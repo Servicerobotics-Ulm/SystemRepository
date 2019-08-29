@@ -199,3 +199,110 @@
 	}
 }
 ]
+[
+{"skill" :
+	{ 
+		"name" : "getBasePose",
+		"skill-definition-fqn" : "CommNavigationObjects.MobileBaseModule.getBasePose",
+		"in-attribute" : {
+		},
+		"out-attribute" : {
+			"x" : "Double",
+			"y" : "Double",
+			"yaw" : "Double"
+		},
+		"results" : [ 
+			{ "result" : "SUCCESS", "result-value" : "OK" }
+		]
+	}
+},
+{"skill" :
+	{ 
+		"name" : "getBaseCharging",
+		"skill-definition-fqn" : "CommNavigationObjects.MobileBaseModule.getBaseCharging",
+		"in-attribute" : {
+		},
+		"out-attribute" : {
+			"charging" : "Bool"
+		},
+		"results" : [ 
+			{ "result" : "SUCCESS", "result-value" : "OK" }
+		]
+	}
+}
+]
+[
+{"skill" :
+	{ 
+		"name" : "activateLocalization",
+		"skill-definition-fqn" : "CommLocalizationObjects.LocalizationModule.activateLocalization",
+		"in-attribute" : {
+		},
+		"out-attribute" : {
+		},
+		"results" : [ 
+			{ "result" : "SUCCESS", "result-value" : "OK" },
+			{ "result" : "ERROR", "result-value" : "" }
+		]
+	}
+},
+{"skill" :
+	{ 
+		"name" : "deactivateLocalization",
+		"skill-definition-fqn" : "CommLocalizationObjects.LocalizationModule.deactivateLocalization",
+		"in-attribute" : {
+		},
+		"out-attribute" : {
+		},
+		"results" : [ 
+			{ "result" : "SUCCESS", "result-value" : "OK" }
+		]
+	}
+},
+{"skill" :
+	{ 
+		"name" : "loadMap",
+		"skill-definition-fqn" : "CommLocalizationObjects.LocalizationModule.loadMap",
+		"in-attribute" : {
+			"mapname" : "String"
+		},
+		"out-attribute" : {
+		},
+		"results" : [ 
+			{ "result" : "SUCCESS", "result-value" : "OK" },
+			{ "result" : "ERROR", "result-value" : "MAP NOT FOUND" }
+		]
+	}
+},
+{"skill" :
+	{ 
+		"name" : "setRobotPose",
+		"skill-definition-fqn" : "CommLocalizationObjects.LocalizationModule.setRobotPose",
+		"in-attribute" : {
+			"x" : "Double",
+			"y" : "Double",
+			"yaw" : "Double"
+		},
+		"out-attribute" : {
+		},
+		"results" : [ 
+			{ "result" : "SUCCESS", "result-value" : "OK" }
+		]
+	}
+},
+{"skill" :
+	{ 
+		"name" : "triggerGlobalLocalization",
+		"skill-definition-fqn" : "CommLocalizationObjects.LocalizationModule.triggerGlobalLocalization",
+		"in-attribute" : {
+		},
+		"out-attribute" : {
+		},
+		"results" : [ 
+			{ "result" : "SUCCESS", "result-value" : "OK" }
+		]
+	}
+}
+]
+[
+]

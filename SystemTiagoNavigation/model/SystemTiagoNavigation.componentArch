@@ -18,6 +18,7 @@ SystemComponentArchitecture SystemTiagoNavigation usingActivityArchitecture Syst
 		ProvidedService BaseStateServiceOut
 		ProvidedService LaserServiceOut
 		ProvidedService NavVelServiceIn
+		ProvidedService LocalizationUpdateServiceIn
 
 		InputHandler VelocityInpuHandler configuration NavVel
 
@@ -35,7 +36,19 @@ SystemComponentArchitecture SystemTiagoNavigation usingActivityArchitecture Syst
 		RequiredService CurMapClient // { connectTo MapperGridMap.CurrMapOut }
 		ProvidedService PlannerGoalServer
 	}
-	ComponentInstance SmartRobotConsole instantiates SmartRobotConsole
+	
+	ComponentInstance SmartAmcl instantiates SmartAmcl
+	{
+		RequiredService LaserServiceIn
+		RequiredService LocalizationUpdateServiceOut
+		ProvidedService LocalizationEventServiceOut
+	}
+	
+	ComponentInstance ComponentKB instantiates ComponentKB
+	{
+	}
+	
+	ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
 	{
 	}
 
@@ -46,4 +59,39 @@ SystemComponentArchitecture SystemTiagoNavigation usingActivityArchitecture Syst
 	Connection SmartMapperGridMap.LaserServiceIn -> SmartGazeboBaseServer.LaserServiceOut;
 	Connection SmartCdlServer.NavVelSendClient -> SmartGazeboBaseServer.NavVelServiceIn;
 	Connection SmartCdlServer.PlannerClient -> SmartPlannerBreadthFirstSearch.PlannerGoalServer;
+	Connection SmartAmcl.LaserServiceIn -> SmartGazeboBaseServer.LaserServiceOut
+	Connection SmartAmcl.LocalizationUpdateServiceOut -> SmartGazeboBaseServer.LocalizationUpdateServiceIn
+	
+	BehaviorTaskRef NavTasks
+	
+	CoordinationModuleMapping {
+		moduleInstance NavTasks.kbModInst realizedby kbModule
+		{
+			interfaceInstance kb realizedby ComponentKB
+		}
+	}
+	
+
+	CoordinationModuleMapping {
+		moduleInstance NavTasks.nav1 realizedby MovementMod2
+		{
+			interfaceInstance cdl realizedby SmartCdlServer
+			interfaceInstance mapper realizedby SmartMapperGridMap
+			interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch
+		}
+	}
+	
+	CoordinationModuleMapping {
+		moduleInstance NavTasks.localizationModInst realizedby locModRealization {
+			interfaceInstance amcl1 realizedby SmartAmcl
+		}
+	}
+	
+	CoordinationModuleMapping {
+		moduleInstance NavTasks.base realizedby baseInst {
+			interfaceInstance base realizedby SmartGazeboBaseServer
+		}
+	}
+	
+		
 }

@@ -23,4 +23,9 @@ SystemParameterModel SystemTiagoNavigation extendsSystem SystemTiagoNavigation {
 			freeBehaviorDist_second = 350.0
 		}
 	}
-}
+ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGridMapParams {
+	ParameterRefinement CurrentMap {
+		growing = "star32"
+	}
+} }
+

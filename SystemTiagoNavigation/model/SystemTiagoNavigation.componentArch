@@ -29,6 +29,7 @@ SystemComponentArchitecture SystemTiagoNavigation usingActivityArchitecture Syst
 	{
 		RequiredService LaserServiceIn // { connectTo GazeboBaseServer.LaserServiceOut }
 		ProvidedService CurrMapOut
+	ParameterStructInstance SystemTiagoNavigation.SmartMapperGridMap
 	}
 	ComponentInstance SmartPlannerBreadthFirstSearch instantiates SmartPlannerBreadthFirstSearch
 	{

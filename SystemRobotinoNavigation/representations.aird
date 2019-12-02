@@ -62,6 +62,9 @@
     <semanticResources>platform:/resource/SmartJoystickNavigation/model/SmartJoystickNavigation.componentParameters</semanticResources>
     <semanticResources>platform:/resource/SmartAmcl/model/SmartAmcl.skillRealization</semanticResources>
     <semanticResources>platform:/resource/CommTrackingObjects/model/CommTrackingObjects.modes</semanticResources>
+    <semanticResources>platform:/resource/CommRobotinoObjects/model/CommRobotinoObjects.modes</semanticResources>
+    <semanticResources>platform:/resource/CommRobotinoObjects/model/CommRobotinoObjects.parameters</semanticResources>
+    <semanticResources>platform:/resource/DomainVision/model/DomainVision.skills</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="__HbQ4DwxEem2Qq_fEgOqlw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="__OgwUDwxEem2Qq_fEgOqlw" name="SystemRobotinoNavigationComponentArchitecture" repPath="#__Oe7IDwxEem2Qq_fEgOqlw">

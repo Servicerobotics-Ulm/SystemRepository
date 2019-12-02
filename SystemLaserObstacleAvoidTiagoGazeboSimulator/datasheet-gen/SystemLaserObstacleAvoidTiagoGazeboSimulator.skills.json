@@ -1,1 +1,33 @@
 
+[
+{"skill" :
+	{ 
+		"name" : "getBasePose",
+		"skill-definition-fqn" : "CommNavigationObjects.MobileBaseModule.getBasePose",
+		"in-attribute" : {
+		},
+		"out-attribute" : {
+			"x" : "Double",
+			"y" : "Double",
+			"yaw" : "Double"
+		},
+		"results" : [ 
+			{ "result" : "SUCCESS", "result-value" : "OK" }
+		]
+	}
+},
+{"skill" :
+	{ 
+		"name" : "getBaseCharging",
+		"skill-definition-fqn" : "CommNavigationObjects.MobileBaseModule.getBaseCharging",
+		"in-attribute" : {
+		},
+		"out-attribute" : {
+			"charging" : "Bool"
+		},
+		"results" : [ 
+			{ "result" : "SUCCESS", "result-value" : "OK" }
+		]
+	}
+}
+]

@@ -33,6 +33,8 @@ pre-start)
 	
 	# ...then call user/deployment specific hook:
 	echo "Triggering pre-start hooks ..."
+
+	bash $SMART_ROOT_ACE/repos/DataRepository/gazebo/startGazebo.sh worlds/tiagoOffice_nav.world
 ;;
 
 post-start)
@@ -57,6 +59,9 @@ post-stop)
 	
 	# ...then call user/deployment specific hook:
 	echo "Triggering post-stop hooks ..."
+
+	killall gzserver
+	killall gzclient
 ;;
 
 *)

@@ -116,7 +116,7 @@
             <styles xmi:type="notation:FilteringStyle" xmi:id="_F3UDFh1KEeigFsnOA8WiJA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_F3UDER1KEeigFsnOA8WiJA" fontName="Ubuntu" fontHeight="10" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F3UDEh1KEeigFsnOA8WiJA" x="636" y="60" width="207" height="171"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F3UDEh1KEeigFsnOA8WiJA" x="312" width="289" height="133"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_0jwBwEeUEei7C6fq1MJgdA" type="2002" element="_0jGhgEeUEei7C6fq1MJgdA">
           <children xmi:type="notation:Node" xmi:id="_0j2IYEeUEei7C6fq1MJgdA" type="5006"/>
@@ -128,7 +128,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_WoLCIsW2EeqSA-PI7MHmWQ"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_WoIl48W2EeqSA-PI7MHmWQ" fontName="Ubuntu" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WoIl5MW2EeqSA-PI7MHmWQ" x="31" y="30"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WoIl5MW2EeqSA-PI7MHmWQ" x="47" y="46"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_0j2vcUeUEei7C6fq1MJgdA"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_0j2vckeUEei7C6fq1MJgdA"/>
@@ -137,15 +137,15 @@
             <children xmi:type="notation:Node" xmi:id="_WoHXycW2EeqSA-PI7MHmWQ" type="5010">
               <layoutConstraint xmi:type="notation:Location" xmi:id="_WoHXysW2EeqSA-PI7MHmWQ" x="31" y="5"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_IN28YOL8Eeq-zoXWIi816Q" type="3014" element="_IM9kgeL8Eeq-zoXWIi816Q">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_IN28YeL8Eeq-zoXWIi816Q" fontName="Ubuntu"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IN28YuL8Eeq-zoXWIi816Q"/>
+            <children xmi:type="notation:Node" xmi:id="_UtU2UOMTEeqZn6qdOJ0cGA" type="3014" element="_UswOkOMTEeqZn6qdOJ0cGA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_UtU2UeMTEeqZn6qdOJ0cGA" fontName="Cantarell"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UtU2UuMTEeqZn6qdOJ0cGA"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_WoHXx8W2EeqSA-PI7MHmWQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WoHXyMW2EeqSA-PI7MHmWQ" x="-22" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WoHXyMW2EeqSA-PI7MHmWQ" x="331" y="78" width="30" height="30"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_0jwBwUeUEei7C6fq1MJgdA" fontName="Ubuntu" fontHeight="10" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0jwBwkeUEei7C6fq1MJgdA" x="48" y="60" width="219" height="171"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0jwBwkeUEei7C6fq1MJgdA" x="78" y="598" width="341" height="185"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_0j3WgEeUEei7C6fq1MJgdA" type="2002" element="_0jJk0EeUEei7C6fq1MJgdA">
           <children xmi:type="notation:Node" xmi:id="_0j39kEeUEei7C6fq1MJgdA" type="5006"/>
@@ -157,7 +157,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_IOAGUuL8Eeq-zoXWIi816Q"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_IN-4MeL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IN-4MuL8Eeq-zoXWIi816Q" x="31" y="30"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IN-4MuL8Eeq-zoXWIi816Q" x="47" y="98"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_0j39kkeUEei7C6fq1MJgdA"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_0j39k0eUEei7C6fq1MJgdA"/>
@@ -171,7 +171,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOAGVeL8Eeq-zoXWIi816Q"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_WoLpM8W2EeqSA-PI7MHmWQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WoLpNMW2EeqSA-PI7MHmWQ" x="-22" y="31" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WoLpNMW2EeqSA-PI7MHmWQ" x="253" y="52" width="30" height="30"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IN4KgOL8Eeq-zoXWIi816Q" type="3012" element="_IM-yo-L8Eeq-zoXWIi816Q">
             <children xmi:type="notation:Node" xmi:id="_IN4xkOL8Eeq-zoXWIi816Q" type="5010">
@@ -182,7 +182,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOAGWOL8Eeq-zoXWIi816Q"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_IN4KgeL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IN4KguL8Eeq-zoXWIi816Q" x="-22" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IN4KguL8Eeq-zoXWIi816Q" x="-22" y="52" width="30" height="30"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IN-RIOL8Eeq-zoXWIi816Q" type="3012" element="_IM_ZsuL8Eeq-zoXWIi816Q">
             <children xmi:type="notation:Node" xmi:id="_IN-RI-L8Eeq-zoXWIi816Q" type="5010">
@@ -193,10 +193,10 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOAtYuL8Eeq-zoXWIi816Q"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_IN-RIeL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IN-RIuL8Eeq-zoXWIi816Q" x="-22" y="62" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IN-RIuL8Eeq-zoXWIi816Q" x="-22" y="104" width="30" height="30"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_0j3WgUeUEei7C6fq1MJgdA" fontName="Ubuntu" fontHeight="10" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0j3WgkeUEei7C6fq1MJgdA" x="336" y="312" width="231" height="99"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0j3WgkeUEei7C6fq1MJgdA" x="728" y="676" width="263" height="185"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_0j39lEeUEei7C6fq1MJgdA" type="2002" element="_0jKL4UeUEei7C6fq1MJgdA">
           <children xmi:type="notation:Node" xmi:id="_0j4koEeUEei7C6fq1MJgdA" type="5006"/>
@@ -233,7 +233,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOCikuL8Eeq-zoXWIi816Q"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_IOAtZOL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOAtZeL8Eeq-zoXWIi816Q" x="-22" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOAtZeL8Eeq-zoXWIi816Q" x="305" y="56" width="30" height="30"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOBUcOL8Eeq-zoXWIi816Q" type="3012" element="_INAn0-L8Eeq-zoXWIi816Q">
             <children xmi:type="notation:Node" xmi:id="_IOBUc-L8Eeq-zoXWIi816Q" type="5010">
@@ -255,10 +255,10 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IODJouL8Eeq-zoXWIi816Q"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_IOB7gOL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOB7geL8Eeq-zoXWIi816Q" x="9" y="134" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOB7geL8Eeq-zoXWIi816Q" x="-22" y="130" width="30" height="30"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_0j39lUeUEei7C6fq1MJgdA" fontName="Ubuntu" fontHeight="10" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0j39lkeUEei7C6fq1MJgdA" x="288" y="492" width="315" height="144"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0j39lkeUEei7C6fq1MJgdA" x="1144" y="338" width="315" height="185"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_0j4kpEeUEei7C6fq1MJgdA" type="2002" element="_0jLaAUeUEei7C6fq1MJgdA">
           <children xmi:type="notation:Node" xmi:id="_0j5LsEeUEei7C6fq1MJgdA" type="5006"/>
@@ -275,7 +275,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOEXxOL8Eeq-zoXWIi816Q"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_UcyBIRKXEeqQsNwCNLX18g" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UcyBIhKXEeqQsNwCNLX18g" x="173" y="19" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UcyBIhKXEeqQsNwCNLX18g" x="331" y="156" width="30" height="30"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IODJo-L8Eeq-zoXWIi816Q" type="3012" element="_INCdAeL8Eeq-zoXWIi816Q">
             <children xmi:type="notation:Node" xmi:id="_IODJpuL8Eeq-zoXWIi816Q" type="5010">
@@ -286,7 +286,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOE-0uL8Eeq-zoXWIi816Q"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_IODJpOL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IODJpeL8Eeq-zoXWIi816Q" x="-22" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IODJpeL8Eeq-zoXWIi816Q" x="331" y="97" width="30" height="30"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IODwsOL8Eeq-zoXWIi816Q" type="3012" element="_INCdBOL8Eeq-zoXWIi816Q">
             <children xmi:type="notation:Node" xmi:id="_IODws-L8Eeq-zoXWIi816Q" type="5010">
@@ -297,7 +297,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOE-1eL8Eeq-zoXWIi816Q"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_IODwseL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IODwsuL8Eeq-zoXWIi816Q" x="-22" y="31" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IODwsuL8Eeq-zoXWIi816Q" x="331" y="19" width="30" height="30"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IODwteL8Eeq-zoXWIi816Q" type="3012" element="_INDEEuL8Eeq-zoXWIi816Q">
             <children xmi:type="notation:Node" xmi:id="_IOEXwOL8Eeq-zoXWIi816Q" type="5010">
@@ -308,10 +308,10 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOE-2OL8Eeq-zoXWIi816Q"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_IODwtuL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IODwt-L8Eeq-zoXWIi816Q" x="-22" y="62" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IODwt-L8Eeq-zoXWIi816Q" x="331" y="208" width="30" height="30"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_0j4kpUeUEei7C6fq1MJgdA" fontName="Ubuntu" fontHeight="10" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0j4kpkeUEei7C6fq1MJgdA" x="780" y="353" width="183" height="99"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0j4kpkeUEei7C6fq1MJgdA" x="78" y="241" width="341" height="250"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_UcgUUBKXEeqQsNwCNLX18g" type="2002" element="_Ub-v4BKXEeqQsNwCNLX18g">
           <children xmi:type="notation:Node" xmi:id="_Ucma8BKXEeqQsNwCNLX18g" type="5006"/>
@@ -323,7 +323,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_IOG0BuL8Eeq-zoXWIi816Q"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_IOG0AeL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOG0AuL8Eeq-zoXWIi816Q" x="28" y="30"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOG0AuL8Eeq-zoXWIi816Q" x="47" y="72"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_UcnCARKXEeqQsNwCNLX18g"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_UcnCAhKXEeqQsNwCNLX18g"/>
@@ -348,10 +348,10 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOG0CeL8Eeq-zoXWIi816Q"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_IOE-2uL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOE-2-L8Eeq-zoXWIi816Q" x="-22" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOE-2-L8Eeq-zoXWIi816Q" x="227" y="26" width="30" height="30"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_UcgUURKXEeqQsNwCNLX18g" fontName="Ubuntu" fontHeight="10" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UcgUUhKXEeqQsNwCNLX18g" x="51" y="-36"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UcgUUhKXEeqQsNwCNLX18g" x="702" y="104" width="237" height="159"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_UcnpEBKXEeqQsNwCNLX18g" type="2002" element="_UcBzMBKXEeqQsNwCNLX18g">
           <children xmi:type="notation:Node" xmi:id="_UcoQIBKXEeqQsNwCNLX18g" type="5006"/>
@@ -368,7 +368,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOIpMuL8Eeq-zoXWIi816Q"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_IOHbEeL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOHbEuL8Eeq-zoXWIi816Q" x="-22" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOHbEuL8Eeq-zoXWIi816Q" x="370" y="130" width="30" height="30"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOHbFeL8Eeq-zoXWIi816Q" type="3012" element="_INFgU-L8Eeq-zoXWIi816Q">
             <children xmi:type="notation:Node" xmi:id="_IOICIOL8Eeq-zoXWIi816Q" type="5010">
@@ -379,7 +379,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOIpNeL8Eeq-zoXWIi816Q"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_IOHbFuL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOHbF-L8Eeq-zoXWIi816Q" x="-22" y="31" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOHbF-L8Eeq-zoXWIi816Q" x="-22" y="109" width="30" height="30"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOICIuL8Eeq-zoXWIi816Q" type="3012" element="_INGHYuL8Eeq-zoXWIi816Q">
             <children xmi:type="notation:Node" xmi:id="_IOICJeL8Eeq-zoXWIi816Q" type="5010">
@@ -390,10 +390,10 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOJQQuL8Eeq-zoXWIi816Q"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_IOICI-L8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOICJOL8Eeq-zoXWIi816Q" x="9" y="60" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOICJOL8Eeq-zoXWIi816Q" x="-22" y="26" width="30" height="30"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_UcnpERKXEeqQsNwCNLX18g" fontName="Ubuntu" fontHeight="10" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UcnpEhKXEeqQsNwCNLX18g" x="300" y="-36"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UcnpEhKXEeqQsNwCNLX18g" x="1144" y="104" width="380" height="211"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_8zDTsMW0EeqSA-PI7MHmWQ" type="2002" element="_8xueAMW0EeqSA-PI7MHmWQ">
           <children xmi:type="notation:Node" xmi:id="_8zLPgMW0EeqSA-PI7MHmWQ" type="5006"/>
@@ -410,7 +410,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOKeYuL8Eeq-zoXWIi816Q"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_IOJQROL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOJQReL8Eeq-zoXWIi816Q" x="-22" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOJQReL8Eeq-zoXWIi816Q" x="253" y="84" width="30" height="30"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOJQSOL8Eeq-zoXWIi816Q" type="3012" element="_INHVgeL8Eeq-zoXWIi816Q">
             <children xmi:type="notation:Node" xmi:id="_IOJ3UOL8Eeq-zoXWIi816Q" type="5010">
@@ -421,7 +421,7 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOLFcuL8Eeq-zoXWIi816Q"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_IOJQSeL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOJQSuL8Eeq-zoXWIi816Q" x="-22" y="31" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOJQSuL8Eeq-zoXWIi816Q" x="-22" y="32" width="30" height="30"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOJ3UuL8Eeq-zoXWIi816Q" type="3012" element="_INHVhOL8Eeq-zoXWIi816Q">
             <children xmi:type="notation:Node" xmi:id="_IOJ3VeL8Eeq-zoXWIi816Q" type="5010">
@@ -432,10 +432,10 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOLFdeL8Eeq-zoXWIi816Q"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_IOJ3U-L8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOJ3VOL8Eeq-zoXWIi816Q" x="9" y="60" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOJ3VOL8Eeq-zoXWIi816Q" x="-22" y="84" width="30" height="30"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_8zDTscW0EeqSA-PI7MHmWQ" fontName="Ubuntu" fontHeight="10" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8zDTssW0EeqSA-PI7MHmWQ" x="51" y="382"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8zDTssW0EeqSA-PI7MHmWQ" x="728" y="488" width="263" height="165"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_INuZgOL8Eeq-zoXWIi816Q" type="2002" element="_IEflAuL8Eeq-zoXWIi816Q">
           <children xmi:type="notation:Node" xmi:id="_INyq8OL8Eeq-zoXWIi816Q" type="5006"/>
@@ -444,7 +444,7 @@
             <styles xmi:type="notation:FilteringStyle" xmi:id="_INzSAuL8Eeq-zoXWIi816Q"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_INuZgeL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="10" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_INuZguL8Eeq-zoXWIi816Q" x="-192" y="264"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_INuZguL8Eeq-zoXWIi816Q" y="78" width="289" height="55"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_IN1uQOL8Eeq-zoXWIi816Q" type="2002" element="_IElEkOL8Eeq-zoXWIi816Q">
           <children xmi:type="notation:Node" xmi:id="_IN2VUOL8Eeq-zoXWIi816Q" type="5006"/>
@@ -453,198 +453,198 @@
             <styles xmi:type="notation:FilteringStyle" xmi:id="_IN2VU-L8Eeq-zoXWIi816Q"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_IN1uQeL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="10" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IN1uQuL8Eeq-zoXWIi816Q" x="-336" y="-132"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IN1uQuL8Eeq-zoXWIi816Q" width="289" height="63"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_7Xmi8h1JEeigFsnOA8WiJA"/>
         <edges xmi:type="notation:Edge" xmi:id="_IOUPYOL8Eeq-zoXWIi816Q" type="4001" element="_INZCUOL8Eeq-zoXWIi816Q" source="_IOICIuL8Eeq-zoXWIi816Q" target="_IOE-2eL8Eeq-zoXWIi816Q">
           <children xmi:type="notation:Node" xmi:id="_IOU2cOL8Eeq-zoXWIi816Q" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOU2ceL8Eeq-zoXWIi816Q" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOU2ceL8Eeq-zoXWIi816Q" x="4" y="3"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOU2cuL8Eeq-zoXWIi816Q" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOU2c-L8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOU2c-L8Eeq-zoXWIi816Q" x="4" y="5"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOU2dOL8Eeq-zoXWIi816Q" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOU2deL8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOU2deL8Eeq-zoXWIi816Q" x="-5" y="7"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_IOUPYeL8Eeq-zoXWIi816Q"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_IOUPYuL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOUPY-L8Eeq-zoXWIi816Q" points="[-15, -4, 265, 56]$[-265, -57, 15, 3]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOUPY-L8Eeq-zoXWIi816Q" points="[-15, 0, 178, 0]$[-178, 0, 15, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOaWAOL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOaWAeL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_IOa9EOL8Eeq-zoXWIi816Q" type="4001" element="_INcFoOL8Eeq-zoXWIi816Q" source="_IOHbFeL8Eeq-zoXWIi816Q" target="_IODJo-L8Eeq-zoXWIi816Q">
           <children xmi:type="notation:Node" xmi:id="_IOa9FOL8Eeq-zoXWIi816Q" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOa9FeL8Eeq-zoXWIi816Q" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOa9FeL8Eeq-zoXWIi816Q" x="-28" y="6"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOa9FuL8Eeq-zoXWIi816Q" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOa9F-L8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOa9F-L8Eeq-zoXWIi816Q" x="40" y="12"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOa9GOL8Eeq-zoXWIi816Q" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOa9GeL8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOa9GeL8Eeq-zoXWIi816Q" x="37" y="12"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_IOa9EeL8Eeq-zoXWIi816Q"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_IOa9EuL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOa9E-L8Eeq-zoXWIi816Q" points="[15, 11, -465, -347]$[465, 346, -15, -12]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOa9E-L8Eeq-zoXWIi816Q" points="[-15, 2, 698, -123]$[-698, 122, 15, -3]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOa9GuL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOa9G-L8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_IOa9HOL8Eeq-zoXWIi816Q" type="4001" element="_INdTwuL8Eeq-zoXWIi816Q" source="_IOBUcOL8Eeq-zoXWIi816Q" target="_IODJo-L8Eeq-zoXWIi816Q">
           <children xmi:type="notation:Node" xmi:id="_IObkIOL8Eeq-zoXWIi816Q" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IObkIeL8Eeq-zoXWIi816Q" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IObkIeL8Eeq-zoXWIi816Q" x="21" y="7"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IObkIuL8Eeq-zoXWIi816Q" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IObkI-L8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IObkI-L8Eeq-zoXWIi816Q" x="-4" y="2"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IObkJOL8Eeq-zoXWIi816Q" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IObkJeL8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IObkJeL8Eeq-zoXWIi816Q" x="-7" y="3"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_IOa9HeL8Eeq-zoXWIi816Q"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_IOa9HuL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOa9H-L8Eeq-zoXWIi816Q" points="[15, -6, -477, 164]$[477, -165, -15, 5]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOa9H-L8Eeq-zoXWIi816Q" points="[-15, -1, 698, 30]$[-698, -31, 15, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IObkJuL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IObkJ-L8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_IObkKOL8Eeq-zoXWIi816Q" type="4001" element="_INd60uL8Eeq-zoXWIi816Q" source="_OXl-pZpoEei3js2rrljKsQ" target="_IODwsOL8Eeq-zoXWIi816Q">
           <children xmi:type="notation:Node" xmi:id="_IObkLOL8Eeq-zoXWIi816Q" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IObkLeL8Eeq-zoXWIi816Q" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IObkLeL8Eeq-zoXWIi816Q" x="21" y="4"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IObkLuL8Eeq-zoXWIi816Q" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IObkL-L8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IObkL-L8Eeq-zoXWIi816Q" x="-8" y="1"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IObkMOL8Eeq-zoXWIi816Q" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IObkMeL8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IObkMeL8Eeq-zoXWIi816Q" x="-2" y="-1"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_IObkKeL8Eeq-zoXWIi816Q"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_IObkKuL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IObkK-L8Eeq-zoXWIi816Q" points="[15, -6, -477, 186]$[477, -187, -15, 5]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IObkK-L8Eeq-zoXWIi816Q" points="[-15, -4, 698, 158]$[-698, -159, 15, 3]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOcLMOL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOcLMeL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_IOcLMuL8Eeq-zoXWIi816Q" type="4001" element="_INfI9OL8Eeq-zoXWIi816Q" source="_WoNea8W2EeqSA-PI7MHmWQ" target="_IODwsOL8Eeq-zoXWIi816Q">
           <children xmi:type="notation:Node" xmi:id="_IOcLNuL8Eeq-zoXWIi816Q" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcLN-L8Eeq-zoXWIi816Q" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcLN-L8Eeq-zoXWIi816Q" x="-4" y="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOcLOOL8Eeq-zoXWIi816Q" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcLOeL8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcLOeL8Eeq-zoXWIi816Q" x="5" y="-1"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOcLOuL8Eeq-zoXWIi816Q" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcLO-L8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcLO-L8Eeq-zoXWIi816Q" x="4" y="-6"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_IOcLM-L8Eeq-zoXWIi816Q"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_IOcLNOL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOcLNeL8Eeq-zoXWIi816Q" points="[15, 8, -714, -381]$[714, 380, -15, -9]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOcLNeL8Eeq-zoXWIi816Q" points="[-15, 6, 256, -119]$[-256, 118, 15, -7]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOcLPOL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOcLPeL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_IOcLPuL8Eeq-zoXWIi816Q" type="4001" element="_INfwBOL8Eeq-zoXWIi816Q" source="_IOBUdeL8Eeq-zoXWIi816Q" target="_UcyBIBKXEeqQsNwCNLX18g">
           <children xmi:type="notation:Node" xmi:id="_IOcyQOL8Eeq-zoXWIi816Q" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcyQeL8Eeq-zoXWIi816Q" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcyQeL8Eeq-zoXWIi816Q" x="32" y="2"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOcyQuL8Eeq-zoXWIi816Q" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcyQ-L8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcyQ-L8Eeq-zoXWIi816Q" x="-14" y="4"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOcyROL8Eeq-zoXWIi816Q" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcyReL8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcyReL8Eeq-zoXWIi816Q" x="-23" y="1"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_IOcLP-L8Eeq-zoXWIi816Q"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_IOcLQOL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOcLQeL8Eeq-zoXWIi816Q" points="[15, -6, -641, 248]$[641, -249, -15, 5]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOcLQeL8Eeq-zoXWIi816Q" points="[-15, -2, 698, 69]$[-698, -70, 15, 1]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOcyRuL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOcyR-L8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_IOcySOL8Eeq-zoXWIi816Q" type="4001" element="_INfwCeL8Eeq-zoXWIi816Q" source="_IOAtY-L8Eeq-zoXWIi816Q" target="_IOHbEOL8Eeq-zoXWIi816Q">
           <children xmi:type="notation:Node" xmi:id="_IOcyTOL8Eeq-zoXWIi816Q" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcyTeL8Eeq-zoXWIi816Q" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcyTeL8Eeq-zoXWIi816Q" x="4" y="2"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOcyTuL8Eeq-zoXWIi816Q" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcyT-L8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcyT-L8Eeq-zoXWIi816Q" x="-6" y="7"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOcyUOL8Eeq-zoXWIi816Q" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcyUeL8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOcyUeL8Eeq-zoXWIi816Q" x="-12" y="-2"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_IOcySeL8Eeq-zoXWIi816Q"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_IOcySuL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOcyS-L8Eeq-zoXWIi816Q" points="[0, -15, -12, 513]$[11, -513, -1, 15]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOcyS-L8Eeq-zoXWIi816Q" points="[15, -8, -50, 152]$[96, -45, 31, 115]$[69, -146, 4, 14]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOdZUOL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOdZUeL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_IOdZUuL8Eeq-zoXWIi816Q" type="4001" element="_INgXFOL8Eeq-zoXWIi816Q" source="_IOJQSOL8Eeq-zoXWIi816Q" target="_IODwsOL8Eeq-zoXWIi816Q">
           <children xmi:type="notation:Node" xmi:id="_IOdZVuL8Eeq-zoXWIi816Q" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOdZV-L8Eeq-zoXWIi816Q" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOdZV-L8Eeq-zoXWIi816Q" x="-5" y="3"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOdZWOL8Eeq-zoXWIi816Q" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOdZWeL8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOdZWeL8Eeq-zoXWIi816Q" x="16" y="2"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOdZWuL8Eeq-zoXWIi816Q" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOdZW-L8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOdZW-L8Eeq-zoXWIi816Q" x="17" y="3"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_IOdZU-L8Eeq-zoXWIi816Q"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_IOdZVOL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOdZVeL8Eeq-zoXWIi816Q" points="[15, -1, -714, 28]$[714, -29, -15, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOdZVeL8Eeq-zoXWIi816Q" points="[-15, -14, 282, 246]$[-282, -247, 15, 13]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOdZXOL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOdZXeL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_IOdZXuL8Eeq-zoXWIi816Q" type="4001" element="_INgXGeL8Eeq-zoXWIi816Q" source="_IOJ3UuL8Eeq-zoXWIi816Q" target="_IODwteL8Eeq-zoXWIi816Q">
           <children xmi:type="notation:Node" xmi:id="_IOdZYuL8Eeq-zoXWIi816Q" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOdZY-L8Eeq-zoXWIi816Q" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOdZY-L8Eeq-zoXWIi816Q" x="-10" y="4"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOdZZOL8Eeq-zoXWIi816Q" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOdZZeL8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOdZZeL8Eeq-zoXWIi816Q" x="14" y="2"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOeAYOL8Eeq-zoXWIi816Q" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOeAYeL8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOeAYeL8Eeq-zoXWIi816Q" x="10" y="1"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_IOdZX-L8Eeq-zoXWIi816Q"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_IOdZYOL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOdZYeL8Eeq-zoXWIi816Q" points="[15, -1, -683, 26]$[683, -27, -15, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOdZYeL8Eeq-zoXWIi816Q" points="[-15, -7, 282, 116]$[-282, -117, 15, 6]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOeAYuL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOeAY-L8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_IOeAZOL8Eeq-zoXWIi816Q" type="4001" element="_INg-IuL8Eeq-zoXWIi816Q" source="_IN-RIOL8Eeq-zoXWIi816Q" target="_IODwteL8Eeq-zoXWIi816Q">
           <children xmi:type="notation:Node" xmi:id="_IOeAaOL8Eeq-zoXWIi816Q" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOeAaeL8Eeq-zoXWIi816Q" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOeAaeL8Eeq-zoXWIi816Q" x="-7" y="-2"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOeAauL8Eeq-zoXWIi816Q" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOeAa-L8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOeAa-L8Eeq-zoXWIi816Q" x="24" y="-1"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOeAbOL8Eeq-zoXWIi816Q" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOeAbeL8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOeAbeL8Eeq-zoXWIi816Q" x="27" y="-2"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_IOeAZeL8Eeq-zoXWIi816Q"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_IOeAZuL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOeAZ-L8Eeq-zoXWIi816Q" points="[15, 1, -429, -40]$[429, 39, -15, -2]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOeAZ-L8Eeq-zoXWIi816Q" points="[-14, -15, 283, 316]$[-284, -316, 13, 15]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOeAbuL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOeAb-L8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_IOeAcOL8Eeq-zoXWIi816Q" type="4001" element="_INg-J-L8Eeq-zoXWIi816Q" source="_IN4KgOL8Eeq-zoXWIi816Q" target="_IODwsOL8Eeq-zoXWIi816Q">
           <children xmi:type="notation:Node" xmi:id="_IOencOL8Eeq-zoXWIi816Q" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOenceL8Eeq-zoXWIi816Q" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOenceL8Eeq-zoXWIi816Q" x="-7" y="-3"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOencuL8Eeq-zoXWIi816Q" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOenc-L8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOenc-L8Eeq-zoXWIi816Q" x="27" y="-2"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOendOL8Eeq-zoXWIi816Q" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOendeL8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOendeL8Eeq-zoXWIi816Q" x="29" y="-2"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_IOeAceL8Eeq-zoXWIi816Q"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_IOeAcuL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOeAc-L8Eeq-zoXWIi816Q" points="[15, 2, -429, -70]$[429, 69, -15, -3]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOeAc-L8Eeq-zoXWIi816Q" points="[-10, -15, 287, 453]$[-288, -453, 9, 15]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOenduL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOend-L8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_IOeneOL8Eeq-zoXWIi816Q" type="4001" element="_INhlMuL8Eeq-zoXWIi816Q" source="_WoHXxsW2EeqSA-PI7MHmWQ" target="_UcyBIBKXEeqQsNwCNLX18g">
           <children xmi:type="notation:Node" xmi:id="_IOenfOL8Eeq-zoXWIi816Q" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOenfeL8Eeq-zoXWIi816Q" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOenfeL8Eeq-zoXWIi816Q" x="10" y="3"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOenfuL8Eeq-zoXWIi816Q" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOenf-L8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOenf-L8Eeq-zoXWIi816Q" x="-9" y="3"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_IOengOL8Eeq-zoXWIi816Q" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOengeL8Eeq-zoXWIi816Q" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IOengeL8Eeq-zoXWIi816Q" x="-10" y="-3"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_IOeneeL8Eeq-zoXWIi816Q"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_IOeneuL8Eeq-zoXWIi816Q" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOene-L8Eeq-zoXWIi816Q" points="[15, 5, -912, -307]$[912, 306, -15, -6]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_IOene-L8Eeq-zoXWIi816Q" points="[5, -12, 5, 267]$[44, -119, 44, 160]$[4, -265, 4, 14]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOfOgOL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_IOfOgeL8Eeq-zoXWIi816Q" id="(0.5,0.5)"/>
         </edges>
@@ -673,14 +673,17 @@
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@subContainerMappings[name='ParameterStructInstanceContainer']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_0jGhgEeUEei7C6fq1MJgdA" name="ComponentKeyboardNavigation: ComponentKeyboardNavigation" tooltipText="ComponentInstance">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_0jGhgEeUEei7C6fq1MJgdA" name="ComponentKeyboardNavigation: " tooltipText="ComponentInstance">
       <target xmi:type="ComponentArchitecture:ComponentInstance" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.1"/>
       <semanticElements xmi:type="ComponentArchitecture:ComponentInstance" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.1"/>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_Wn0c1sW2EeqSA-PI7MHmWQ" name="navVelSendClient" tooltipText="OutputRequestor" outgoingEdges="_INhlMuL8Eeq-zoXWIi816Q" width="3" height="3" resizeKind="NSEW">
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_Wn0c1sW2EeqSA-PI7MHmWQ" tooltipText="InputRequestor" outgoingEdges="_INhlMuL8Eeq-zoXWIi816Q" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.1/@ports.0"/>
         <semanticElements xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.1/@ports.0"/>
-        <ownedStyle xmi:type="diagram:CustomStyle" uid="_IM9kgeL8Eeq-zoXWIi816Q" showIcon="false" id="outreq">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@conditionnalStyles.0/@style"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_UswOkOMTEeqZn6qdOJ0cGA" showIcon="false" id="inreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
       </ownedBorderedNodes>
@@ -695,6 +698,9 @@
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_Wn1D5cW2EeqSA-PI7MHmWQ" name="ComponentKeyboardNavigation" tooltipText="ParameterStructInstance">
         <target xmi:type="SystemParameter:ParameterStructInstance" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.1/@extensions.0"/>
         <semanticElements xmi:type="SystemParameter:ParameterStructInstance" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.1/@extensions.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Wn1D5sW2EeqSA-PI7MHmWQ" borderSize="1" borderSizeComputationExpression="1">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@subContainerMappings[name='ParameterStructInstanceContainer']/@style"/>
         </ownedStyle>
@@ -707,6 +713,9 @@
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_Wn1D68W2EeqSA-PI7MHmWQ" name="newestMapPushServer" tooltipText="OutputProvider" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentArchitecture:ProvidedService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.2/@ports.2"/>
         <semanticElements xmi:type="ComponentArchitecture:ProvidedService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.2/@ports.2"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" uid="_IM-yoeL8Eeq-zoXWIi816Q" showIcon="false" id="outprov">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@style"/>
         </ownedStyle>
@@ -715,6 +724,9 @@
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_IM-yo-L8Eeq-zoXWIi816Q" name="laserClient" tooltipText="InputRequestor" outgoingEdges="_INg-J-L8Eeq-zoXWIi816Q" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.2/@ports.0"/>
         <semanticElements xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.2/@ports.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" uid="_IM_ZsOL8Eeq-zoXWIi816Q" showIcon="false" id="inreq">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
         </ownedStyle>
@@ -723,6 +735,9 @@
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_IM_ZsuL8Eeq-zoXWIi816Q" name="basePositionUpdateClient" tooltipText="OutputRequestor" outgoingEdges="_INg-IuL8Eeq-zoXWIi816Q" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.2/@ports.1"/>
         <semanticElements xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.2/@ports.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" uid="_IM_Zs-L8Eeq-zoXWIi816Q" showIcon="false" id="outreq">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@conditionnalStyles.0/@style"/>
         </ownedStyle>
@@ -739,6 +754,9 @@
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_INAAweL8Eeq-zoXWIi816Q" name="ComponentGMapping" tooltipText="ParameterStructInstance">
         <target xmi:type="SystemParameter:ParameterStructInstance" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.2/@extensions.0"/>
         <semanticElements xmi:type="SystemParameter:ParameterStructInstance" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.2/@extensions.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_INAAwuL8Eeq-zoXWIi816Q" borderSize="1" borderSizeComputationExpression="1">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@subContainerMappings[name='ParameterStructInstanceContainer']/@style"/>
         </ownedStyle>
@@ -762,6 +780,9 @@
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_INAn0OL8Eeq-zoXWIi816Q" name="PlannerClient" tooltipText="InputRequestor" outgoingEdges="_INfwCeL8Eeq-zoXWIi816Q" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.3/@ports.1"/>
         <semanticElements xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.3/@ports.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" uid="_INAn0eL8Eeq-zoXWIi816Q" showIcon="false" id="inreq">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
         </ownedStyle>
@@ -778,6 +799,9 @@
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_INBO4uL8Eeq-zoXWIi816Q" name="NavVelSendClient" tooltipText="OutputRequestor" outgoingEdges="_INfwBOL8Eeq-zoXWIi816Q" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.3/@ports.3"/>
         <semanticElements xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.3/@ports.3"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" uid="_INBO4-L8Eeq-zoXWIi816Q" showIcon="false" id="outreq">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@conditionnalStyles.0/@style"/>
         </ownedStyle>
@@ -817,6 +841,9 @@
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_INCdAeL8Eeq-zoXWIi816Q" name="BaseStateServiceOut" tooltipText="OutputProvider" incomingEdges="_INcFoOL8Eeq-zoXWIi816Q _INdTwuL8Eeq-zoXWIi816Q" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentArchitecture:ProvidedService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.4/@ports.0"/>
         <semanticElements xmi:type="ComponentArchitecture:ProvidedService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.4/@ports.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" uid="_INCdAuL8Eeq-zoXWIi816Q" showIcon="false" id="outprov">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@style"/>
         </ownedStyle>
@@ -825,6 +852,9 @@
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_INCdBOL8Eeq-zoXWIi816Q" name="LaserServiceOut" tooltipText="OutputProvider" incomingEdges="_INd60uL8Eeq-zoXWIi816Q _INfI9OL8Eeq-zoXWIi816Q _INgXFOL8Eeq-zoXWIi816Q _INg-J-L8Eeq-zoXWIi816Q" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentArchitecture:ProvidedService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.4/@ports.1"/>
         <semanticElements xmi:type="ComponentArchitecture:ProvidedService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.4/@ports.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" uid="_INDEEOL8Eeq-zoXWIi816Q" showIcon="false" id="outprov">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@style"/>
         </ownedStyle>
@@ -833,6 +863,9 @@
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_INDEEuL8Eeq-zoXWIi816Q" name="LocalizationUpdateServiceIn" tooltipText="InputProvider" incomingEdges="_INgXGeL8Eeq-zoXWIi816Q _INg-IuL8Eeq-zoXWIi816Q" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentArchitecture:ProvidedService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.4/@ports.3"/>
         <semanticElements xmi:type="ComponentArchitecture:ProvidedService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.4/@ports.3"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" uid="_INDEE-L8Eeq-zoXWIi816Q" showIcon="false" id="inprov">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@conditionnalStyles.0/@style"/>
         </ownedStyle>
@@ -861,6 +894,9 @@
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_INESMOL8Eeq-zoXWIi816Q" name="CurrMapOut" tooltipText="OutputProvider" incomingEdges="_INZCUOL8Eeq-zoXWIi816Q" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentArchitecture:ProvidedService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.5/@ports.1"/>
         <semanticElements xmi:type="ComponentArchitecture:ProvidedService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.5/@ports.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" uid="_INESMeL8Eeq-zoXWIi816Q" showIcon="false" id="outprov">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@style"/>
         </ownedStyle>
@@ -877,6 +913,9 @@
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_INE5QuL8Eeq-zoXWIi816Q" name="SmartMapperGridMap" tooltipText="ParameterStructInstance">
         <target xmi:type="SystemParameter:ParameterStructInstance" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.5/@extensions.0"/>
         <semanticElements xmi:type="SystemParameter:ParameterStructInstance" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.5/@extensions.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_INE5Q-L8Eeq-zoXWIi816Q" borderSize="1" borderSizeComputationExpression="1">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@subContainerMappings[name='ParameterStructInstanceContainer']/@style"/>
         </ownedStyle>
@@ -889,6 +928,9 @@
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_INFgUOL8Eeq-zoXWIi816Q" name="PlannerGoalServer" tooltipText="OutputProvider" incomingEdges="_INfwCeL8Eeq-zoXWIi816Q" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentArchitecture:ProvidedService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.6/@ports.2"/>
         <semanticElements xmi:type="ComponentArchitecture:ProvidedService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.6/@ports.2"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" uid="_INFgUeL8Eeq-zoXWIi816Q" showIcon="false" id="outprov">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@style"/>
         </ownedStyle>
@@ -897,6 +939,9 @@
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_INFgU-L8Eeq-zoXWIi816Q" name="BaseStateClient" tooltipText="InputRequestor" outgoingEdges="_INcFoOL8Eeq-zoXWIi816Q" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.6/@ports.0"/>
         <semanticElements xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.6/@ports.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" uid="_INGHYOL8Eeq-zoXWIi816Q" showIcon="false" id="inreq">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
         </ownedStyle>
@@ -905,11 +950,17 @@
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_INGHYuL8Eeq-zoXWIi816Q" name="CurMapClient" tooltipText="InputRequestor" outgoingEdges="_INZCUOL8Eeq-zoXWIi816Q" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.6/@ports.1"/>
         <semanticElements xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.6/@ports.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" uid="_INGucOL8Eeq-zoXWIi816Q" showIcon="false" id="inreq">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
       </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_UcBzMRKXEeqQsNwCNLX18g" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
         <labelFormat>bold</labelFormat>
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@style"/>
@@ -922,6 +973,9 @@
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_INGucuL8Eeq-zoXWIi816Q" name="LocalizationEventServiceOut" tooltipText="OutputProvider" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentArchitecture:ProvidedService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.7/@ports.2"/>
         <semanticElements xmi:type="ComponentArchitecture:ProvidedService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.7/@ports.2"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" uid="_INGuc-L8Eeq-zoXWIi816Q" showIcon="false" id="outprov">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@style"/>
         </ownedStyle>
@@ -930,6 +984,9 @@
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_INHVgeL8Eeq-zoXWIi816Q" name="LaserServiceIn" tooltipText="InputRequestor" outgoingEdges="_INgXFOL8Eeq-zoXWIi816Q" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.7/@ports.0"/>
         <semanticElements xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.7/@ports.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" uid="_INHVguL8Eeq-zoXWIi816Q" showIcon="false" id="inreq">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
         </ownedStyle>
@@ -938,6 +995,9 @@
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_INHVhOL8Eeq-zoXWIi816Q" name="LocalizationUpdateServiceOut" tooltipText="OutputRequestor" outgoingEdges="_INgXGeL8Eeq-zoXWIi816Q" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.7/@ports.1"/>
         <semanticElements xmi:type="ComponentArchitecture:RequiredService" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.7/@ports.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" uid="_INH8kOL8Eeq-zoXWIi816Q" showIcon="false" id="outreq">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@conditionnalStyles.0/@style"/>
         </ownedStyle>
@@ -955,6 +1015,9 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_IEflAuL8Eeq-zoXWIi816Q" name="ComponentKB: ComponentKB" tooltipText="ComponentInstance">
       <target xmi:type="ComponentArchitecture:ComponentInstance" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.8"/>
       <semanticElements xmi:type="ComponentArchitecture:ComponentInstance" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.8"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_IEgzIOL8Eeq-zoXWIi816Q" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
         <labelFormat>bold</labelFormat>
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@style"/>
@@ -964,6 +1027,9 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_IElEkOL8Eeq-zoXWIi816Q" name="ComponentTCLSequencer: ComponentTCLSequencer" tooltipText="ComponentInstance">
       <target xmi:type="ComponentArchitecture:ComponentInstance" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.9"/>
       <semanticElements xmi:type="ComponentArchitecture:ComponentInstance" href="model/SystemGazeboP3DXNavigationLocalization.componentArch#//@components.9"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_IElEkeL8Eeq-zoXWIi816Q" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
         <labelFormat>bold</labelFormat>
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@style"/>

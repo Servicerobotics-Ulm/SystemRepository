@@ -1,0 +1,28 @@
+DeploymentModel SystemGazeboP3DXNavigationLocalization using ComponentArchitecture SystemGazeboP3DXNavigationLocalization 
+{
+	NamingService
+	{	
+		portNr 20002
+		deploy-to VirtualBoxImage
+	}
+
+	TargetPlatformReference VirtualBoxImage using SystemGazeboP3DXNavigationLocalization.VirtualBoxImage
+	{
+		NetworkInterface eth0
+
+		UploadDirectory "/tmp/"
+	}
+	ComponentArtefact ComponentGMapping deploy-to VirtualBoxImage
+	ComponentArtefact SmartCdlServer deploy-to VirtualBoxImage
+	ComponentArtefact SmartGazeboBaseServer deploy-to VirtualBoxImage
+
+	ComponentArtefact SmartPlannerBreadthFirstSearch deploy-to VirtualBoxImage
+	ComponentArtefact SmartAmcl deploy-to VirtualBoxImage
+	ComponentArtefact SmartMapperGridMap deploy-to VirtualBoxImage
+
+	ComponentArtefact ComponentKB deploy-to VirtualBoxImage
+
+	ComponentArtefact ComponentKeyboardNavigation deploy-to VirtualBoxImage
+	ComponentArtefact ComponentTCLSequencer deploy-to VirtualBoxImage
+	ComponentArtefact ComponentVisualization deploy-to VirtualBoxImage
+}

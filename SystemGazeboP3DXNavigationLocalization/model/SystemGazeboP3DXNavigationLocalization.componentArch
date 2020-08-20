@@ -1,0 +1,127 @@
+SystemComponentArchitecture SystemGazeboP3DXNavigationLocalization usingActivityArchitecture SystemGazeboP3DXNavigationLocalization
+{
+	ComponentInstance ComponentVisualization instantiates ComponentVisualization {
+		ParameterStructInstance SystemGazeboP3DXNavigationLocalization.ComponentVisualization
+	}
+	ComponentInstance ComponentKeyboardNavigation instantiates ComponentKeyboardNavigation {
+		RequiredService navVelSendClient
+		ParameterStructInstance SystemGazeboP3DXNavigationLocalization.ComponentKeyboardNavigation
+	}
+	ComponentInstance ComponentGMapping instantiates ComponentGMapping {
+		RequiredService laserClient
+		RequiredService basePositionUpdateClient
+		ProvidedService newestMapPushServer
+		ParameterStructInstance SystemGazeboP3DXNavigationLocalization.ComponentGMapping
+		
+	}
+	ComponentInstance SmartCdlServer instantiates SmartCdlServer
+	{
+		RequiredService LaserClient
+		RequiredService PlannerClient
+		RequiredService BaseStateClient
+
+		RequiredService NavVelSendClient
+
+		ParameterStructInstance SystemGazeboP3DXNavigationLocalization.SmartCdlServer
+
+		Activity CdlTask configuration CDL;
+
+	}
+	ComponentInstance SmartGazeboBaseServer instantiates SmartGazeboBaseServer
+	{
+		ProvidedService BaseStateServiceOut
+		ProvidedService LaserServiceOut
+		ProvidedService NavVelServiceIn
+		ProvidedService LocalizationUpdateServiceIn
+
+		InputHandler VelocityInpuHandler configuration NavVel
+
+		Activity LaserTask configuration Laser
+	}
+
+	ComponentInstance SmartMapperGridMap instantiates SmartMapperGridMap
+	{
+		RequiredService LaserServiceIn // { connectTo GazeboBaseServer.LaserServiceOut }
+		ProvidedService CurrMapOut
+	ParameterStructInstance SystemGazeboP3DXNavigationLocalization.SmartMapperGridMap
+	}
+	ComponentInstance SmartPlannerBreadthFirstSearch instantiates SmartPlannerBreadthFirstSearch
+	{
+		RequiredService BaseStateClient // { connectTo GazeboBaseServer.BaseStateServiceOut }
+		RequiredService CurMapClient // { connectTo MapperGridMap.CurrMapOut }
+		ProvidedService PlannerGoalServer
+	}
+	
+	ComponentInstance SmartAmcl instantiates SmartAmcl
+	{
+		RequiredService LaserServiceIn
+		RequiredService LocalizationUpdateServiceOut
+		ProvidedService LocalizationEventServiceOut
+	}
+	
+	ComponentInstance ComponentKB instantiates ComponentKB
+	{
+	}
+	
+	ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
+	{
+	}
+
+	Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.CurrMapOut;
+	Connection SmartPlannerBreadthFirstSearch.BaseStateClient -> SmartGazeboBaseServer.BaseStateServiceOut;
+	Connection SmartCdlServer.BaseStateClient -> SmartGazeboBaseServer.BaseStateServiceOut;
+	Connection SmartCdlServer.LaserClient -> SmartGazeboBaseServer.LaserServiceOut;
+	Connection SmartMapperGridMap.LaserServiceIn -> SmartGazeboBaseServer.LaserServiceOut;
+	Connection SmartCdlServer.NavVelSendClient -> SmartGazeboBaseServer.NavVelServiceIn;
+	Connection SmartCdlServer.PlannerClient -> SmartPlannerBreadthFirstSearch.PlannerGoalServer;
+	Connection SmartAmcl.LaserServiceIn -> SmartGazeboBaseServer.LaserServiceOut
+	Connection SmartAmcl.LocalizationUpdateServiceOut -> SmartGazeboBaseServer.LocalizationUpdateServiceIn
+	Connection ComponentGMapping.basePositionUpdateClient -> SmartGazeboBaseServer.LocalizationUpdateServiceIn
+	Connection ComponentGMapping.laserClient -> SmartGazeboBaseServer.LaserServiceOut
+	Connection ComponentKeyboardNavigation.navVelSendClient -> SmartGazeboBaseServer.NavVelServiceIn
+	
+	BehaviorTaskRef BehaviorNavigationMapping
+	
+	CoordinationModuleMapping {
+		moduleInstance BehaviorNavigationMapping.kbModInst realizedby kbModule
+		{
+			interfaceInstance kb realizedby ComponentKB
+		}
+	}
+	
+
+	CoordinationModuleMapping {
+		moduleInstance BehaviorNavigationMapping.nav1 realizedby MovementMod2
+		{
+			interfaceInstance cdl realizedby SmartCdlServer
+			interfaceInstance mapper realizedby SmartMapperGridMap
+			interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch
+		}
+	}
+	
+	CoordinationModuleMapping {
+		moduleInstance BehaviorNavigationMapping.localizationModInst realizedby locModRealization {
+			interfaceInstance amcl1 realizedby SmartAmcl
+		}
+	}
+	
+	CoordinationModuleMapping {
+		moduleInstance BehaviorNavigationMapping.base realizedby baseInst {
+			interfaceInstance base realizedby SmartGazeboBaseServer
+		}
+	}
+	
+	CoordinationModuleMapping {
+		moduleInstance BehaviorNavigationMapping.slam realizedby slamModule {
+			interfaceInstance gmapping realizedby ComponentGMapping
+		}
+	}
+	
+	CoordinationModuleMapping {
+		moduleInstance BehaviorNavigationMapping.vis realizedby visualizationmod {
+			interfaceInstance vis realizedby ComponentVisualization
+		}
+	}
+	
+		
+}

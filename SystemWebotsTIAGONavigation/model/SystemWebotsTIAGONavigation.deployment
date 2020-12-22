@@ -1,0 +1,23 @@
+DeploymentModel SystemWebotsTIAGONavigation using ComponentArchitecture SystemWebotsTIAGONavigation
+{
+TargetPlatformReference PC1 using SystemWebotsTIAGONavigation.PC1
+	{
+		UploadDirectory "/tmp"		
+		NetworkInterface eth2
+	}
+	NamingService
+	{
+		deploy-to PC1 }
+	ComponentArtefact ComponentKB deploy-to PC1
+	ComponentArtefact ComponentTCLSequencer deploy-to PC1
+	ComponentArtefact ComponentWebots deploy-to PC1
+
+	ComponentArtefact ComponentWebotsMobileRobot deploy-to PC1
+	ComponentArtefact SmartAmcl deploy-to PC1
+	ComponentArtefact SmartCdlServer deploy-to PC1
+	ComponentArtefact SmartMapperGridMap deploy-to PC1
+	ComponentArtefact SmartPlannerBreadthFirstSearch deploy-to PC1
+ComponentArtefact ComponentVisualization deploy-to PC1
+ComponentArtefact SmartRobotConsole deploy-to PC1
+ComponentArtefact ComponentWebots2DLidar deploy-to PC1
+}

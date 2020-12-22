@@ -1,0 +1,120 @@
+SystemParameterModel SystemWebotsTIAGONavigationPara extendsSystem SystemWebotsTIAGONavigation {	
+	ComponentParameterInstance SmartAmcl refinesParamStruct SmartAmclParams{
+		ParameterRefinement General {
+			initalizationType = INI_POSE
+			initPoseFileName = "/tmp/lastRobotPose.txt"
+			verbose = false
+			connect_services = true
+			yaml_file = "localization-map.yaml"
+			initial_x = 0.0
+			initial_y = 0.0
+			initial_a = 0.0
+			initial_cov_xx = 0.03
+			initial_cov_yy = 0.03
+			initial_cov_aa = 0.068539
+			enable_visualization = true
+			lostEventMaxHypothese = 3
+			lostEventMaxEigValueSum = 0.2
+	}
+	}
+ComponentParameterInstance SmartCdlServer refinesParamStruct SmartCdlServerParams{
+	ParameterRefinement Cdl { 
+		dataDir = "data/lookup-files/"
+			accel_default_file = "CDLacc_PMB2.dat"
+			accel_second_file = "CDLacc_PMB2.dat"
+			contour_default_file = "CDLcontour_PMB2.dat"
+			contour_second_file = "CDLcontour_PMB2.dat"
+			curvature_default_file = "CDLindex_PMB2.dat"
+			curvature_second_file = "CDLindex_PMB2.dat"			
+			lookup_default_file = "CDLdist_PMB2.dat.compressed"
+			lookup_default_file_compressed = true
+			lookup_second_file = "CDLdist_PMB2.dat.compressed"			
+			lookup_second_file_compressed = true
+			translation_acc = 400.0
+			rotation_acc = 100.0
+			delta_t_calc = 0.35
+			delta_t_trigger = 0.1
+			followHysteresis = false
+			use_obstacle_history = false
+			freeBehaviorDist = 350.0
+			freeBehaviorDist_second = 350.0
+	}
+}
+
+ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWebots2DLidarParams{
+  ParameterRefinement webots {
+    robotName = "LidarTiago"
+  }
+  ParameterRefinement scanner {      
+      verbose = true
+			on_turret = false			
+			x = 202
+			y = 0
+			z = 0
+			azimuth = 0
+			elevation = 0
+			roll = 0
+			ip_address = "192.168.0.1"
+			port = 2111
+			min_range = 200
+			max_range = 10000
+			opening_angle = 180
+			resolution = 0.36
+			length_unit = 1
+			frequency = 25
+  }
+  ParameterRefinement base_manipulator { 
+    on_base = true
+			x = 0
+			y = 0
+			z = 0
+			base_a = 0
+			steer_a = 0
+			turret_a = 0
+			
+			}
+}	
+ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct ComponentWebotsMobileRobotParams {
+  ParameterRefinement Webots { 
+      robotName = "TIAGo Iron"
+      motorName = ["wheel_left_joint", "wheel_right_joint"]
+      radius = [0.0985, 0.0985]
+      distanceToRobotCentre = [-0.202, 0.202]
+      heading = [0, 0]
+      maxAcceleration = [1.0, 0.0, 40.0]
+  }  
+  ParameterRefinement General { verbose = false
+			hasSignalState = true
+			useLocalizationEvent = true
+			poseFileName = "/tmp/lastRobotPose.txt"
+			writePoseFile = false
+}
+}
+
+ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGridMapParams{
+	ParameterRefinement General {
+		cellsize = 50
+			connectLaser = true
+			verbose = false
+			mapDataDir = "data/maps/"
+	}
+	ParameterRefinement CurrentMap {
+		interval = 10
+			growing = "star16"
+			xsize = 250000
+			ysize = 250000
+			xpos = -10000
+			ypos = -10000
+			id = 0
+	}
+	ParameterRefinement LtmMap {
+		kalman = 100
+			xsize = 250000
+			ysize = 250000
+			xpos = -10000
+			ypos = -10000
+			id = 0
+	}
+}
+
+}

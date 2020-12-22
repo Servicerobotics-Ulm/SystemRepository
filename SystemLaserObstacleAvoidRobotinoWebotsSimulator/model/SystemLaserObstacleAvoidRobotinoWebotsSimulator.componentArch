@@ -1,0 +1,23 @@
+SystemComponentArchitecture SystemLaserObstacleAvoidRobotinoWebotsSimulator
+{
+ComponentInstance ComponentWebots instantiates ComponentWebots
+	{
+	}
+	ComponentInstance ComponentWebots2DLidar instantiates ComponentWebots2DLidar
+	{
+		RequiredService BaseStateServiceIn
+		ProvidedService LaserServiceOut
+	}
+	ComponentInstance ComponentWebotsMobileRobot instantiates ComponentWebotsMobileRobot
+	{
+		ProvidedService BaseStateServiceOut
+		ProvidedService NavigationVelocityServiceIn
+	}
+	ComponentInstance ComponentLaserObstacleAvoid instantiates ComponentLaserObstacleAvoid
+	{
+		RequiredService LaserServiceIn
+		RequiredService NavigationVelocityServiceOut
+	}
+	Connection ComponentLaserObstacleAvoid.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
+	Connection ComponentLaserObstacleAvoid.NavigationVelocityServiceOut -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
+}

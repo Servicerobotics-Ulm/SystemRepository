@@ -21,7 +21,11 @@ ComponentInstance ComponentRobotinoBaseServer instantiates ComponentRobotinoBase
 	{
 	}
 	
-	ComponentInstance SmartCdlServer1 instantiates SmartCdlServer {
+	ComponentInstance SmartRobotConsole instantiates SmartRobotConsole {
+
+	}
+	
+	ComponentInstance SmartCdlServer instantiates SmartCdlServer {
 		
 
 	RequiredService LaserClient
@@ -68,22 +72,30 @@ ComponentInstance ComponentRobotinoBaseServer instantiates ComponentRobotinoBase
 	RequiredService JoystickServiceIn
 	RequiredService NavVelServiceOut
 	}
+    ComponentInstance ComponentQtRobotConsole instantiates ComponentQtRobotConsole {
 
+	}
+	ComponentInstance ComponentVisualization instantiates ComponentVisualization {
+
+	}
 
 	
 	Connection ComponentLaserLMS1xx.BaseStateServiceIn -> ComponentRobotinoBaseServer.BaseStateServiceOut
 	Connection SmartMapperGridMap1.LaserServiceIn -> ComponentLaserLMS1xx.LaserServiceOut
 	Connection SmartPlannerBreadthFirstSearch1.CurMapClient -> SmartMapperGridMap1.CurrMapOut
 	Connection SmartPlannerBreadthFirstSearch1.BaseStateClient -> ComponentRobotinoBaseServer.BaseStateServiceOut
-	Connection SmartCdlServer1.LaserClient -> ComponentLaserLMS1xx.LaserServiceOut
-	Connection SmartCdlServer1.PlannerClient -> SmartPlannerBreadthFirstSearch1.PlannerGoalServer
-	Connection SmartCdlServer1.NavVelSendClient -> ComponentRobotinoBaseServer.NavigationVelocityServiceIn
+	Connection SmartCdlServer.LaserClient -> ComponentLaserLMS1xx.LaserServiceOut
+	Connection SmartCdlServer.PlannerClient -> SmartPlannerBreadthFirstSearch1.PlannerGoalServer
+	Connection SmartCdlServer.NavVelSendClient -> ComponentRobotinoBaseServer.NavigationVelocityServiceIn
 	Connection SmartAmcl.LaserServiceIn -> ComponentLaserLMS1xx.LaserServiceOut
 	Connection SmartAmcl.LocalizationUpdateServiceOut -> ComponentRobotinoBaseServer.LocalizationUpdateServiceIn
 	Connection ComponentRobotinoBaseServer.LocalizationEventServiceIn -> SmartAmcl.LocalizationEventServiceOut
-	Connection SmartJoystickNavigation.NavVelServiceOut -> SmartCdlServer1.NavVelSendServer
+	Connection SmartJoystickNavigation.NavVelServiceOut -> SmartCdlServer.NavVelSendServer
 	Connection SmartJoystickNavigation.JoystickServiceIn -> SmartJoystickServer.JoystickServcieOut
 	
+	//...
+	// SystemComponentArchitecture SystemRobotinoNavigation
+	 
 	BehaviorTaskRef NavTasks
 
 	CoordinationModuleMapping {
@@ -95,9 +107,9 @@ ComponentInstance ComponentRobotinoBaseServer instantiates ComponentRobotinoBase
 	
 
 	CoordinationModuleMapping {
-		moduleInstance NavTasks.nav1 realizedby MovementMod2
+		moduleInstance NavTasks.navigation realizedby MovementMod2
 		{
-			interfaceInstance cdl realizedby SmartCdlServer1
+			interfaceInstance cdl realizedby SmartCdlServer
 			interfaceInstance mapper realizedby SmartMapperGridMap1
 			interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch1
 		}

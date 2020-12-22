@@ -42,7 +42,7 @@
 	<natures>
 		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
-		<nature>org.smartmdsd.utils.natures.SystemNature</nature>
+		<nature>org.eclipse.smartmdsd.ui.natures.SystemNature</nature>
 		<nature>org.eclipse.sirius.nature.modelingproject</nature>
 		<nature>org.eclipse.cdt.core.cnature</nature>
 		<nature>org.eclipse.cdt.core.ccnature</nature>

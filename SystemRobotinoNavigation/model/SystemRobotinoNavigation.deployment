@@ -13,10 +13,13 @@ TargetPlatformReference PC1 using SystemRobotinoNavigation.PC1
 	{
 		deploy-to PC1 }
 ComponentArtefact SystemRobotinoNavigation.ComponentLaserLMS1xx deploy-to PC1
-	ComponentArtefact SystemRobotinoNavigation.SmartCdlServer1 deploy-to PC1
+	ComponentArtefact SystemRobotinoNavigation.SmartCdlServer deploy-to PC1
 	ComponentArtefact SystemRobotinoNavigation.SmartMapperGridMap1 deploy-to PC1
 	ComponentArtefact SystemRobotinoNavigation.SmartPlannerBreadthFirstSearch1 deploy-to PC1
 ComponentArtefact SystemRobotinoNavigation.SmartJoystickNavigation deploy-to PC1
 	ComponentArtefact SystemRobotinoNavigation.SmartJoystickServer deploy-to PC1
 	ComponentArtefact SystemRobotinoNavigation.SmartAmcl deploy-to PC1
+ComponentArtefact SystemRobotinoNavigation.ComponentQtRobotConsole deploy-to PC1
+	ComponentArtefact SystemRobotinoNavigation.ComponentVisualization deploy-to PC1
+	ComponentArtefact SystemRobotinoNavigation.SmartRobotConsole deploy-to PC1
 }

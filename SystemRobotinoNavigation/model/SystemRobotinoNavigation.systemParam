@@ -43,7 +43,7 @@ ComponentParameterInstance SmartMapperGridMap1 refinesParamStruct SmartMapperGri
 	}
 }
 
-ComponentParameterInstance SmartCdlServer1 refinesParamStruct SmartCdlServerParams {
+ComponentParameterInstance SmartCdlServer refinesParamStruct SmartCdlServerParams {
 	ParameterRefinement Cdl  {
 		dataDir = "./"
 		curvature_default_file = "CDLindex_Robotino3_600mm.dat"
@@ -105,7 +105,7 @@ ComponentParameterInstance ComponentLaserLMS1xx refinesParamStruct ComponentLase
 		azimuth = 0
 		elevation = 0
 		roll = 0
-		ip_address = "192.168.0.22"
+		ip_address = "192.168.0.2"
 		port = 2111
 		min_range = 10
 		max_range = 20000

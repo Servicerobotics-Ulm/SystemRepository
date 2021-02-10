@@ -1,0 +1,131 @@
+SystemComponentArchitecture SystemWebotsRobotino3Navigation
+{
+ComponentInstance ComponentWebots instantiates ComponentWebots
+	{
+	}
+	ComponentInstance ComponentKB instantiates ComponentKB
+	{
+		RequiredService kbChainedEntriesEventClient
+		ProvidedService kbEventServer
+		ProvidedService kbQuery
+	}
+	ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
+	{
+	}
+
+	ComponentInstance ComponentWebotsMobileRobot instantiates ComponentWebotsMobileRobot
+	{
+		ProvidedService BaseStateServiceOut
+		ProvidedService BatteryEventServiceOut
+		ProvidedService LocalizationUpdateServiceIn
+		ProvidedService NavigationVelocityServiceIn
+		//ProvidedService BaseStateAnswerer
+	}
+	ComponentInstance SmartCdlServer instantiates SmartCdlServer
+	{
+		RequiredService LaserClient
+		RequiredService PlannerClient
+		RequiredService TrackingClient
+		RequiredService IRClient
+		RequiredService BaseStateClient
+		RequiredService PathNavigationGoalClient
+		RequiredService NavVelSendClient
+		ProvidedService GoalEventServer
+		ProvidedService RobotBlockedEventServer
+		ProvidedService NavVelSendServer
+	}
+	ComponentInstance SmartMapperGridMap instantiates SmartMapperGridMap
+	{
+		RequiredService LaserServiceIn
+		ProvidedService CurrMapOut
+		ProvidedService CurrQueryServer
+		ProvidedService LtmQueryServer
+	}
+	ComponentInstance SmartPlannerBreadthFirstSearch instantiates SmartPlannerBreadthFirstSearch
+	{
+		RequiredService CurMapClient
+		RequiredService BaseStateClient
+		ProvidedService PlannerGoalServer
+		ProvidedService PlannerEventServer
+	}
+	ComponentInstance SmartAmcl instantiates SmartAmcl
+	{
+		RequiredService LaserServiceIn
+		RequiredService LocalizationUpdateServiceOut
+		ProvidedService LocalizationEventServiceOut
+		ProvidedService AmclVisualizationInfoOut
+	}
+	ComponentInstance ComponentVisualization instantiates ComponentVisualization
+	{
+		RequiredService rgbdPushNewestClient
+		RequiredService rgbdQueryClient
+		RequiredService baseClient
+		RequiredService laserClient1
+		RequiredService laserClient2
+		RequiredService laserClient3
+		RequiredService irPushNewestClient
+		RequiredService imagePushNewestClient
+		RequiredService curPushClient
+		RequiredService depthPushNewestClient
+		RequiredService ultrasonicPushNewestClient
+		RequiredService personDetectionEventClient
+		RequiredService MarkerListDetectionServiceIn
+		RequiredService AmclVisualizationInfoIn
+		RequiredService RGBDImageQueryServiceReq
+		RequiredService ltmQueryClient
+		RequiredService personDetectionQueryClient
+	}
+	ComponentInstance SmartRobotConsole instantiates SmartRobotConsole
+	{
+	}
+
+	ComponentInstance ComponentWebots2DLidar instantiates ComponentWebots2DLidar
+	{
+		RequiredService BaseStateServiceIn
+		ProvidedService LaserServiceOut
+		ProvidedService LaserQueryServiceAnsw
+	}
+	Connection SmartAmcl.LocalizationUpdateServiceOut -> ComponentWebotsMobileRobot.LocalizationUpdateServiceIn
+	Connection SmartCdlServer.NavVelSendClient -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
+Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.CurrMapOut
+	Connection SmartPlannerBreadthFirstSearch.BaseStateClient -> ComponentWebotsMobileRobot.BaseStateServiceOut
+
+	Connection SmartCdlServer.PlannerClient -> SmartPlannerBreadthFirstSearch.PlannerGoalServer
+	Connection SmartCdlServer.BaseStateClient -> ComponentWebotsMobileRobot.BaseStateServiceOut
+	
+		Connection  ComponentWebots2DLidar.BaseStateServiceIn -> ComponentWebotsMobileRobot.BaseStateServiceOut
+
+	Connection  SmartAmcl.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
+	Connection SmartCdlServer.LaserClient -> ComponentWebots2DLidar.LaserServiceOut
+	Connection SmartMapperGridMap.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
+	
+		BehaviorTaskRef NavTasks
+
+	CoordinationModuleMapping {
+		moduleInstance NavTasks.kbModInst realizedby kbModule
+		{
+			interfaceInstance kb realizedby ComponentKB
+		}
+	}
+
+	CoordinationModuleMapping {
+		moduleInstance NavTasks.navigation realizedby MovementMod2
+		{
+			interfaceInstance cdl realizedby SmartCdlServer
+			interfaceInstance mapper realizedby SmartMapperGridMap
+			interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch
+		}
+	}
+
+	CoordinationModuleMapping {
+		moduleInstance NavTasks.localizationModInst realizedby locModRealization {
+			interfaceInstance amcl realizedby SmartAmcl
+		}
+	}
+
+//	CoordinationModuleMapping {
+//		moduleInstance NavTasks.base realizedby baseInst {
+//			interfaceInstance base realizedby ComponentWebotsMobileRobot
+//		}
+//	}
+}

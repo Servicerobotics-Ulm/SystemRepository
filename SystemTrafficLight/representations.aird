@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ComponentArchitecture="http://www.ecore.org/system/ComponentArchitecture" xmlns:Deployment="http://www.ecore.org/system/Deployment" xmlns:TargetPlatform="http://www.ecore.org/system/TargetPlatform" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis xmi:id="_rk_DUCoaEemVTK0tKLfwvw" selectedViews="_ro_ZkCoaEemVTK0tKLfwvw _rpdToCoaEemVTK0tKLfwvw _rp4xcCoaEemVTK0tKLfwvw" version="12.1.0.201708031200">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:componentArchitecture="http://www.eclipse.org/smartmdsd/system/componentArchitecture" xmlns:deployment="http://www.eclipse.org/smartmdsd/system/deployment" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:targetPlatform="http://www.eclipse.org/smartmdsd/system/targetPlatform" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_rk_DUCoaEemVTK0tKLfwvw" selectedViews="_ro_ZkCoaEemVTK0tKLfwvw _rpdToCoaEemVTK0tKLfwvw _rp4xcCoaEemVTK0tKLfwvw" version="14.3.1.202003261200">
     <semanticResources>model/SystemTrafficLight.componentArch</semanticResources>
     <semanticResources>model/SystemTrafficLight.deployment</semanticResources>
     <semanticResources>model/SystemTrafficLight.systemParam</semanticResources>
@@ -9,33 +9,63 @@
     <semanticResources>platform:/resource/DomainHMI/model/DomainHMI.services</semanticResources>
     <semanticResources>platform:/resource/DomainHMI/model/DomainHMI.types</semanticResources>
     <semanticResources>platform:/resource/ComponentTrafficLightTest/model/ComponentTrafficLightTest.component</semanticResources>
-    <ownedViews xmi:type="viewpoint:DView" xmi:id="_ro_ZkCoaEemVTK0tKLfwvw">
-      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_rpQfVSoaEemVTK0tKLfwvw" name="SystemTrafficLightComponentArchitecture" repPath="#_rpPRMCoaEemVTK0tKLfwvw">
-        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']"/>
-        <target xmi:type="ComponentArchitecture:SystemComponentArchitecture" href="model/SystemTrafficLight.componentArch#SystemTrafficLight"/>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign</semanticResources>
+    <semanticResources>environment:/viewpoint</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.system.componentArchitecture/model/componentArchitecture.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.system.activityArchitecture/model/activityArchitecture.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.component.componentDefinition/model/componentDefinition.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.base.documentation/model/documentation.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.service.serviceDefinition/model/serviceDefinition.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.service.coordinationPattern/model/coordinationPattern.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.base.stateMachine/model/stateMachine.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.service.componentMode/model/componentMode.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.service.parameterDefinition/model/parameterDefinition.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.base.basicAttributes/model/basicAttributes.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.service.communicationPattern/model/communicationPattern.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.service.communicationObject/model/communicationObject.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.service.roboticMiddleware/model/roboticMiddleware.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.system.compArchSeronetExtension/model/compArchSeronetExtension.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.component.seronetExtension/model/seronetExtension.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.base.mixedport/model/mixedport.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.system.systemParameter/model/systemParameter.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.component.componentParameter/model/componentParameter.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.component.coordinationExtension/model/coordinationExtension.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.behavior.skillRealization/model/skillRealization.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.service.skillDefinition/model/skillDefinition.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.system.variability/model/variability.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.system.nativeNodes/model/nativeNodes.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.sirius.properties.defaultrules/model/properties.odesign</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.system.targetPlatform/model/targetPlatform.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.system.deployment/model/deployment.ecore</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_ro_ZkCoaEemVTK0tKLfwvw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_rpQfVSoaEemVTK0tKLfwvw" name="SystemTrafficLightComponentArchitecture" repPath="#_rpQfUCoaEemVTK0tKLfwvw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']"/>
+        <target xmi:type="componentArchitecture:SystemComponentArchitecture" href="model/SystemTrafficLight.componentArch#SystemTrafficLight"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
-    <ownedViews xmi:type="viewpoint:DView" xmi:id="_rpdToCoaEemVTK0tKLfwvw">
-      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_rpvnhSoaEemVTK0tKLfwvw" name="SystemTrafficLightTargetPlatform" repPath="#_rpuZYCoaEemVTK0tKLfwvw">
-        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']"/>
-        <target xmi:type="TargetPlatform:TargetPlatformModel" href="model/SystemTrafficLight.target#SystemTrafficLight"/>
+    <ownedViews xmi:type="viewpoint:DView" uid="_rpdToCoaEemVTK0tKLfwvw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_rpvnhSoaEemVTK0tKLfwvw" name="SystemTrafficLightTargetPlatform" repPath="#_rpvngCoaEemVTK0tKLfwvw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']"/>
+        <target xmi:type="targetPlatform:TargetPlatformModel" href="model/SystemTrafficLight.target#SystemTrafficLight"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
-    <ownedViews xmi:type="viewpoint:DView" xmi:id="_rp4xcCoaEemVTK0tKLfwvw">
-      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_rqeARSoaEemVTK0tKLfwvw" name="SystemTrafficLightDeployment" repPath="#_rqdZMCoaEemVTK0tKLfwvw">
-        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']"/>
-        <target xmi:type="Deployment:DeploymentModel" href="model/SystemTrafficLight.deployment#SystemTrafficLight"/>
+    <ownedViews xmi:type="viewpoint:DView" uid="_rp4xcCoaEemVTK0tKLfwvw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_rqeARSoaEemVTK0tKLfwvw" name="SystemTrafficLightDeployment" repPath="#_rqeAQCoaEemVTK0tKLfwvw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']"/>
+        <target xmi:type="deployment:DeploymentModel" href="model/SystemTrafficLight.deployment#SystemTrafficLight"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
-  <diagram:DSemanticDiagram xmi:id="_rpQfUCoaEemVTK0tKLfwvw" name="SystemTrafficLightComponentArchitecture" uid="_rpPRMCoaEemVTK0tKLfwvw">
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_rpQfUSoaEemVTK0tKLfwvw" source="DANNOTATION_CUSTOMIZATION_KEY">
-      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_rpQfUioaEemVTK0tKLfwvw"/>
+  <diagram:DSemanticDiagram uid="_rpQfUCoaEemVTK0tKLfwvw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_rpQfUSoaEemVTK0tKLfwvw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_rpQfUioaEemVTK0tKLfwvw"/>
     </ownedAnnotationEntries>
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_rpRGYCoaEemVTK0tKLfwvw" source="GMF_DIAGRAMS">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_rpRGYCoaEemVTK0tKLfwvw" source="GMF_DIAGRAMS">
       <data xmi:type="notation:Diagram" xmi:id="_rpRGYSoaEemVTK0tKLfwvw" type="Sirius" element="_rpQfUCoaEemVTK0tKLfwvw" measurementUnit="Pixel">
         <children xmi:type="notation:Node" xmi:id="_w4pVUCoaEemVTK0tKLfwvw" type="2002" element="_w4jOsCoaEemVTK0tKLfwvw">
           <children xmi:type="notation:Node" xmi:id="_w4p8YCoaEemVTK0tKLfwvw" type="5006"/>
@@ -96,71 +126,71 @@
         </edges>
       </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_w4jOsCoaEemVTK0tKLfwvw" name="ComponentTrafficLight: ComponentTrafficLight" tooltipText="ComponentInstance">
-      <target xmi:type="ComponentArchitecture:ComponentInstance" href="model/SystemTrafficLight.componentArch#//@components.0"/>
-      <semanticElements xmi:type="ComponentArchitecture:ComponentInstance" href="model/SystemTrafficLight.componentArch#//@components.0"/>
-      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_06v40CoaEemVTK0tKLfwvw" name="TrafficLightServiceIn" tooltipText="InputProvider" incomingEdges="_2IsSoCoaEemVTK0tKLfwvw" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="ComponentArchitecture:ProvidedService" href="model/SystemTrafficLight.componentArch#//@components.0/@ports.0"/>
-        <semanticElements xmi:type="ComponentArchitecture:ProvidedService" href="model/SystemTrafficLight.componentArch#//@components.0/@ports.0"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_w4jOsCoaEemVTK0tKLfwvw" name="ComponentTrafficLight: ComponentTrafficLight" tooltipText="ComponentInstance">
+      <target xmi:type="componentArchitecture:ComponentInstance" href="model/SystemTrafficLight.componentArch#//@components.0"/>
+      <semanticElements xmi:type="componentArchitecture:ComponentInstance" href="model/SystemTrafficLight.componentArch#//@components.0"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_06v40CoaEemVTK0tKLfwvw" name="TrafficLightServiceIn" tooltipText="InputProvider" incomingEdges="_2IsSoCoaEemVTK0tKLfwvw" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemTrafficLight.componentArch#//@components.0/@ports.0"/>
+        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemTrafficLight.componentArch#//@components.0/@ports.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:CustomStyle" xmi:id="_06v40SoaEemVTK0tKLfwvw" showIcon="false" id="inprov">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@conditionnalStyles.0/@style"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_06v40SoaEemVTK0tKLfwvw" showIcon="false" id="inprov">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@conditionnalStyles.0/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
       </ownedBorderedNodes>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_w4ngICoaEemVTK0tKLfwvw" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_w4ngICoaEemVTK0tKLfwvw" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
         <labelFormat>bold</labelFormat>
-        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@style"/>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']"/>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_xqGncCoaEemVTK0tKLfwvw" name="ComponentTrafficLightTest: ComponentTrafficLightTest" tooltipText="ComponentInstance">
-      <target xmi:type="ComponentArchitecture:ComponentInstance" href="model/SystemTrafficLight.componentArch#//@components.1"/>
-      <semanticElements xmi:type="ComponentArchitecture:ComponentInstance" href="model/SystemTrafficLight.componentArch#//@components.1"/>
-      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_z9zIYCoaEemVTK0tKLfwvw" name="TrafficLightServiceOut" tooltipText="OutputRequestor" outgoingEdges="_2IsSoCoaEemVTK0tKLfwvw" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="ComponentArchitecture:RequiredService" href="model/SystemTrafficLight.componentArch#//@components.1/@ports.0"/>
-        <semanticElements xmi:type="ComponentArchitecture:RequiredService" href="model/SystemTrafficLight.componentArch#//@components.1/@ports.0"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_xqGncCoaEemVTK0tKLfwvw" name="ComponentTrafficLightTest: ComponentTrafficLightTest" tooltipText="ComponentInstance">
+      <target xmi:type="componentArchitecture:ComponentInstance" href="model/SystemTrafficLight.componentArch#//@components.1"/>
+      <semanticElements xmi:type="componentArchitecture:ComponentInstance" href="model/SystemTrafficLight.componentArch#//@components.1"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_z9zIYCoaEemVTK0tKLfwvw" name="TrafficLightServiceOut" tooltipText="OutputRequestor" outgoingEdges="_2IsSoCoaEemVTK0tKLfwvw" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemTrafficLight.componentArch#//@components.1/@ports.0"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemTrafficLight.componentArch#//@components.1/@ports.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:CustomStyle" xmi:id="_z9zvcCoaEemVTK0tKLfwvw" showIcon="false" id="outreq">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@conditionnalStyles.0/@style"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_z9zvcCoaEemVTK0tKLfwvw" showIcon="false" id="outreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@conditionnalStyles.0/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
       </ownedBorderedNodes>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_xqHOgCoaEemVTK0tKLfwvw" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_xqHOgCoaEemVTK0tKLfwvw" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
         <labelFormat>bold</labelFormat>
-        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@style"/>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']"/>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_2IsSoCoaEemVTK0tKLfwvw" name="CommTrafficLight" sourceNode="_z9zIYCoaEemVTK0tKLfwvw" targetNode="_06v40CoaEemVTK0tKLfwvw">
-      <target xmi:type="ComponentArchitecture:Connection" href="model/SystemTrafficLight.componentArch#//@connections.0"/>
-      <semanticElements xmi:type="ComponentArchitecture:Connection" href="model/SystemTrafficLight.componentArch#//@connections.0"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_2Is5sCoaEemVTK0tKLfwvw" targetArrow="NoDecoration" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@edgeMappings[name='ConnectionEdge']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_2Is5sSoaEemVTK0tKLfwvw" iconPath="/org.sirius.tools/icons/commObj_16x16.gif"/>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_2IsSoCoaEemVTK0tKLfwvw" name="CommTrafficLight" sourceNode="_z9zIYCoaEemVTK0tKLfwvw" targetNode="_06v40CoaEemVTK0tKLfwvw">
+      <target xmi:type="componentArchitecture:Connection" href="model/SystemTrafficLight.componentArch#//@connections.0"/>
+      <semanticElements xmi:type="componentArchitecture:Connection" href="model/SystemTrafficLight.componentArch#//@connections.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_2Is5sCoaEemVTK0tKLfwvw" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@edgeMappings[name='ConnectionEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_2Is5sSoaEemVTK0tKLfwvw" iconPath="/org.eclipse.smartmdsd.sirius.tools/icons/commObj_16x16.gif"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@edgeMappings[name='ConnectionEdge']"/>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@edgeMappings[name='ConnectionEdge']"/>
     </ownedDiagramElements>
-    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']"/>
-    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_rpQfVCoaEemVTK0tKLfwvw"/>
-    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer"/>
-    <target xmi:type="ComponentArchitecture:SystemComponentArchitecture" href="model/SystemTrafficLight.componentArch#SystemTrafficLight"/>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_rpQfVCoaEemVTK0tKLfwvw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer"/>
+    <target xmi:type="componentArchitecture:SystemComponentArchitecture" href="model/SystemTrafficLight.componentArch#SystemTrafficLight"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram xmi:id="_rpvngCoaEemVTK0tKLfwvw" name="SystemTrafficLightTargetPlatform" uid="_rpuZYCoaEemVTK0tKLfwvw">
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_rpvngSoaEemVTK0tKLfwvw" source="DANNOTATION_CUSTOMIZATION_KEY">
-      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_rpvngioaEemVTK0tKLfwvw"/>
+  <diagram:DSemanticDiagram uid="_rpvngCoaEemVTK0tKLfwvw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_rpvngSoaEemVTK0tKLfwvw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_rpvngioaEemVTK0tKLfwvw"/>
     </ownedAnnotationEntries>
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_rpwOkCoaEemVTK0tKLfwvw" source="GMF_DIAGRAMS">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_rpwOkCoaEemVTK0tKLfwvw" source="GMF_DIAGRAMS">
       <data xmi:type="notation:Diagram" xmi:id="_rpwOkSoaEemVTK0tKLfwvw" type="Sirius" element="_rpvngCoaEemVTK0tKLfwvw" measurementUnit="Pixel">
         <children xmi:type="notation:Node" xmi:id="_6nL3MCoaEemVTK0tKLfwvw" type="2002" element="_6mvyUCoaEemVTK0tKLfwvw">
           <children xmi:type="notation:Node" xmi:id="_6nL3MyoaEemVTK0tKLfwvw" type="5006"/>
@@ -203,55 +233,55 @@
         <styles xmi:type="notation:DiagramStyle" xmi:id="_rpwOkioaEemVTK0tKLfwvw"/>
       </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_6mvyUCoaEemVTK0tKLfwvw" name="PC1" tooltipText="ComputationPlatform">
-      <target xmi:type="TargetPlatform:TargetPlatformDefinition" href="model/SystemTrafficLight.target#//@elements.0"/>
-      <semanticElements xmi:type="TargetPlatform:TargetPlatformDefinition" href="model/SystemTrafficLight.target#//@elements.0"/>
-      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_7SuukCoaEemVTK0tKLfwvw" name="eth1" tooltipText="NetworkInterface" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="TargetPlatform:NetworkInterface" href="model/SystemTrafficLight.target#//@elements.0/@elements.0"/>
-        <semanticElements xmi:type="TargetPlatform:NetworkInterface" href="model/SystemTrafficLight.target#//@elements.0/@elements.0"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_6mvyUCoaEemVTK0tKLfwvw" name="PC1" tooltipText="ComputationPlatform">
+      <target xmi:type="targetPlatform:TargetPlatformDefinition" href="model/SystemTrafficLight.target#//@elements.0"/>
+      <semanticElements xmi:type="targetPlatform:TargetPlatformDefinition" href="model/SystemTrafficLight.target#//@elements.0"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_7SuukCoaEemVTK0tKLfwvw" name="eth1" tooltipText="NetworkInterface" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="targetPlatform:NetworkInterface" href="model/SystemTrafficLight.target#//@elements.0/@elements.0"/>
+        <semanticElements xmi:type="targetPlatform:NetworkInterface" href="model/SystemTrafficLight.target#//@elements.0/@elements.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_7SvVoCoaEemVTK0tKLfwvw" showIcon="false" workspacePath="/org.sirius.system.targetPlatform.design/icons/EthernetPort.png">
-          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@borderedNodeMappings[name='NetworkInterfaceNode']/@style"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_7SvVoCoaEemVTK0tKLfwvw" showIcon="false" workspacePath="/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/icons/EthernetPort.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@borderedNodeMappings[name='NetworkInterfaceNode']/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@borderedNodeMappings[name='NetworkInterfaceNode']"/>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@borderedNodeMappings[name='NetworkInterfaceNode']"/>
       </ownedBorderedNodes>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_6mvyUSoaEemVTK0tKLfwvw" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6mvyUSoaEemVTK0tKLfwvw" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
         <labelFormat>bold</labelFormat>
-        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@style"/>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']"/>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_6mxAcCoaEemVTK0tKLfwvw" name="TargetMiddlewares" tooltipText="TargetMiddlewares">
-        <target xmi:type="TargetPlatform:TargetPlatformDefinition" href="model/SystemTrafficLight.target#//@elements.0"/>
-        <semanticElements xmi:type="TargetPlatform:TargetPlatformDefinition" href="model/SystemTrafficLight.target#//@elements.0"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_6m0q0CoaEemVTK0tKLfwvw" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
-          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='TargetMiddlewares']/@style"/>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6mxAcCoaEemVTK0tKLfwvw" name="TargetMiddlewares" tooltipText="TargetMiddlewares">
+        <target xmi:type="targetPlatform:TargetPlatformDefinition" href="model/SystemTrafficLight.target#//@elements.0"/>
+        <semanticElements xmi:type="targetPlatform:TargetPlatformDefinition" href="model/SystemTrafficLight.target#//@elements.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6m0q0CoaEemVTK0tKLfwvw" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='TargetMiddlewares']/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='TargetMiddlewares']"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='TargetMiddlewares']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_9JSAgCoaEemVTK0tKLfwvw" name="guest" tooltipText="LoginAccount">
-        <target xmi:type="TargetPlatform:LoginAccount" href="model/SystemTrafficLight.target#//@elements.0/@elements.1"/>
-        <semanticElements xmi:type="TargetPlatform:LoginAccount" href="model/SystemTrafficLight.target#//@elements.0/@elements.1"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_9JSAgCoaEemVTK0tKLfwvw" name="guest" tooltipText="LoginAccount">
+        <target xmi:type="targetPlatform:LoginAccount" href="model/SystemTrafficLight.target#//@elements.0/@elements.1"/>
+        <semanticElements xmi:type="targetPlatform:LoginAccount" href="model/SystemTrafficLight.target#//@elements.0/@elements.1"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_9JSAgSoaEemVTK0tKLfwvw" borderSize="1" borderSizeComputationExpression="1">
-          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='LoginAccountContainer']/@style"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_9JSAgSoaEemVTK0tKLfwvw" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='LoginAccountContainer']/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='LoginAccountContainer']"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='LoginAccountContainer']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']"/>
-    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_rpvnhCoaEemVTK0tKLfwvw"/>
-    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer"/>
-    <target xmi:type="TargetPlatform:TargetPlatformModel" href="model/SystemTrafficLight.target#SystemTrafficLight"/>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_rpvnhCoaEemVTK0tKLfwvw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer"/>
+    <target xmi:type="targetPlatform:TargetPlatformModel" href="model/SystemTrafficLight.target#SystemTrafficLight"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram xmi:id="_rqeAQCoaEemVTK0tKLfwvw" name="SystemTrafficLightDeployment" uid="_rqdZMCoaEemVTK0tKLfwvw">
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_rqeAQSoaEemVTK0tKLfwvw" source="DANNOTATION_CUSTOMIZATION_KEY">
-      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_rqeAQioaEemVTK0tKLfwvw"/>
+  <diagram:DSemanticDiagram uid="_rqeAQCoaEemVTK0tKLfwvw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_rqeAQSoaEemVTK0tKLfwvw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_rqeAQioaEemVTK0tKLfwvw"/>
     </ownedAnnotationEntries>
-    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_rqenUCoaEemVTK0tKLfwvw" source="GMF_DIAGRAMS">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_rqenUCoaEemVTK0tKLfwvw" source="GMF_DIAGRAMS">
       <data xmi:type="notation:Diagram" xmi:id="_rqenUSoaEemVTK0tKLfwvw" type="Sirius" element="_rqeAQCoaEemVTK0tKLfwvw" measurementUnit="Pixel">
         <children xmi:type="notation:Node" xmi:id="__cNFYCoaEemVTK0tKLfwvw" type="2002" element="__bdegCoaEemVTK0tKLfwvw">
           <children xmi:type="notation:Node" xmi:id="__cNFYyoaEemVTK0tKLfwvw" type="5006"/>
@@ -333,80 +363,80 @@
         </edges>
       </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="__bdegCoaEemVTK0tKLfwvw" name="PC1" tooltipText="ComputationPlatformReference" incomingEdges="_JSnJ0CobEemVTK0tKLfwvw _K4-DoCobEemVTK0tKLfwvw">
-      <target xmi:type="Deployment:TargetPlatformReference" href="model/SystemTrafficLight.deployment#//@elements.0"/>
-      <semanticElements xmi:type="Deployment:TargetPlatformReference" href="model/SystemTrafficLight.deployment#//@elements.0"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="__bdegCoaEemVTK0tKLfwvw" name="PC1" tooltipText="ComputationPlatformReference" incomingEdges="_JSnJ0CobEemVTK0tKLfwvw _K4-DoCobEemVTK0tKLfwvw">
+      <target xmi:type="deployment:TargetPlatformReference" href="model/SystemTrafficLight.deployment#//@elements.0"/>
+      <semanticElements xmi:type="deployment:TargetPlatformReference" href="model/SystemTrafficLight.deployment#//@elements.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="__beFkCoaEemVTK0tKLfwvw" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="__beFkCoaEemVTK0tKLfwvw" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
         <labelFormat>bold</labelFormat>
-        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@style"/>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']"/>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_ArvaoCobEemVTK0tKLfwvw" name="/tmp" tooltipText="UploadFolder">
-        <target xmi:type="Deployment:UploadDirectory" href="model/SystemTrafficLight.deployment#//@elements.0/@directory"/>
-        <semanticElements xmi:type="Deployment:UploadDirectory" href="model/SystemTrafficLight.deployment#//@elements.0/@directory"/>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_ArvaoCobEemVTK0tKLfwvw" name="/tmp" tooltipText="UploadFolder">
+        <target xmi:type="deployment:UploadDirectory" href="model/SystemTrafficLight.deployment#//@elements.0/@directory"/>
+        <semanticElements xmi:type="deployment:UploadDirectory" href="model/SystemTrafficLight.deployment#//@elements.0/@directory"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_ArvaoSobEemVTK0tKLfwvw" borderSize="1" borderSizeComputationExpression="1">
-          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='UploadDirectoryContainer']/@style"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_ArvaoSobEemVTK0tKLfwvw" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='UploadDirectoryContainer']/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='UploadDirectoryContainer']"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='UploadDirectoryContainer']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_E4AmwCobEemVTK0tKLfwvw" name="eth1" tooltipText="HostInterface">
-        <target xmi:type="Deployment:NetworkInterfaceSelection" href="model/SystemTrafficLight.deployment#//@elements.0/@host"/>
-        <semanticElements xmi:type="Deployment:NetworkInterfaceSelection" href="model/SystemTrafficLight.deployment#//@elements.0/@host"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_E4AmwCobEemVTK0tKLfwvw" name="eth1" tooltipText="HostInterface">
+        <target xmi:type="deployment:NetworkInterfaceSelection" href="model/SystemTrafficLight.deployment#//@elements.0/@host"/>
+        <semanticElements xmi:type="deployment:NetworkInterfaceSelection" href="model/SystemTrafficLight.deployment#//@elements.0/@host"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_E4AmwSobEemVTK0tKLfwvw" borderSize="1" borderSizeComputationExpression="1">
-          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='NetworkInterfaceContainer']/@style"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_E4AmwSobEemVTK0tKLfwvw" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='NetworkInterfaceContainer']/@style"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='NetworkInterfaceContainer']"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='NetworkInterfaceContainer']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_He6-oCobEemVTK0tKLfwvw" name="ComponentTrafficLightTest" tooltipText="ComponentArtefact" outgoingEdges="_JSnJ0CobEemVTK0tKLfwvw">
-      <target xmi:type="Deployment:ComponentArtefact" href="model/SystemTrafficLight.deployment#//@elements.1"/>
-      <semanticElements xmi:type="Deployment:ComponentArtefact" href="model/SystemTrafficLight.deployment#//@elements.1"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_He6-oCobEemVTK0tKLfwvw" name="ComponentTrafficLightTest" tooltipText="ComponentArtefact" outgoingEdges="_JSnJ0CobEemVTK0tKLfwvw">
+      <target xmi:type="deployment:ComponentArtefact" href="model/SystemTrafficLight.deployment#//@elements.1"/>
+      <semanticElements xmi:type="deployment:ComponentArtefact" href="model/SystemTrafficLight.deployment#//@elements.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_He6-oSobEemVTK0tKLfwvw" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
-        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='ComponentArtefactContainer']/@style"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_He6-oSobEemVTK0tKLfwvw" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='ComponentArtefactContainer']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='ComponentArtefactContainer']"/>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='ComponentArtefactContainer']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_IMsDkCobEemVTK0tKLfwvw" name="NamingService" outgoingEdges="_K4-DoCobEemVTK0tKLfwvw">
-      <target xmi:type="Deployment:NamingService" href="model/SystemTrafficLight.deployment#//@elements.2"/>
-      <semanticElements xmi:type="Deployment:NamingService" href="model/SystemTrafficLight.deployment#//@elements.2"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_IMvt8CobEemVTK0tKLfwvw" borderSize="1" borderSizeComputationExpression="1">
-        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='NamingServiceContainer']/@style"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_IMsDkCobEemVTK0tKLfwvw" name="NamingService" outgoingEdges="_K4-DoCobEemVTK0tKLfwvw">
+      <target xmi:type="deployment:NamingService" href="model/SystemTrafficLight.deployment#//@elements.2"/>
+      <semanticElements xmi:type="deployment:NamingService" href="model/SystemTrafficLight.deployment#//@elements.2"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_IMvt8CobEemVTK0tKLfwvw" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='NamingServiceContainer']/@style"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='NamingServiceContainer']"/>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='NamingServiceContainer']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_JSnJ0CobEemVTK0tKLfwvw" name="Deployment" sourceNode="_He6-oCobEemVTK0tKLfwvw" targetNode="__bdegCoaEemVTK0tKLfwvw">
-      <target xmi:type="Deployment:Deployment" href="model/SystemTrafficLight.deployment#//@elements.1/@deploy"/>
-      <semanticElements xmi:type="Deployment:Deployment" href="model/SystemTrafficLight.deployment#//@elements.1/@deploy"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_JSnw4CobEemVTK0tKLfwvw" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_JSnw4SobEemVTK0tKLfwvw"/>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_JSnJ0CobEemVTK0tKLfwvw" name="Deployment" sourceNode="_He6-oCobEemVTK0tKLfwvw" targetNode="__bdegCoaEemVTK0tKLfwvw">
+      <target xmi:type="deployment:Deployment" href="model/SystemTrafficLight.deployment#//@elements.1/@deploy"/>
+      <semanticElements xmi:type="deployment:Deployment" href="model/SystemTrafficLight.deployment#//@elements.1/@deploy"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_JSnw4CobEemVTK0tKLfwvw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_JSnw4SobEemVTK0tKLfwvw"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']"/>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_K4-DoCobEemVTK0tKLfwvw" name="Deployment" sourceNode="_IMsDkCobEemVTK0tKLfwvw" targetNode="__bdegCoaEemVTK0tKLfwvw">
-      <target xmi:type="Deployment:Deployment" href="model/SystemTrafficLight.deployment#//@elements.2/@deploy"/>
-      <semanticElements xmi:type="Deployment:Deployment" href="model/SystemTrafficLight.deployment#//@elements.2/@deploy"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_K4-DoSobEemVTK0tKLfwvw" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_K4-DoiobEemVTK0tKLfwvw"/>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_K4-DoCobEemVTK0tKLfwvw" name="Deployment" sourceNode="_IMsDkCobEemVTK0tKLfwvw" targetNode="__bdegCoaEemVTK0tKLfwvw">
+      <target xmi:type="deployment:Deployment" href="model/SystemTrafficLight.deployment#//@elements.2/@deploy"/>
+      <semanticElements xmi:type="deployment:Deployment" href="model/SystemTrafficLight.deployment#//@elements.2/@deploy"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_K4-DoSobEemVTK0tKLfwvw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_K4-DoiobEemVTK0tKLfwvw"/>
       </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']"/>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']"/>
     </ownedDiagramElements>
-    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']"/>
-    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_rqeARCoaEemVTK0tKLfwvw"/>
-    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer"/>
-    <target xmi:type="Deployment:DeploymentModel" href="model/SystemTrafficLight.deployment#SystemTrafficLight"/>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_rqeARCoaEemVTK0tKLfwvw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer"/>
+    <target xmi:type="deployment:DeploymentModel" href="model/SystemTrafficLight.deployment#SystemTrafficLight"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

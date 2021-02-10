@@ -1,0 +1,4 @@
+components//latest/ComponentWebots/ComponentWebots
+components//latest/ComponentWebots2DLidar/ComponentWebots2DLidar
+components//latest/ComponentWebotsMobileRobot/ComponentWebotsMobileRobot
+components//latest/ComponentLaserObstacleAvoid/ComponentLaserObstacleAvoid

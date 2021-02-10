@@ -44,7 +44,7 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
-		<nature>org.smartmdsd.utils.natures.SystemNature</nature>
+		<nature>org.eclipse.smartmdsd.ui.natures.SystemNature</nature>
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 	</natures>

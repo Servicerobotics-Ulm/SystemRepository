@@ -1,4 +1,16 @@
 SystemParameterModel SystemLaserObstacleAvoidRobotinoWebotsSimulator extendsSystem SystemLaserObstacleAvoidRobotinoWebotsSimulator {
+	ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct ComponentWebotsMobileRobotParams {
+		ParameterRefinement Webots { 
+		    robotName = "Robotino 3"
+			maxAcceleration = [3.0, 3.0, 20.0]
+			motorName = ["wheel0_joint", "wheel1_joint", "wheel2_joint"]
+			radius = [0.063, 0.063, 0.063]
+			distanceToRobotCentre = [-0.1826, -0.1826, -0.1826]
+			heading = [90.0, 210.0, 330.0]
+			keyboardControl = true
+		}
+	}  
+
 	ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWebots2DLidarParams
 	{
 		ParameterRefinement base_manipulator {
@@ -29,6 +41,11 @@ SystemParameterModel SystemLaserObstacleAvoidRobotinoWebotsSimulator extendsSyst
 			resolution = 0.5
 			length_unit = 1
 			frequency = 50
+		}
+	}
+	ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots {
+		ParameterRefinement General{
+			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/RobotinoTHU.wbt"
 		}
 	}	
 }

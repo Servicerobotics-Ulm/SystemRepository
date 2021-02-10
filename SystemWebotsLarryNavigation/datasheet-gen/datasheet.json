@@ -1,0 +1,13 @@
+{
+	"name": "SystemWebotsLarryNavigation",
+	"shortDescription": "A short description for the SystemWebotsLarryNavigation datasheet",
+	"type": "Toolify",
+	"description": "",
+	"purposes": ["Example"],
+	"supplier": "No supplier specified",
+	"homepage": "http://www.example.com",
+	"variationPoints": [
+	],
+	"systemVariants": [
+	]
+}

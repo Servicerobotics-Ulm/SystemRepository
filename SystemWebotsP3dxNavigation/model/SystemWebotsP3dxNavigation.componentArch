@@ -16,7 +16,6 @@ ComponentInstance ComponentWebots instantiates ComponentWebots
 	ComponentInstance ComponentWebotsMobileRobot instantiates ComponentWebotsMobileRobot
 	{
 		ProvidedService BaseStateServiceOut
-		ProvidedService BatteryEventServiceOut
 		ProvidedService LocalizationUpdateServiceIn
 		ProvidedService NavigationVelocityServiceIn
 		//ProvidedService BaseStateAnswerer
@@ -99,17 +98,17 @@ Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.Cur
 	Connection SmartCdlServer.LaserClient -> ComponentWebots2DLidar.LaserServiceOut
 	Connection SmartMapperGridMap.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
 	
-		BehaviorTaskRef NavTasks
+		BehaviorTaskRef NavigationTasks
 
 	CoordinationModuleMapping {
-		moduleInstance NavTasks.kbModInst realizedby kbModule
+		moduleInstance NavigationTasks.kbModInst realizedby kbModule
 		{
 			interfaceInstance kb realizedby ComponentKB
 		}
 	}
 
 	CoordinationModuleMapping {
-		moduleInstance NavTasks.navigation realizedby MovementMod2
+		moduleInstance NavigationTasks.navigation realizedby MovementMod2
 		{
 			interfaceInstance cdl realizedby SmartCdlServer
 			interfaceInstance mapper realizedby SmartMapperGridMap
@@ -118,14 +117,8 @@ Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.Cur
 	}
 
 	CoordinationModuleMapping {
-		moduleInstance NavTasks.localizationModInst realizedby locModRealization {
+		moduleInstance NavigationTasks.localizationModInst realizedby locModRealization {
 			interfaceInstance amcl realizedby SmartAmcl
 		}
 	}
-
-//	CoordinationModuleMapping {
-//		moduleInstance NavTasks.base realizedby baseInst {
-//			interfaceInstance base realizedby ComponentWebotsMobileRobot
-//		}
-//	}
 }

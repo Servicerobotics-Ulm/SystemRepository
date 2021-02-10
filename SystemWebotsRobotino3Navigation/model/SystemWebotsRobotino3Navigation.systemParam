@@ -65,8 +65,6 @@ ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWe
 			azimuth = 0
 			elevation = 0
 			roll = 0
-			ip_address = "192.168.0.1"
-			port = 2111
 			min_range = 10
 			max_range = 20000
 			opening_angle = 210
@@ -91,7 +89,7 @@ ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct Compone
       radius = [0.063, 0.063, 0.063]
       distanceToRobotCentre = [-0.1826, -0.1826, -0.1826]
       heading = [90.0, 210.0, 330.0]
-      maxAcceleration = [10.0, 6.0, 40.0]
+      maxAcceleration = [3.0, 3.0, 20.0]
   }
   ParameterRefinement General { verbose = false
 			hasSignalState = true
@@ -106,25 +104,37 @@ ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGrid
 		cellsize = 50
 			connectLaser = true
 			verbose = false
-			mapDataDir = "data/maps/"
+			mapDataDir = ""
 	}
 	ParameterRefinement CurrentMap {
-		interval = 10
+			interval = 10
 			growing = "star16"
-			xsize = 250000
-			ysize = 250000
-			xpos = -10000
-			ypos = -10000
+			xsize = 40000
+			ysize = 40000
+			xpos = -20000
+			ypos = -20000
 			id = 0
 	}
 	ParameterRefinement LtmMap {
 		kalman = 100
-			xsize = 250000
-			ysize = 250000
-			xpos = -10000
-			ypos = -10000
-			id = 0
+			xsize = 40000
+			ysize = 40000
+			xpos = -20000
+			ypos = -20000
+			id = 0			
+	}
+	ParameterRefinement CURLTM {
+		preoccupation = ENABLE
+		threshold = 20
+	}
+	ParameterRefinement CUREMPTY {
+		mapmode = EMPTY	
 	}
 }
 
+	ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots {
+		ParameterRefinement General{
+			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/RobotinoTHU.wbt"
+		}
+	}
 }

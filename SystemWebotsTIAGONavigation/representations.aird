@@ -93,6 +93,15 @@
     <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.system.nativeNodes/model/nativeNodes.ecore</semanticResources>
     <semanticResources>platform:/plugin/org.eclipse.sirius.properties.defaultrules/model/properties.odesign</semanticResources>
     <semanticResources>platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign</semanticResources>
+    <semanticResources>platform:/resource/ComponentWebotsMobileRobot/model/ComponentWebotsMobileRobot.component</semanticResources>
+    <semanticResources>platform:/resource/ComponentWebotsMobileRobot/model/ComponentWebotsMobileRobot.skillRealization</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.xtext.base.stateMachine/componentLifecycle/ComponentLifecycle.automaton</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.xtext.service.parameterDefinition/defaultParameterLib/defaultParameterLib.parameters</semanticResources>
+    <semanticResources>platform:/resource/ComponentWebotsMobileRobot/model/ComponentWebotsMobileRobot.componentParameters</semanticResources>
+    <semanticResources>platform:/resource/ComponentWebots2DLidar/model/ComponentWebots2DLidar.component</semanticResources>
+    <semanticResources>platform:/resource/ComponentWebots2DLidar/model/ComponentWebots2DLidar.componentParameters</semanticResources>
+    <semanticResources>platform:/resource/ComponentWebots/model/ComponentWebots.componentParameters</semanticResources>
+    <semanticResources>platform:/resource/BehaviorNavigationTHUScenario/model/BehaviorNavigationTHUScenario.taskRealization</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_c0EWkBheEeur6as5CaUsIg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_c0OuoxheEeur6as5CaUsIg" name="SystemWebotsTIAGONavigationDeployment" repPath="#_c0NggBheEeur6as5CaUsIg">
@@ -2305,8 +2314,8 @@
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='TargetMiddlewares']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_OGg1oBhhEeur6as5CaUsIg" name="feldmeier" tooltipText="LoginAccount">
-        <target xmi:type="targetPlatform:LoginAccount" href="model/SystemWebotsTIAGONavigation.target#//@elements.0/@elements.0"/>
-        <semanticElements xmi:type="targetPlatform:LoginAccount" href="model/SystemWebotsTIAGONavigation.target#//@elements.0/@elements.0"/>
+        <target xmi:type="targetPlatform:NetworkInterface" href="model/SystemWebotsTIAGONavigation.target#//@elements.0/@elements.0"/>
+        <semanticElements xmi:type="targetPlatform:NetworkInterface" href="model/SystemWebotsTIAGONavigation.target#//@elements.0/@elements.0"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_OGg1oRhhEeur6as5CaUsIg" borderSize="1" borderSizeComputationExpression="1">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='LoginAccountContainer']/@style"/>
         </ownedStyle>

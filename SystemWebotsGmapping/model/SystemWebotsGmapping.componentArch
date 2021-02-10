@@ -1,0 +1,67 @@
+SystemComponentArchitecture SystemWebotsGmapping usingActivityArchitecture SystemWebotsGmapping
+{
+ComponentInstance ComponentGMapping instantiates ComponentGMapping
+	{
+		RequiredService laserClient
+		RequiredService basePositionUpdateClient
+		ProvidedService newestMapPushServer
+	}
+	ComponentInstance ComponentVisualization instantiates ComponentVisualization
+	{
+		RequiredService rgbdPushNewestClient
+		RequiredService rgbdQueryClient
+		RequiredService baseClient
+		RequiredService laserClient1
+		RequiredService laserClient2
+		RequiredService laserClient3
+		RequiredService irPushNewestClient
+		RequiredService imagePushNewestClient
+		RequiredService curPushClient
+		RequiredService depthPushNewestClient
+		RequiredService ultrasonicPushNewestClient
+		RequiredService personDetectionEventClient
+		RequiredService MarkerListDetectionServiceIn
+		RequiredService AmclVisualizationInfoIn
+		RequiredService RGBDImageQueryServiceReq
+		RequiredService ltmQueryClient
+		RequiredService personDetectionQueryClient
+	}
+
+	ComponentInstance SmartJoystickNavigation instantiates SmartJoystickNavigation
+	{
+		RequiredService JoystickServiceIn
+		RequiredService NavVelServiceOut
+	}
+	ComponentInstance SmartJoystickServer instantiates SmartJoystickServer
+	{
+		ProvidedService JoystickServcieOut
+	}
+	ComponentInstance ComponentWebots instantiates ComponentWebots
+	{
+	}
+	ComponentInstance SmartRobotConsole instantiates SmartRobotConsole
+	{
+	}
+	ComponentInstance ComponentWebots2DLidar instantiates ComponentWebots2DLidar
+	{
+		RequiredService BaseStateServiceIn
+		ProvidedService LaserServiceOut
+		ProvidedService LaserQueryServiceAnsw
+	}
+	ComponentInstance ComponentWebotsMobileRobot instantiates ComponentWebotsMobileRobot
+	{
+		RequiredService LocalizationEventServiceIn
+		ProvidedService BaseStateServiceOut
+		ProvidedService NavigationVelocityServiceIn
+		ProvidedService LocalizationUpdateServiceIn
+		ProvidedService BaseStateQueryServiceAnsw
+	}
+	Connection SmartJoystickNavigation.JoystickServiceIn -> SmartJoystickServer.JoystickServcieOut
+
+	Connection  ComponentGMapping.laserClient -> ComponentWebots2DLidar.LaserServiceOut
+
+	Connection  SmartJoystickNavigation.NavVelServiceOut -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
+
+	Connection  ComponentWebots2DLidar.BaseStateServiceIn -> ComponentWebotsMobileRobot.BaseStateServiceOut
+Connection ComponentGMapping.basePositionUpdateClient -> ComponentWebotsMobileRobot.LocalizationUpdateServiceIn
+}

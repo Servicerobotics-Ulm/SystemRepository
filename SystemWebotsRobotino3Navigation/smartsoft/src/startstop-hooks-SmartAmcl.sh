@@ -33,6 +33,7 @@ pre-start)
 	
 	# ...then call user/deployment specific hook:
 	echo "Triggering pre-start hooks ..."
+	sleep 10
 ;;
 
 post-start)

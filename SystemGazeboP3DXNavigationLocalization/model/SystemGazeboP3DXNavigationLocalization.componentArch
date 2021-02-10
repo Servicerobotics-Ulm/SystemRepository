@@ -91,7 +91,7 @@ SystemComponentArchitecture SystemGazeboP3DXNavigationLocalization usingActivity
 	
 
 	CoordinationModuleMapping {
-		moduleInstance BehaviorNavigationMapping.nav1 realizedby MovementMod2
+		moduleInstance BehaviorNavigationMapping.navigation realizedby MovementMod2
 		{
 			interfaceInstance cdl realizedby SmartCdlServer
 			interfaceInstance mapper realizedby SmartMapperGridMap
@@ -101,7 +101,7 @@ SystemComponentArchitecture SystemGazeboP3DXNavigationLocalization usingActivity
 	
 	CoordinationModuleMapping {
 		moduleInstance BehaviorNavigationMapping.localizationModInst realizedby locModRealization {
-			interfaceInstance amcl1 realizedby SmartAmcl
+			interfaceInstance amcl realizedby SmartAmcl
 		}
 	}
 	

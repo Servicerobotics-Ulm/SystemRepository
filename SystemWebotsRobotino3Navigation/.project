@@ -3,7 +3,7 @@
 	<name>SystemWebotsRobotino3Navigation</name>
 	<comment></comment>
 	<projects>
-		<project>BehaviorNavigationScenario</project>
+		<project>BehaviorNavigationTHUScenario</project>
 		<project>ComponentKB</project>
 		<project>ComponentTCLSequencer</project>
 		<project>ComponentVisualization</project>

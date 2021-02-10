@@ -3,6 +3,19 @@ SystemParameterModel SystemGazeboP3DXNavigationLocalization extendsSystem System
 	ComponentParameterInstance SmartAmcl refinesParamStruct SmartAmclParams {
 		ParameterRefinement General {
 			enable_visualization = true
+			yaml_file = "localization-map.yaml"
+			initalizationType = INI_POSE
+			initPoseFileName = "/tmp/lastRobotPose.txt"
+			verbose = false
+			connect_services = true
+			initial_x = 0.0
+			initial_y = 0.0
+			initial_a = 0.0
+			initial_cov_xx = 0.03
+			initial_cov_yy = 0.03
+			initial_cov_aa = 0.068539
+			lostEventMaxHypothese = 3
+			lostEventMaxEigValueSum = 0.2
 		}
 	}
 	ComponentParameterInstance ComponentVisualization refinesParamStruct ComponentVisualizationParams {

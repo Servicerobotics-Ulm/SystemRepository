@@ -3,7 +3,7 @@ SystemParameterModel SystemWebotsP3dxNavigationPara extendsSystem SystemWebotsP3
 		ParameterRefinement General {
 			initalizationType = INI_POSE
 			initPoseFileName = "/tmp/lastRobotPose.txt"
-			verbose = true
+			verbose = false
 			connect_services = true
 			yaml_file = "localization-map.yaml"
 			initial_x = 0.0
@@ -65,8 +65,6 @@ ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWe
 			azimuth = 0
 			elevation = 0
 			roll = 0
-			ip_address = "192.168.0.1"
-			port = 2111
 			min_range = 10
 			max_range = 80000
 			opening_angle = 180
@@ -91,7 +89,7 @@ ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct Compone
       radius = [0.0975, 0.0975]
       distanceToRobotCentre = [-0.165, 0.165]
       heading = [0, 0]
-      maxAcceleration = [3.0, 0.0, 15.0]
+      maxAcceleration = [1.0, 0.0, 15.0]
   }  
   ParameterRefinement General { verbose = false
 			hasSignalState = true
@@ -106,25 +104,35 @@ ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGrid
 		cellsize = 50
 			connectLaser = true
 			verbose = false
-			mapDataDir = "data/maps/"
+			mapDataDir = ""
 	}
 	ParameterRefinement CurrentMap {
-		interval = 10
+			interval = 10
 			growing = "star16"
-			xsize = 250000
-			ysize = 250000
-			xpos = -10000
-			ypos = -10000
+			xsize = 40000
+			ysize = 40000
+			xpos = -20000
+			ypos = -20000
 			id = 0
 	}
 	ParameterRefinement LtmMap {
 		kalman = 100
-			xsize = 250000
-			ysize = 250000
-			xpos = -10000
-			ypos = -10000
-			id = 0
+			xsize = 40000
+			ysize = 40000
+			xpos = -20000
+			ypos = -20000
+			id = 0			
+	}
+	ParameterRefinement CURLTM {
+		preoccupation = ENABLE
+		threshold = 20
+	}
+	ParameterRefinement CUREMPTY {
+		mapmode = EMPTY	
 	}
 }
-
+ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots { 
+	ParameterRefinement 
+	General { WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/PioneerTHU.wbt"	}  
+	}
 }

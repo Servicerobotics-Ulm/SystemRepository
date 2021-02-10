@@ -1,0 +1,20 @@
+DeploymentModel SystemWebotsGmapping using ComponentArchitecture SystemWebotsGmapping
+{
+TargetPlatformReference PC1 using SystemWebotsGmapping.PC1
+	{
+		UploadDirectory "/tmp"		
+		NetworkInterface eth2
+	}
+	NamingService
+	{
+		deploy-to PC1 }
+	ComponentArtefact ComponentGMapping deploy-to PC1
+	ComponentArtefact ComponentVisualization deploy-to PC1
+	ComponentArtefact ComponentWebots deploy-to PC1
+
+	ComponentArtefact SmartJoystickNavigation deploy-to PC1
+	ComponentArtefact SmartJoystickServer deploy-to PC1
+	ComponentArtefact SmartRobotConsole deploy-to PC1
+ComponentArtefact ComponentWebots2DLidar deploy-to PC1
+	ComponentArtefact ComponentWebotsMobileRobot deploy-to PC1
+}

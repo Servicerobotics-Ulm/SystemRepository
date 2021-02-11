@@ -1,0 +1,22 @@
+DeploymentModel SystemLarryNavigation using ComponentArchitecture SystemLarryNavigation
+{
+TargetPlatformReference PC1 using SystemLarryNavigation.PC1
+	{
+		UploadDirectory "/tmp"
+		LoginAccount larry
+		NetworkInterface eth2
+	}
+	NamingService
+	{
+		deploy-to PC1 }
+	ComponentArtefact ComponentKB deploy-to PC1
+	ComponentArtefact ComponentLaserLMS1xx deploy-to PC1
+	ComponentArtefact ComponentQtRobotConsole deploy-to PC1
+	ComponentArtefact ComponentRMPBaseServer deploy-to PC1
+	ComponentArtefact ComponentTCLSequencer deploy-to PC1
+	ComponentArtefact ComponentVisualization deploy-to PC1
+	ComponentArtefact SmartAmcl deploy-to PC1
+	ComponentArtefact SmartMapperGridMap deploy-to PC1
+	ComponentArtefact SmartPlannerBreadthFirstSearch deploy-to PC1
+	ComponentArtefact SmartCdlServer deploy-to PC1
+}

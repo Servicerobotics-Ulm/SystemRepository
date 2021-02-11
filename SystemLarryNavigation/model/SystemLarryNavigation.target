@@ -1,0 +1,10 @@
+TargetPlatformModel SystemLarryNavigation
+{
+	TargetPlatformDefinition PC1
+	{
+		Linux "Ubuntu Linux 20.04 64bit"
+		LoginAccount larry { FullName "larry" Email "guest@example.com" }
+		NetworkInterface eth2 { HostAddress "10.36.32.131" }
+		
+	}
+}

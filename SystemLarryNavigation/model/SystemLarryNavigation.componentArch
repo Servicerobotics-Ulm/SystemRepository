@@ -1,0 +1,126 @@
+SystemComponentArchitecture SystemLarryNavigation
+{
+ComponentInstance ComponentRMPBaseServer instantiates ComponentRMPBaseServer
+	{
+		ProvidedService basePositionServer
+		ProvidedService batteryEventServer
+		ProvidedService navigationVelocityServer
+		ProvidedService basePositionUpdateServer
+		ProvidedService baseQueryServer
+	}
+	ComponentInstance ComponentKB instantiates ComponentKB
+	{
+		RequiredService kbChainedEntriesEventClient
+		ProvidedService kbEventServer
+		ProvidedService kbQuery
+	}
+	ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
+	{
+	}
+	ComponentInstance SmartPlannerBreadthFirstSearch instantiates SmartPlannerBreadthFirstSearch
+	{
+		RequiredService CurMapClient
+		RequiredService BaseStateClient
+		ProvidedService PlannerGoalServer
+		ProvidedService PlannerEventServer
+	}
+	ComponentInstance ComponentLaserLMS1xx instantiates ComponentLaserLMS1xx
+	{
+		RequiredService BaseStateServiceIn
+		ProvidedService LaserServiceOut
+		ProvidedService LaserQueryServiceAnsw
+		ParameterStructInstance SystemLarryNavigation.ComponentLaserLMS1xx
+	}
+	ComponentInstance SmartCdlServer instantiates SmartCdlServer
+	{
+		RequiredService LaserClient
+		RequiredService LaserClient2
+		RequiredService PlannerClient
+		RequiredService TrackingClient
+		RequiredService IRClient
+		RequiredService PathNavigationGoalClient
+		RequiredService BaseStateClient
+		RequiredService NavVelSendClient
+		ProvidedService GoalEventServer
+		ProvidedService RobotBlockedEventServer
+		ProvidedService NavVelSendServer
+	}
+	ComponentInstance SmartMapperGridMap instantiates SmartMapperGridMap
+	{
+		RequiredService LaserServiceIn
+		ProvidedService CurrMapOut
+		ProvidedService CurrQueryServer
+		ProvidedService LtmQueryServer
+	}
+	ComponentInstance SmartAmcl instantiates SmartAmcl
+	{
+		RequiredService LaserServiceIn
+		RequiredService LocalizationUpdateServiceOut
+		ProvidedService LocalizationEventServiceOut
+		ProvidedService AmclVisualizationInfoOut
+	}
+	ComponentInstance ComponentVisualization instantiates ComponentVisualization
+	{
+		RequiredService rgbdPushNewestClient
+		RequiredService rgbdQueryClient
+		RequiredService baseClient
+		RequiredService laserClient1
+		RequiredService laserClient2
+		RequiredService laserClient3
+		RequiredService irPushNewestClient
+		RequiredService imagePushNewestClient
+		RequiredService curPushClient
+		RequiredService depthPushNewestClient
+		RequiredService ultrasonicPushNewestClient
+		RequiredService personDetectionEventClient
+		RequiredService MarkerListDetectionServiceIn
+		RequiredService AmclVisualizationInfoIn
+		RequiredService RGBDImageQueryServiceReq
+		RequiredService ltmQueryClient
+		RequiredService personDetectionQueryClient
+	}
+	ComponentInstance ComponentQtRobotConsole instantiates ComponentQtRobotConsole
+	{
+	}
+	Connection ComponentLaserLMS1xx.BaseStateServiceIn -> ComponentRMPBaseServer.basePositionServer
+	Connection SmartAmcl.LaserServiceIn -> ComponentLaserLMS1xx.LaserServiceOut
+	Connection SmartMapperGridMap.LaserServiceIn -> ComponentLaserLMS1xx.LaserServiceOut
+	Connection SmartCdlServer.LaserClient -> ComponentLaserLMS1xx.LaserServiceOut
+	Connection SmartCdlServer.NavVelSendClient -> ComponentRMPBaseServer.navigationVelocityServer
+	Connection SmartCdlServer.PlannerClient -> SmartPlannerBreadthFirstSearch.PlannerGoalServer
+	Connection SmartAmcl.LocalizationUpdateServiceOut -> ComponentRMPBaseServer.basePositionUpdateServer
+	Connection SmartPlannerBreadthFirstSearch.BaseStateClient -> ComponentRMPBaseServer.basePositionServer
+	Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.CurrMapOut
+	
+	BehaviorTaskRef NavTasks
+	CoordinationModuleMapping {
+		moduleInstance NavTasks.kbModInst realizedby kbModule
+		{
+			interfaceInstance kb realizedby ComponentKB
+		}
+	}
+	
+		CoordinationModuleMapping {
+		moduleInstance NavTasks.navigation realizedby MovementMod2
+		{
+			interfaceInstance cdl realizedby SmartCdlServer
+			interfaceInstance mapper realizedby SmartMapperGridMap
+			interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch
+		}
+	}
+	
+		CoordinationModuleMapping {
+		moduleInstance NavTasks.localizationModInst realizedby locModRealization {
+			interfaceInstance amcl1 realizedby SmartAmcl
+		}
+	}
+	
+		CoordinationModuleMapping {
+		moduleInstance NavTasks.base realizedby baseInst {
+			interfaceInstance base realizedby ComponentRMPBaseServer
+		}
+	}
+	
+	
+	
+}

@@ -1,0 +1,148 @@
+SystemParameterModel SystemLarryNavigation extendsSystem SystemLarryNavigation {
+
+ComponentParameterInstance ComponentLaserLMS1xx refinesParamStruct ComponentLaserLMS1xxParams { 
+	ParameterRefinement scanner {
+		on_turret = false
+		verbose = false
+		
+		x = 287
+		y = 0
+		z = 103
+		
+		azimuth = 0
+		elevation = 0
+		roll = 3.1416
+		
+		ip_address = "192.168.0.22"
+		port = 2111
+		min_range = 10
+		max_range = 20000
+		opening_angle = 210
+		resolution = 0.5
+		length_unit = 1
+		frequency = 50
+	}
+}
+
+ComponentParameterInstance SmartAmcl refinesParamStruct SmartAmclParams { 
+	ParameterRefinement General {
+		initalizationType = INI_POSE
+		initPoseFileName = "/tmp/lastRobotPose.txt"
+		verbose = false
+		connect_services = true
+		yaml_file = "localization-map.yaml"
+		initial_x = 0.0
+		initial_y = 0.0
+		initial_a = 0.0
+		initial_cov_xx = 0.03
+		initial_cov_yy = 0.03
+		initial_cov_aa = 0.068539
+		enable_visualization = true
+		lostEventMaxHypothese = 3
+		lostEventMaxEigValueSum = 0.2
+	}	
+}
+
+ComponentParameterInstance SmartCdlServer refinesParamStruct SmartCdlServerParams {
+	ParameterRefinement Cdl  {
+		dataDir = "./"
+		curvature_default_file = "CDLindex_RMP50.dat"
+		lookup_default_file = "CDLdist_RMP50.dat.compressed"
+		lookup_default_file_compressed = true
+		accel_default_file = "CDLacc_RMP50.dat"
+		curvature_second_file = "CDLindex_RMP50.dat"
+		lookup_second_file = "CDLdist_RMP50.dat.compressed"
+		lookup_second_file_compressed = true
+		accel_second_file = "CDLacc_RMP50.dat"
+		translation_acc = 400.0
+		rotation_acc = 100.0
+		delta_t_calc = 0.35
+		delta_t_trigger = 0.1
+		followHysteresis = false
+		contour_default_file = "CDLcontour_RMP50.dat"
+		contour_second_file = "CDLcontour_RMP50.dat"
+		use_obstacle_history = false
+		freeBehaviorDist = 350.0
+		freeBehaviorDist_second = 350.0
+	}
+	ParameterRefinement Server {
+		plannerInit = true
+		trackerInit = false
+		laserClient2Init = false
+		irClientInit = false
+		pathNavInit = false
+		baseClientInit = false
+	}
+	ParameterRefinement CdlRotate {
+		error = 5.0
+	}
+	ParameterRefinement PathNav {
+		pathNavPredictedGoalPose_controll1_dist = 200.0
+		pathNavPredictedGoalPose_controll1_speed = 100.0
+		pathNavPredictedGoalPose_controll2_dist = 300.0
+		pathNavPredictedGoalPose_controll2_speed = 250.0
+		pathNavPredictedGoalPose_controll3_dist = 500.0
+		pathNavPredictedGoalPose_controll3_speed = 600.0
+		pathNavPredictedGoalPose_minDist = 200
+		pathNavRecover_max_dist = 1000
+		robotBlocked_event_timeout = 15
+	}
+}
+
+ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGridMapParams {
+	ParameterRefinement General {
+		cellsize = 50
+		connectLaser = true
+		verbose = false
+		mapDataDir = "./"
+	}
+	ParameterRefinement LtmMap {
+		kalman = 100
+		xsize = 60000
+		ysize = 60000
+		xpos = -15000
+		ypos = -15000
+		id = 0
+	}
+	ParameterRefinement CurrentMap {
+		interval = 10
+		growing = "star16"
+		xsize = 20000
+		ysize = 20000
+		xpos = -10000
+		ypos = -10000
+		id = 0
+	}
+}
+
+ComponentParameterInstance SmartPlannerBreadthFirstSearch refinesParamStruct SmartPlannerParams{ 
+	ParameterRefinement Settings {
+		no_path_event_timeout = 5.0
+	}
+}
+
+ComponentParameterInstance ComponentRMPBaseServer refinesParamStruct ComponentRMPBaseServer{
+	ParameterRefinement robot{
+		    verbose = false
+			debug = false
+			back_is_front = false
+			rmp_config_file = "rmp_config.ini"
+			enable_motors = true
+			max_vel = 1000
+			max_rot_vel = 600
+			max_velocity_scale_factor = 16
+			max_acceleration_scale_factor = 16
+			max_turn_rate_scale_factor = 16
+			gain_schedule = 1
+			limit_scale_factor = 256
+			accelerationForward = 100
+			decelerationFoward = 1000
+			accelerationBackward = 100
+			decelerationBackward = 100
+			accelerationLeftward = 0.4
+			decelerationLeftward = 0.4
+			accelerationRightward = 0.4
+			decelerationRightward = 0.4
+			}
+			}
+ }

@@ -19,6 +19,7 @@ SystemParameterModel SystemWebotsTIAGONavigationPara extendsSystem SystemWebotsT
 ComponentParameterInstance SmartCdlServer refinesParamStruct SmartCdlServerParams{
 	ParameterRefinement Cdl { 
 		dataDir = "data/lookup-files/"
+		/*
 			accel_default_file = "CDLacc_PMB2.dat"
 			accel_second_file = "CDLacc_PMB2.dat"
 			contour_default_file = "CDLcontour_PMB2.dat"
@@ -28,6 +29,17 @@ ComponentParameterInstance SmartCdlServer refinesParamStruct SmartCdlServerParam
 			lookup_default_file = "CDLdist_PMB2.dat.compressed"
 			lookup_default_file_compressed = true
 			lookup_second_file = "CDLdist_PMB2.dat.compressed"			
+			lookup_second_file_compressed = true			
+			*/
+			accel_default_file = "CDLacc_TIAGO_EXTRA.dat"
+			accel_second_file = "CDLacc_TIAGO_EXTRA.dat"
+			contour_default_file = "CDLcontour_TIAGO_EXTRA.dat"
+			contour_second_file = "CDLcontour_TIAGO_EXTRA.dat"
+			curvature_default_file = "CDLindex_TIAGO_EXTRA.dat"
+			curvature_second_file = "CDLindex_TIAGO_EXTRA.dat"			
+			lookup_default_file = "CDLdist_TIAGO_EXTRA.dat.compressed"
+			lookup_default_file_compressed = true
+			lookup_second_file = "CDLdist_TIAGO_EXTRA.dat.compressed"			
 			lookup_second_file_compressed = true
 			translation_acc = 400.0
 			rotation_acc = 100.0
@@ -97,7 +109,7 @@ ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGrid
 	}
 	ParameterRefinement CurrentMap {
 			interval = 10
-			growing = "star16"
+			growing = "star32"
 			xsize = 40000
 			ysize = 40000
 			xpos = -20000

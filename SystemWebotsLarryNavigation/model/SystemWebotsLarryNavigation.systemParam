@@ -31,6 +31,8 @@ SystemParameterModel SystemWebotsLarryNavigationPara extendsSystem SystemWebotsL
 ComponentParameterInstance SmartCdlServer refinesParamStruct SmartCdlServerParams{
 	ParameterRefinement Cdl { 
 		dataDir = "data/lookup-files/"
+			
+			/*
 			accel_default_file = "CDLacc_RMP50.dat"
 			accel_second_file = "CDLacc_RMP50.dat"
 			contour_default_file = "CDLcontour_RMP50.dat"
@@ -41,6 +43,20 @@ ComponentParameterInstance SmartCdlServer refinesParamStruct SmartCdlServerParam
 			lookup_default_file_compressed = true
 			lookup_second_file = "CDLdist_RMP50.dat.compressed"			
 			lookup_second_file_compressed = true
+			*/
+			
+			accel_default_file = "CDLacc_RMP50_EXTRA.dat"
+			accel_second_file = "CDLacc_RMP50_EXTRA.dat"
+			contour_default_file = "CDLcontour_RMP50_EXTRA.dat"
+			contour_second_file = "CDLcontour_RMP50_EXTRA.dat"
+			curvature_default_file = "CDLindex_RMP50_EXTRA.dat"
+			curvature_second_file = "CDLindex_RMP50_EXTRA.dat"			
+			lookup_default_file = "CDLdist_RMP50_EXTRA.dat.compressed"
+			lookup_default_file_compressed = true
+			lookup_second_file = "CDLdist_RMP50_EXTRA.dat.compressed"			
+			lookup_second_file_compressed = true
+			
+			
 			translation_acc = 400.0
 			rotation_acc = 100.0
 			delta_t_calc = 0.35
@@ -109,7 +125,7 @@ ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGrid
 	}
 	ParameterRefinement CurrentMap {
 			interval = 10
-			growing = "star16"
+			growing = "star32"
 			xsize = 20000
 			ysize = 20000
 			xpos = -10000

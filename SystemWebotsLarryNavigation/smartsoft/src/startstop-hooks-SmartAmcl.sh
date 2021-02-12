@@ -30,7 +30,6 @@ case "$1" in
 pre-start)
 	# first, trigger hooks as delivered from component ...
 	bash startstop-hooks-component-SmartAmcl.sh pre-start
-	sleep 5
 	# ...then call user/deployment specific hook:
 	echo "Triggering pre-start hooks ..."
 ;;

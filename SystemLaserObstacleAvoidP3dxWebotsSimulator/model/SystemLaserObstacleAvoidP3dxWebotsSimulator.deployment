@@ -1,0 +1,15 @@
+DeploymentModel SystemLaserObstacleAvoidP3dxWebotsSimulator using ComponentArchitecture SystemLaserObstacleAvoidP3dxWebotsSimulator
+{
+TargetPlatformReference LocalhostTarget using SystemLaserObstacleAvoidP3dxWebotsSimulator.LocalhostTarget
+	{
+		UploadDirectory "/tmp"
+		NetworkInterface localhost
+	}
+	NamingService
+	{
+		deploy-to LocalhostTarget }
+	ComponentArtefact ComponentLaserObstacleAvoid deploy-to LocalhostTarget
+	ComponentArtefact ComponentWebots deploy-to LocalhostTarget
+	ComponentArtefact ComponentWebots2DLidar deploy-to LocalhostTarget
+	ComponentArtefact ComponentWebotsMobileRobot deploy-to LocalhostTarget
+}

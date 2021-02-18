@@ -1,0 +1,53 @@
+SystemParameterModel SystemLaserObstacleAvoidP3dxWebotsSimulator extendsSystem SystemLaserObstacleAvoidP3dxWebotsSimulator { 
+	ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWebots2DLidarParams{
+  ParameterRefinement webots {
+    robotName = "LidarPioneer"
+  }
+  ParameterRefinement scanner {      
+      verbose = true
+			on_turret = false			
+			x = 70
+			y = 0
+			z = 0
+			azimuth = 0
+			elevation = 0
+			roll = 0
+			min_range = 10
+			max_range = 80000
+			opening_angle = 180
+			resolution = 1
+			length_unit = 1
+			frequency = 25
+  }
+  ParameterRefinement base_manipulator { 
+    on_base = true
+			x = 0
+			y = 0
+			z = 0
+			base_a = 0
+			steer_a = 0
+			turret_a = 0			
+			}
+}	
+ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct ComponentWebotsMobileRobotParams {
+  ParameterRefinement Webots { 
+      robotName = "Pioneer 3-DX"
+      motorName = ["left wheel", "right wheel"]
+      radius = [0.0975, 0.0975]
+      distanceToRobotCentre = [-0.165, 0.165]
+      heading = [0, 0]
+      maxAcceleration = [1.0, 0.0, 15.0]
+  }  
+  ParameterRefinement General { verbose = false
+			hasSignalState = true
+			useLocalizationEvent = true
+			poseFileName = "/tmp/lastRobotPose.txt"
+			writePoseFile = false
+}
+}
+
+ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots { 
+	ParameterRefinement 
+	General { WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/P3dxHospital.wbt"	}  
+	}
+}

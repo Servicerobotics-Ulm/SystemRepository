@@ -1,0 +1,19 @@
+DeploymentModel SystemRobotinoNavigationRealWorld using ComponentArchitecture SystemRobotinoNavigationRealWorld
+{
+	TargetPlatformReference Robotino using SystemRobotinoNavigationRealWorld.Robotino {
+		UploadDirectory "/tmp"
+		NetworkInterface wifi
+		LoginAccount student
+	}
+	NamingService {
+		deploy-to Robotino
+	}
+	ComponentArtefact ComponentKB deploy-to Robotino
+	ComponentArtefact ComponentLaserLMS1xx deploy-to Robotino
+	ComponentArtefact ComponentRobotinoBaseServer deploy-to Robotino
+	ComponentArtefact ComponentTCLSequencer deploy-to Robotino
+	ComponentArtefact SmartAmcl deploy-to Robotino
+	ComponentArtefact SmartCdlServer deploy-to Robotino
+	ComponentArtefact SmartMapperGridMap deploy-to Robotino
+	ComponentArtefact SmartPlannerBreadthFirstSearch deploy-to Robotino	
+}

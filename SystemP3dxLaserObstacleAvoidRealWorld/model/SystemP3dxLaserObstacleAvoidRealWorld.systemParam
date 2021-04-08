@@ -1,0 +1,31 @@
+SystemParameterModel SystemP3dxLaserObstacleAvoidRealWorld extendsSystem SystemP3dxLaserObstacleAvoidRealWorld {	
+	ComponentParameterInstance SmartLaserLMS200Server refinesParamStruct SmartLaserLMS200ServerParams {
+		ParameterRefinement Laser {
+			sick_type = "LMS"
+			x = 70.0
+			y = 0.0
+			z = 0.0
+			azimuth = 0.0
+			device = "/dev/sick"
+			baudrate = 500000
+			resolution = 50
+			length_unit = 1
+			verbose = false
+		}
+	}	
+	
+	ComponentParameterInstance SmartPioneerBaseServer refinesParamStruct SmartPioneerBaseServerParams {
+		ParameterRefinement Robot{
+			enable_motors = true
+			enable_sonar = false
+			maxVel = 1000
+			maxVelAcc = 300
+			maxVelDecel = 300
+			maxRotVel = 300
+			maxRotVelAcc = 100
+			maxRotVelDecel = 100
+			serialport = "/dev/ttyS0"
+			robotType = "p3dx"
+		}
+	}
+}

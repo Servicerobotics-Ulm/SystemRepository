@@ -1,19 +1,19 @@
 SystemComponentArchitecture SystemLaserObstacleAvoidP3dxPlayerStageSimulator
 {
-	ComponentInstance ComponentLaserObstacleAvoid instantiates ComponentLaserObstacleAvoid
+ComponentInstance ComponentLaserObstacleAvoid instantiates ComponentLaserObstacleAvoid
 	{
 		RequiredService LaserServiceIn
 		RequiredService NavigationVelocityServiceOut
 	}
 	ComponentInstance ComponentPlayerStageSimulator instantiates ComponentPlayerStageSimulator
 	{
-		ProvidedService BaseStateAnswerer
-		ProvidedService LocalizationUpdateServiceIn
-		ProvidedService NavigationVelocityServiceIn
-		ProvidedService BaseStateServiceOut
-		ProvidedService BatteryEventServiceOut
 		ProvidedService LaserServiceOut
+		ProvidedService BatteryEventServiceOut
+		ProvidedService BaseStateServiceOut
+		ProvidedService NavigationVelocityServiceIn
+		ProvidedService LocalizationUpdateServiceIn
+		ProvidedService BaseStateAnswerer
 	}
-	Connection ComponentLaserObstacleAvoid.LaserServiceIn -> ComponentPlayerStageSimulator.LaserServiceOut
 	Connection ComponentLaserObstacleAvoid.NavigationVelocityServiceOut -> ComponentPlayerStageSimulator.NavigationVelocityServiceIn
+	Connection ComponentLaserObstacleAvoid.LaserServiceIn -> ComponentPlayerStageSimulator.LaserServiceOut
 }

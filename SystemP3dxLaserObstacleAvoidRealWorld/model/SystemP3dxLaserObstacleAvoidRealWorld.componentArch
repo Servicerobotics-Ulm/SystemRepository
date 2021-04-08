@@ -1,0 +1,21 @@
+SystemComponentArchitecture SystemP3dxLaserObstacleAvoidRealWorld
+{
+ComponentInstance SmartPioneerBaseServer instantiates SmartPioneerBaseServer
+	{
+		ProvidedService BasePositionOut
+		ProvidedService NavVelIn
+	}
+	ComponentInstance SmartLaserLMS200Server instantiates SmartLaserLMS200Server
+	{
+		RequiredService BaseStateIn
+		ProvidedService LaserServiceOut
+	}
+	ComponentInstance ComponentLaserObstacleAvoid instantiates ComponentLaserObstacleAvoid
+	{
+		RequiredService LaserServiceIn
+		RequiredService NavigationVelocityServiceOut
+	}
+	Connection SmartLaserLMS200Server.BaseStateIn -> SmartPioneerBaseServer.BasePositionOut
+	Connection ComponentLaserObstacleAvoid.LaserServiceIn -> SmartLaserLMS200Server.LaserServiceOut
+	Connection ComponentLaserObstacleAvoid.NavigationVelocityServiceOut -> SmartPioneerBaseServer.NavVelIn
+}

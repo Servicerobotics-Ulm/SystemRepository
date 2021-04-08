@@ -1,14 +1,13 @@
-DeploymentModel SystemLaserObstacleAvoidP3dxPlayerStageSimulator {
-
-	TargetPlatformReference PC1 using SystemLaserObstacleAvoidP3dxPlayerStageSimulator.PC1
+DeploymentModel SystemLaserObstacleAvoidP3dxPlayerStageSimulator using ComponentArchitecture SystemLaserObstacleAvoidP3dxPlayerStageSimulator
+{
+TargetPlatformReference LocalhostTarget using SystemLaserObstacleAvoidP3dxPlayerStageSimulator.LocalhostTarget
 	{
 		UploadDirectory "/tmp"
-
-		NetworkInterface eth2
+		NetworkInterface localhost
 	}
-	ComponentArtefact SystemLaserObstacleAvoidP3dxPlayerStageSimulator.ComponentLaserObstacleAvoid deploy-to PC1
-	ComponentArtefact SystemLaserObstacleAvoidP3dxPlayerStageSimulator.ComponentPlayerStageSimulator deploy-to PC1
 	NamingService
 	{
-		deploy-to PC1 }
+		deploy-to LocalhostTarget }
+	ComponentArtefact ComponentLaserObstacleAvoid deploy-to LocalhostTarget
+	ComponentArtefact ComponentPlayerStageSimulator deploy-to LocalhostTarget
 }

@@ -1,0 +1,15 @@
+components/36d1068f-e102-4be0-b543-188532b1a7a1/latest/ComponentKB/ComponentKB
+components/4ee1a525-0a82-4b0e-a75e-74ecebd908ad/latest/ComponentTCLSequencer/ComponentTCLSequencer
+components/269ddee0-2728-46b5-9ce5-369959d52bcb/latest/SmartCdlServer/SmartCdlServer
+components/aca3b019-f8eb-4210-85e3-1e69387048ab/latest/SmartMapperGridMap/SmartMapperGridMap
+components/9f92437a-b1b9-4b45-8a4a-17f2edb68ea2/latest/SmartPlannerBreadthFirstSearch/SmartPlannerBreadthFirstSearch
+components/a5b1cc35-11c8-4e67-8f65-1ce29c95996f/latest/SmartAmcl/SmartAmcl
+components//latest/SmartJoystickServer/SmartJoystickServer
+components/6ccf8904-6dbc-4bbb-a63c-eefa98d55315/latest/SmartJoystickNavigation/SmartJoystickNavigation
+components/4b45b72f-eff7-46e0-994d-b43aaeb62838/latest/SmartRobotConsole/SmartRobotConsole
+components/ce94c4fc-8506-46c8-9411-f8b5050d52bc/latest/ComponentWebots/ComponentWebots
+components//latest/ComponentVisualization/ComponentVisualization
+components//latest/ComponentWebotsMobileRobot/ComponentWebotsMobileRobot
+components//latest/ComponentWebots2DLidar/ComponentWebots2DLidar
+components/ed6f45dc-922c-4e95-a159-ec8c415ca8fe/latest/ComponentWebotsMpsDocking/ComponentWebotsMpsDocking
+components//latest/ComponentWebotsConveyorBeltOpcua/ComponentWebotsConveyorBeltOpcua

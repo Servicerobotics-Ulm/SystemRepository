@@ -1,0 +1,26 @@
+DeploymentModel SystemWebotsNavMpsDockingOPCUA using ComponentArchitecture SystemWebotsNavMpsDockingOPCUA
+{
+TargetPlatformReference LocalhostTarget using SystemWebotsNavMpsDockingOPCUA.LocalhostTarget
+	{
+		UploadDirectory "/tmp"
+		NetworkInterface localhost
+	}
+	NamingService
+	{
+		deploy-to LocalhostTarget }
+	ComponentArtefact ComponentKB deploy-to LocalhostTarget
+	ComponentArtefact ComponentTCLSequencer deploy-to LocalhostTarget
+	ComponentArtefact SmartCdlServer deploy-to LocalhostTarget
+	ComponentArtefact SmartMapperGridMap deploy-to LocalhostTarget
+	ComponentArtefact SmartPlannerBreadthFirstSearch deploy-to LocalhostTarget
+	ComponentArtefact SmartAmcl deploy-to LocalhostTarget
+	ComponentArtefact SmartJoystickServer deploy-to LocalhostTarget
+	ComponentArtefact SmartJoystickNavigation deploy-to LocalhostTarget
+	ComponentArtefact SmartRobotConsole deploy-to LocalhostTarget
+	ComponentArtefact ComponentWebots deploy-to LocalhostTarget
+	ComponentArtefact ComponentVisualization deploy-to LocalhostTarget
+	ComponentArtefact ComponentWebotsMobileRobot deploy-to LocalhostTarget
+	ComponentArtefact ComponentWebots2DLidar deploy-to LocalhostTarget
+	ComponentArtefact ComponentWebotsMpsDocking deploy-to LocalhostTarget
+	ComponentArtefact ComponentWebotsConveyorBeltOpcua deploy-to LocalhostTarget
+}

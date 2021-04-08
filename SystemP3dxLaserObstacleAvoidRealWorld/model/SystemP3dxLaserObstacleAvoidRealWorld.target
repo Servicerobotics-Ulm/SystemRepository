@@ -1,0 +1,7 @@
+TargetPlatformModel SystemP3dxLaserObstacleAvoidRealWorld
+{
+TargetPlatformDefinition P3dx
+	{
+		LoginAccount student { FullName "Guest" Email "guest@example.com" }
+		NetworkInterface wifi { HostAddress "10.36.32.114" }
+	} }

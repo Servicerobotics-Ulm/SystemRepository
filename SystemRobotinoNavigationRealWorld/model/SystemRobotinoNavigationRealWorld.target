@@ -1,0 +1,7 @@
+TargetPlatformModel SystemRobotinoNavigationRealWorld
+{
+TargetPlatformDefinition Robotino
+	{
+		NetworkInterface wifi { HostAddress "10.36.32.130" Kind "WLAN" }
+		LoginAccount student { FullName "Guest" Email "guest@example.com" }
+	} }

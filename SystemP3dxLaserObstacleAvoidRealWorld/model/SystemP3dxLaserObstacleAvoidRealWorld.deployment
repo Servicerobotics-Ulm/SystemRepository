@@ -1,0 +1,15 @@
+DeploymentModel SystemP3dxLaserObstacleAvoidRealWorld using ComponentArchitecture SystemP3dxLaserObstacleAvoidRealWorld
+{
+TargetPlatformReference P3dx using SystemP3dxLaserObstacleAvoidRealWorld.P3dx
+	{
+		UploadDirectory "/tmp"
+		LoginAccount student
+		NetworkInterface wifi
+	}
+	NamingService
+	{
+		deploy-to P3dx }
+	ComponentArtefact ComponentLaserObstacleAvoid deploy-to P3dx
+	ComponentArtefact SmartLaserLMS200Server deploy-to P3dx
+	ComponentArtefact SmartPioneerBaseServer deploy-to P3dx
+}

@@ -1,0 +1,8 @@
+components/36d1068f-e102-4be0-b543-188532b1a7a1/latest/ComponentKB/ComponentKB
+components/4ee1a525-0a82-4b0e-a75e-74ecebd908ad/latest/ComponentTCLSequencer/ComponentTCLSequencer
+components/6b6de89f-20e5-40b2-8d80-dde239c535c5/latest/ComponentRobotinoBaseServer/ComponentRobotinoBaseServer
+components/269ddee0-2728-46b5-9ce5-369959d52bcb/latest/SmartCdlServer/SmartCdlServer
+components/aca3b019-f8eb-4210-85e3-1e69387048ab/latest/SmartMapperGridMap/SmartMapperGridMap
+components/9f92437a-b1b9-4b45-8a4a-17f2edb68ea2/latest/SmartPlannerBreadthFirstSearch/SmartPlannerBreadthFirstSearch
+components/a5b1cc35-11c8-4e67-8f65-1ce29c95996f/latest/SmartAmcl/SmartAmcl
+components//latest/ComponentLaserLMS1xx/ComponentLaserLMS1xx

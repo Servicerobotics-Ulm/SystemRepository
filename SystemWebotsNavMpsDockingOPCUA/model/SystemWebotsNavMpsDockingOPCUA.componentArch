@@ -1,0 +1,132 @@
+SystemComponentArchitecture SystemWebotsNavMpsDockingOPCUA
+{
+	ComponentInstance ComponentKB instantiates ComponentKB
+	{
+	}
+	ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
+	{
+	}
+	ComponentInstance SmartCdlServer instantiates SmartCdlServer
+	{
+		RequiredService LaserClient 
+		RequiredService PlannerClient
+		RequiredService NavVelSendClient
+		ProvidedService NavVelSendServer
+	}
+	ComponentInstance SmartMapperGridMap instantiates SmartMapperGridMap
+	{
+		RequiredService LaserServiceIn
+		ProvidedService CurrMapOut  
+	}
+	ComponentInstance SmartPlannerBreadthFirstSearch instantiates SmartPlannerBreadthFirstSearch
+	{
+		RequiredService BaseStateClient
+		RequiredService CurMapClient
+		ProvidedService PlannerGoalServer
+	}
+	ComponentInstance SmartAmcl instantiates SmartAmcl
+	{
+		RequiredService LaserServiceIn
+		RequiredService LocalizationUpdateServiceOut
+		ProvidedService LocalizationEventServiceOut
+	}
+	ComponentInstance SmartJoystickServer instantiates SmartJoystickServer
+	{
+		ProvidedService JoystickServcieOut  
+	}
+	ComponentInstance SmartJoystickNavigation instantiates SmartJoystickNavigation
+	{
+		RequiredService JoystickServiceIn
+		RequiredService NavVelServiceOut
+	}
+	ComponentInstance SmartRobotConsole instantiates SmartRobotConsole
+	{
+	}
+	ComponentInstance ComponentWebots instantiates ComponentWebots
+	{
+	}
+	ComponentInstance ComponentVisualization instantiates ComponentVisualization
+	{
+	}
+
+	ComponentInstance ComponentWebotsMobileRobot instantiates ComponentWebotsMobileRobot
+	{
+		RequiredService LocalizationEventServiceIn 
+		ProvidedService BaseStateServiceOut
+		ProvidedService NavigationVelocityServiceIn
+		ProvidedService LocalizationUpdateServiceIn
+	}
+	ComponentInstance ComponentWebots2DLidar instantiates ComponentWebots2DLidar
+	{
+		RequiredService BaseStateServiceIn
+		ProvidedService LaserServiceOut
+	}
+	ComponentInstance ComponentWebotsMpsDocking instantiates ComponentWebotsMpsDocking
+	{
+		RequiredService BaseStateServiceIn 
+		RequiredService LaserServiceIn
+		RequiredService NavigationVelocityServiceOut
+		ProvidedService TrafficLightsServiceOut
+	}
+	ComponentInstance ComponentWebotsConveyorBeltOpcua instantiates ComponentWebotsConveyorBeltOpcua
+	{
+		RequiredService TrafficLightsServiceIn
+	}
+
+	Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.CurrMapOut
+	Connection SmartCdlServer.PlannerClient -> SmartPlannerBreadthFirstSearch.PlannerGoalServer
+	Connection SmartJoystickNavigation.NavVelServiceOut -> SmartCdlServer.NavVelSendServer
+	Connection SmartJoystickNavigation.JoystickServiceIn -> SmartJoystickServer.JoystickServcieOut
+	Connection ComponentWebotsMobileRobot.LocalizationEventServiceIn -> SmartAmcl.LocalizationEventServiceOut
+	Connection SmartAmcl.LocalizationUpdateServiceOut -> ComponentWebotsMobileRobot.LocalizationUpdateServiceIn
+	Connection SmartCdlServer.LaserClient -> ComponentWebots2DLidar.LaserServiceOut
+	Connection SmartMapperGridMap.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
+	Connection SmartAmcl.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
+	Connection SmartPlannerBreadthFirstSearch.BaseStateClient -> ComponentWebotsMobileRobot.BaseStateServiceOut
+	Connection ComponentWebotsConveyorBeltOpcua.TrafficLightsServiceIn -> ComponentWebotsMpsDocking.TrafficLightsServiceOut
+	Connection ComponentWebots2DLidar.BaseStateServiceIn -> ComponentWebotsMobileRobot.BaseStateServiceOut
+	Connection ComponentWebotsMpsDocking.BaseStateServiceIn -> ComponentWebotsMobileRobot.BaseStateServiceOut
+	Connection ComponentWebotsMpsDocking.NavigationVelocityServiceOut -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
+	Connection ComponentWebotsMpsDocking.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
+	Connection SmartCdlServer.NavVelSendClient -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
+
+
+
+	BehaviorTaskRef BehaviorRobotinoBoxTransportationTasks
+	
+	CoordinationModuleMapping {
+		moduleInstance BehaviorRobotinoBoxTransportationTasks.navigation realizedby MovementMod2
+		{
+			interfaceInstance cdl realizedby SmartCdlServer
+			interfaceInstance mapper realizedby SmartMapperGridMap
+			interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch 
+		}
+	}
+	
+	CoordinationModuleMapping {
+		moduleInstance BehaviorRobotinoBoxTransportationTasks.localizationModInst realizedby locModRealization {
+			interfaceInstance amcl realizedby SmartAmcl
+		}
+	}
+	
+	CoordinationModuleMapping {
+		moduleInstance BehaviorRobotinoBoxTransportationTasks.kbModInst realizedby kbModule
+		{
+			interfaceInstance kb realizedby ComponentKB
+		}
+	}
+	CoordinationModuleMapping {
+		moduleInstance BehaviorRobotinoBoxTransportationTasks.base realizedby baseInst {
+			interfaceInstance base realizedby ComponentWebotsMobileRobot
+		}
+	}
+	
+	CoordinationModuleMapping {
+		moduleInstance BehaviorRobotinoBoxTransportationTasks.MPS realizedby mpsModRealization {
+			interfaceInstance BELT realizedby ComponentWebotsConveyorBeltOpcua
+			interfaceInstance MPSDOCKING realizedby ComponentWebotsMpsDocking
+		}
+	}
+
+
+}

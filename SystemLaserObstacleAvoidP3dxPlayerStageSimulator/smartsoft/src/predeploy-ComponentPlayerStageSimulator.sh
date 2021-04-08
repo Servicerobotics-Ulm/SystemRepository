@@ -22,7 +22,7 @@
 #--------------------------------------------------------------------------
 
 # uncomment to enable predeploy script delivered by component
-#source $REFERENCED_PROJECT_ComponentPlayerStageSimulator/smartsoft/src/predeploy.sh
+source $REFERENCED_PROJECT_ComponentPlayerStageSimulator/smartsoft/src/predeploy.sh
 
 # Add SmartSoft libraries that shall be deployed to the target device where this
 # component is to be deployed.

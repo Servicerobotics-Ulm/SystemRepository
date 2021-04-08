@@ -1,0 +1,3 @@
+components//latest/SmartPioneerBaseServer/SmartPioneerBaseServer
+components//latest/SmartLaserLMS200Server/SmartLaserLMS200Server
+components//latest/ComponentLaserObstacleAvoid/ComponentLaserObstacleAvoid

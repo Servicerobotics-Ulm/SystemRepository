@@ -1,0 +1,145 @@
+SystemParameterModel SystemWebotsNavMpsDockingOpcuaParams extendsSystem SystemWebotsNavMpsDockingOPCUA {
+	
+ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots {
+	ParameterRefinement General {
+		WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/ConveyorBeltIntralogistic.wbt"	
+	}
+}
+
+ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct ComponentWebotsMobileRobotParams {
+	ParameterRefinement General  {
+			verbose = false
+			useLocalizationEvent = false
+			poseFileName = "/tmp/lastRobotPose.txt"
+			writePoseFile = false
+	}
+	ParameterRefinement Robot {
+		maxVelX = 1.0
+		maxVelY = 1.0
+		maxRotVel = 4.0
+	}
+}
+
+ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGridMapParams {
+	ParameterRefinement General {
+		cellsize = 50
+		connectLaser = true
+		verbose = false
+		mapDataDir = "./"
+	}
+	ParameterRefinement LtmMap {
+		kalman = 100
+		xsize = 60000
+		ysize = 60000
+		xpos = -15000
+		ypos = -15000
+		id = 0
+	}
+	ParameterRefinement CurrentMap {
+		interval = 10
+		growing = "star16"
+		xsize = 20000
+		ysize = 20000
+		xpos = -10000
+		ypos = -10000
+		id = 0
+	}
+}
+
+ComponentParameterInstance SmartCdlServer refinesParamStruct SmartCdlServerParams {
+	ParameterRefinement Cdl  {
+		dataDir = "data/lookup-files/"
+		curvature_default_file = "CDLindex_Robotino3_600mm.dat"
+		lookup_default_file = "CDLdist_Robotino3_600mm.dat.compressed"
+		lookup_default_file_compressed = true
+		accel_default_file = "CDLacc_Robotino3_600mm.dat"
+		curvature_second_file = "CDLindex_Robotino3Cell25mm.dat"
+		lookup_second_file = "CDLdist_Robotino3Cell25mm.dat.compressed"
+		lookup_second_file_compressed = true
+		accel_second_file = "CDLacc_Robotino3Cell25mm.dat"
+		translation_acc = 400.0
+		rotation_acc = 100.0
+		delta_t_calc = 0.35
+		delta_t_trigger = 0.1
+		followHysteresis = false
+		contour_default_file = "CDLcontour_Robotino3_600mm.dat"
+		contour_second_file = "CDLcontour_Robotino3Cell25mm.dat"
+		use_obstacle_history = false
+		freeBehaviorDist = 350.0
+		freeBehaviorDist_second = 350.0
+	}
+	ParameterRefinement Server {
+		plannerInit = true
+		trackerInit = false
+		laserClient2Init = false
+		irClientInit = false
+		pathNavInit = false
+		baseClientInit = false
+	}
+	ParameterRefinement CdlRotate {
+		error = 5.0
+	}
+	ParameterRefinement PathNav {
+		pathNavPredictedGoalPose_controll1_dist = 200.0
+		pathNavPredictedGoalPose_controll1_speed = 100.0
+		pathNavPredictedGoalPose_controll2_dist = 300.0
+		pathNavPredictedGoalPose_controll2_speed = 250.0
+		pathNavPredictedGoalPose_controll3_dist = 500.0
+		pathNavPredictedGoalPose_controll3_speed = 600.0
+		pathNavPredictedGoalPose_minDist = 200
+		pathNavRecover_max_dist = 1000
+		robotBlocked_event_timeout = 15
+	}
+}
+
+ComponentParameterInstance SmartPlannerBreadthFirstSearch refinesParamStruct SmartPlannerParams{ 
+	ParameterRefinement Settings {
+		no_path_event_timeout = 5.0
+	}
+}
+
+ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWebots2DLidarParams {
+	ParameterRefinement scanner {
+			x = 190
+			y = 0
+			z = 0
+			min_range = 10
+			max_range = 20000
+			opening_angle = 210
+			resolution = 0.5
+			frequency = 50
+	}
+}
+
+ComponentParameterInstance SmartAmcl refinesParamStruct SmartAmclParams { 
+	ParameterRefinement General {
+		initalizationType = INI_POSE
+		initPoseFileName = "/tmp/lastRobotPose.txt"
+		verbose = false
+		connect_services = true
+		yaml_file = "localization-map.yaml"
+		initial_x = 0.0
+		initial_y = 0.0
+		initial_a = 0.0
+		initial_cov_xx = 0.03
+		initial_cov_yy = 0.03
+		initial_cov_aa = 0.068539
+		enable_visualization = true
+		lostEventMaxHypothese = 3
+		lostEventMaxEigValueSum = 0.2
+	}	
+}
+
+ComponentParameterInstance SmartJoystickServer refinesParamStruct SmartJoystickServerParameters {
+	ParameterRefinement General { 
+		device = "/dev/input/js0"
+			invert_y1_axis = true
+			invert_y2_axis = true
+			invert_x1_axis = true
+			invert_x2_axis = true
+			interval_min = 0.04
+			interval_max = 0.5
+			verbose = true
+	}
+}
+}

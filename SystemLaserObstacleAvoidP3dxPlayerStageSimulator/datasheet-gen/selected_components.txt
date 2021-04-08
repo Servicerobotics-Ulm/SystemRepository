@@ -1,0 +1,2 @@
+components//latest/ComponentLaserObstacleAvoid/ComponentLaserObstacleAvoid
+components//latest/ComponentPlayerStageSimulator/ComponentPlayerStageSimulator

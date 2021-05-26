@@ -1,18 +1,23 @@
-DeploymentModel SystemP3dxNavigationRealWorld
+DeploymentModel SystemP3dxNavigationRealWorld using ComponentArchitecture SystemP3dxNavigationRealWorld
 {
-	TargetPlatformReference C26_11_RobotA using SystemP3dxNavigationRealWorld.C26_11_RobotA
+	TargetPlatformReference Pioneer3DX using SystemP3dxNavigationRealWorld.Pioneer3DX
 	{
 		UploadDirectory "/tmp"
 		LoginAccount student
-		NetworkInterface wlp3s0
+		NetworkInterface wifi
 	}
+
 	NamingService
 	{
-		deploy-to C26_11_RobotA }
-	ComponentArtefact SystemP3dxNavigationRealWorld.SmartCdlServer deploy-to C26_11_RobotA
-	ComponentArtefact SystemP3dxNavigationRealWorld.SmartLaserLMS200Server deploy-to C26_11_RobotA
-	ComponentArtefact SystemP3dxNavigationRealWorld.SmartMapperGridMap deploy-to C26_11_RobotA
-	ComponentArtefact SystemP3dxNavigationRealWorld.SmartPioneerBaseServer deploy-to C26_11_RobotA
-	ComponentArtefact SystemP3dxNavigationRealWorld.SmartPlannerBreadthFirstSearch deploy-to C26_11_RobotA
-	ComponentArtefact SystemP3dxNavigationRealWorld.SmartRobotConsole deploy-to C26_11_RobotA
+		deploy-to Pioneer3DX }
+
+	ComponentArtefact  ComponentKB deploy-to Pioneer3DX
+	ComponentArtefact  ComponentTCLSequencer deploy-to Pioneer3DX
+	ComponentArtefact  SmartAmcl deploy-to Pioneer3DX
+	ComponentArtefact  SmartCdlServer deploy-to Pioneer3DX
+	ComponentArtefact  SmartLaserLMS200Server deploy-to Pioneer3DX
+	ComponentArtefact  SmartMapperGridMap deploy-to Pioneer3DX
+	ComponentArtefact  SmartPioneerBaseServer deploy-to Pioneer3DX
+	ComponentArtefact  SmartPlannerBreadthFirstSearch deploy-to Pioneer3DX	
+ComponentArtefact ComponentVisualization deploy-to Pioneer3DX
 }

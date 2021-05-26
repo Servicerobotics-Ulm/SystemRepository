@@ -109,7 +109,6 @@ ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct Compone
       maxAcceleration = [0.5, 0.0, 20.0]
   }
   ParameterRefinement General { verbose = false
-			hasSignalState = true
 			useLocalizationEvent = true
 			poseFileName = "/tmp/lastRobotPose.txt"
 			writePoseFile = false

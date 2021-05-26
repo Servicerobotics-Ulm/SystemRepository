@@ -30,15 +30,6 @@ SystemComponentArchitecture SystemWebotsNavMpsDockingOPCUA
 		RequiredService LocalizationUpdateServiceOut
 		ProvidedService LocalizationEventServiceOut
 	}
-	ComponentInstance SmartJoystickServer instantiates SmartJoystickServer
-	{
-		ProvidedService JoystickServcieOut  
-	}
-	ComponentInstance SmartJoystickNavigation instantiates SmartJoystickNavigation
-	{
-		RequiredService JoystickServiceIn
-		RequiredService NavVelServiceOut
-	}
 	ComponentInstance SmartRobotConsole instantiates SmartRobotConsole
 	{
 	}
@@ -74,9 +65,7 @@ SystemComponentArchitecture SystemWebotsNavMpsDockingOPCUA
 	}
 
 	Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.CurrMapOut
-	Connection SmartCdlServer.PlannerClient -> SmartPlannerBreadthFirstSearch.PlannerGoalServer
-	Connection SmartJoystickNavigation.NavVelServiceOut -> SmartCdlServer.NavVelSendServer
-	Connection SmartJoystickNavigation.JoystickServiceIn -> SmartJoystickServer.JoystickServcieOut
+	Connection SmartCdlServer.PlannerClient -> SmartPlannerBreadthFirstSearch.PlannerGoalServer	
 	Connection ComponentWebotsMobileRobot.LocalizationEventServiceIn -> SmartAmcl.LocalizationEventServiceOut
 	Connection SmartAmcl.LocalizationUpdateServiceOut -> ComponentWebotsMobileRobot.LocalizationUpdateServiceIn
 	Connection SmartCdlServer.LaserClient -> ComponentWebots2DLidar.LaserServiceOut

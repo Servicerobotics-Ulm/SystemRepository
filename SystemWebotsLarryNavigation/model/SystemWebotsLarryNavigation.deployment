@@ -9,7 +9,7 @@ TargetPlatformReference PC1 using SystemWebotsLarryNavigation.PC1
 	{
 		deploy-to PC1 }
 	ComponentArtefact ComponentKB deploy-to PC1
-	ComponentArtefact ComponentTCLSequencer deploy-to PC1
+
 	ComponentArtefact ComponentWebots deploy-to PC1
 
 	ComponentArtefact ComponentWebotsMobileRobot deploy-to PC1
@@ -20,4 +20,5 @@ TargetPlatformReference PC1 using SystemWebotsLarryNavigation.PC1
 ComponentArtefact ComponentVisualization deploy-to PC1
 ComponentArtefact SmartRobotConsole deploy-to PC1
 ComponentArtefact ComponentWebots2DLidar deploy-to PC1
+ComponentArtefact ComponentTCLSequencer deploy-to PC1
 }

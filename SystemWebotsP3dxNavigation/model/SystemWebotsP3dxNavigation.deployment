@@ -5,9 +5,7 @@ TargetPlatformReference PC1 using SystemWebotsP3dxNavigation.PC1
 		UploadDirectory "/tmp"		
 		NetworkInterface eth2
 	}
-	NamingService
-	{
-		deploy-to PC1 }
+	NamingService	{ deploy-to PC1 }
 	ComponentArtefact ComponentKB deploy-to PC1
 	ComponentArtefact ComponentTCLSequencer deploy-to PC1
 	ComponentArtefact ComponentWebots deploy-to PC1
@@ -20,4 +18,5 @@ TargetPlatformReference PC1 using SystemWebotsP3dxNavigation.PC1
 ComponentArtefact ComponentVisualization deploy-to PC1
 ComponentArtefact SmartRobotConsole deploy-to PC1
 ComponentArtefact ComponentWebots2DLidar deploy-to PC1
+
 }

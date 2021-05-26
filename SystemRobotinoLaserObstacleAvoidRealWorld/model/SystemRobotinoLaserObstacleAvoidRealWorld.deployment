@@ -1,0 +1,15 @@
+DeploymentModel SystemRobotinoLaserObstacleAvoidRealWorld using ComponentArchitecture SystemRobotinoLaserObstacleAvoidRealWorld
+{
+TargetPlatformReference Robotino using SystemRobotinoLaserObstacleAvoidRealWorld.Robotino
+	{
+		UploadDirectory "/tmp"
+		LoginAccount student
+		NetworkInterface wifi
+	}
+	NamingService
+	{
+		deploy-to Robotino }
+	ComponentArtefact ComponentLaserLMS1xx deploy-to Robotino
+	ComponentArtefact ComponentLaserObstacleAvoid deploy-to Robotino
+	ComponentArtefact ComponentRobotinoBaseServer deploy-to Robotino
+}

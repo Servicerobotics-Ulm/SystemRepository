@@ -1,0 +1,56 @@
+SystemParameterModel SystemURTesting extendsSystem SystemURTesting { 
+	ComponentParameterInstance SmartURServer refinesParamStruct SmartURServerParams
+	{
+		ParameterRefinement base {
+			on_base = false
+			x = 0
+			y = 0
+			z = 0
+			base_a = 0
+			steer_a = 0
+			turret_a = 0
+		}
+		
+		ParameterRefinement manipulator {
+			verbose = true
+			goal_angle_approach = 0.1
+			goal_position_approach = 3
+			x = 0
+			y = 0
+			z = 0
+			azimuth = 0
+			elevation = 0
+			roll = 0
+			debugSendProgrammDirect = false
+		}
+		
+		ParameterRefinement network {
+			ip_adress = "10.0.0.161"
+		}
+		
+	}
+	
+	ComponentParameterInstance SmartURTestClient refinesParamStruct SmartURTestClient {
+		ParameterRefinement connection {
+			urServerComponent = "SmartURServer"
+			connectionMode = Query
+		}
+		
+		ParameterRefinement general {
+			show_arm_chain = true
+			show_kinect_chain = false
+			show_arm_image_pose = false
+			
+			urtype = UR5
+		}
+		
+		ParameterRefinement toolOffset {
+			x = 0
+			y = 0
+			z = 0
+			yaw = 0
+			pitch = 0
+			roll = 0
+		}
+	}
+}

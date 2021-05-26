@@ -1,8 +1,7 @@
 TargetPlatformModel SystemP3dxNavigationRealWorld
 {
-	TargetPlatformDefinition C26_11_RobotA
+	TargetPlatformDefinition Pioneer3DX
 	{
-		LoginAccount student { FullName "Student" Email "student@example.com" }
-		TargetMiddleware ACE_SmartSoft
-		NetworkInterface wlp3s0 { HostAddress "c26-11-robota" : 22 Kind "WLan" }
+		LoginAccount student { FullName "Guest" Email "guest@example.com" }
+		NetworkInterface wifi { HostAddress "10.36.32.114" Kind "WLAN" }
 	} }

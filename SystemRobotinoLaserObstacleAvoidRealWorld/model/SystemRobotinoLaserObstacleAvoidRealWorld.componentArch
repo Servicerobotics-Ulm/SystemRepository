@@ -1,0 +1,21 @@
+SystemComponentArchitecture SystemRobotinoLaserObstacleAvoidRealWorld
+{
+ComponentInstance ComponentLaserLMS1xx instantiates ComponentLaserLMS1xx
+	{
+		RequiredService BaseStateServiceIn
+		ProvidedService LaserServiceOut
+	}
+	ComponentInstance ComponentRobotinoBaseServer instantiates ComponentRobotinoBaseServer
+	{
+		ProvidedService NavigationVelocityServiceIn
+		ProvidedService BaseStateServiceOut
+	}
+	ComponentInstance ComponentLaserObstacleAvoid instantiates ComponentLaserObstacleAvoid
+	{
+		RequiredService LaserServiceIn
+		RequiredService NavigationVelocityServiceOut
+	}
+	Connection ComponentLaserLMS1xx.BaseStateServiceIn -> ComponentRobotinoBaseServer.BaseStateServiceOut
+	Connection ComponentLaserObstacleAvoid.LaserServiceIn -> ComponentLaserLMS1xx.LaserServiceOut
+	Connection ComponentLaserObstacleAvoid.NavigationVelocityServiceOut -> ComponentRobotinoBaseServer.NavigationVelocityServiceIn
+}

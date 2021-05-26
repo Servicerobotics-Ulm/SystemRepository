@@ -1,0 +1,13 @@
+DeploymentModel SystemURTesting using ComponentArchitecture SystemURTesting
+{
+TargetPlatformReference LocalhostTarget using SystemURTesting.LocalhostTarget
+	{
+		UploadDirectory "/tmp"
+		NetworkInterface localhost
+	}
+	NamingService
+	{
+		deploy-to LocalhostTarget }
+	ComponentArtefact SmartURServer deploy-to LocalhostTarget
+	ComponentArtefact SmartURTestClient deploy-to LocalhostTarget
+}

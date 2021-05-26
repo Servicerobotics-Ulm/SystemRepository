@@ -13,9 +13,7 @@ TargetPlatformReference LocalhostTarget using SystemWebotsNavMpsDockingOPCUA.Loc
 	ComponentArtefact SmartCdlServer deploy-to LocalhostTarget
 	ComponentArtefact SmartMapperGridMap deploy-to LocalhostTarget
 	ComponentArtefact SmartPlannerBreadthFirstSearch deploy-to LocalhostTarget
-	ComponentArtefact SmartAmcl deploy-to LocalhostTarget
-	ComponentArtefact SmartJoystickServer deploy-to LocalhostTarget
-	ComponentArtefact SmartJoystickNavigation deploy-to LocalhostTarget
+	ComponentArtefact SmartAmcl deploy-to LocalhostTarget	
 	ComponentArtefact SmartRobotConsole deploy-to LocalhostTarget
 	ComponentArtefact ComponentWebots deploy-to LocalhostTarget
 	ComponentArtefact ComponentVisualization deploy-to LocalhostTarget

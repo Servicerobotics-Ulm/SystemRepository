@@ -14,7 +14,8 @@ TargetPlatformReference PC1 using SystemWebotsGmapping.PC1
 
 	ComponentArtefact SmartJoystickNavigation deploy-to PC1
 	ComponentArtefact SmartJoystickServer deploy-to PC1
-	ComponentArtefact SmartRobotConsole deploy-to PC1
-ComponentArtefact ComponentWebots2DLidar deploy-to PC1
+
+	ComponentArtefact ComponentWebots2DLidar deploy-to PC1
 	ComponentArtefact ComponentWebotsMobileRobot deploy-to PC1
+ComponentArtefact ComponentTCLSequencer deploy-to PC1
 }

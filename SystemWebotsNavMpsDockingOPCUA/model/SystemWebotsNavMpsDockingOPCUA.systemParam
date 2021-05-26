@@ -129,17 +129,4 @@ ComponentParameterInstance SmartAmcl refinesParamStruct SmartAmclParams {
 		lostEventMaxEigValueSum = 0.2
 	}	
 }
-
-ComponentParameterInstance SmartJoystickServer refinesParamStruct SmartJoystickServerParameters {
-	ParameterRefinement General { 
-		device = "/dev/input/js0"
-			invert_y1_axis = true
-			invert_y2_axis = true
-			invert_x1_axis = true
-			invert_x2_axis = true
-			interval_min = 0.04
-			interval_max = 0.5
-			verbose = true
-	}
-}
 }

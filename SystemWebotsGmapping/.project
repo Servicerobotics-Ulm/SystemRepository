@@ -3,14 +3,15 @@
 	<name>SystemWebotsGmapping</name>
 	<comment></comment>
 	<projects>
+		<project>BehaviorMapping</project>
 		<project>ComponentGMapping</project>
+		<project>ComponentTCLSequencer</project>
 		<project>ComponentVisualization</project>
 		<project>ComponentWebots</project>
 		<project>ComponentWebots2DLidar</project>
 		<project>ComponentWebotsMobileRobot</project>
 		<project>SmartJoystickNavigation</project>
 		<project>SmartJoystickServer</project>
-		<project>SmartRobotConsole</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

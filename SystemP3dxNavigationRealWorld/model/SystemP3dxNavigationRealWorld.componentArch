@@ -5,10 +5,11 @@ SystemComponentArchitecture SystemP3dxNavigationRealWorld
 		RequiredService PlannerClient
 		RequiredService LaserClient
 		RequiredService NavVelSendClient
+	RequiredService BaseStateClient
 	}
 	ComponentInstance SmartLaserLMS200Server instantiates SmartLaserLMS200Server
 	{
-		ProvidedService LaserScanOut
+		ProvidedService LaserServiceOut
 		RequiredService BaseStateIn
 		ParameterStructInstance SystemP3dxNavigationRealWorldParams.SmartLaserLMS200Server
 	}
@@ -21,6 +22,7 @@ SystemComponentArchitecture SystemP3dxNavigationRealWorld
 	{
 		ProvidedService NavVelIn
 		ProvidedService BasePositionOut
+	ProvidedService LocalizationUpdate
 	}
 	ComponentInstance SmartPlannerBreadthFirstSearch instantiates SmartPlannerBreadthFirstSearch
 	{
@@ -28,14 +30,80 @@ SystemComponentArchitecture SystemP3dxNavigationRealWorld
 		RequiredService CurMapClient
 		ProvidedService PlannerGoalServer
 	}
-	ComponentInstance SmartRobotConsole instantiates SmartRobotConsole
+	ComponentInstance ComponentKB instantiates ComponentKB
+	{
+		RequiredService kbChainedEntriesEventClient
+		ProvidedService kbEventServer
+		ProvidedService kbQuery
+	}
+	ComponentInstance SmartAmcl instantiates SmartAmcl
+	{
+		RequiredService LaserServiceIn
+		RequiredService LocalizationUpdateServiceOut
+		ProvidedService LocalizationEventServiceOut
+		ProvidedService AmclVisualizationInfoOut
+	}
+	ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
 	{
 	}
+	ComponentInstance ComponentVisualization instantiates ComponentVisualization
+	{
+		RequiredService rgbdPushNewestClient
+		RequiredService rgbdQueryClient
+		RequiredService baseClient
+		RequiredService laserClient1
+		RequiredService laserClient2
+		RequiredService laserClient3
+		RequiredService irPushNewestClient
+		RequiredService imagePushNewestClient
+		RequiredService curPushClient
+		RequiredService depthPushNewestClient
+		RequiredService ultrasonicPushNewestClient
+		RequiredService personDetectionEventClient
+		RequiredService MarkerListDetectionServiceIn
+		RequiredService AmclVisualizationInfoIn
+		RequiredService plannerGoalPushClient
+		RequiredService RGBDImageQueryServiceReq
+		RequiredService ltmQueryClient
+		RequiredService personDetectionQueryClient
+	}
 	Connection SmartLaserLMS200Server.BaseStateIn -> SmartPioneerBaseServer.BasePositionOut
-	Connection SmartMapperGridMap.LaserServiceIn -> SmartLaserLMS200Server.LaserScanOut
-	Connection SmartCdlServer.LaserClient -> SmartLaserLMS200Server.LaserScanOut
+	Connection SmartMapperGridMap.LaserServiceIn -> SmartLaserLMS200Server.LaserServiceOut
+	Connection SmartCdlServer.LaserClient -> SmartLaserLMS200Server.LaserServiceOut
 	Connection SmartPlannerBreadthFirstSearch.BaseStateClient -> SmartPioneerBaseServer.BasePositionOut
 	Connection SmartCdlServer.NavVelSendClient -> SmartPioneerBaseServer.NavVelIn
 	Connection SmartCdlServer.PlannerClient -> SmartPlannerBreadthFirstSearch.PlannerGoalServer
 	Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.CurrMapOut
+	Connection SmartAmcl.LocalizationUpdateServiceOut -> SmartPioneerBaseServer.LocalizationUpdate
+	Connection SmartCdlServer.BaseStateClient -> SmartPioneerBaseServer.BasePositionOut
+	Connection SmartAmcl.LaserServiceIn -> SmartLaserLMS200Server.LaserServiceOut
+	
+		BehaviorTaskRef NavigationTasks
+	CoordinationModuleMapping 
+		{ 
+		moduleInstance NavigationTasks.kbModInst realizedby kbModule { 
+			interfaceInstance kb realizedby ComponentKB
+			}
+		} 
+	CoordinationModuleMapping 
+		{ 
+		moduleInstance NavigationTasks.navigation realizedby MovementMod2 { 
+			interfaceInstance cdl realizedby SmartCdlServer 
+			interfaceInstance mapper realizedby SmartMapperGridMap 
+			interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch
+			}
+		} 
+	CoordinationModuleMapping 
+		{ 
+		moduleInstance NavigationTasks.localizationModInst realizedby locModRealization { 
+			interfaceInstance amcl realizedby SmartAmcl
+			}
+		}
+	CoordinationModuleMapping 
+		{
+		moduleInstance NavigationTasks.base realizedby baseInst {
+			interfaceInstance base realizedby SmartPioneerBaseServer
+			
+			}
+		}
 }

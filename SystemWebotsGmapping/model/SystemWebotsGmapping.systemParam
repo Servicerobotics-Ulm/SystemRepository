@@ -11,10 +11,10 @@ SystemParameterModel SystemWebotsGmapping extendsSystem SystemWebotsGmapping {
 			verbose = true
 		}
 	}
-/*	
+	
 	ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWebots2DLidarParams{
   ParameterRefinement webots {
-    robotName = "LidarRobotino3"
+  	robotName = "LidarRobotino3"    
   }
   ParameterRefinement scanner {
       verbose = true
@@ -33,6 +33,8 @@ SystemParameterModel SystemWebotsGmapping extendsSystem SystemWebotsGmapping {
       frequency = 50
   }
   }	
+  
+  //Robotino3
   ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct ComponentWebotsMobileRobotParams {
     ParameterRefinement Robot { 
       maxVelX = 4.0
@@ -48,14 +50,15 @@ SystemParameterModel SystemWebotsGmapping extendsSystem SystemWebotsGmapping {
       maxAcceleration = [10.0, 6.0, 40.0]
   }
   ParameterRefinement General { verbose = false
-      hasSignalState = true
       useLocalizationEvent = true
       poseFileName = "/tmp/lastRobotPose.txt"
       writePoseFile = false
 }
 }
-*/
 
+
+/*
+  //Larry
   ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct ComponentWebotsMobileRobotParams {
   ParameterRefinement Webots { 
       robotName = "Larry"
@@ -79,6 +82,8 @@ SystemParameterModel SystemWebotsGmapping extendsSystem SystemWebotsGmapping {
     robotName = "Sick LMS 100_Front"
     //robotName = "Sick LMS 100_Back"
   }
+  
+ 
   ParameterRefinement scanner {      
       verbose = true
 			on_turret = false			
@@ -105,6 +110,8 @@ SystemParameterModel SystemWebotsGmapping extendsSystem SystemWebotsGmapping {
 			turret_a = 0			
 			}
 }
+* */
+
 
 ComponentParameterInstance ComponentGMapping refinesParamStruct ComponentGMappingParams {
 	ParameterRefinement gfs{ 
@@ -144,9 +151,8 @@ ComponentParameterInstance ComponentGMapping refinesParamStruct ComponentGMappin
 	}
 }
 ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots {
-	ParameterRefinement General { 
-		WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/LarryLab.wbt"
+	ParameterRefinement General {
+		 WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/RobotinoHome.wbt"
 }
 }
-} 
-
+}

@@ -1,0 +1,40 @@
+
+[
+{"skill" :
+	{ 
+		"name" : "moveLinear",
+		"skill-definition-fqn" : "CommManipulatorObjects.manipulatorModule.moveLinear",
+		"in-attribute" : {
+			"goalX" : "Double",
+			"goalY" : "Double",
+			"goalZ" : "Double",
+			"goalRX" : "Double",
+			"goalRY" : "Double",
+			"goalRZ" : "Double",
+			"acc" : "Double",
+			"speed" : "Double"
+		},
+		"out-attribute" : {
+		},
+		"results" : [ 
+			{ "result" : "SUCCESS", "result-value" : "" },
+			{ "result" : "ERROR", "result-value" : "COLLISION" }
+		]
+	}
+},
+{"skill" :
+	{ 
+		"name" : "executeProgram",
+		"skill-definition-fqn" : "CommManipulatorObjects.manipulatorModule.executeProgram",
+		"in-attribute" : {
+			"program" : "String"
+		},
+		"out-attribute" : {
+		},
+		"results" : [ 
+			{ "result" : "SUCCESS", "result-value" : "" },
+			{ "result" : "ERROR", "result-value" : "" }
+		]
+	}
+}
+]

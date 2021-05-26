@@ -39,9 +39,7 @@ ComponentInstance ComponentGMapping instantiates ComponentGMapping
 	ComponentInstance ComponentWebots instantiates ComponentWebots
 	{
 	}
-	ComponentInstance SmartRobotConsole instantiates SmartRobotConsole
-	{
-	}
+
 	ComponentInstance ComponentWebots2DLidar instantiates ComponentWebots2DLidar
 	{
 		RequiredService BaseStateServiceIn
@@ -56,12 +54,29 @@ ComponentInstance ComponentGMapping instantiates ComponentGMapping
 		ProvidedService LocalizationUpdateServiceIn
 		ProvidedService BaseStateQueryServiceAnsw
 	}
+	ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
+	{
+	}
 	Connection SmartJoystickNavigation.JoystickServiceIn -> SmartJoystickServer.JoystickServcieOut
-
 	Connection  ComponentGMapping.laserClient -> ComponentWebots2DLidar.LaserServiceOut
-
 	Connection  SmartJoystickNavigation.NavVelServiceOut -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
-
 	Connection  ComponentWebots2DLidar.BaseStateServiceIn -> ComponentWebotsMobileRobot.BaseStateServiceOut
-Connection ComponentGMapping.basePositionUpdateClient -> ComponentWebotsMobileRobot.LocalizationUpdateServiceIn
+	Connection ComponentGMapping.basePositionUpdateClient -> ComponentWebotsMobileRobot.LocalizationUpdateServiceIn
+	
+	BehaviorTaskRef BehaviorMapping
+	CoordinationModuleMapping {
+		moduleInstance BehaviorMapping.base realizedby baseInst {
+			interfaceInstance base realizedby ComponentWebotsMobileRobot
+		}	
+	}
+	CoordinationModuleMapping {
+		moduleInstance BehaviorMapping.slam realizedby slamModule {
+			interfaceInstance gmapping realizedby ComponentGMapping
+		}
+	}
+	CoordinationModuleMapping {
+		moduleInstance BehaviorMapping.vis realizedby visualizationmod{
+			interfaceInstance vis realizedby ComponentVisualization
+		}
+	}
 }

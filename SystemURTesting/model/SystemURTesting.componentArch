@@ -1,0 +1,28 @@
+SystemComponentArchitecture SystemURTesting
+{
+	ComponentInstance SmartURServer instantiates SmartURServer
+	{
+		RequiredService baseStateServiceIn
+		ProvidedService posePushServer
+		ProvidedService manipulatorEventServiceOut
+		ProvidedService digitalInputEventServer
+		ProvidedService trajectorySendServer
+		ProvidedService poseQueryServer
+		ProvidedService ioQueryServer
+		ProvidedService programQueryServer
+		ParameterStructInstance SystemURTesting.SmartURServer
+	}
+	ComponentInstance SmartURTestClient instantiates SmartURTestClient
+	{
+		RequiredService MobileManipulatorStateServiceIn
+		RequiredService ManipulatorEventServiceIn
+		RequiredService SendTrajectoryServiceOut
+		RequiredService RGBImageQueryServiceReq
+		RequiredService MobileManipulatorStateQueryServiceReq
+		ParameterStructInstance SystemURTesting.SmartURTestClient
+	}
+	Connection SmartURTestClient.MobileManipulatorStateServiceIn -> SmartURServer.posePushServer
+	Connection SmartURTestClient.ManipulatorEventServiceIn -> SmartURServer.manipulatorEventServiceOut
+	Connection SmartURTestClient.SendTrajectoryServiceOut -> SmartURServer.trajectorySendServer
+	Connection SmartURTestClient.MobileManipulatorStateQueryServiceReq -> SmartURServer.poseQueryServer
+}

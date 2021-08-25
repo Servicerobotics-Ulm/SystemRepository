@@ -1,0 +1,144 @@
+SystemParameterModel SystemWebotsRobotino3HospitalNavigationPara extendsSystem SystemWebotsRobotino3HospitalNavigation {	
+	ComponentParameterInstance SmartAmcl refinesParamStruct SmartAmclParams{
+		ParameterRefinement General {
+			initalizationType = INI_POSE
+			initPoseFileName = "/tmp/lastRobotPose.txt"
+			verbose = true
+			connect_services = true
+			yaml_file = "localization-map.yaml"
+			initial_x = 0.0
+			initial_y = 0.0
+			initial_a = 0.0
+			initial_cov_xx = 0.03
+			initial_cov_yy = 0.03
+			initial_cov_aa = 0.068539
+			enable_visualization = true
+			lostEventMaxHypothese = 3
+			lostEventMaxEigValueSum = 0.2
+	}
+	
+	ParameterRefinement Odometry {
+	    alpha1 = 0.2
+			alpha2 = 0.2
+			alpha3 = 0.8
+			alpha4 = 0.2
+			alpha5 = 0.2
+			odom_model_type = "diff"			
+			}
+	
+	}
+
+ComponentParameterInstance SmartCdlServer refinesParamStruct SmartCdlServerParams{
+	ParameterRefinement Cdl { 
+		dataDir = "data/lookup-files/"
+		accel_default_file = "CDLacc_Robotino3Cell22mm.dat"
+		accel_second_file = "CDLacc_Robotino3Cell22mm.dat"
+		contour_default_file = "CDLcontour_Robotino3Cell22mm.dat"
+		contour_second_file = "CDLcontour_Robotino3Cell22mm.dat"
+		curvature_default_file = "CDLindex_Robotino3Cell22mm.dat"
+		curvature_second_file = "CDLindex_Robotino3Cell22mm.dat"			
+		lookup_default_file = "CDLdist_Robotino3Cell22mm.dat.compressed"
+		lookup_default_file_compressed = true
+		lookup_second_file = "CDLdist_Robotino3Cell22mm.dat.compressed"			
+		lookup_second_file_compressed = true			
+			
+		translation_acc = 400.0
+		rotation_acc = 100.0
+		delta_t_calc = 0.35
+		delta_t_trigger = 0.1
+		followHysteresis = false
+		use_obstacle_history = false
+		freeBehaviorDist = 350.0
+		freeBehaviorDist_second = 350.0
+	}
+}
+
+ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWebots2DLidarParams{
+  ParameterRefinement webots {
+    robotName = "LidarRobotino3"
+  }
+  ParameterRefinement scanner {      
+      verbose = true
+			on_turret = false			
+			x = 190
+			y = 0
+			z = 0
+			azimuth = 0
+			elevation = 0
+			roll = 0
+			min_range = 10
+			max_range = 20000
+			opening_angle = 210
+			resolution = 0.5
+			length_unit = 1
+			frequency = 50
+  }
+  ParameterRefinement base_manipulator { 
+    on_base = true
+			x = 0
+			y = 0
+			z = 0
+			base_a = 0
+			steer_a = 0
+			turret_a = 0			
+			}
+}	
+ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct ComponentWebotsMobileRobotParams {
+  ParameterRefinement Webots { 
+      robotName = "Robotino 3"
+      motorName = ["wheel0_joint", "wheel1_joint", "wheel2_joint"]
+      radius = [0.063, 0.063, 0.063]
+      distanceToRobotCentre = [-0.1826, -0.1826, -0.1826]
+      heading = [90.0, 210.0, 330.0]
+      maxAcceleration = [3.0, 3.0, 20.0]
+      
+      
+  }
+  ParameterRefinement General { verbose = false
+			useLocalizationEvent = true
+			poseFileName = "/tmp/lastRobotPose.txt"
+			writePoseFile = false
+			
+}
+ 
+}
+
+ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGridMapParams{
+	ParameterRefinement General {
+			cellsize = 50
+			connectLaser = true
+			verbose = false
+			mapDataDir = ""
+	}
+	ParameterRefinement CurrentMap {
+			interval = 10
+			growing = "star16"
+			xsize = 50000
+			ysize = 20000
+			xpos = -25000
+			ypos = -10000
+			id = 0
+	}
+	ParameterRefinement LtmMap {
+		kalman = 100
+			xsize = 50000
+			ysize = 20000
+			xpos = -25000
+			ypos = -10000
+			id = 0			
+	}
+	ParameterRefinement CURLTM {
+		preoccupation = ENABLE
+		threshold = 20
+	}
+	ParameterRefinement CUREMPTY {
+		mapmode = EMPTY
+	}
+}
+
+	ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots {
+		ParameterRefinement General{
+			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/RobotinoHospital.wbt"
+		}
+	}
+}

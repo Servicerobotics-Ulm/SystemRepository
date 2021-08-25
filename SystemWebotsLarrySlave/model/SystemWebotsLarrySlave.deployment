@@ -1,0 +1,27 @@
+DeploymentModel SystemWebotsLarrySlave using ComponentArchitecture SystemWebotsLarrySlave
+{
+	TargetPlatformReference PC1 using SystemWebotsLarrySlave.PC1
+	{
+		UploadDirectory "/tmp"
+		NetworkInterface eth2
+	}
+	
+	ComponentArtefact ComponentWebots deploy-to PC1
+	ComponentArtefact ComponentKB_2 deploy-to PC1
+	ComponentArtefact SmartAmcl_2 deploy-to PC1
+	ComponentArtefact SmartCdlServer_2 deploy-to PC1
+	ComponentArtefact SmartMapperGridMap_2 deploy-to PC1
+	ComponentArtefact SmartPlannerBreadthFirstSearch_2 deploy-to PC1
+	ComponentArtefact ComponentVisualization deploy-to PC1
+	ComponentArtefact SmartRobotConsole deploy-to PC1
+	ComponentArtefact ComponentWebots2DLidar_2 deploy-to PC1
+	ComponentArtefact ComponentTCLSequencer_2 deploy-to PC1
+	ComponentArtefact ComponentWebotsPTUServer deploy-to PC1
+	ComponentArtefact ComponentWebots3DCamera deploy-to PC1
+	ComponentArtefact ComponentWebotsURServer deploy-to PC1
+	ComponentArtefact ComponentRackDetection deploy-to PC1
+	ComponentArtefact ComponentKinectBoxDetection deploy-to PC1
+	ComponentArtefact ComponentOpenRave deploy-to PC1
+	ComponentArtefact ComponentWebotsMobileRobot_2 deploy-to PC1
+	ComponentArtefact ComponentSeq2SeqCom_2 deploy-to PC1
+}

@@ -1,0 +1,30 @@
+<Robot name="UR6Schunk">
+  <robot file="universalrobots-ur6-85-5-a-old.dae"></robot>
+  <robot prefix="hand_" file="vacuumGripper/gripper.robot.xml"></robot>
+  <KinBody>
+    <!-- this defines the transformation of the gripper manipulation model (mesh)  -->
+    <body name="hand_root">
+      <offsetfrom>link6</offsetfrom>
+      <translation>0.08 0.01 -0.007</translation>
+      <rotationaxis>1 0 0 180</rotationaxis>
+    </body>
+    <joint name="armTohandJoint" type="hinge" enable="false">
+     <body>link6</body>
+     <body>hand_root</body>
+     <limits>0 0</limits>
+    </joint>
+  </KinBody>
+  <!-- the lower to values define last link (gripper) to the TCP (measured value is: 0.143m) -->
+  <Manipulator name="arm">
+    <base>link0</base>
+    <effector>link6</effector>
+    <rotationaxis>0 1 0 90</rotationaxis>
+    <translation>0.154 0 0</translation>
+  </Manipulator>
+  <Manipulator name="armZ">
+    <base>link0</base>
+    <effector>link6</effector>
+    <rotationaxis>0 1 0 90</rotationaxis>
+    <translation>0.154 0 0</translation>
+  </Manipulator>
+</Robot>

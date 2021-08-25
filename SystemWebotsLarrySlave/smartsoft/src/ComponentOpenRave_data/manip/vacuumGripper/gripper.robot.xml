@@ -1,0 +1,17 @@
+<Robot name="gripper">
+  <KinBody>
+    <!-- Create the base body, it should never move-->
+    <!-- Note that all translations and rotations are with respect to this base-->
+    <!-- For example, the robot at the identity transformation is equivalent to the identity transformation of the first body.-->
+    <Body name="root" type="dynamic">
+      <Translation>0.0  0.0  0.0</Translation>
+      <Geom type="trimesh">
+	<Translation>0.0 0.0 0.0</Translation>
+	<RotationAxis>1 0 0 0</RotationAxis>
+	<render>vacuum-gripper_from_solid_works_v4.wrl 1 1 1 </render>
+	<collision>vacuum-gripper_from_solid_works_v4.wrl 1 1 1</collision>
+      </Geom>
+    </Body>
+  </KinBody>
+
+</Robot>

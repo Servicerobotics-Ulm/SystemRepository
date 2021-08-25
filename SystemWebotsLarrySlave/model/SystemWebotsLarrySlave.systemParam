@@ -1,0 +1,336 @@
+SystemParameterModel SystemWebotsLarrySlave extendsSystem SystemWebotsLarrySlave {
+		
+ComponentParameterInstance SmartAmcl_2 refinesParamStruct SmartAmclParams{
+	ParameterRefinement General {
+		initalizationType = INI_POSE
+		initPoseFileName = "/tmp/lastRobotPose.txt"
+		verbose = false
+		connect_services = true
+		yaml_file = "localization-map.yaml"
+		initial_x = 0.0
+		initial_y = 0.0
+		initial_a = 0.0
+		initial_cov_xx = 0.03
+		initial_cov_yy = 0.03
+		initial_cov_aa = 0.068539
+		enable_visualization = true
+		lostEventMaxHypothese = 3
+		lostEventMaxEigValueSum = 0.2
+	}
+	
+	ParameterRefinement Odometry {
+	    alpha1 = 0.2
+		alpha2 = 0.2
+		alpha3 = 0.8
+		alpha4 = 0.2
+		alpha5 = 0.2
+		odom_model_type = "diff"
+	}
+	
+}
+
+ComponentParameterInstance SmartCdlServer_2 refinesParamStruct SmartCdlServerParams{
+	ParameterRefinement Cdl { 
+		dataDir = "data/lookup-files/"
+
+/*
+ * accel_default_file = "CDLacc_RMP50.dat"
+ * accel_second_file = "CDLacc_RMP50.dat"
+ * contour_default_file = "CDLcontour_RMP50.dat"
+ * contour_second_file = "CDLcontour_RMP50.dat"
+ * curvature_default_file = "CDLindex_RMP50.dat"
+ * curvature_second_file = "CDLindex_RMP50.dat"			
+ * lookup_default_file = "CDLdist_RMP50.dat.compressed"
+ * lookup_default_file_compressed = true
+ * lookup_second_file = "CDLdist_RMP50.dat.compressed"			
+ * lookup_second_file_compressed = true
+ */
+		accel_default_file = "CDLacc_RMP50_EXTRA.dat"
+		accel_second_file = "CDLacc_RMP50_EXTRA.dat"
+		contour_default_file = "CDLcontour_RMP50_EXTRA.dat"
+		contour_second_file = "CDLcontour_RMP50_EXTRA.dat"
+		curvature_default_file = "CDLindex_RMP50_EXTRA.dat"
+		curvature_second_file = "CDLindex_RMP50_EXTRA.dat"
+		lookup_default_file = "CDLdist_RMP50_EXTRA.dat.compressed"
+		lookup_default_file_compressed = true
+		lookup_second_file = "CDLdist_RMP50_EXTRA.dat.compressed"
+		lookup_second_file_compressed = true
+		
+		translation_acc = 400.0
+		rotation_acc = 100.0
+		delta_t_calc = 0.35
+		delta_t_trigger = 0.1
+		followHysteresis = false
+		use_obstacle_history = false
+		freeBehaviorDist = 350.0
+		freeBehaviorDist_second = 350.0 
+	}
+}
+
+ComponentParameterInstance ComponentWebots2DLidar_2 refinesParamStruct ComponentWebots2DLidarParams{
+  ParameterRefinement webots {
+    robotName = "Sick LMS 100_Front"
+}
+  ParameterRefinement scanner {      
+	verbose = true
+	on_turret = false
+	x = 287
+	y = 0
+	z = 103
+	azimuth = 0
+	elevation = 0
+	roll = 3.1416
+	min_range = 10
+	max_range = 20000
+	opening_angle = 210
+	resolution = 0.5
+	length_unit = 1
+	frequency = 50
+  }
+  ParameterRefinement base_manipulator { 
+    on_base = true
+	x = 0
+	y = 0
+	z = 0
+	base_a = 0
+	steer_a = 0
+	turret_a = 0
+  }
+}	
+ComponentParameterInstance SmartMapperGridMap_2 refinesParamStruct SmartMapperGridMapParams{
+	ParameterRefinement General {
+		cellsize = 50
+		connectLaser = true
+		verbose = false
+		mapDataDir = ""
+	}
+	ParameterRefinement CurrentMap {
+		interval = 10
+		growing = "star32"
+		xsize = 20000
+		ysize = 20000
+		xpos = -10000
+		ypos = -10000
+		id = 0
+	}
+	ParameterRefinement LtmMap {
+		kalman = 100
+		xsize = 20000
+		ysize = 20000
+		xpos = -10000
+		ypos = -10000
+		id = 0
+	}
+	ParameterRefinement CURLTM{
+		preoccupation = ENABLE
+		threshold = 20
+	}
+	
+	ParameterRefinement CUREMPTY {
+		mapmode = EMPTY
+	}
+}
+
+ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots { 
+		ParameterRefinement General { 
+			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/ZAFH.wbt"
+		} 
+}
+
+ComponentParameterInstance ComponentWebotsMobileRobot_2 refinesParamStruct ComponentWebotsMobileRobotParams {
+  ParameterRefinement Webots { 
+    robotName = "Larry"
+	motorName = ["LeftWheel", "RightWheel"]
+	radius = [0.2, 0.2]
+	distanceToRobotCentre = [-0.2325, 0.2325]
+	heading = [0, 0]
+	maxAcceleration = [0.5, 0.0, 20.0]
+  }
+  ParameterRefinement General { verbose = false
+    useLocalizationEvent = true
+    poseFileName = "/tmp/lastRobotPose.txt"
+    writePoseFile = false
+  }
+}
+
+ComponentParameterInstance ComponentWebots3DCamera refinesParamStruct ComponentWebots3DCameraParams { 
+		ParameterRefinement webots { 
+			robotName = "kinect_v2"
+			cameraName = "kinect_v2_color"
+			rangeFinderName = "kinect_v2_range"
+		}
+		ParameterRefinement base { 
+			on_ptu = true
+			on_base = false
+			on_ur = false
+			x = 0
+			y = 0
+			z = 0
+			base_a = 0
+		}
+		ParameterRefinement sensor_pose {
+			x = 21
+			y = -98
+			z = 95
+			azimuth = -1.5707963
+			elevation = 0
+			roll = -1.5707963
+		}
+		ParameterRefinement settings {
+			debug_info = true
+			pushnewest_rgbd_image = true
+			pushnewest_color_image = true
+			pushnewest_depth_image = true
+		}
+}
+
+ComponentParameterInstance ComponentOpenRave refinesParamStruct ComponentOpenRaveParams {
+		ParameterRefinement OpenRave {
+			defaultEnvironmentPath = "env/defaultOpenRaveLarry.env.xml"
+			robotPath = "manip/UR6SchunkBigger-vacuum.robot.xml"
+			saveTrajectoryToFile = false
+			saveObjectsToFile = false
+			debugSend = false
+			debugOpenRave = true
+			debugGrasping = false
+			gui_active = true
+			robotName = "UR6855A"
+			showCompleteTrajectory = false
+			storedEnvironmentPath = "data/"
+			storedEnvironmentName = "storedEnvironment"
+			python_path = "."
+			objectDatabasePath = "db/"
+			objectDatabaseXMLFilename = "openRaveObjectsDB.xml"
+		}
+		ParameterRefinement PortParameter {
+			withManipulator = true
+			withGripper = false
+			gripperComponentName = "SmartSchunkGripperServer"
+			gripperComponentParameterService = "param"
+			withObjectRecognition = true
+		}	
+}
+
+	ComponentParameterInstance ComponentWebotsURServer refinesParamStruct ComponentWebotsURServerParams { 
+       ParameterRefinement base {
+               on_base = false
+               x = 0
+               y = 0
+               z = 0
+               base_a = 0
+               steer_a = 0
+               turret_a = 0
+       }
+       ParameterRefinement manipulator {
+               verbose = true
+               x = 129
+               y = -54
+               z = 352
+               azimuth = -0.034906585
+               elevation = 0
+               roll = 0
+       }
+	}
+	
+	ComponentParameterInstance ComponentWebotsPTUServer refinesParamStruct ComponentWebotsPTUServerParams {
+		ParameterRefinement PTU {
+			device = "/dev/ptu"
+			verbose = false
+			x = -27
+			y = -25
+			z = 1113
+			azimuth = 0
+			elevation = 0
+			roll = 0.0174533
+		}
+	}
+	
+	ComponentParameterInstance ComponentKinectBoxDetection refinesParamStruct ComponentKinectBoxDetection {
+		ParameterRefinement General {
+			verbose = true
+			use_kinect = false
+			use_kinect_v2 = true
+			use_hsv = false
+			do_x_filtering = true
+			do_y_filtering = true
+			do_z_filtering = true
+			x_detection_distance_min = -1000
+			x_detection_distance_max = 1000
+			y_detection_distance_min = -1000
+			y_detection_distance_max = 1000
+			z_detection_distance_min = -160
+			z_detection_distance_max = 1300
+			box_aspect_ratio = 3.0
+			send_obstacle_mesh = true
+		}
+		
+		ParameterRefinement SETSEARCHHEIGHT {
+			minM = 0.0
+			maxM = 2.0
+		}
+	}
+	
+	ComponentParameterInstance ComponentRackDetection refinesParamStruct ComponentRackDetection {
+
+		ParameterRefinement General {
+			model_path = "rack_model_cloud.pcd"
+			send_obstacle_mesh = true
+			max_detection_score = 0.016			
+			
+			
+			rack_dimension_min_x = 0.0
+			rack_dimension_max_x = 1.30
+			rack_dimension_min_y = -1.0
+			rack_dimension_max_y = 1.0
+			rack_dimension_min_z = 0.1
+			rack_dimension_max_z = 2.0			
+
+//Pick up items from Rack on Left of Robot
+			init_relative_obj_pose_x = 0.04
+			init_relative_obj_pose_y = 0.12
+			init_relative_obj_pose_z = 0.065
+			
+			relative_obj_pose_x = 0.0
+			relative_obj_pose_y = 0.115
+			relative_obj_pose_z = 0.0
+			relative_obj_pose_pitch = -0.2
+			
+
+//Pick up from Rack in Front of Robot			
+//			init_relative_obj_pose_x = 0.04
+//			init_relative_obj_pose_y = 0.14
+//			init_relative_obj_pose_z = 0.065
+			
+//			relative_obj_pose_x = 0.0
+//			relative_obj_pose_y = 0.11
+//			relative_obj_pose_z = 0.0
+//			relative_obj_pose_pitch = -0.2
+			
+
+
+			
+			obj_width = 0.07 
+			obj_height = 0.105
+			obj_depth = 0.04
+			obj_types = "CHOCO,SPECIAL,FROSTIES,CORN-FLAKES,SMACKS"
+		}
+		
+		
+		ParameterRefinement ModelCreation {
+			create_model = false
+			capture_model = true
+			transformation_x = -0.6
+			transformation_y = 0.36
+			transformation_z = -0.8
+			theta = -1.57
+			save_model_path = "new_rack_model_cloud.pcd"
+			load_model_path = "new_rack_model_cloud.pcd"
+		} 
+	}
+	
+	ComponentParameterInstance ComponentKB_2 refinesParamStruct ComponentKBParams {
+		ParameterRefinement Settings {
+			connectChainedEntries = true
+		}
+	}
+}

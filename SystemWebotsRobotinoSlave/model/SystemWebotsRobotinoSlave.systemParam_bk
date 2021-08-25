@@ -1,0 +1,151 @@
+SystemParameterModel SystemWebotsRobotinoSlave extendsSystem SystemWebotsRobotinoSlave {
+	
+ComponentParameterInstance SmartAmcl refinesParamStruct SmartAmclParams {
+	
+	ParameterRefinement General {
+		initalizationType = INI_POSE
+		initPoseFileName = "/tmp/lastRobotPose.txt"
+		verbose = false
+		connect_services = true
+		yaml_file = "localization-map.yaml"
+		initial_x = 0.0
+		initial_y = 0.0
+		initial_a = 0.0
+		initial_cov_xx = 0.03
+		initial_cov_yy = 0.03
+		initial_cov_aa = 0.068539
+		enable_visualization = true
+		lostEventMaxHypothese = 3
+		lostEventMaxEigValueSum = 0.2
+	}
+	
+	ParameterRefinement Odometry {
+	    alpha1 = 0.2
+		alpha2 = 0.2
+		alpha3 = 0.8
+		alpha4 = 0.2
+		alpha5 = 0.2
+		odom_model_type = "omni"
+	}
+	
+}
+
+ComponentParameterInstance SmartCdlServer refinesParamStruct SmartCdlServerParams {
+	ParameterRefinement Cdl {
+		dataDir = "data/lookup-files/"
+		
+		accel_default_file = "CDLacc_Robotino3Cell22mm.dat"
+		accel_second_file = "CDLacc_Robotino3Cell22mm.dat"
+		contour_default_file = "CDLcontour_Robotino3Cell22mm.dat"
+		contour_second_file = "CDLcontour_Robotino3Cell22mm.dat"
+		curvature_default_file = "CDLindex_Robotino3Cell22mm.dat"
+		curvature_second_file = "CDLindex_Robotino3Cell22mm.dat"			
+		lookup_default_file = "CDLdist_Robotino3Cell22mm.dat.compressed"
+		lookup_default_file_compressed = true
+		lookup_second_file = "CDLdist_Robotino3Cell22mm.dat.compressed"			
+		lookup_second_file_compressed = true
+		
+		translation_acc = 400.0
+		rotation_acc = 100.0
+		delta_t_calc = 0.35
+		delta_t_trigger = 0.1
+		followHysteresis = false
+		use_obstacle_history = false
+		freeBehaviorDist = 350.0
+		freeBehaviorDist_second = 350.0
+	}
+}
+
+ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWebots2DLidarParams{
+	ParameterRefinement scanner {
+			x = 190
+			y = 0
+			z = 0
+			min_range = 10
+			max_range = 20000
+			opening_angle = 210
+			resolution = 0.5
+			frequency = 50
+	}
+}	
+ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGridMapParams{
+	
+	ParameterRefinement General {
+		cellsize = 50
+		connectLaser = true
+		verbose = false
+		mapDataDir = ""
+	}
+	ParameterRefinement CurrentMap {
+		interval = 10
+		growing = "star32"
+		xsize = 20000
+		ysize = 20000
+		xpos = -10000
+		ypos = -10000
+		id = 0
+	}
+	ParameterRefinement LtmMap { 
+		kalman = 100
+		xsize = 20000
+		ysize = 20000
+		xpos = -10000
+		ypos = -10000
+		id = 0
+	}
+	ParameterRefinement CURLTM{ 
+		preoccupation = ENABLE
+		threshold = 20
+	}
+	
+	ParameterRefinement CUREMPTY {
+		mapmode = EMPTY
+	}
+}
+
+ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct ComponentWebotsMobileRobotParams {
+	ParameterRefinement General {
+			verbose = false
+			useLocalizationEvent = false
+			poseFileName = "/tmp/lastRobotPose.txt"
+			writePoseFile = false
+	}
+	ParameterRefinement Robot {
+		maxVelX = 1.0
+		maxVelY = 1.0
+		maxRotVel = 4.0
+	}
+}
+
+	ComponentParameterInstance ComponentKB refinesParamStruct ComponentKBParams {
+		ParameterRefinement Settings {
+			connectChainedEntries = true
+		}
+	}
+	
+	ComponentParameterInstance ComponentWebotsMpsDocking refinesParamStruct ComponentWebotsMpsDocking {
+		ParameterRefinement Webots {
+			stationName = ["MPS0"]
+		}
+	}
+	
+	ComponentParameterInstance ComponentRobotToRobotDocking refinesParamStruct ComponentRobotToRobotDocking {
+		ParameterRefinement docking {
+			connectToServices = true
+			useLaser = true
+			laserDocking_transVelX = 0.2
+			laserDocking_transVelY = 0.2
+			laserDocking_rotVel = 20
+			laserDocking_stopDistance = 0.4
+			enable_visualization = false
+		}
+	}
+	
+	ComponentParameterInstance ComponentWebotsConveyorBeltOpcua refinesParamStruct ComponentWebotsConveyorBeltOpcua {
+		ParameterRefinement ProductionStations {
+			stationName = ["MPS0"]
+			stationUrl = ["PASSIVE_STATION"]
+		}
+	}
+	
+}

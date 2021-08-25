@@ -1,0 +1,103 @@
+SystemComponentArchitecture SystemWebotsRobotino3HospitalNavigation
+{
+ComponentInstance ComponentWebots instantiates ComponentWebots
+	{
+	}
+	ComponentInstance ComponentKB instantiates ComponentKB
+	{
+	}
+	ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
+	{
+	}
+
+	ComponentInstance ComponentWebotsMobileRobot instantiates ComponentWebotsMobileRobot
+	{
+		ProvidedService BaseStateServiceOut
+		ProvidedService LocalizationUpdateServiceIn
+		ProvidedService NavigationVelocityServiceIn
+		//ProvidedService BaseStateAnswerer
+	}
+	ComponentInstance SmartCdlServer instantiates SmartCdlServer
+	{
+		RequiredService LaserClient
+		RequiredService PlannerClient
+
+		RequiredService BaseStateClient
+
+		RequiredService NavVelSendClient
+	}
+	ComponentInstance SmartMapperGridMap instantiates SmartMapperGridMap
+	{
+		RequiredService LaserServiceIn
+		ProvidedService CurrMapOut
+	}
+	ComponentInstance SmartPlannerBreadthFirstSearch instantiates SmartPlannerBreadthFirstSearch
+	{
+		RequiredService CurMapClient
+		RequiredService BaseStateClient
+		ProvidedService PlannerGoalServer
+	}
+	ComponentInstance SmartAmcl instantiates SmartAmcl
+	{
+		RequiredService LaserServiceIn
+		RequiredService LocalizationUpdateServiceOut
+	}
+	ComponentInstance ComponentVisualization instantiates ComponentVisualization
+	{
+	}
+	ComponentInstance SmartRobotConsole instantiates SmartRobotConsole
+	{
+	}
+
+	ComponentInstance ComponentWebots2DLidar instantiates ComponentWebots2DLidar
+	{
+		RequiredService BaseStateServiceIn
+		ProvidedService LaserServiceOut
+	}
+
+	Connection SmartCdlServer.NavVelSendClient -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
+Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.CurrMapOut
+	Connection SmartPlannerBreadthFirstSearch.BaseStateClient -> ComponentWebotsMobileRobot.BaseStateServiceOut
+
+	Connection SmartCdlServer.PlannerClient -> SmartPlannerBreadthFirstSearch.PlannerGoalServer
+	Connection SmartCdlServer.BaseStateClient -> ComponentWebotsMobileRobot.BaseStateServiceOut
+	
+		
+
+	Connection  SmartAmcl.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
+	Connection SmartCdlServer.LaserClient -> ComponentWebots2DLidar.LaserServiceOut
+	Connection SmartMapperGridMap.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
+	
+		Connection ComponentWebots2DLidar.BaseStateServiceIn -> ComponentWebotsMobileRobot.BaseStateServiceOut
+	Connection SmartAmcl.LocalizationUpdateServiceOut -> ComponentWebotsMobileRobot.LocalizationUpdateServiceIn
+
+	BehaviorTaskRef NavigationTasks
+
+	CoordinationModuleMapping { 
+		moduleInstance NavigationTasks.kbModInst realizedby kbModule
+		{
+			interfaceInstance kb realizedby ComponentKB
+		}
+	}
+	CoordinationModuleMapping {
+		moduleInstance NavigationTasks.base realizedby baseInst
+		{
+			interfaceInstance base realizedby ComponentWebotsMobileRobot
+		}		
+	}
+	CoordinationModuleMapping {
+		moduleInstance NavigationTasks.navigation realizedby MovementMod2
+		{
+			interfaceInstance cdl realizedby SmartCdlServer
+			interfaceInstance mapper realizedby SmartMapperGridMap
+			interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch
+		}
+	}
+
+
+	CoordinationModuleMapping {
+		moduleInstance NavigationTasks.localizationModInst realizedby locModRealization {
+			interfaceInstance amcl realizedby SmartAmcl
+		}
+	}
+}

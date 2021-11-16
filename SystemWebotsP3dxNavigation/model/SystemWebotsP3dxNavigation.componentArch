@@ -2,9 +2,11 @@ SystemComponentArchitecture SystemWebotsP3dxNavigation
 {
 ComponentInstance ComponentWebots instantiates ComponentWebots
 	{
+	RequiredService CommKBQueryReq
 	}
 	ComponentInstance ComponentKB instantiates ComponentKB
 	{
+	ProvidedService kbQuery
 	}
 	ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
 	{
@@ -15,7 +17,6 @@ ComponentInstance ComponentWebots instantiates ComponentWebots
 		ProvidedService BaseStateServiceOut
 		ProvidedService LocalizationUpdateServiceIn
 		ProvidedService NavigationVelocityServiceIn
-		//ProvidedService BaseStateAnswerer
 	}
 	ComponentInstance SmartCdlServer instantiates SmartCdlServer
 	{
@@ -67,8 +68,9 @@ Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.Cur
 	Connection  SmartAmcl.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
 	Connection SmartCdlServer.LaserClient -> ComponentWebots2DLidar.LaserServiceOut
 	Connection SmartMapperGridMap.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
-	
-		BehaviorTaskRef NavigationTasks
+	Connection ComponentWebots.CommKBQueryReq -> ComponentKB.kbQuery
+
+	BehaviorTaskRef NavigationTasks
 
 	CoordinationModuleMapping {
 		moduleInstance NavigationTasks.kbModInst realizedby kbModule

@@ -1,15 +1,21 @@
 DeploymentModel SystemLaserObstacleAvoidRobotinoWebotsSimulator using ComponentArchitecture SystemLaserObstacleAvoidRobotinoWebotsSimulator
 {
-TargetPlatformReference LocalhostTarget using SystemLaserObstacleAvoidRobotinoWebotsSimulator.LocalhostTarget
+	TargetPlatformReference PC1 using SystemLaserObstacleAvoidRobotinoWebotsSimulator.PC1
 	{
 		UploadDirectory "/tmp"
-		NetworkInterface localhost
+		NetworkInterface eth1
 	}
+
 	NamingService
 	{
-		deploy-to LocalhostTarget }
-	ComponentArtefact ComponentWebots deploy-to LocalhostTarget
-	ComponentArtefact ComponentWebots2DLidar deploy-to LocalhostTarget
-	ComponentArtefact ComponentWebotsMobileRobot deploy-to LocalhostTarget
-	ComponentArtefact ComponentLaserObstacleAvoid deploy-to LocalhostTarget
+		deploy-to PC1 }
+
+	ComponentArtefact  ComponentLaserObstacleAvoid deploy-to PC1
+
+	ComponentArtefact  ComponentWebots deploy-to PC1
+
+	ComponentArtefact  ComponentWebots2DLidar deploy-to PC1
+
+	ComponentArtefact  
+ComponentWebotsMobileRobot deploy-to PC1
 }

@@ -2,9 +2,11 @@ SystemComponentArchitecture SystemWebotsLarryNavigation
 {
 ComponentInstance ComponentWebots instantiates ComponentWebots
 	{
+	RequiredService CommKBQueryReq
 	}
 	ComponentInstance ComponentKB instantiates ComponentKB
 	{
+	ProvidedService kbQuery
 	}
 
 	ComponentInstance ComponentWebotsMobileRobot instantiates ComponentWebotsMobileRobot
@@ -12,7 +14,6 @@ ComponentInstance ComponentWebots instantiates ComponentWebots
 		ProvidedService BaseStateServiceOut
 		ProvidedService LocalizationUpdateServiceIn
 		ProvidedService NavigationVelocityServiceIn
-		//ProvidedService BaseStateAnswerer
 	}
 	ComponentInstance SmartCdlServer instantiates SmartCdlServer
 	{
@@ -65,6 +66,7 @@ Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.Cur
 	Connection  SmartAmcl.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
 	Connection SmartCdlServer.LaserClient -> ComponentWebots2DLidar.LaserServiceOut
 	Connection SmartMapperGridMap.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
+	Connection ComponentWebots.CommKBQueryReq -> ComponentKB.kbQuery
 
 	BehaviorTaskRef BehaviorNavigationLabScenario
 

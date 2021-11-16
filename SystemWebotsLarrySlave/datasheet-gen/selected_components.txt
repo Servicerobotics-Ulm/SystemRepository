@@ -1,4 +1,3 @@
-components/ce94c4fc-8506-46c8-9411-f8b5050d52bc/latest/ComponentWebots/ComponentWebots
 components/36d1068f-e102-4be0-b543-188532b1a7a1/latest/ComponentKB/ComponentKB_2
 components//latest/ComponentWebotsMobileRobot/ComponentWebotsMobileRobot_2
 components/269ddee0-2728-46b5-9ce5-369959d52bcb/latest/SmartCdlServer/SmartCdlServer_2
@@ -11,7 +10,7 @@ components//latest/ComponentWebots2DLidar/ComponentWebots2DLidar_2
 components/4ee1a525-0a82-4b0e-a75e-74ecebd908ad/latest/ComponentTCLSequencer/ComponentTCLSequencer_2
 components//latest/ComponentWebotsPTUServer/ComponentWebotsPTUServer
 components/c9034960-3f3a-4f9c-ace3-322790b9e4a5/latest/ComponentWebots3DCamera/ComponentWebots3DCamera
-components//latest/ComponentWebotsURServer/ComponentWebotsURServer
+components//latest/ComponentWebotsRobotArm/ComponentWebotsRobotArm
 components//latest/ComponentRackDetection/ComponentRackDetection
 components//latest/ComponentKinectBoxDetection/ComponentKinectBoxDetection
 components//latest/ComponentOpenRave/ComponentOpenRave

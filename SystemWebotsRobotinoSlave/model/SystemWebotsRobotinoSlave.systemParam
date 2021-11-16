@@ -121,10 +121,7 @@ ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct Compone
 		}
 	}
 	
-	ComponentParameterInstance ComponentWebotsMpsDocking refinesParamStruct ComponentWebotsMpsDocking {
-		ParameterRefinement Webots {
-			stationName = ["MPS0", "MPS1"]
-		}
+	ComponentParameterInstance ComponentWebotsMpsDocking refinesParamStruct ComponentWebotsMpsDocking {		
 	}
 	
 	ComponentParameterInstance ComponentRobotToRobotDocking refinesParamStruct ComponentRobotToRobotDocking {
@@ -139,10 +136,10 @@ ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct Compone
 		}
 	}
 	
-	ComponentParameterInstance ComponentWebotsConveyorBeltOpcua refinesParamStruct ComponentWebotsConveyorBeltOpcua {
-		ParameterRefinement ProductionStations {
-			stationName = ["MPS0", "MPS1"]
-			stationUrl = ["opc.tcp://localhost:4840", "PASSIVE_STATION"]
-		}
-	}
+	//ComponentParameterInstance ComponentWebotsConveyorBeltOpcua refinesParamStruct ComponentWebotsConveyorBeltOpcua {
+	//	ParameterRefinement ProductionStations{
+	//		stationName = ["MPS0", "MPS1"]
+	//		stationUrl = ["opc.tcp://localhost:4840", "PASSIVE_STATION"]
+	//	}
+	//}
 }

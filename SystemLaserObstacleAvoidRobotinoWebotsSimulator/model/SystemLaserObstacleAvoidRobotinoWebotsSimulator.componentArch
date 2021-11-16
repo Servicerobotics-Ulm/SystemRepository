@@ -20,4 +20,5 @@ ComponentInstance ComponentWebots instantiates ComponentWebots
 	}
 	Connection ComponentLaserObstacleAvoid.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
 	Connection ComponentLaserObstacleAvoid.NavigationVelocityServiceOut -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
+Connection ComponentWebots2DLidar.BaseStateServiceIn -> ComponentWebotsMobileRobot.BaseStateServiceOut
 }

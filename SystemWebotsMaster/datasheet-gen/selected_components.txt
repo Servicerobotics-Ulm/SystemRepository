@@ -1,0 +1,5 @@
+components/36d1068f-e102-4be0-b543-188532b1a7a1/latest/ComponentKB/ComponentKB_3
+components//latest/SmartFestoFleetCom/SmartFestoFleetCom
+components//latest/SmartJobDispatcher/SmartJobDispatcher
+components//latest/ComponentSymbolicPlanner/ComponentSymbolicPlanner
+components/ce94c4fc-8506-46c8-9411-f8b5050d52bc/latest/ComponentWebots/ComponentWebots

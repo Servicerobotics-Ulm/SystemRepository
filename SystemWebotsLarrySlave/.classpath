@@ -10,12 +10,11 @@
 	<classpathentry kind="src" path="/ComponentSeq2SeqCom"/>
 	<classpathentry kind="src" path="/ComponentTCLSequencer"/>
 	<classpathentry kind="src" path="/ComponentVisualization"/>
-	<classpathentry kind="src" path="/ComponentWebots"/>
 	<classpathentry kind="src" path="/ComponentWebots2DLidar"/>
 	<classpathentry kind="src" path="/ComponentWebots3DCamera"/>
 	<classpathentry kind="src" path="/ComponentWebotsMobileRobot"/>
 	<classpathentry kind="src" path="/ComponentWebotsPTUServer"/>
-	<classpathentry kind="src" path="/ComponentWebotsURServer"/>
+	<classpathentry kind="src" path="/ComponentWebotsRobotArm"/>
 	<classpathentry kind="src" path="/SmartAmcl"/>
 	<classpathentry kind="src" path="/SmartCdlServer"/>
 	<classpathentry kind="src" path="/SmartMapperGridMap"/>

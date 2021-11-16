@@ -89,7 +89,7 @@ ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct Compone
       radius = [0.063, 0.063, 0.063]
       distanceToRobotCentre = [-0.1826, -0.1826, -0.1826]
       heading = [90.0, 210.0, 330.0]
-      maxAcceleration = [3.0, 3.0, 20.0]
+      maxAcceleration = [1.0, 1.0, 5.0]
   }
   ParameterRefinement General { verbose = false
 			useLocalizationEvent = true
@@ -134,6 +134,7 @@ ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGrid
 	ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots {
 		ParameterRefinement General{
 			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/RobotinoTHU.wbt"
+			enableEditor = true
 		}
 	}
 }

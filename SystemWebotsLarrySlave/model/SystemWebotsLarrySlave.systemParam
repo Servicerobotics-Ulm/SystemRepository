@@ -131,12 +131,6 @@ ComponentParameterInstance SmartMapperGridMap_2 refinesParamStruct SmartMapperGr
 	}
 }
 
-ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots { 
-		ParameterRefinement General { 
-			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/ZAFH.wbt"
-		} 
-}
-
 ComponentParameterInstance ComponentWebotsMobileRobot_2 refinesParamStruct ComponentWebotsMobileRobotParams {
   ParameterRefinement Webots { 
     robotName = "Larry"
@@ -211,15 +205,10 @@ ComponentParameterInstance ComponentOpenRave refinesParamStruct ComponentOpenRav
 		}	
 }
 
-	ComponentParameterInstance ComponentWebotsURServer refinesParamStruct ComponentWebotsURServerParams { 
+	ComponentParameterInstance ComponentWebotsRobotArm refinesParamStruct ComponentWebotsRobotArmParams { 
        ParameterRefinement base {
-               on_base = false
-               x = 0
-               y = 0
-               z = 0
-               base_a = 0
-               steer_a = 0
-               turret_a = 0
+               on_base = false              
+
        }
        ParameterRefinement manipulator {
                verbose = true
@@ -229,6 +218,10 @@ ComponentParameterInstance ComponentOpenRave refinesParamStruct ComponentOpenRav
                azimuth = -0.034906585
                elevation = 0
                roll = 0
+       }
+       
+       ParameterRefinement webots {
+       	robotName = "UR5"
        }
 	}
 	
@@ -258,7 +251,7 @@ ComponentParameterInstance ComponentOpenRave refinesParamStruct ComponentOpenRav
 			x_detection_distance_max = 1000
 			y_detection_distance_min = -1000
 			y_detection_distance_max = 1000
-			z_detection_distance_min = -160
+			z_detection_distance_min = -1600
 			z_detection_distance_max = 1300
 			box_aspect_ratio = 3.0
 			send_obstacle_mesh = true
@@ -273,7 +266,7 @@ ComponentParameterInstance ComponentOpenRave refinesParamStruct ComponentOpenRav
 	ComponentParameterInstance ComponentRackDetection refinesParamStruct ComponentRackDetection {
 
 		ParameterRefinement General {
-			model_path = "rack_model_cloud.pcd"
+			model_path = "webots_rack_model_cloud.pcd"
 			send_obstacle_mesh = true
 			max_detection_score = 0.016			
 			
@@ -286,14 +279,35 @@ ComponentParameterInstance ComponentOpenRave refinesParamStruct ComponentOpenRav
 			rack_dimension_max_z = 2.0			
 
 //Pick up items from Rack on Left of Robot
-			init_relative_obj_pose_x = 0.04
-			init_relative_obj_pose_y = 0.12
-			init_relative_obj_pose_z = 0.065
+			//init_relative_obj_pose_x = 0.04
+			//init_relative_obj_pose_x = 0.03
+			
+			// top view of shelf witch boxes (B) and coordinate axes X Y (Z is up)
+			//               X    
+			//               |
+			//   +-----------+
+			//   |           |
+			//   | B B B B B |
+			// Y-+-----------+ 
+			
+			// n-th box (from right to left):
+			// position = init_relative_obj_pose + relative_obj_pose*(n-1)
+                       //
+                       // relative_obj_pose_pitch = -0.2618 // 15 degrees
+	 		// init_relative_obj_pose_x = 0.0112
+			// init_relative_obj_pose_x = 0.04
+			// thomas: change from 0.03 to 0.02
+			init_relative_obj_pose_x = 0.02
+			// thomas: change from 0.12 to 0.115
+			init_relative_obj_pose_y = 0.125
+			init_relative_obj_pose_z = 0.1
 			
 			relative_obj_pose_x = 0.0
-			relative_obj_pose_y = 0.115
+			// thomas: change from 0.115 to 0.11
+			relative_obj_pose_y = 0.11
 			relative_obj_pose_z = 0.0
-			relative_obj_pose_pitch = -0.2
+			// thomas: change from -0.2 to -0.2618 			
+			relative_obj_pose_pitch = -0.2618
 			
 
 //Pick up from Rack in Front of Robot			
@@ -309,8 +323,8 @@ ComponentParameterInstance ComponentOpenRave refinesParamStruct ComponentOpenRav
 
 
 			
-			obj_width = 0.07 
-			obj_height = 0.105
+			obj_height = 0.103
+			obj_width = 0.07 			
 			obj_depth = 0.04
 			obj_types = "CHOCO,SPECIAL,FROSTIES,CORN-FLAKES,SMACKS"
 		}
@@ -322,9 +336,9 @@ ComponentParameterInstance ComponentOpenRave refinesParamStruct ComponentOpenRav
 			transformation_x = -0.6
 			transformation_y = 0.36
 			transformation_z = -0.8
-			theta = -1.57
-			save_model_path = "new_rack_model_cloud.pcd"
-			load_model_path = "new_rack_model_cloud.pcd"
+			theta = -1.57079632679
+			save_model_path = "webots_rack_model_cloud.pcd"
+			load_model_path = "webots_rack_model_cloud.pcd"
 		} 
 	}
 	

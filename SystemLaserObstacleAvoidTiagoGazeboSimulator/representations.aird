@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:componentArchitecture="http://www.eclipse.org/smartmdsd/system/componentArchitecture" xmlns:deployment="http://www.eclipse.org/smartmdsd/system/deployment" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:targetPlatform="http://www.eclipse.org/smartmdsd/system/targetPlatform" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:componentArchitecture="http://www.eclipse.org/smartmdsd/system/componentArchitecture" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:targetPlatform="http://www.eclipse.org/smartmdsd/system/targetPlatform" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="_stsAII_wEeiqe88wSyzFwQ" selectedViews="_svORMI_wEeiqe88wSyzFwQ _svsyUI_wEeiqe88wSyzFwQ _swL6gI_wEeiqe88wSyzFwQ" version="14.3.1.202003261200">
     <semanticResources>model/SystemLaserObstacleAvoidTiagoGazeboSimulator.componentArch</semanticResources>
     <semanticResources>model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment</semanticResources>
@@ -48,6 +48,10 @@
     <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.system.targetPlatform/model/targetPlatform.ecore</semanticResources>
     <semanticResources>platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign</semanticResources>
     <semanticResources>platform:/plugin/org.eclipse.smartmdsd.ecore.system.deployment/model/deployment.ecore</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.xtext.service.parameterDefinition/defaultParameterLib/defaultParameterLib.parameters</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.xtext.base.stateMachine/componentLifecycle/ComponentLifecycle.automaton</semanticResources>
+    <semanticResources>platform:/resource/SmartGazeboBaseServer/model/SmartGazeboBaseServer.skillRealization</semanticResources>
+    <semanticResources>platform:/resource/CommNavigationObjects/model/CommNavigationObjects.skills</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_svORMI_wEeiqe88wSyzFwQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_svdhxY_wEeiqe88wSyzFwQ" name="SystemLaserObstacleAvoidTiagoGazeboSimulatorComponentArchitecture" repPath="#_svdhwI_wEeiqe88wSyzFwQ">
@@ -64,9 +68,8 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_swL6gI_wEeiqe88wSyzFwQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_swh4xY_wEeiqe88wSyzFwQ" name="SystemLaserObstacleAvoidTiagoGazeboSimulatorDeployment" repPath="#_swh4wI_wEeiqe88wSyzFwQ">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_swh4xY_wEeiqe88wSyzFwQ" name="SystemLaserObstacleAvoidTiagoGazeboSimulatorDeployment" target="SystemLaserObstacleAvoidTiagoGazeboSimulator" repPath="#_swh4wI_wEeiqe88wSyzFwQ">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']"/>
-        <target xmi:type="deployment:DeploymentModel" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#SystemLaserObstacleAvoidTiagoGazeboSimulator"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
@@ -415,7 +418,7 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer"/>
     <target xmi:type="targetPlatform:TargetPlatformModel" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.target#SystemLaserObstacleAvoidTiagoGazeboSimulator"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram uid="_swh4wI_wEeiqe88wSyzFwQ">
+  <diagram:DSemanticDiagram uid="_swh4wI_wEeiqe88wSyzFwQ" target="SystemLaserObstacleAvoidTiagoGazeboSimulator">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_swh4wY_wEeiqe88wSyzFwQ" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_swh4wo_wEeiqe88wSyzFwQ"/>
     </ownedAnnotationEntries>
@@ -527,8 +530,6 @@
       </data>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_Oq8IwI_xEeiqe88wSyzFwQ" name="PC1" tooltipText="ComputationPlatformReference" incomingEdges="_W_A3wI_xEeiqe88wSyzFwQ _Xn8gAI_xEeiqe88wSyzFwQ _YmaTYI_xEeiqe88wSyzFwQ">
-      <target xmi:type="deployment:TargetPlatformReference" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.0"/>
-      <semanticElements xmi:type="deployment:TargetPlatformReference" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -538,8 +539,6 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']"/>
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_Q8CBoI_xEeiqe88wSyzFwQ" name="/tmp" tooltipText="UploadFolder">
-        <target xmi:type="deployment:UploadDirectory" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.0/@directory"/>
-        <semanticElements xmi:type="deployment:UploadDirectory" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.0/@directory"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -549,8 +548,6 @@
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='UploadDirectoryContainer']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_SfZR0I_xEeiqe88wSyzFwQ" name="eth2" tooltipText="HostInterface">
-        <target xmi:type="deployment:NetworkInterfaceSelection" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.0/@host"/>
-        <semanticElements xmi:type="deployment:NetworkInterfaceSelection" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.0/@host"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -561,8 +558,6 @@
       </ownedDiagramElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_Un85wI_xEeiqe88wSyzFwQ" name="ComponentLaserObstacleAvoid" tooltipText="ComponentArtefact" outgoingEdges="_W_A3wI_xEeiqe88wSyzFwQ">
-      <target xmi:type="deployment:ComponentArtefact" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.1"/>
-      <semanticElements xmi:type="deployment:ComponentArtefact" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -572,8 +567,6 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='ComponentArtefactContainer']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_VDrMcI_xEeiqe88wSyzFwQ" name="SmartGazeboBaseServer" tooltipText="ComponentArtefact" outgoingEdges="_Xn8gAI_xEeiqe88wSyzFwQ">
-      <target xmi:type="deployment:ComponentArtefact" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.2"/>
-      <semanticElements xmi:type="deployment:ComponentArtefact" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.2"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -583,8 +576,6 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='ComponentArtefactContainer']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_VP7fwI_xEeiqe88wSyzFwQ" name="NamingService" outgoingEdges="_YmaTYI_xEeiqe88wSyzFwQ">
-      <target xmi:type="deployment:NamingService" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.3"/>
-      <semanticElements xmi:type="deployment:NamingService" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.3"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -594,8 +585,6 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='NamingServiceContainer']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_W_A3wI_xEeiqe88wSyzFwQ" name="Deployment" sourceNode="_Un85wI_xEeiqe88wSyzFwQ" targetNode="_Oq8IwI_xEeiqe88wSyzFwQ">
-      <target xmi:type="deployment:Deployment" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.1/@deploy"/>
-      <semanticElements xmi:type="deployment:Deployment" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.1/@deploy"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_W_A3wY_xEeiqe88wSyzFwQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_W_A3wo_xEeiqe88wSyzFwQ"/>
@@ -603,8 +592,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Xn8gAI_xEeiqe88wSyzFwQ" name="Deployment" sourceNode="_VDrMcI_xEeiqe88wSyzFwQ" targetNode="_Oq8IwI_xEeiqe88wSyzFwQ">
-      <target xmi:type="deployment:Deployment" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.2/@deploy"/>
-      <semanticElements xmi:type="deployment:Deployment" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.2/@deploy"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Xn8gAY_xEeiqe88wSyzFwQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Xn8gAo_xEeiqe88wSyzFwQ"/>
@@ -612,8 +599,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_YmaTYI_xEeiqe88wSyzFwQ" name="Deployment" sourceNode="_VP7fwI_xEeiqe88wSyzFwQ" targetNode="_Oq8IwI_xEeiqe88wSyzFwQ">
-      <target xmi:type="deployment:Deployment" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.3/@deploy"/>
-      <semanticElements xmi:type="deployment:Deployment" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#//@elements.3/@deploy"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_YmaTYY_xEeiqe88wSyzFwQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_YmaTYo_xEeiqe88wSyzFwQ"/>
@@ -623,6 +608,5 @@
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_swh4xI_wEeiqe88wSyzFwQ"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer"/>
-    <target xmi:type="deployment:DeploymentModel" href="model/SystemLaserObstacleAvoidTiagoGazeboSimulator.deployment#SystemLaserObstacleAvoidTiagoGazeboSimulator"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

@@ -1,0 +1,17 @@
+DeploymentModel SystemWebotsMaster using ComponentArchitecture SystemWebotsMaster
+{
+	TargetPlatformReference PC1 using SystemWebotsMaster.PC1
+	{
+		UploadDirectory "/tmp"
+		NetworkInterface eth2
+	}
+	NamingService
+	{
+		deploy-to PC1 
+	}
+	ComponentArtefact ComponentKB_3 deploy-to PC1
+	ComponentArtefact SmartFestoFleetCom deploy-to PC1
+	ComponentArtefact SmartJobDispatcher deploy-to PC1
+	ComponentArtefact ComponentSymbolicPlanner deploy-to PC1
+ComponentArtefact ComponentWebots deploy-to PC1
+}

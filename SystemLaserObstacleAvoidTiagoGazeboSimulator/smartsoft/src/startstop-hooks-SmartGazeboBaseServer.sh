@@ -34,7 +34,24 @@ pre-start)
 	# ...then call user/deployment specific hook:
 	echo "Triggering pre-start hooks ..."
 
-	bash $SMART_ROOT_ACE/repos/DataRepository/gazebo/startGazebo.sh worlds/tiagoOffice_nav.world
+#	bash $SMART_ROOT_ACE/repos/DataRepository/gazebo/startGazebo.sh worlds/tiagoOffice_nav.world
+
+
+        FROM=$(pwd)
+        DEPL_GAZEBO_FILES=$FROM/gazebo
+
+        export GAZEBO_RESOURCE_PATH=/usr/share/gazebo-9/
+        export GAZEBO_RESOURCE_PATH=$GAZEBO_RESOURCE_PATH:../
+        export GAZEBO_MODEL_PATH=:$DEPL_GAZEBO_FILES/models
+        export GAZEBO_PLUGIN_PATH=$SMART_ROOT_ACE/lib
+        echo "GAZEBO_RESOURCE_PATH: $GAZEBO_RESOURCE_PATH"
+        echo "GAZEBO_MODEL_PATH: $GAZEBO_MODEL_PATH"
+        echo "GAZEBO_PLUGIN_PATH: $GAZEBO_PLUGIN_PATH"
+
+#        xterm -title "Gazebo Terminal" -e "pwd; gazebo --verbose $DEPL_GAZEBO_FILES/worlds/pioneerOffice.world || bash; sleep 5" &
+         xterm -title "Gazebo Terminal" -e "echo ""Before""; export SVGA_VGPU10=0;pwd; ""echo ""SVGA_VGPU10: $SVGA_VGPU10"";gazebo --verbose $DEPL_GAZEBO_FILES/worlds/tiagoOffice_nav.world || bash; sleep 5" &
+
+
 ;;
 
 post-start)

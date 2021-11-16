@@ -1,6 +1,6 @@
 TargetPlatformModel SystemLaserObstacleAvoidRobotinoWebotsSimulator
 {
-TargetPlatformDefinition LocalhostTarget
+	TargetPlatformDefinition PC1
 	{
-		NetworkInterface localhost { HostAddress "127.0.0.1" }
+		NetworkInterface eth1 { HostAddress "localhost" }
 	} }

@@ -14,7 +14,7 @@ ComponentInstance ComponentWebots instantiates ComponentWebots
 		ProvidedService NavigationVelocityServiceIn
 		//ProvidedService BaseStateAnswerer
 	}
-	ComponentInstance SmartCdlServer instantiates SmartCdlServer
+	ComponentInstance SmartCdlServer instantiates SmartCdlServer 
 	{
 		RequiredService LaserClient
 		RequiredService PlannerClient
@@ -168,7 +168,7 @@ ComponentInstance ComponentWebots instantiates ComponentWebots
 	CoordinationModuleMapping {
 		moduleInstance BehaviorOrderPicking.manipulationModule realizedby manipulationPlanning {
 			interfaceInstance cs_trajPlanning realizedby ComponentOpenRave
-			interfaceInstance cs_trajExecution realizedby ComponentWebotsRobotArm
+			interfaceInstance cs_trajExecution realizedby ComponentWebotsRobotArm 
 		}
 	}
 }

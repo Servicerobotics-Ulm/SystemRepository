@@ -2,6 +2,7 @@ SystemComponentArchitecture SystemWebotsNavMpsDockingOPCUA
 {
 	ComponentInstance ComponentKB instantiates ComponentKB
 	{
+	ProvidedService kbQuery
 	}
 	ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
 	{
@@ -35,6 +36,7 @@ SystemComponentArchitecture SystemWebotsNavMpsDockingOPCUA
 	}
 	ComponentInstance ComponentWebots instantiates ComponentWebots
 	{
+	RequiredService CommKBQueryReq
 	}
 	ComponentInstance ComponentVisualization instantiates ComponentVisualization
 	{
@@ -78,6 +80,7 @@ SystemComponentArchitecture SystemWebotsNavMpsDockingOPCUA
 	Connection ComponentWebotsMpsDocking.NavigationVelocityServiceOut -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
 	Connection ComponentWebotsMpsDocking.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
 	Connection SmartCdlServer.NavVelSendClient -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
+	Connection ComponentWebots.CommKBQueryReq -> ComponentKB.kbQuery
 
 
 

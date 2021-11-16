@@ -106,7 +106,7 @@ ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct Compone
       radius = [0.2, 0.2]
       distanceToRobotCentre = [-0.2325, 0.2325]
       heading = [0, 0]
-      maxAcceleration = [0.5, 0.0, 20.0]
+      maxAcceleration = [0.5, 0.0, 5.0]
   }
   ParameterRefinement General { verbose = false
 			useLocalizationEvent = true
@@ -152,6 +152,7 @@ ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGrid
 ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots {
 	ParameterRefinement General {
 		WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/LarryLab.wbt"
+		enableEditor = true
 	}
 }
 

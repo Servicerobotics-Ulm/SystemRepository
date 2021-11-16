@@ -1,0 +1,39 @@
+SystemComponentArchitecture SystemWebotsMaster
+{
+	
+ComponentInstance ComponentKB_3 instantiates ComponentKB
+	{
+		RequiredService kbChainedEntriesEventClient
+		ProvidedService kbEventServer
+		ProvidedService kbQuery
+	}
+	ComponentInstance SmartFestoFleetCom instantiates SmartFestoFleetCom 
+	{
+		RequiredService TaskResultIn
+		RequiredService kbQueryClient
+		ProvidedService TaskEventOut
+	}
+	ComponentInstance SmartJobDispatcher instantiates SmartJobDispatcher
+	{
+		RequiredService jobSourceEventClient
+		RequiredService CommKBQueryReq
+		ProvidedService jobEventServer
+		ProvidedService TaskResultOut
+		ProvidedService jobResultSendServer
+	RequiredService SymbolicPannerServiceReq
+	}
+	ComponentInstance ComponentSymbolicPlanner instantiates ComponentSymbolicPlanner
+	{
+		ProvidedService SymbolicPlannerQueryServer
+	}
+	ComponentInstance ComponentWebots instantiates ComponentWebots
+	{
+		RequiredService CommKBQueryReq
+	}
+	Connection SmartFestoFleetCom.TaskResultIn -> SmartJobDispatcher.TaskResultOut
+	Connection SmartFestoFleetCom.kbQueryClient -> ComponentKB_3.kbQuery
+	Connection SmartJobDispatcher.CommKBQueryReq -> ComponentKB_3.kbQuery
+	Connection SmartJobDispatcher.jobSourceEventClient -> SmartFestoFleetCom.TaskEventOut
+Connection SmartJobDispatcher.SymbolicPannerServiceReq -> ComponentSymbolicPlanner.SymbolicPlannerQueryServer
+Connection ComponentWebots.CommKBQueryReq -> ComponentKB_3.kbQuery
+}

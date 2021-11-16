@@ -6,7 +6,7 @@ DeploymentModel SystemWebotsLarrySlave using ComponentArchitecture SystemWebotsL
 		NetworkInterface eth2
 	}
 	
-	ComponentArtefact ComponentWebots deploy-to PC1
+	
 	ComponentArtefact ComponentKB_2 deploy-to PC1
 	ComponentArtefact SmartAmcl_2 deploy-to PC1
 	ComponentArtefact SmartCdlServer_2 deploy-to PC1
@@ -18,7 +18,7 @@ DeploymentModel SystemWebotsLarrySlave using ComponentArchitecture SystemWebotsL
 	ComponentArtefact ComponentTCLSequencer_2 deploy-to PC1
 	ComponentArtefact ComponentWebotsPTUServer deploy-to PC1
 	ComponentArtefact ComponentWebots3DCamera deploy-to PC1
-	ComponentArtefact ComponentWebotsURServer deploy-to PC1
+	ComponentArtefact ComponentWebotsRobotArm deploy-to PC1
 	ComponentArtefact ComponentRackDetection deploy-to PC1
 	ComponentArtefact ComponentKinectBoxDetection deploy-to PC1
 	ComponentArtefact ComponentOpenRave deploy-to PC1

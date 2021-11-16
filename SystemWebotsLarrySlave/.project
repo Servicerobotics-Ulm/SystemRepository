@@ -11,12 +11,11 @@
 		<project>ComponentSeq2SeqCom</project>
 		<project>ComponentTCLSequencer</project>
 		<project>ComponentVisualization</project>
-		<project>ComponentWebots</project>
 		<project>ComponentWebots2DLidar</project>
 		<project>ComponentWebots3DCamera</project>
 		<project>ComponentWebotsMobileRobot</project>
 		<project>ComponentWebotsPTUServer</project>
-		<project>ComponentWebotsURServer</project>
+		<project>ComponentWebotsRobotArm</project>
 		<project>SmartAmcl</project>
 		<project>SmartCdlServer</project>
 		<project>SmartMapperGridMap</project>

@@ -2,9 +2,11 @@ SystemComponentArchitecture SystemWebotsRobotino3HospitalNavigation
 {
 ComponentInstance ComponentWebots instantiates ComponentWebots
 	{
+	RequiredService CommKBQueryReq
 	}
 	ComponentInstance ComponentKB instantiates ComponentKB
 	{
+	ProvidedService kbQuery
 	}
 	ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
 	{
@@ -15,7 +17,6 @@ ComponentInstance ComponentWebots instantiates ComponentWebots
 		ProvidedService BaseStateServiceOut
 		ProvidedService LocalizationUpdateServiceIn
 		ProvidedService NavigationVelocityServiceIn
-		//ProvidedService BaseStateAnswerer
 	}
 	ComponentInstance SmartCdlServer instantiates SmartCdlServer
 	{
@@ -70,6 +71,7 @@ Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.Cur
 	
 		Connection ComponentWebots2DLidar.BaseStateServiceIn -> ComponentWebotsMobileRobot.BaseStateServiceOut
 	Connection SmartAmcl.LocalizationUpdateServiceOut -> ComponentWebotsMobileRobot.LocalizationUpdateServiceIn
+	Connection ComponentWebots.CommKBQueryReq -> ComponentKB.kbQuery
 
 	BehaviorTaskRef NavigationTasks
 

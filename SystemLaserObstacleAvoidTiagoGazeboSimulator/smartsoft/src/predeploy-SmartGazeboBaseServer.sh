@@ -31,7 +31,9 @@
 #DEPLOY_LIBRARIES="$DEPLOY_LIBRARIES
 #libSmartSickInterface.so
 #"
-
+DEPLOY_LIBRARIES="$DEPLOY_LIBRARIES
+../repos/DataRepository/gazebo
+"
 
 # add custom code here. E.g. use this script to collect data-files and 
 # copy them to src/<COMPONENT>_data, etc.

@@ -1,0 +1,17 @@
+SystemParameterModel SystemWebotsMaster extendsSystem SystemWebotsMaster {
+	
+	ComponentParameterInstance SmartFestoFleetCom refinesParamStruct SmartFestoFleetCom
+	{
+		ParameterRefinement Settings {
+			port = "13000"
+			pushCyclicSystemState = false
+		}
+	}
+	
+	ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots { 
+		ParameterRefinement General { 
+			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/ZAFH.wbt"
+			enableEditor = true
+		}
+	}
+}

@@ -50,6 +50,7 @@ ComponentParameterInstance SmartCdlServer refinesParamStruct SmartCdlServerParam
 		use_obstacle_history = false
 		freeBehaviorDist = 350.0
 		freeBehaviorDist_second = 350.0
+		
 	}
 }
 
@@ -57,7 +58,7 @@ ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWe
   ParameterRefinement webots {
     robotName = "LidarRobotino3"
   }
-  ParameterRefinement scanner {      
+  ParameterRefinement scanner {
       verbose = true
 			on_turret = false			
 			x = 190
@@ -73,34 +74,30 @@ ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWe
 			length_unit = 1
 			frequency = 50
   }
-  ParameterRefinement base_manipulator { 
+  ParameterRefinement base_manipulator {
     on_base = true
 			x = 0
 			y = 0
 			z = 0
 			base_a = 0
 			steer_a = 0
-			turret_a = 0			
+			turret_a = 0
 			}
 }	
 ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct ComponentWebotsMobileRobotParams {
-  ParameterRefinement Webots { 
+  ParameterRefinement Webots {
       robotName = "Robotino 3"
       motorName = ["wheel0_joint", "wheel1_joint", "wheel2_joint"]
       radius = [0.063, 0.063, 0.063]
       distanceToRobotCentre = [-0.1826, -0.1826, -0.1826]
       heading = [90.0, 210.0, 330.0]
-      maxAcceleration = [3.0, 3.0, 20.0]
-      
-      
+      maxAcceleration = [1.0, 1.0, 5.0]
   }
   ParameterRefinement General { verbose = false
 			useLocalizationEvent = true
 			poseFileName = "/tmp/lastRobotPose.txt"
 			writePoseFile = false
-			
-}
- 
+  }
 }
 
 ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGridMapParams{
@@ -139,6 +136,8 @@ ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGrid
 	ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots {
 		ParameterRefinement General{
 			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/RobotinoHospital.wbt"
+			enableEditor = true
 		}
 	}
 }
+

@@ -1,9 +1,6 @@
 SystemComponentArchitecture SystemWebotsLarrySlave
 {
-	
-ComponentInstance ComponentWebots instantiates ComponentWebots
-	{
-	}
+
 	ComponentInstance ComponentKB_2 instantiates ComponentKB
 	{
 	} 
@@ -63,19 +60,17 @@ ComponentInstance ComponentWebots instantiates ComponentWebots
 		RequiredService ptuPosePushNewestClient
 		ProvidedService imageQueryServer
 	}
-	ComponentInstance ComponentWebotsURServer instantiates ComponentWebotsURServer
-	{ 
+	
+	ComponentInstance ComponentWebotsRobotArm instantiates ComponentWebotsRobotArm {
 		ProvidedService posePushServer
-
 		ProvidedService trajectorySendServer
 		ProvidedService poseQueryServer
 		RequiredService baseStateServiceIn
-		
 		ProvidedService manipulatorEventServiceOut
-	ProvidedService ioQueryServer
+		ProvidedService ioQueryServer
 		ProvidedService ioEventServer
 		ProvidedService programQuery
-	}
+	} 
 	ComponentInstance ComponentRackDetection instantiates ComponentRackDetection
 	{
 		RequiredService kinectQueryClient
@@ -118,12 +113,12 @@ Connection SmartPlannerBreadthFirstSearch_2.CurMapClient -> SmartMapperGridMap_2
 	Connection SmartMapperGridMap_2.LaserServiceIn -> ComponentWebots2DLidar_2.LaserServiceOut
 	Connection ComponentWebots3DCamera.ptuPosePushNewestClient -> ComponentWebotsPTUServer.devicePoseStateServer
 
-	Connection ComponentOpenRave.MobileManipulatorStateServiceIn -> ComponentWebotsURServer.posePushServer
-	Connection ComponentOpenRave.MobileManipulatorStateQueryServiceReq -> ComponentWebotsURServer.poseQueryServer
-	Connection ComponentOpenRave.SendTrajectoryOut -> ComponentWebotsURServer.trajectorySendServer
+	Connection ComponentOpenRave.MobileManipulatorStateServiceIn -> ComponentWebotsRobotArm.posePushServer
+	Connection ComponentOpenRave.MobileManipulatorStateQueryServiceReq -> ComponentWebotsRobotArm.poseQueryServer
+	Connection ComponentOpenRave.SendTrajectoryOut -> ComponentWebotsRobotArm.trajectorySendServer
 
 	Connection ComponentOpenRave.ObjectQueryServiceReq -> ComponentKinectBoxDetection.objectPropertyQueryServer
-	Connection ComponentWebotsURServer.baseStateServiceIn -> ComponentWebotsMobileRobot_2.BaseStateServiceOut
+	Connection ComponentWebotsRobotArm.baseStateServiceIn -> ComponentWebotsMobileRobot_2.BaseStateServiceOut
 
 	Connection ComponentWebotsPTUServer.baseStateClient -> ComponentWebotsMobileRobot_2.BaseStateServiceOut
 	Connection  ComponentOpenRave.EnvironmentQueryServiceReq -> ComponentRackDetection.environmentQueryServer
@@ -176,7 +171,7 @@ Connection SmartPlannerBreadthFirstSearch_2.CurMapClient -> SmartMapperGridMap_2
 	CoordinationModuleMapping {
 		moduleInstance BehaviorLarrySlave.manipulationModule realizedby manipulationPlanning {
 			interfaceInstance cs_trajPlanning realizedby ComponentOpenRave
-			interfaceInstance cs_trajExecution realizedby ComponentWebotsURServer
+			interfaceInstance cs_trajExecution realizedby ComponentWebotsRobotArm
 		}
 	}
 	

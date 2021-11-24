@@ -1,0 +1,13 @@
+{
+	"name": "SystemFleetMaster",
+	"shortDescription": "A short description for the SystemFleetMaster datasheet",
+	"type": "Toolify",
+	"description": "",
+	"purposes": ["Example"],
+	"supplier": "No supplier specified",
+	"homepage": "http://www.example.com",
+	"variationPoints": [
+	],
+	"systemVariants": [
+	]
+}

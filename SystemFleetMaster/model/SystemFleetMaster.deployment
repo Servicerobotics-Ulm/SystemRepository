@@ -1,0 +1,19 @@
+DeploymentModel SystemFleetMaster using ComponentArchitecture SystemFleetMaster
+{
+	TargetPlatformReference PC1 using SystemFleetMaster.PC1
+	{
+		UploadDirectory "/tmp"
+		NetworkInterface eth2
+	}
+	NamingService
+	{
+		deploy-to PC1 
+	}
+	ComponentArtefact ComponentKB_Master deploy-to PC1
+	ComponentArtefact SmartFestoFleetCom deploy-to PC1
+	ComponentArtefact SmartJobDispatcher deploy-to PC1
+	ComponentArtefact ComponentNavigationGraph deploy-to PC1
+	ComponentArtefact ComponentWebots deploy-to PC1
+	ComponentArtefact ComponentSymbolicPlanner deploy-to PC1
+	ComponentArtefact ComponentTCLSequencer deploy-to PC1
+}

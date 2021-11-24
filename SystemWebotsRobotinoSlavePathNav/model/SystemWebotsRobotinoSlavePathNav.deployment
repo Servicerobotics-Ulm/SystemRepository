@@ -1,0 +1,25 @@
+DeploymentModel SystemWebotsRobotinoSlavePathNav using ComponentArchitecture SystemWebotsRobotinoSlavePathNav
+{
+	TargetPlatformReference PC1 using SystemWebotsRobotinoSlavePathNav.PC1
+	{
+		UploadDirectory "/tmp"
+		NetworkInterface eth2
+	}
+	
+	ComponentArtefact ComponentKB_1 deploy-to PC1
+	ComponentArtefact ComponentTCLSequencer_1 deploy-to PC1
+	ComponentArtefact SmartCdlServer_1 deploy-to PC1
+	ComponentArtefact SmartMapperGridMap_1 deploy-to PC1
+	ComponentArtefact SmartAmcl_1 deploy-to PC1
+	ComponentArtefact ComponentWebotsMobileRobot_1 deploy-to PC1
+	ComponentArtefact ComponentWebots2DLidar_1 deploy-to PC1
+	ComponentArtefact ComponentWebotsMpsDocking_1 deploy-to PC1
+	ComponentArtefact ComponentWebotsConveyorBeltOpcua_1 deploy-to PC1
+	ComponentArtefact ComponentSeq2SeqCom_1 deploy-to PC1
+	ComponentArtefact SmartPlannerBreadthFirstSearch_1 deploy-to PC1
+
+	
+	ComponentArtefact ComponentRobotToRobotDocking_1 deploy-to PC1
+	
+	ComponentArtefact ComponentGoalNodeControl_1 deploy-to PC1
+}

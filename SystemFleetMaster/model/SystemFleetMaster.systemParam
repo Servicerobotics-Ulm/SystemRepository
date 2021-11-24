@@ -1,0 +1,20 @@
+SystemParameterModel SystemFleetMaster extendsSystem SystemFleetMaster {
+	
+	ComponentParameterInstance SmartFestoFleetCom refinesParamStruct SmartFestoFleetCom
+	{
+		ParameterRefinement Settings {
+			port = "13000"
+			pushCyclicSystemState = false
+		}
+	} 
+	
+	ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots { 
+		ParameterRefinement General { 
+
+			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/PathNavigation.wbt"
+			enableEditor = true
+			}	
+			
+		}
+
+}

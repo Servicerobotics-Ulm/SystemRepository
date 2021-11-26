@@ -1,0 +1,5 @@
+TargetPlatformModel SystemExerciseLaserDriveMidway {
+    TargetPlatformDefinition PC1 {
+		NetworkInterface eth2 { HostAddress "localhost" }
+	} 
+}

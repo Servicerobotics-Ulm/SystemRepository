@@ -1,0 +1,22 @@
+DeploymentModel SystemExerciseLaserFollowWall using ComponentArchitecture SystemExerciseLaserFollowWall
+{
+	TargetPlatformReference PC1 using SystemExerciseLaserFollowWall.PC1
+	{
+		UploadDirectory "/tmp"
+		NetworkInterface eth2
+	}
+
+	NamingService
+	{
+		deploy-to PC1 }
+
+	ComponentArtefact   ComponentWebotsMobileRobot deploy-to PC1
+
+	ComponentArtefact   ComponentWebots deploy-to PC1
+
+	ComponentArtefact   ComponentWebots2DLidar deploy-to PC1
+
+	ComponentArtefact  
+ 
+ ComponentExerciseFollowWall deploy-to PC1
+}

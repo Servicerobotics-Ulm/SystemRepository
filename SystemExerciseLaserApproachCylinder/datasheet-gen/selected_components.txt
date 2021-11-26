@@ -1,0 +1,4 @@
+components//latest/ComponentWebotsMobileRobot/ComponentWebotsMobileRobot
+components/ce94c4fc-8506-46c8-9411-f8b5050d52bc/latest/ComponentWebots/ComponentWebots
+components//latest/ComponentWebots2DLidar/ComponentWebots2DLidar
+components//latest/ComponentExerciseApproachCylinder/ComponentExerciseApproachCylinder

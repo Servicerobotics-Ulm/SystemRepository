@@ -1,0 +1,55 @@
+SystemParameterModel SystemExerciseLaserFollowWall extendsSystem SystemExerciseLaserFollowWall { 
+	ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots { 
+		ParameterRefinement General {
+			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/ExerciseWallfollower.wbt"
+			// WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/ExerciseWallfollower2.wbt"
+			enableEditor = false
+		}
+	}	 
+	ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWebots2DLidarParams {
+		ParameterRefinement webots {
+			robotName = "LidarPioneer"
+		}
+		ParameterRefinement scanner {      
+	  		verbose = true
+			on_turret = false
+			x = 70
+			y = 0 
+			z = 317 /* height above ground in mm; in SmartLaserLMS200Server this value is 0 (perspective mounting point?) */
+			azimuth = 0
+			elevation = 0
+			roll = 0
+			min_range = 10
+			max_range = 80000
+			opening_angle = 180
+			resolution = 0.5
+			length_unit = 1
+			frequency = 31
+		}
+		ParameterRefinement base_manipulator { 
+			on_base = true
+			x = 0
+			y = 0
+			z = 0
+			base_a = 0
+			steer_a = 0
+			turret_a = 0
+		}
+	}	
+	ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct ComponentWebotsMobileRobotParams {
+  		ParameterRefinement Webots { 
+			robotName = "Pioneer 3-DX"
+			motorName = ["left wheel", "right wheel"]
+			radius = [0.0975, 0.0975]
+			distanceToRobotCentre = [-0.165, 0.165]
+			heading = [0, 0]
+      		maxAcceleration = [1.0, 0.0, 5.0]			
+		}  
+		ParameterRefinement General { 
+			verbose = false
+			useLocalizationEvent = true
+			poseFileName = "/tmp/lastRobotPose.txt"
+			writePoseFile = false
+		}
+	}
+}

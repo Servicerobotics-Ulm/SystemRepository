@@ -1,0 +1,23 @@
+DeploymentModel SystemExerciseLaserApproachCylinder using ComponentArchitecture SystemExerciseLaserApproachCylinder
+{
+	TargetPlatformReference PC1 using SystemExerciseLaserApproachCylinder.PC1
+	{
+		UploadDirectory "/tmp"
+		NetworkInterface eth2
+	}
+
+	NamingService
+	{
+		deploy-to PC1 }
+
+	ComponentArtefact    ComponentWebotsMobileRobot deploy-to PC1
+
+	ComponentArtefact    ComponentWebots deploy-to PC1
+
+	ComponentArtefact    ComponentWebots2DLidar deploy-to PC1
+
+	ComponentArtefact  
+ 
+ 
+ComponentExerciseApproachCylinder deploy-to PC1
+}

@@ -1,0 +1,32 @@
+SystemComponentArchitecture SystemExerciseLaserDriveMidway
+{
+ComponentInstance ComponentWebotsMobileRobot instantiates ComponentWebotsMobileRobot
+	{
+		RequiredService LocalizationEventServiceIn
+		ProvidedService BaseStateServiceOut
+		ProvidedService NavigationVelocityServiceIn
+		ProvidedService LocalizationUpdateServiceIn
+		ProvidedService BaseStateQueryServiceAnsw
+	}
+	ComponentInstance ComponentWebots instantiates ComponentWebots
+	{
+	}
+	ComponentInstance ComponentWebots2DLidar instantiates ComponentWebots2DLidar
+	{
+		RequiredService BaseStateServiceIn
+		ProvidedService LaserServiceOut
+		ProvidedService LaserQueryServiceAnsw
+	}
+
+	ComponentInstance ComponentExerciseDriveMidway instantiates ComponentExerciseDriveMidway
+	{
+		RequiredService LaserServiceIn
+		RequiredService NavigationVelocityServiceOut
+	}
+
+	Connection  ComponentExerciseDriveMidway.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
+
+	Connection  ComponentExerciseDriveMidway.NavigationVelocityServiceOut -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
+
+	Connection  ComponentWebots2DLidar.BaseStateServiceIn -> ComponentWebotsMobileRobot.BaseStateServiceOut
+}

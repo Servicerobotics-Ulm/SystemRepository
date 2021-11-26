@@ -1,0 +1,1636 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<aas:aasenv xmlns:aas="http://www.admin-shell.io/aas/2/0" xmlns:IEC61360="http://www.admin-shell.io/IEC61360/2/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.admin-shell.io/aas/2/0 AAS.xsd http://www.admin-shell.io/IEC61360/2/0 IEC61360.xsd">
+    <aas:assetAdministrationShells>
+        <aas:assetAdministrationShell>
+            <aas:idShort>SmartMDSD_AAS</aas:idShort>
+            <aas:identification idType="IRI">smartmdsd.aas</aas:identification>
+            <aas:assetRef>
+                <aas:keys>
+                    <aas:key idType="IRI" local="true" type="Asset">smartmdsd</aas:key>
+                </aas:keys>
+            </aas:assetRef>
+            <aas:submodelRefs>
+                <aas:submodelRef>
+                    <aas:keys>
+                        <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                    </aas:keys>
+                </aas:submodelRef>
+                <aas:submodelRef>
+                    <aas:keys>
+                        <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.technicaldata</aas:key>
+                    </aas:keys>
+                </aas:submodelRef>
+                <aas:submodelRef>
+                    <aas:keys>
+                        <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.operations</aas:key>
+                    </aas:keys>
+                </aas:submodelRef>
+                <aas:submodelRef>
+                    <aas:keys>
+                        <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/Capabilities</aas:key>
+                    </aas:keys>
+                </aas:submodelRef>
+                <aas:submodelRef>
+                    <aas:keys>
+                        <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.nameplate</aas:key>
+                    </aas:keys>
+                </aas:submodelRef>
+                <aas:submodelRef>
+                    <aas:keys>
+                        <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/SmartMDSDCommands</aas:key>
+                    </aas:keys>
+                </aas:submodelRef>
+                <aas:submodelRef>
+                    <aas:keys>
+                        <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.documentation</aas:key>
+                    </aas:keys>
+                </aas:submodelRef>
+            </aas:submodelRefs>
+            <aas:views/>
+            <aas:conceptDictionaries/>
+        </aas:assetAdministrationShell>
+    </aas:assetAdministrationShells>
+    <aas:assets>
+        <aas:asset>
+            <aas:idShort>SmartMDSD</aas:idShort>
+            <aas:identification idType="IRI">smartmdsd</aas:identification>
+            <aas:kind>Instance</aas:kind>
+        </aas:asset>
+    </aas:assets>
+    <aas:submodels>
+        <aas:submodel>
+            <aas:idShort>Nameplate</aas:idShort>
+            <aas:identification idType="IRI">smartmdsd.aas.submodel.nameplate</aas:identification>
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+                <aas:keys>
+                    <aas:key idType="IRI" local="false" type="ConceptDescription">https://admin-shell.io/zvei/nameplate/1/0/Nameplate</aas:key>
+                </aas:keys>
+            </aas:semanticId>
+            <aas:submodelElements>
+                <aas:submodelElement>
+                    <aas:property>
+                        <aas:idShort>AASInitYear</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.nameplate</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:value>2021</aas:value>
+                        <aas:valueType>integer</aas:valueType>
+                    </aas:property>
+                </aas:submodelElement>
+                <aas:submodelElement>
+                    <aas:submodelElementCollection>
+                        <aas:idShort>Address</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.nameplate</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:semanticId>
+                            <aas:keys>
+                                <aas:key idType="IRDI" local="false" type="ConceptDescription">0173-1#02-AAQ832#005</aas:key>
+                            </aas:keys>
+                        </aas:semanticId>
+                        <aas:allowDuplicates>true</aas:allowDuplicates>
+                        <aas:ordered>true</aas:ordered>
+                        <aas:value>
+                            <aas:submodelElement>
+                                <aas:multiLanguageProperty>
+                                    <aas:idShort>NationalCode</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Address</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:semanticId>
+                                        <aas:keys>
+                                            <aas:key idType="IRDI" local="false" type="ConceptDescription">0173-1#02-AAO134#002</aas:key>
+                                        </aas:keys>
+                                    </aas:semanticId>
+                                    <aas:value>
+                                        <aas:langString lang="English">DE-EU</aas:langString>
+                                    </aas:value>
+                                </aas:multiLanguageProperty>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:multiLanguageProperty>
+                                    <aas:idShort>Zipcode</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Address</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:semanticId>
+                                        <aas:keys>
+                                            <aas:key idType="IRDI" local="false" type="ConceptDescription">0173-1#02-AAO129#002</aas:key>
+                                        </aas:keys>
+                                    </aas:semanticId>
+                                    <aas:value>
+                                        <aas:langString lang="English">89075</aas:langString>
+                                    </aas:value>
+                                </aas:multiLanguageProperty>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:multiLanguageProperty>
+                                    <aas:idShort>Street</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Address</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:semanticId>
+                                        <aas:keys>
+                                            <aas:key idType="IRDI" local="false" type="ConceptDescription">0173-1#02-AAO128#002</aas:key>
+                                        </aas:keys>
+                                    </aas:semanticId>
+                                    <aas:value>
+                                        <aas:langString lang="English">Prittwitzstraße 10</aas:langString>
+                                    </aas:value>
+                                </aas:multiLanguageProperty>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:multiLanguageProperty>
+                                    <aas:idShort>CityTown</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Address</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:semanticId>
+                                        <aas:keys>
+                                            <aas:key idType="IRDI" local="false" type="ConceptDescription">0173-1#02-AAO132#002</aas:key>
+                                        </aas:keys>
+                                    </aas:semanticId>
+                                    <aas:value>
+                                        <aas:langString lang="English">Ulm</aas:langString>
+                                    </aas:value>
+                                </aas:multiLanguageProperty>
+                            </aas:submodelElement>
+                        </aas:value>
+                    </aas:submodelElementCollection>
+                </aas:submodelElement>
+                <aas:submodelElement>
+                    <aas:multiLanguageProperty>
+                        <aas:idShort>ModelDrivenSoftware</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.nameplate</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:value/>
+                    </aas:multiLanguageProperty>
+                </aas:submodelElement>
+                <aas:submodelElement>
+                    <aas:multiLanguageProperty>
+                        <aas:idShort>ServiceRoboticsULM</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.nameplate</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:value/>
+                    </aas:multiLanguageProperty>
+                </aas:submodelElement>
+                <aas:submodelElement>
+                    <aas:multiLanguageProperty>
+                        <aas:idShort>SmartMDSD</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.nameplate</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:value/>
+                    </aas:multiLanguageProperty>
+                </aas:submodelElement>
+            </aas:submodelElements>
+        </aas:submodel>
+        <aas:submodel>
+            <aas:idShort>TechnicalData</aas:idShort>
+            <aas:identification idType="IRI">smartmdsd.aas.submodel.technicaldata</aas:identification>
+            <aas:kind>Instance</aas:kind>
+            <aas:semanticId>
+                <aas:keys>
+                    <aas:key idType="IRI" local="false" type="ConceptDescription">http://admin-shell.io/ZVEI/TechnicalData/Submodel/1/1</aas:key>
+                </aas:keys>
+            </aas:semanticId>
+            <aas:submodelElements>
+                <aas:submodelElement>
+                    <aas:submodelElementCollection>
+                        <aas:idShort>ModelDrivenSoftware</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.technicaldata</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:allowDuplicates>true</aas:allowDuplicates>
+                        <aas:ordered>true</aas:ordered>
+                        <aas:value/>
+                    </aas:submodelElementCollection>
+                </aas:submodelElement>
+                <aas:submodelElement>
+                    <aas:submodelElementCollection>
+                        <aas:idShort>FurtherInformation</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.technicaldata</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:semanticId>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="false" type="ConceptDescription">https://admin-shell.io/ZVEI/TechnicalData/FurtherInformation/1/1</aas:key>
+                            </aas:keys>
+                        </aas:semanticId>
+                        <aas:allowDuplicates>true</aas:allowDuplicates>
+                        <aas:ordered>true</aas:ordered>
+                        <aas:value>
+                            <aas:submodelElement>
+                                <aas:property>
+                                    <aas:idShort>validDate</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">FurtherInformation</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:value>2104</aas:value>
+                                    <aas:valueType>string</aas:valueType>
+                                </aas:property>
+                            </aas:submodelElement>
+                        </aas:value>
+                    </aas:submodelElementCollection>
+                </aas:submodelElement>
+                <aas:submodelElement>
+                    <aas:submodelElementCollection>
+                        <aas:idShort>GeneralInformation</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.technicaldata</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:semanticId>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="false" type="ConceptDescription">https://admin-shell.io/ZVEI/TechnicalData/GeneralInformation/1/1</aas:key>
+                            </aas:keys>
+                        </aas:semanticId>
+                        <aas:allowDuplicates>true</aas:allowDuplicates>
+                        <aas:ordered>true</aas:ordered>
+                        <aas:value>
+                            <aas:submodelElement>
+                                <aas:property>
+                                    <aas:idShort>manufacturerPartNumber</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">GeneralInformation</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:value>NA</aas:value>
+                                    <aas:valueType>string</aas:valueType>
+                                </aas:property>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:property>
+                                    <aas:idShort>manufacturerName</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">GeneralInformation</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:value>ServiceRoboticsULM</aas:value>
+                                    <aas:valueType>string</aas:valueType>
+                                </aas:property>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:property>
+                                    <aas:idShort>manufacturerOrderCode</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">GeneralInformation</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:value>NA</aas:value>
+                                    <aas:valueType>string</aas:valueType>
+                                </aas:property>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:multiLanguageProperty>
+                                    <aas:idShort>manufacturerProductDesignation</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">GeneralInformation</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:value/>
+                                </aas:multiLanguageProperty>
+                            </aas:submodelElement>
+                        </aas:value>
+                    </aas:submodelElementCollection>
+                </aas:submodelElement>
+                <aas:submodelElement>
+                    <aas:submodelElementCollection>
+                        <aas:idShort>TechnicalProperties</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.technicaldata</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:allowDuplicates>true</aas:allowDuplicates>
+                        <aas:ordered>true</aas:ordered>
+                        <aas:value/>
+                    </aas:submodelElementCollection>
+                </aas:submodelElement>
+            </aas:submodelElements>
+        </aas:submodel>
+        <aas:submodel>
+            <aas:idShort>Operations</aas:idShort>
+            <aas:identification idType="IRI">smartmdsd.aas.submodel.operations</aas:identification>
+            <aas:kind>Instance</aas:kind>
+            <aas:submodelElements>
+                <aas:submodelElement>
+                    <aas:operation>
+                        <aas:idShort>PushCapability</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.operations</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:inoutputVariable/>
+                        <aas:inputVariable>
+                            <aas:operationVariable>
+                                <aas:value>
+                                    <aas:property>
+                                        <aas:idShort>Command</aas:idShort>
+                                        <aas:kind>Template</aas:kind>
+                                        <aas:value>EmptyCommand</aas:value>
+                                        <aas:valueType>string</aas:valueType>
+                                    </aas:property>
+                                </aas:value>
+                            </aas:operationVariable>
+                        </aas:inputVariable>
+                        <aas:outputVariable>
+                            <aas:operationVariable>
+                                <aas:value>
+                                    <aas:property>
+                                        <aas:idShort>OutId</aas:idShort>
+                                        <aas:kind>Template</aas:kind>
+                                        <aas:value>NA</aas:value>
+                                        <aas:valueType>string</aas:valueType>
+                                    </aas:property>
+                                </aas:value>
+                            </aas:operationVariable>
+                        </aas:outputVariable>
+                    </aas:operation>
+                </aas:submodelElement>
+                <aas:submodelElement>
+                    <aas:operation>
+                        <aas:idShort>GetStatusCapability</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.operations</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:inoutputVariable/>
+                        <aas:inputVariable>
+                            <aas:operationVariable>
+                                <aas:value>
+                                    <aas:property>
+                                        <aas:idShort>CommandId</aas:idShort>
+                                        <aas:kind>Template</aas:kind>
+                                        <aas:value>EmptyCommand</aas:value>
+                                        <aas:valueType>string</aas:valueType>
+                                    </aas:property>
+                                </aas:value>
+                            </aas:operationVariable>
+                        </aas:inputVariable>
+                        <aas:outputVariable>
+                            <aas:operationVariable>
+                                <aas:value>
+                                    <aas:property>
+                                        <aas:idShort>Result</aas:idShort>
+                                        <aas:kind>Template</aas:kind>
+                                        <aas:value>NA</aas:value>
+                                        <aas:valueType>string</aas:valueType>
+                                    </aas:property>
+                                </aas:value>
+                            </aas:operationVariable>
+                        </aas:outputVariable>
+                    </aas:operation>
+                </aas:submodelElement>
+                <aas:submodelElement>
+                    <aas:operation>
+                        <aas:idShort>ManageServer</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.operations</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:inoutputVariable/>
+                        <aas:inputVariable>
+                            <aas:operationVariable>
+                                <aas:value>
+                                    <aas:property>
+                                        <aas:idShort>ServerCommand</aas:idShort>
+                                        <aas:kind>Template</aas:kind>
+                                        <aas:value>EmptyServerCommand</aas:value>
+                                        <aas:valueType>string</aas:valueType>
+                                    </aas:property>
+                                </aas:value>
+                            </aas:operationVariable>
+                        </aas:inputVariable>
+                        <aas:outputVariable>
+                            <aas:operationVariable>
+                                <aas:value>
+                                    <aas:property>
+                                        <aas:idShort>Result</aas:idShort>
+                                        <aas:kind>Template</aas:kind>
+                                        <aas:value>NA</aas:value>
+                                        <aas:valueType>string</aas:valueType>
+                                    </aas:property>
+                                </aas:value>
+                            </aas:operationVariable>
+                        </aas:outputVariable>
+                    </aas:operation>
+                </aas:submodelElement>
+                <aas:submodelElement>
+                    <aas:operation>
+                        <aas:idShort>DeleteCapability</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.operations</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:inoutputVariable/>
+                        <aas:inputVariable>
+                            <aas:operationVariable>
+                                <aas:value>
+                                    <aas:property>
+                                        <aas:idShort>Command</aas:idShort>
+                                        <aas:kind>Template</aas:kind>
+                                        <aas:value>EmptyCommand</aas:value>
+                                        <aas:valueType>string</aas:valueType>
+                                    </aas:property>
+                                </aas:value>
+                            </aas:operationVariable>
+                        </aas:inputVariable>
+                        <aas:outputVariable>
+                            <aas:operationVariable>
+                                <aas:value>
+                                    <aas:property>
+                                        <aas:idShort>OutId</aas:idShort>
+                                        <aas:kind>Template</aas:kind>
+                                        <aas:value>NA</aas:value>
+                                        <aas:valueType>string</aas:valueType>
+                                    </aas:property>
+                                </aas:value>
+                            </aas:operationVariable>
+                        </aas:outputVariable>
+                    </aas:operation>
+                </aas:submodelElement>
+                <aas:submodelElement>
+                    <aas:operation>
+                        <aas:idShort>GetOutputCapability</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.operations</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:inoutputVariable/>
+                        <aas:inputVariable>
+                            <aas:operationVariable>
+                                <aas:value>
+                                    <aas:property>
+                                        <aas:idShort>CommandId</aas:idShort>
+                                        <aas:kind>Template</aas:kind>
+                                        <aas:value>EmptyCommand</aas:value>
+                                        <aas:valueType>string</aas:valueType>
+                                    </aas:property>
+                                </aas:value>
+                            </aas:operationVariable>
+                        </aas:inputVariable>
+                        <aas:outputVariable>
+                            <aas:operationVariable>
+                                <aas:value>
+                                    <aas:property>
+                                        <aas:idShort>Result</aas:idShort>
+                                        <aas:kind>Template</aas:kind>
+                                        <aas:value>NA</aas:value>
+                                        <aas:valueType>string</aas:valueType>
+                                    </aas:property>
+                                </aas:value>
+                            </aas:operationVariable>
+                        </aas:outputVariable>
+                    </aas:operation>
+                </aas:submodelElement>
+            </aas:submodelElements>
+        </aas:submodel>
+        <aas:submodel>
+            <aas:idShort>BillOfMaterials</aas:idShort>
+            <aas:identification idType="IRI">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:identification>
+            <aas:kind>Instance</aas:kind>
+            <aas:submodelElements>
+                <aas:submodelElement>
+                    <aas:submodelElementCollection>
+                        <aas:idShort>Components</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:allowDuplicates>true</aas:allowDuplicates>
+                        <aas:ordered>true</aas:ordered>
+                        <aas:value>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>SmartCdlServer</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value>
+                                        <aas:submodelElement>
+                                            <aas:submodelElementCollection>
+                                                <aas:idShort>Capabilities</aas:idShort>
+                                                <aas:parent>
+                                                    <aas:keys>
+                                                        <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartCdlServer</aas:key>
+                                                    </aas:keys>
+                                                </aas:parent>
+                                                <aas:kind>Instance</aas:kind>
+                                                <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                <aas:ordered>true</aas:ordered>
+                                                <aas:value>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>moveRobotBackwardsRelative</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartCdlServer</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>startReactiveNavigation</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartCdlServer</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>stopReactiveNavigation</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartCdlServer</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>moveRobotOrientateRobotAbs</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartCdlServer</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>moveRobotPosition</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartCdlServer</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>approachLocation</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartCdlServer</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>moveRobotBackwardsLocation</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartCdlServer</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>moveRobotOrientateRobotRel</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartCdlServer</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>approachWall</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartCdlServer</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>loadNavigationMap</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartCdlServer</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>startJoystickNavigation</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartCdlServer</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>stopJoystickNavigation</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartCdlServer</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>initNavigation</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartCdlServer</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                </aas:value>
+                                            </aas:submodelElementCollection>
+                                        </aas:submodelElement>
+                                    </aas:value>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>SmartPlannerBreadthFirstSearch</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value/>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>SmartAmcl</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value>
+                                        <aas:submodelElement>
+                                            <aas:submodelElementCollection>
+                                                <aas:idShort>Capabilities</aas:idShort>
+                                                <aas:parent>
+                                                    <aas:keys>
+                                                        <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartAmcl</aas:key>
+                                                    </aas:keys>
+                                                </aas:parent>
+                                                <aas:kind>Instance</aas:kind>
+                                                <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                <aas:ordered>true</aas:ordered>
+                                                <aas:value>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>triggerGlobalLocalization</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartAmcl</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>loadMap</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartAmcl</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>deactivateLocalization</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartAmcl</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>setRobotPose</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartAmcl</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>activateLocalization</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SmartAmcl</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                </aas:value>
+                                            </aas:submodelElementCollection>
+                                        </aas:submodelElement>
+                                    </aas:value>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>ComponentWebots2DLidar</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value/>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>SmartMapperGridMap</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value/>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>ComponentRackDetection</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value>
+                                        <aas:submodelElement>
+                                            <aas:submodelElementCollection>
+                                                <aas:idShort>Capabilities</aas:idShort>
+                                                <aas:parent>
+                                                    <aas:keys>
+                                                        <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentRackDetection</aas:key>
+                                                    </aas:keys>
+                                                </aas:parent>
+                                                <aas:kind>Instance</aas:kind>
+                                                <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                <aas:ordered>true</aas:ordered>
+                                                <aas:value>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>objectrecognition</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentRackDetection</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                </aas:value>
+                                            </aas:submodelElementCollection>
+                                        </aas:submodelElement>
+                                    </aas:value>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>ComponentAASBridge</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value>
+                                        <aas:submodelElement>
+                                            <aas:submodelElementCollection>
+                                                <aas:idShort>Capabilities</aas:idShort>
+                                                <aas:parent>
+                                                    <aas:keys>
+                                                        <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentAASBridge</aas:key>
+                                                    </aas:keys>
+                                                </aas:parent>
+                                                <aas:kind>Instance</aas:kind>
+                                                <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                <aas:ordered>true</aas:ordered>
+                                                <aas:value>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>dummy</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentAASBridge</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                </aas:value>
+                                            </aas:submodelElementCollection>
+                                        </aas:submodelElement>
+                                    </aas:value>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>ComponentWebots</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value/>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>SmartRobotConsole</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value/>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>ComponentKB</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value>
+                                        <aas:submodelElement>
+                                            <aas:submodelElementCollection>
+                                                <aas:idShort>Capabilities</aas:idShort>
+                                                <aas:parent>
+                                                    <aas:keys>
+                                                        <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentKB</aas:key>
+                                                    </aas:keys>
+                                                </aas:parent>
+                                                <aas:kind>Instance</aas:kind>
+                                                <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                <aas:ordered>true</aas:ordered>
+                                                <aas:value/>
+                                            </aas:submodelElementCollection>
+                                        </aas:submodelElement>
+                                    </aas:value>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>ComponentWebotsPTUServer</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value>
+                                        <aas:submodelElement>
+                                            <aas:submodelElementCollection>
+                                                <aas:idShort>Capabilities</aas:idShort>
+                                                <aas:parent>
+                                                    <aas:keys>
+                                                        <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentWebotsPTUServer</aas:key>
+                                                    </aas:keys>
+                                                </aas:parent>
+                                                <aas:kind>Instance</aas:kind>
+                                                <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                <aas:ordered>true</aas:ordered>
+                                                <aas:value>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>moveptuabsolute</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentWebotsPTUServer</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>moveptulocation</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentWebotsPTUServer</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                </aas:value>
+                                            </aas:submodelElementCollection>
+                                        </aas:submodelElement>
+                                    </aas:value>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>ComponentKinectBoxDetection</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value>
+                                        <aas:submodelElement>
+                                            <aas:submodelElementCollection>
+                                                <aas:idShort>Capabilities</aas:idShort>
+                                                <aas:parent>
+                                                    <aas:keys>
+                                                        <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentKinectBoxDetection</aas:key>
+                                                    </aas:keys>
+                                                </aas:parent>
+                                                <aas:kind>Instance</aas:kind>
+                                                <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                <aas:ordered>true</aas:ordered>
+                                                <aas:value>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>objectrecognition</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentKinectBoxDetection</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                </aas:value>
+                                            </aas:submodelElementCollection>
+                                        </aas:submodelElement>
+                                    </aas:value>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>ComponentTCLSequencer</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value/>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>ComponentVisualization</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value>
+                                        <aas:submodelElement>
+                                            <aas:submodelElementCollection>
+                                                <aas:idShort>Capabilities</aas:idShort>
+                                                <aas:parent>
+                                                    <aas:keys>
+                                                        <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentVisualization</aas:key>
+                                                    </aas:keys>
+                                                </aas:parent>
+                                                <aas:kind>Instance</aas:kind>
+                                                <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                <aas:ordered>true</aas:ordered>
+                                                <aas:value>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>stopVisualizationOf</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentVisualization</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>startVisualizationOf</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentVisualization</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                </aas:value>
+                                            </aas:submodelElementCollection>
+                                        </aas:submodelElement>
+                                    </aas:value>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>ComponentWebots3DCamera</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value/>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>ComponentOpenRave</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value>
+                                        <aas:submodelElement>
+                                            <aas:submodelElementCollection>
+                                                <aas:idShort>Capabilities</aas:idShort>
+                                                <aas:parent>
+                                                    <aas:keys>
+                                                        <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentOpenRave</aas:key>
+                                                    </aas:keys>
+                                                </aas:parent>
+                                                <aas:kind>Instance</aas:kind>
+                                                <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                <aas:ordered>true</aas:ordered>
+                                                <aas:value>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>graspobjects</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentOpenRave</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                </aas:value>
+                                            </aas:submodelElementCollection>
+                                        </aas:submodelElement>
+                                    </aas:value>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>ComponentWebotsMobileRobot</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value>
+                                        <aas:submodelElement>
+                                            <aas:submodelElementCollection>
+                                                <aas:idShort>Capabilities</aas:idShort>
+                                                <aas:parent>
+                                                    <aas:keys>
+                                                        <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentWebotsMobileRobot</aas:key>
+                                                    </aas:keys>
+                                                </aas:parent>
+                                                <aas:kind>Instance</aas:kind>
+                                                <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                <aas:ordered>true</aas:ordered>
+                                                <aas:value>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>getBaseCharging</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentWebotsMobileRobot</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>getBasePose</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentWebotsMobileRobot</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>resetBase</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentWebotsMobileRobot</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                </aas:value>
+                                            </aas:submodelElementCollection>
+                                        </aas:submodelElement>
+                                    </aas:value>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>ComponentWebotsRobotArm</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value/>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                        </aas:value>
+                    </aas:submodelElementCollection>
+                </aas:submodelElement>
+            </aas:submodelElements>
+        </aas:submodel>
+        <aas:submodel>
+            <aas:idShort>Capabilities</aas:idShort>
+            <aas:identification idType="IRI">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/Capabilities</aas:identification>
+            <aas:kind>Instance</aas:kind>
+            <aas:submodelElements>
+                <aas:submodelElement>
+                    <aas:submodelElementCollection>
+                        <aas:idShort>null</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/Capabilities</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:allowDuplicates>true</aas:allowDuplicates>
+                        <aas:ordered>true</aas:ordered>
+                        <aas:value/>
+                    </aas:submodelElementCollection>
+                </aas:submodelElement>
+            </aas:submodelElements>
+        </aas:submodel>
+        <aas:submodel>
+            <aas:idShort>SmartMDSDCommands</aas:idShort>
+            <aas:identification idType="IRI">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/SmartMDSDCommands</aas:identification>
+            <aas:kind>Instance</aas:kind>
+            <aas:submodelElements>
+                <aas:submodelElement>
+                    <aas:submodelElementCollection>
+                        <aas:idShort>AnotherCommandINPUTSocket</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/SmartMDSDCommands</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:allowDuplicates>true</aas:allowDuplicates>
+                        <aas:ordered>true</aas:ordered>
+                        <aas:value>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>CommandText2</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/SmartMDSDCommands</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">AnotherCommandINPUTSocket</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value/>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                        </aas:value>
+                    </aas:submodelElementCollection>
+                </aas:submodelElement>
+                <aas:submodelElement>
+                    <aas:submodelElementCollection>
+                        <aas:idShort>SystemWebotsLarryOrderPickingWithAASDefaultCommandINPUTSocket</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/SmartMDSDCommands</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:allowDuplicates>true</aas:allowDuplicates>
+                        <aas:ordered>true</aas:ordered>
+                        <aas:value>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                    <aas:idShort>CommandText1</aas:idShort>
+                                    <aas:parent>
+                                        <aas:keys>
+                                            <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/SmartMDSDCommands</aas:key>
+                                            <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">SystemWebotsLarryOrderPickingWithAASDefaultCommandINPUTSocket</aas:key>
+                                        </aas:keys>
+                                    </aas:parent>
+                                    <aas:kind>Instance</aas:kind>
+                                    <aas:allowDuplicates>true</aas:allowDuplicates>
+                                    <aas:ordered>true</aas:ordered>
+                                    <aas:value/>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                        </aas:value>
+                    </aas:submodelElementCollection>
+                </aas:submodelElement>
+            </aas:submodelElements>
+        </aas:submodel>
+        <aas:submodel>
+            <aas:idShort>Documentation</aas:idShort>
+            <aas:identification idType="IRI">smartmdsd.aas.submodel.documentation</aas:identification>
+            <aas:kind>Instance</aas:kind>
+            <aas:submodelElements>
+                <aas:submodelElement>
+                    <aas:property>
+                        <aas:idShort>smartmdsd_website</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.documentation</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:value>www.servicerobotik-ulm.de</aas:value>
+                        <aas:valueType>string</aas:valueType>
+                    </aas:property>
+                </aas:submodelElement>
+                <aas:submodelElement>
+                    <aas:property>
+                        <aas:idShort>smartmdsd_project</aas:idShort>
+                        <aas:parent>
+                            <aas:keys>
+                                <aas:key idType="IRI" local="true" type="Submodel">smartmdsd.aas.submodel.documentation</aas:key>
+                            </aas:keys>
+                        </aas:parent>
+                        <aas:kind>Instance</aas:kind>
+                        <aas:value>SystemWebotsLarryOrderPickingWithAAS</aas:value>
+                        <aas:valueType>string</aas:valueType>
+                    </aas:property>
+                </aas:submodelElement>
+            </aas:submodelElements>
+        </aas:submodel>
+    </aas:submodels>
+    <aas:conceptDescriptions/>
+</aas:aasenv>

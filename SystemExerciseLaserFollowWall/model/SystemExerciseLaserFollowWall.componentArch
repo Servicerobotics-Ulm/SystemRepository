@@ -1,0 +1,31 @@
+SystemComponentArchitecture SystemExerciseLaserFollowWall
+{
+ComponentInstance ComponentWebotsMobileRobot instantiates ComponentWebotsMobileRobot
+	{
+		RequiredService LocalizationEventServiceIn
+		ProvidedService BaseStateServiceOut
+		ProvidedService NavigationVelocityServiceIn
+		ProvidedService LocalizationUpdateServiceIn
+		ProvidedService BaseStateQueryServiceAnsw
+	}
+	ComponentInstance ComponentWebots instantiates ComponentWebots
+	{
+	}
+	ComponentInstance ComponentWebots2DLidar instantiates ComponentWebots2DLidar
+	{
+		RequiredService BaseStateServiceIn
+		ProvidedService LaserServiceOut
+		ProvidedService LaserQueryServiceAnsw
+	}
+
+	ComponentInstance ComponentExerciseFollowWall instantiates ComponentExerciseFollowWall
+	{
+		RequiredService LaserServiceIn
+		RequiredService NavigationVelocityServiceOut
+	}
+
+	Connection  ComponentWebots2DLidar.BaseStateServiceIn -> ComponentWebotsMobileRobot.BaseStateServiceOut
+Connection   ComponentExerciseFollowWall.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
+
+	Connection ComponentExerciseFollowWall.NavigationVelocityServiceOut -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
+}

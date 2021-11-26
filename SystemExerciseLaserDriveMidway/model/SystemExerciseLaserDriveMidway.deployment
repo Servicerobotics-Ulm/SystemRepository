@@ -1,0 +1,22 @@
+DeploymentModel SystemExerciseLaserDriveMidway using ComponentArchitecture SystemExerciseLaserDriveMidway
+{
+	TargetPlatformReference PC1 using SystemExerciseLaserDriveMidway.PC1
+	{
+		UploadDirectory "/tmp"
+		NetworkInterface eth2
+	}
+
+	NamingService
+	{
+		deploy-to PC1 }
+
+	ComponentArtefact   ComponentWebotsMobileRobot deploy-to PC1
+
+	ComponentArtefact   ComponentWebots deploy-to PC1
+
+	ComponentArtefact   ComponentWebots2DLidar deploy-to PC1
+
+	ComponentArtefact  
+ 
+ComponentExerciseDriveMidway deploy-to PC1
+}

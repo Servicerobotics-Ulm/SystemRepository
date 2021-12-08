@@ -1,0 +1,37 @@
+SystemComponentArchitecture SystemExerciseRGBDApproachCylinder
+{
+	ComponentInstance ComponentWebots instantiates ComponentWebots 
+	{
+	}
+	ComponentInstance ComponentWebotsMobileRobot instantiates ComponentWebotsMobileRobot
+	{
+		ProvidedService BaseStateServiceOut
+		ProvidedService NavigationVelocityServiceIn
+	}
+	ComponentInstance ComponentWebots3DCamera instantiates ComponentWebots3DCamera
+	{
+		RequiredService basePushTimedClient
+		ProvidedService RGBDImagePushServiceOut
+	}
+	ComponentInstance ComponentExerciseRGBDApproachCylinder instantiates ComponentExerciseRGBDApproachCylinder {
+		RequiredService NavigationVelocityServiceOut
+		RequiredService RGBDImagePushServiceIn
+	}
+	ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer {       
+	}
+	ComponentInstance ComponentVisualization instantiates ComponentVisualization
+	{
+	}
+	Connection ComponentWebots3DCamera.basePushTimedClient -> ComponentWebotsMobileRobot.BaseStateServiceOut
+	Connection ComponentExerciseRGBDApproachCylinder.RGBDImagePushServiceIn -> ComponentWebots3DCamera.RGBDImagePushServiceOut
+	Connection ComponentExerciseRGBDApproachCylinder.NavigationVelocityServiceOut -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
+
+    BehaviorTaskRef BehaviorExerciseRGBDApproachCylinder
+	 
+	CoordinationModuleMapping { 
+		moduleInstance BehaviorExerciseRGBDApproachCylinder.turnOnOffCamera realizedby CameraModule {
+			interfaceInstance camera realizedby ComponentWebots3DCamera 			
+		}
+	}
+	
+}

@@ -1,0 +1,6 @@
+TargetPlatformModel SystemExerciseRGBDObstacleAvoid
+{
+	TargetPlatformDefinition LocalhostTarget
+	{
+		NetworkInterface localhost { HostAddress "127.0.0.1" }
+	} }

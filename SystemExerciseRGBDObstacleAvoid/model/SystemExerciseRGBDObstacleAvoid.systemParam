@@ -1,0 +1,133 @@
+SystemParameterModel SystemExerciseRGBDObstacleAvoid extendsSystem SystemExerciseRGBDObstacleAvoid {
+	 
+	ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots { 
+		ParameterRefinement General {
+			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/ExerciseObstacleAvoid.wbt"
+			enableEditor = false
+		}
+	}	 	
+	ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct ComponentWebotsMobileRobotParams {		
+		ParameterRefinement OdometryRandomError {
+			varianceOfDistancePerMeter = 0
+			varianceOfHeadingPerRadians = 0
+			varianceOfHeadingPerMeter = 0
+		}
+		ParameterRefinement Robot {
+			maxVelX = 1.0
+			maxVelY = 1.0
+			maxRotVel = 4.0
+		}
+  		ParameterRefinement Webots { 
+			robotName = "Pioneer 3-DX"
+			motorName = ["left wheel", "right wheel"]
+			radius = [0.0975, 0.0975]
+			distanceToRobotCentre = [-0.165, 0.165]
+			heading = [0, 0]
+      		maxAcceleration = [1.0, 0.0, 5.0]			
+		}  
+		ParameterRefinement General { 
+			verbose = false
+			useLocalizationEvent = true
+			poseFileName = "/tmp/lastRobotPose.txt"
+			writePoseFile = false
+		}
+	}
+	ComponentParameterInstance ComponentLaserFromRGBDServer refinesParamStruct ComponentLaserFromRGBDServerParams {    	
+		ParameterRefinement scanner {
+			verbose = true
+			on_turret = false
+			x = 70
+			y = 0
+			z = 500
+			azimuth = 0
+			elevation = 0
+			roll = 0
+		}
+		ParameterRefinement laser_generator {
+			min_range = 10
+			max_range = 20000
+			vertical_fov = 0.0
+			angle_resolution = 0.5
+			generationPeriodSec = 0
+			generationPeriodMilliSec = 100
+			floor_threshold_distance = 0.05
+			rgbd_source = 0			
+		}
+		ParameterRefinement base_manipulator {
+			on_base = true
+			x = 0
+			y = 0
+			z = 0
+			base_a = 0
+			steer_a = 0
+			turret_a = 0
+		}
+    }
+	ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWebots2DLidarParams {
+		ParameterRefinement webots {
+			robotName = "LidarPioneer"
+		}
+		ParameterRefinement scanner {      
+	  		verbose = true
+			on_turret = false
+			x = 70
+			y = 0 
+			z = 318 /* height above ground in mm; in SmartLaserLMS200Server this value is 0 (perspective mounting point?) */
+			azimuth = 0
+			elevation = 0
+			roll = 0
+			min_range = 10
+			max_range = 80000
+			opening_angle = 180
+			resolution = 0.5
+			length_unit = 1
+			frequency = 31
+		}
+		ParameterRefinement base_manipulator { 
+			on_base = true
+			x = 0
+			y = 0
+			z = 0
+			base_a = 0
+			steer_a = 0
+			turret_a = 0
+		}
+	}
+	ComponentParameterInstance ComponentWebots3DCamera refinesParamStruct ComponentWebots3DCameraParams { 		
+		ParameterRefinement webots {
+			robotName = "RealSenseD435"
+			cameraName = "RealSense_color"
+			rangeFinderName = "RealSense_range"
+			frequency = 31.25
+		}
+		ParameterRefinement settings {
+			debug_info = true
+			pushnewest_rgbd_image = true
+			pushnewest_color_image = true
+			pushnewest_depth_image = true
+		}
+		ParameterRefinement sensor_pose {
+			x = 70
+			y = 0
+			z = 500
+			azimuth = -1.5707963
+			elevation = 0
+			roll = -1.5707963
+		}
+		ParameterRefinement base {
+			on_base = true
+			on_ptu = false
+			on_ur = false
+			x = 0
+			y = 0
+			z = 0
+			base_a = 0
+		}
+		ParameterRefinement hardware_properties {
+			min_distance = 10
+			max_distance = 10000
+		}
+	}
+	
+}
+

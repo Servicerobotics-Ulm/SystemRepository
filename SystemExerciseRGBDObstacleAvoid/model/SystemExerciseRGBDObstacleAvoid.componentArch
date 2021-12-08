@@ -1,0 +1,86 @@
+SystemComponentArchitecture SystemExerciseRGBDObstacleAvoid
+{
+	ComponentInstance ComponentWebots instantiates ComponentWebots 
+	{
+	}
+	ComponentInstance ComponentWebotsMobileRobot instantiates ComponentWebotsMobileRobot
+	{
+		ProvidedService BaseStateServiceOut
+		ProvidedService NavigationVelocityServiceIn
+	}
+	ComponentInstance ComponentLaserObstacleAvoid instantiates ComponentLaserObstacleAvoid
+	{
+		RequiredService LaserServiceIn
+		RequiredService NavigationVelocityServiceOut
+	}
+	ComponentInstance ComponentLaserFromRGBDServer instantiates ComponentLaserFromRGBDServer
+	{
+		RequiredService rgbdClient
+		ProvidedService LaserServiceOut
+		ProvidedService laserQueryServer
+	}
+	ComponentInstance ComponentWebots3DCamera instantiates ComponentWebots3DCamera
+	{
+		RequiredService basePushTimedClient
+		RequiredService ptuPosePushNewestClient
+		RequiredService UrPosePushTimedClient
+		RequiredService UrPoseQueryClient
+		ProvidedService RGBImagePushServiceOut
+		ProvidedService depthPushNewestServer
+		ProvidedService RGBDImagePushServiceOut
+		ProvidedService colorImageQueryServer
+		ProvidedService imageQueryServer
+	}
+	ComponentInstance ComponentWebots2DLidar instantiates ComponentWebots2DLidar
+	{
+		RequiredService BaseStateServiceIn
+		ProvidedService LaserServiceOut
+		ProvidedService LaserQueryServiceAnsw
+	}
+	ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer {       
+	}
+	ComponentInstance ComponentVisualization instantiates ComponentVisualization
+	{
+		RequiredService rgbdPushNewestClient
+		RequiredService rgbdQueryClient
+		RequiredService baseClient
+		RequiredService laserClient1
+		RequiredService laserClient2
+		RequiredService laserClient3
+		RequiredService irPushNewestClient
+		RequiredService imagePushNewestClient
+		RequiredService curPushClient
+		RequiredService depthPushNewestClient
+		RequiredService ultrasonicPushNewestClient
+		RequiredService personDetectionEventClient
+		RequiredService MarkerListDetectionServiceIn
+		RequiredService AmclVisualizationInfoIn
+		RequiredService plannerGoalPushClient
+		RequiredService plannerWavefrontGridMap
+		RequiredService RGBDImageQueryServiceReq
+		RequiredService ltmQueryClient
+		RequiredService personDetectionQueryClient
+		RequiredService VisualMarkers
+	}
+	Connection ComponentLaserFromRGBDServer.rgbdClient -> ComponentWebots3DCamera.RGBDImagePushServiceOut
+	Connection ComponentLaserObstacleAvoid.NavigationVelocityServiceOut -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
+	Connection ComponentWebots3DCamera.basePushTimedClient -> ComponentWebotsMobileRobot.BaseStateServiceOut
+	Connection ComponentWebots2DLidar.BaseStateServiceIn -> ComponentWebotsMobileRobot.BaseStateServiceOut
+	Connection ComponentLaserObstacleAvoid.LaserServiceIn -> ComponentLaserFromRGBDServer.LaserServiceOut
+	BehaviorTaskRef BehaviorExerciseRGBDObstacleAvoid CoordinationModuleMapping { 
+		moduleInstance BehaviorExerciseRGBDObstacleAvoid.laserFromRGBDGen realizedby LaserFromRGBDModule { 
+			interfaceInstance laserfromrgbd realizedby ComponentLaserFromRGBDServer
+		}
+	} 
+	CoordinationModuleMapping { 
+		moduleInstance BehaviorExerciseRGBDObstacleAvoid.laserFromRGBDGen realizedby LaserFromRGBDModule { 
+			interfaceInstance laserfromrgbd realizedby ComponentLaserFromRGBDServer
+		}
+	}
+	CoordinationModuleMapping { 
+		moduleInstance BehaviorExerciseRGBDObstacleAvoid.turnOnOffCamera realizedby CameraModule {
+			interfaceInstance camera realizedby ComponentWebots3DCamera 			
+		}
+	}
+	
+}

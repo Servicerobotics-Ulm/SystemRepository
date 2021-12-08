@@ -1,0 +1,19 @@
+DeploymentModel SystemExerciseRGBDObstacleAvoid using ComponentArchitecture SystemExerciseRGBDObstacleAvoid
+{
+	TargetPlatformReference LocalhostTarget using SystemExerciseRGBDObstacleAvoid.LocalhostTarget
+	{
+		UploadDirectory "/tmp"
+		NetworkInterface localhost
+	}
+ComponentArtefact ComponentWebots deploy-to LocalhostTarget
+	ComponentArtefact ComponentWebotsMobileRobot deploy-to LocalhostTarget
+	ComponentArtefact ComponentLaserObstacleAvoid deploy-to LocalhostTarget
+	ComponentArtefact ComponentLaserFromRGBDServer deploy-to LocalhostTarget
+	ComponentArtefact ComponentWebots3DCamera deploy-to LocalhostTarget
+	ComponentArtefact ComponentWebots2DLidar deploy-to LocalhostTarget
+	ComponentArtefact ComponentTCLSequencer deploy-to LocalhostTarget
+	NamingService
+	{
+		deploy-to LocalhostTarget }
+ComponentArtefact ComponentVisualization deploy-to LocalhostTarget
+}

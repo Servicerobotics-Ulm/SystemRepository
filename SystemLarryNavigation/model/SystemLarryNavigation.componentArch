@@ -111,7 +111,7 @@ ComponentInstance ComponentRMPBaseServer instantiates ComponentRMPBaseServer
 	
 		CoordinationModuleMapping {
 		moduleInstance NavTasks.localizationModInst realizedby locModRealization {
-			interfaceInstance amcl1 realizedby SmartAmcl
+			interfaceInstance amcl realizedby SmartAmcl
 		}
 	}
 	

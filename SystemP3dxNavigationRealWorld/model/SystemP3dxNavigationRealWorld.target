@@ -3,5 +3,5 @@ TargetPlatformModel SystemP3dxNavigationRealWorld
 	TargetPlatformDefinition Pioneer3DX
 	{
 		LoginAccount student { FullName "Guest" Email "guest@example.com" }
-		NetworkInterface wifi { HostAddress "10.36.32.114" Kind "WLAN" }
+		NetworkInterface wifi { HostAddress "10.36.32.226" Kind "WLAN" }
 	} }

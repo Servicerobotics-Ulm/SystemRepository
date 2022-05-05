@@ -4,4 +4,9 @@ TargetPlatformModel SystemWebotsRobotinoSlave
 	{
 		NetworkInterface eth2 { HostAddress "localhost" }
 	} 
+	TargetPlatformDefinition Robotino26
+	{
+		NetworkInterface wifi { HostAddress "c26-26-robotino3" }
+		LoginAccount robotino { FullName "Guest" Email "guest@example.com" }
+	} 
 }

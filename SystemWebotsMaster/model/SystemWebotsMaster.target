@@ -1,5 +1,10 @@
 TargetPlatformModel SystemWebotsMaster
 {
+	TargetPlatformDefinition Robotino
+	{
+		NetworkInterface eth2 { HostAddress "192.168.101.118" }
+		LoginAccount robotino { FullName "Guest" Email "guest@example.com" }
+	} 
 	TargetPlatformDefinition PC1
 	{
 		NetworkInterface eth2 { HostAddress "localhost" }

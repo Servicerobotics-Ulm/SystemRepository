@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:componentArchitecture="http://www.eclipse.org/smartmdsd/system/componentArchitecture" xmlns:deployment="http://www.eclipse.org/smartmdsd/system/deployment" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:targetPlatform="http://www.eclipse.org/smartmdsd/system/targetPlatform" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis uid="_Am6sYKdNEeu_E_Gfsg8tyw" selectedViews="_AnKkAKdNEeu_E_Gfsg8tyw _AoWPwKdNEeu_E_Gfsg8tyw _ApFPkKdNEeu_E_Gfsg8tyw" version="14.3.1.202003261200">
+  <viewpoint:DAnalysis uid="_Am6sYKdNEeu_E_Gfsg8tyw" selectedViews="_AnKkAKdNEeu_E_Gfsg8tyw _AoWPwKdNEeu_E_Gfsg8tyw _ApFPkKdNEeu_E_Gfsg8tyw" version="14.5.1.202106111100">
     <semanticResources>model/SystemWebotsLarrySlave.componentArch</semanticResources>
     <semanticResources>model/SystemWebotsLarrySlave.deployment</semanticResources>
     <semanticResources>model/SystemWebotsLarrySlave.systemDatasheet</semanticResources>
@@ -101,6 +101,19 @@
     <semanticResources>platform:/resource/SmartRobotConsole/model/SmartRobotConsole.component</semanticResources>
     <semanticResources>platform:/resource/ComponentWebotsRobotArm/model/ComponentWebotsRobotArm.component</semanticResources>
     <semanticResources>platform:/resource/ComponentWebotsRobotArm/model/ComponentWebotsRobotArm.componentParameters</semanticResources>
+    <semanticResources>platform:/resource/ComponentGoalNodeControl/model/ComponentGoalNodeControl.component</semanticResources>
+    <semanticResources>platform:/resource/DomainRobotFleetNavigation/model/DomainRobotFleetNavigation.services</semanticResources>
+    <semanticResources>platform:/resource/DomainRobotFleetNavigation/model/DomainRobotFleetNavigation.types</semanticResources>
+    <semanticResources>platform:/resource/ComponentGoalNodeControl/model/ComponentGoalNodeControl.skillRealization</semanticResources>
+    <semanticResources>platform:/resource/DomainRobotFleetNavigation/model/DomainRobotFleetNavigation.skills</semanticResources>
+    <semanticResources>platform:/resource/ComponentGoalNodeControl/model/ComponentGoalNodeControl.componentParameters</semanticResources>
+    <semanticResources>platform:/resource/ComponentWebots3DCamera/model/ComponentWebots3DCamera.skillRealization</semanticResources>
+    <semanticResources>platform:/resource/DomainVision/model/DomainVision.skills</semanticResources>
+    <semanticResources>platform:/resource/CommTrackingObjects/model/CommTrackingObjects.parameters</semanticResources>
+    <semanticResources>smartsoft/src/ComponentOpenRave_Larry_data/db/openRaveObjectsDB.xsd</semanticResources>
+    <semanticResources>bundleentry://811.fwk512371432/cache/www.w3.org/2001/XMLSchema-instance.xsd</semanticResources>
+    <semanticResources>bundleentry://811.fwk512371432/cache/www.w3.org/2001/XMLSchema.xsd</semanticResources>
+    <semanticResources>bundleentry://811.fwk512371432/cache/www.w3.org/2001/MagicXMLSchema.xsd</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_AnKkAKdNEeu_E_Gfsg8tyw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_AoKpkadNEeu_E_Gfsg8tyw" name="SystemWebotsLarrySlaveDeployment" repPath="#_AoKCgKdNEeu_E_Gfsg8tyw" changeId="4b46b8fd-7700-4e32-8fb3-7f686ebe13bd">

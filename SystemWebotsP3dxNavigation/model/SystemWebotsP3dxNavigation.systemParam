@@ -54,14 +54,14 @@ ComponentParameterInstance SmartCdlServer refinesParamStruct SmartCdlServerParam
 
 ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWebots2DLidarParams{
   ParameterRefinement webots {
-    robotName = "LidarPioneer"
+    robotName = "Pioneer3dx_lidar"
   }
   ParameterRefinement scanner {      
       verbose = true
 			on_turret = false			
-			x = 70
+			x = 82
 			y = 0
-			z = 0
+			z = 306
 			azimuth = 0
 			elevation = 0
 			roll = 0
@@ -84,7 +84,7 @@ ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWe
 }	
 ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct ComponentWebotsMobileRobotParams {
   ParameterRefinement Webots { 
-      robotName = "Pioneer 3-DX"
+      robotName = "Pioneer3dx"
       motorName = ["left wheel", "right wheel"]
       radius = [0.0975, 0.0975]
       distanceToRobotCentre = [-0.165, 0.165]
@@ -134,7 +134,7 @@ ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots {
 	ParameterRefinement 
 	General { 
 		WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/PioneerTHU.wbt"
-		enableEditor = true
+		isEditorPresent = true
 	}
 	  
 	}

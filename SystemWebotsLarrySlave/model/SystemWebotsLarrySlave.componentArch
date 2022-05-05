@@ -1,67 +1,68 @@
 SystemComponentArchitecture SystemWebotsLarrySlave
 {
 
-	ComponentInstance ComponentKB_2 instantiates ComponentKB
+	ComponentInstance ComponentKB_Larry instantiates ComponentKB
 	{
 	} 
 
-	ComponentInstance ComponentWebotsMobileRobot_2 instantiates ComponentWebotsMobileRobot
+	ComponentInstance ComponentWebotsMobileRobot_Larry instantiates ComponentWebotsMobileRobot
 	{
 		ProvidedService BaseStateServiceOut
 		ProvidedService LocalizationUpdateServiceIn
 		ProvidedService NavigationVelocityServiceIn
 		//ProvidedService BaseStateAnswerer
 	}
-	ComponentInstance SmartCdlServer_2 instantiates SmartCdlServer
+	ComponentInstance SmartCdlServer_Larry instantiates SmartCdlServer
 	{
 		RequiredService LaserClient
 		RequiredService PlannerClient
 
 		RequiredService NavVelSendClient
+	RequiredService PathNavigationGoalClient
 	}
-	ComponentInstance SmartMapperGridMap_2 instantiates SmartMapperGridMap
+	ComponentInstance SmartMapperGridMap_Larry instantiates SmartMapperGridMap
 	{
 		RequiredService LaserServiceIn
 		ProvidedService CurrMapOut
 	}
-	ComponentInstance SmartPlannerBreadthFirstSearch_2 instantiates SmartPlannerBreadthFirstSearch
+	ComponentInstance SmartPlannerBreadthFirstSearch_Larry instantiates SmartPlannerBreadthFirstSearch
 	{
 		RequiredService CurMapClient
 		RequiredService BaseStateClient
 		ProvidedService PlannerGoalServer
 	}
-	ComponentInstance SmartAmcl_2 instantiates SmartAmcl
+	ComponentInstance SmartAmcl_Larry instantiates SmartAmcl
 	{
 		RequiredService LaserServiceIn
 		RequiredService LocalizationUpdateServiceOut
 	}
-	ComponentInstance ComponentVisualization instantiates ComponentVisualization
+	ComponentInstance ComponentVisualization_Larry instantiates ComponentVisualization
 	{
 	}
-	ComponentInstance SmartRobotConsole instantiates SmartRobotConsole
+	ComponentInstance SmartRobotConsole_Larry instantiates SmartRobotConsole
 	{
 	}
 
-	ComponentInstance ComponentWebots2DLidar_2 instantiates ComponentWebots2DLidar
+	ComponentInstance ComponentWebots2DLidar_Larry instantiates ComponentWebots2DLidar
 	{
 		RequiredService BaseStateServiceIn
 		ProvidedService LaserServiceOut
 	}
-	ComponentInstance ComponentTCLSequencer_2 instantiates ComponentTCLSequencer
+	ComponentInstance ComponentTCLSequencer_Larry instantiates ComponentTCLSequencer
 	{
 	}
-	ComponentInstance ComponentWebotsPTUServer instantiates ComponentWebotsPTUServer
+	ComponentInstance ComponentWebotsPTUServer_Larry instantiates ComponentWebotsPTUServer
 	{
 		ProvidedService devicePoseStateServer
 	RequiredService baseStateClient
 	}
-	ComponentInstance ComponentWebots3DCamera instantiates ComponentWebots3DCamera
+	ComponentInstance ComponentWebots3DCamera_Larry instantiates ComponentWebots3DCamera
 	{
 		RequiredService ptuPosePushNewestClient
 		ProvidedService imageQueryServer
 	}
 	
-	ComponentInstance ComponentWebotsRobotArm instantiates ComponentWebotsRobotArm {
+	ComponentInstance ComponentWebotsRobotArm_Larry instantiates ComponentWebotsRobotArm {
 		ProvidedService posePushServer
 		ProvidedService trajectorySendServer
 		ProvidedService poseQueryServer
@@ -71,20 +72,20 @@ SystemComponentArchitecture SystemWebotsLarrySlave
 		ProvidedService ioEventServer
 		ProvidedService programQuery
 	} 
-	ComponentInstance ComponentRackDetection instantiates ComponentRackDetection
+	ComponentInstance ComponentRackDetection_Larry instantiates ComponentRackDetection
 	{
 		RequiredService kinectQueryClient
 
 		ProvidedService environmentQueryServer
 	}
-	ComponentInstance ComponentKinectBoxDetection instantiates ComponentKinectBoxDetection
+	ComponentInstance ComponentKinectBoxDetection_Larry instantiates ComponentKinectBoxDetection
 	{
 		RequiredService kinectQueryClient
 		ProvidedService objectPropertyQueryServer
 	ProvidedService environmentQueryServer
 	}
 
-	ComponentInstance ComponentOpenRave instantiates ComponentOpenRave
+	ComponentInstance ComponentOpenRave_Larry instantiates ComponentOpenRave
 	{
 		RequiredService MobileManipulatorStateServiceIn
 		RequiredService SendTrajectoryOut
@@ -92,98 +93,116 @@ SystemComponentArchitecture SystemWebotsLarrySlave
 		RequiredService EnvironmentQueryServiceReq
 		RequiredService ObjectQueryServiceReq
 	}
-	ComponentInstance ComponentSeq2SeqCom_2 instantiates ComponentSeq2SeqCom
+	ComponentInstance ComponentSeq2SeqCom_Larry instantiates ComponentSeq2SeqCom
 	{
 		RequiredService TaskSendOut
 		ProvidedService TaskEventOut
 		ProvidedService TaskSendIn
 	}
+	ComponentInstance ComponentGoalNodeControl_Larry instantiates ComponentGoalNodeControl
+	{
+		RequiredService BaseStateServiceIn
+		RequiredService ShortestPathRequestServiceReq
+		RequiredService NodeStatusUpdateServiceReq
+		ProvidedService CorridorNavigationNextGoalOut
+	}
 
-	Connection SmartAmcl_2.LocalizationUpdateServiceOut -> ComponentWebotsMobileRobot_2.LocalizationUpdateServiceIn
-	Connection SmartCdlServer_2.NavVelSendClient -> ComponentWebotsMobileRobot_2.NavigationVelocityServiceIn
-Connection SmartPlannerBreadthFirstSearch_2.CurMapClient -> SmartMapperGridMap_2.CurrMapOut
-	Connection SmartPlannerBreadthFirstSearch_2.BaseStateClient -> ComponentWebotsMobileRobot_2.BaseStateServiceOut
+	Connection SmartAmcl_Larry.LocalizationUpdateServiceOut -> ComponentWebotsMobileRobot_Larry.LocalizationUpdateServiceIn
+	Connection SmartCdlServer_Larry.NavVelSendClient -> ComponentWebotsMobileRobot_Larry.NavigationVelocityServiceIn
+Connection SmartPlannerBreadthFirstSearch_Larry.CurMapClient -> SmartMapperGridMap_Larry.CurrMapOut
+	Connection SmartPlannerBreadthFirstSearch_Larry.BaseStateClient -> ComponentWebotsMobileRobot_Larry.BaseStateServiceOut
 
-	Connection SmartCdlServer_2.PlannerClient -> SmartPlannerBreadthFirstSearch_2.PlannerGoalServer
+	Connection SmartCdlServer_Larry.PlannerClient -> SmartPlannerBreadthFirstSearch_Larry.PlannerGoalServer
 
-	Connection  ComponentWebots2DLidar_2.BaseStateServiceIn -> ComponentWebotsMobileRobot_2.BaseStateServiceOut
+	Connection  ComponentWebots2DLidar_Larry.BaseStateServiceIn -> ComponentWebotsMobileRobot_Larry.BaseStateServiceOut
 
-	Connection  SmartAmcl_2.LaserServiceIn -> ComponentWebots2DLidar_2.LaserServiceOut
-	Connection SmartCdlServer_2.LaserClient -> ComponentWebots2DLidar_2.LaserServiceOut
-	Connection SmartMapperGridMap_2.LaserServiceIn -> ComponentWebots2DLidar_2.LaserServiceOut
-	Connection ComponentWebots3DCamera.ptuPosePushNewestClient -> ComponentWebotsPTUServer.devicePoseStateServer
+	Connection  SmartAmcl_Larry.LaserServiceIn -> ComponentWebots2DLidar_Larry.LaserServiceOut
+	Connection SmartCdlServer_Larry.LaserClient -> ComponentWebots2DLidar_Larry.LaserServiceOut
+	Connection SmartMapperGridMap_Larry.LaserServiceIn -> ComponentWebots2DLidar_Larry.LaserServiceOut
+	Connection ComponentWebots3DCamera_Larry.ptuPosePushNewestClient -> ComponentWebotsPTUServer_Larry.devicePoseStateServer
 
-	Connection ComponentOpenRave.MobileManipulatorStateServiceIn -> ComponentWebotsRobotArm.posePushServer
-	Connection ComponentOpenRave.MobileManipulatorStateQueryServiceReq -> ComponentWebotsRobotArm.poseQueryServer
-	Connection ComponentOpenRave.SendTrajectoryOut -> ComponentWebotsRobotArm.trajectorySendServer
+	Connection ComponentOpenRave_Larry.MobileManipulatorStateServiceIn -> ComponentWebotsRobotArm_Larry.posePushServer
+	Connection ComponentOpenRave_Larry.MobileManipulatorStateQueryServiceReq -> ComponentWebotsRobotArm_Larry.poseQueryServer
+	Connection ComponentOpenRave_Larry.SendTrajectoryOut -> ComponentWebotsRobotArm_Larry.trajectorySendServer
 
-	Connection ComponentOpenRave.ObjectQueryServiceReq -> ComponentKinectBoxDetection.objectPropertyQueryServer
-	Connection ComponentWebotsRobotArm.baseStateServiceIn -> ComponentWebotsMobileRobot_2.BaseStateServiceOut
+	Connection ComponentOpenRave_Larry.ObjectQueryServiceReq -> ComponentKinectBoxDetection_Larry.objectPropertyQueryServer
+	Connection ComponentWebotsRobotArm_Larry.baseStateServiceIn -> ComponentWebotsMobileRobot_Larry.BaseStateServiceOut
 
-	Connection ComponentWebotsPTUServer.baseStateClient -> ComponentWebotsMobileRobot_2.BaseStateServiceOut
-	Connection  ComponentOpenRave.EnvironmentQueryServiceReq -> ComponentRackDetection.environmentQueryServer
-	Connection ComponentRackDetection.kinectQueryClient -> ComponentWebots3DCamera.imageQueryServer
+	Connection ComponentWebotsPTUServer_Larry.baseStateClient -> ComponentWebotsMobileRobot_Larry.BaseStateServiceOut
+	Connection  ComponentOpenRave_Larry.EnvironmentQueryServiceReq -> ComponentRackDetection_Larry.environmentQueryServer
+	Connection ComponentRackDetection_Larry.kinectQueryClient -> ComponentWebots3DCamera_Larry.imageQueryServer
+	Connection ComponentGoalNodeControl_Larry.BaseStateServiceIn -> ComponentWebotsMobileRobot_Larry.BaseStateServiceOut
+	Connection SmartCdlServer_Larry.PathNavigationGoalClient -> ComponentGoalNodeControl_Larry.CorridorNavigationNextGoalOut
 	BehaviorTaskRef BehaviorLarrySlave
 	
 	CoordinationModuleMapping {
 		
 		moduleInstance BehaviorLarrySlave.kbModule realizedby kbModule {
-			interfaceInstance kb realizedby ComponentKB_2
+			interfaceInstance kb realizedby ComponentKB_Larry
 		}
 	}
 	
 	CoordinationModuleMapping {
 		moduleInstance BehaviorLarrySlave.navigation realizedby MovementMod2
 		{
-			interfaceInstance cdl realizedby SmartCdlServer_2
-			interfaceInstance mapper realizedby SmartMapperGridMap_2
-			interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch_2
+			interfaceInstance cdl realizedby SmartCdlServer_Larry
+			interfaceInstance mapper realizedby SmartMapperGridMap_Larry
+			interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch_Larry
 		}
 	}
 	
 	CoordinationModuleMapping {
 		moduleInstance BehaviorLarrySlave.localizationModInst realizedby locModRealization {
-			interfaceInstance amcl realizedby SmartAmcl_2
+			interfaceInstance amcl realizedby SmartAmcl_Larry
 		}
 	}
 	
 	CoordinationModuleMapping {	
 		
 		moduleInstance BehaviorLarrySlave.ptuModule realizedby ptu {
-			interfaceInstance ptu_cs realizedby ComponentWebotsPTUServer
+			interfaceInstance ptu_cs realizedby ComponentWebotsPTUServer_Larry
 		}
 	}
 	
 	CoordinationModuleMapping {
 		moduleInstance BehaviorLarrySlave.boxDetectionModule realizedby boxDetection {
-			interfaceInstance cs_boxDetection realizedby ComponentKinectBoxDetection
+			interfaceInstance cs_boxDetection realizedby ComponentKinectBoxDetection_Larry
 			//interfaceInstance cs_camera realizedby ComponentWebots3DCamera 
 		} 
 	}
 	
 	CoordinationModuleMapping {
 		moduleInstance BehaviorLarrySlave.rackDetectionModule realizedby rackDetection {
-			interfaceInstance cs_rackDetection realizedby ComponentRackDetection
-			interfaceInstance cs_camera realizedby ComponentWebots3DCamera
+			interfaceInstance cs_rackDetection realizedby ComponentRackDetection_Larry
+			interfaceInstance cs_camera realizedby ComponentWebots3DCamera_Larry
 		} 
 	}
 	
 	CoordinationModuleMapping {
 		moduleInstance BehaviorLarrySlave.manipulationModule realizedby manipulationPlanning {
-			interfaceInstance cs_trajPlanning realizedby ComponentOpenRave
-			interfaceInstance cs_trajExecution realizedby ComponentWebotsRobotArm
+			interfaceInstance cs_trajPlanning realizedby ComponentOpenRave_Larry
+			interfaceInstance cs_trajExecution realizedby ComponentWebotsRobotArm_Larry
 		}
 	}
 	
 	CoordinationModuleMapping {
 		moduleInstance BehaviorLarrySlave.base realizedby baseInst {
-			interfaceInstance base realizedby ComponentWebotsMobileRobot_2
+			interfaceInstance base realizedby ComponentWebotsMobileRobot_Larry
 		}
 	}
 	
 	CoordinationModuleMapping {
 		moduleInstance BehaviorLarrySlave.seq2seq realizedby seq2seq {
-			interfaceInstance cs_seq2seq realizedby ComponentSeq2SeqCom_2
+			interfaceInstance cs_seq2seq realizedby ComponentSeq2SeqCom_Larry
+		}
+	}
+	 
+	CoordinationModuleMapping {  
+		moduleInstance BehaviorLarrySlave.navPathClient realizedby navPathClient {
+			interfaceInstance cdl realizedby SmartCdlServer_Larry
+			interfaceInstance mapper realizedby SmartMapperGridMap_Larry
+			interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch_Larry
+			interfaceInstance navPathClient realizedby ComponentGoalNodeControl_Larry
 		}
 	}
 	

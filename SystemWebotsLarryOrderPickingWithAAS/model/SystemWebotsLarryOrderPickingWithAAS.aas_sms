@@ -108,6 +108,10 @@ AAS :: SMS	"SystemWebotsLarryOrderPickingWithAAS"  [[AASEntriesLOG_START[[
 Ͱ"AAS"¤"SystemWebotsLarryOrderPickingWithAAS"§"SM"¤"BillOfMaterials"§"SMC"¤"Components"§"ENT"¤"ComponentWebotsPTUServer"§"ENT"¤"Capabilities"§"CAP"¤"moveptuabsolute"†"IRI"º"Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM/Components/ComponentWebotsPTUServer/Capabilities/moveptuabsolute"†"";
 Ͱ"AAS"¤"SystemWebotsLarryOrderPickingWithAAS"§"SM"¤"BillOfMaterials"§"SMC"¤"Components"§"ENT"¤"ComponentWebotsPTUServer"§"ENT"¤"Capabilities"§"CAP"¤"moveptulocation"†"IRI"º"Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM/Components/ComponentWebotsPTUServer/Capabilities/moveptulocation"†"";
 Ͱ"AAS"¤"SystemWebotsLarryOrderPickingWithAAS"§"SM"¤"BillOfMaterials"§"SMC"¤"Components"§"ENT"¤"ComponentWebots3DCamera"†"IRI"º"Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM/Components/ComponentWebots3DCamera"†"";
+Ͱ"AAS"¤"SystemWebotsLarryOrderPickingWithAAS"§"SM"¤"BillOfMaterials"§"SMC"¤"Components"§"ENT"¤"ComponentWebots3DCamera"§"ENT"¤"Capabilities"†"IRI"º"Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM/Components/ComponentWebots3DCamera/Capabilities"†"";
+Ͱ"AAS"¤"SystemWebotsLarryOrderPickingWithAAS"§"SM"¤"BillOfMaterials"§"SMC"¤"Components"§"ENT"¤"ComponentWebots3DCamera"§"ENT"¤"Capabilities"§"CAP"¤"activateCameraPush"†"IRI"º"Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM/Components/ComponentWebots3DCamera/Capabilities/activateCameraPush"†"";
+Ͱ"AAS"¤"SystemWebotsLarryOrderPickingWithAAS"§"SM"¤"BillOfMaterials"§"SMC"¤"Components"§"ENT"¤"ComponentWebots3DCamera"§"ENT"¤"Capabilities"§"CAP"¤"activateCameraRequestResponse"†"IRI"º"Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM/Components/ComponentWebots3DCamera/Capabilities/activateCameraRequestResponse"†"";
+Ͱ"AAS"¤"SystemWebotsLarryOrderPickingWithAAS"§"SM"¤"BillOfMaterials"§"SMC"¤"Components"§"ENT"¤"ComponentWebots3DCamera"§"ENT"¤"Capabilities"§"CAP"¤"deactivateCamera"†"IRI"º"Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM/Components/ComponentWebots3DCamera/Capabilities/deactivateCamera"†"";
 Ͱ"AAS"¤"SystemWebotsLarryOrderPickingWithAAS"§"SM"¤"BillOfMaterials"§"SMC"¤"Components"§"ENT"¤"ComponentWebotsRobotArm"†"IRI"º"Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM/Components/ComponentWebotsRobotArm"†"";
 Ͱ"AAS"¤"SystemWebotsLarryOrderPickingWithAAS"§"SM"¤"BillOfMaterials"§"SMC"¤"Components"§"ENT"¤"ComponentRackDetection"†"IRI"º"Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM/Components/ComponentRackDetection"†"";
 Ͱ"AAS"¤"SystemWebotsLarryOrderPickingWithAAS"§"SM"¤"BillOfMaterials"§"SMC"¤"Components"§"ENT"¤"ComponentRackDetection"§"ENT"¤"Capabilities"†"IRI"º"Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM/Components/ComponentRackDetection/Capabilities"†"";
@@ -122,7 +126,7 @@ AAS :: SMS	"SystemWebotsLarryOrderPickingWithAAS"  [[AASEntriesLOG_START[[
 Ͱ"AAS"¤"SystemWebotsLarryOrderPickingWithAAS"§"SM"¤"BillOfMaterials"§"SMC"¤"Components"§"ENT"¤"ComponentAASBridge"§"ENT"¤"Capabilities"†"IRI"º"Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM/Components/ComponentAASBridge/Capabilities"†"";
 Ͱ"AAS"¤"SystemWebotsLarryOrderPickingWithAAS"§"SM"¤"BillOfMaterials"§"SMC"¤"Components"§"ENT"¤"ComponentAASBridge"§"ENT"¤"Capabilities"§"CAP"¤"dummy"†"IRI"º"Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM/Components/ComponentAASBridge/Capabilities/dummy"†"";
 Ͱ"AAS"¤"SystemWebotsLarryOrderPickingWithAAS"§"SM"¤"Capabilities"†"IRI"º"Smartaasid/SystemWebotsLarryOrderPickingWithAAS/Capabilities"†"";
-Ͱ"AAS"¤"SystemWebotsLarryOrderPickingWithAAS"§"SM"¤"Capabilities"§"SMC"¤"null"†"IRI"º"Smartaasid/SystemWebotsLarryOrderPickingWithAAS/Capabilities/null"†"";
+Ͱ"AAS"¤"SystemWebotsLarryOrderPickingWithAAS"§"SM"¤"Capabilities"§"SMC"¤"BehaviorOrderPickingWithAAS"†"IRI"º"Smartaasid/SystemWebotsLarryOrderPickingWithAAS/Capabilities/BehaviorOrderPickingWithAAS"†"";
 ]]AASEntriesLOG_FINISH]]
 
 AAS :: SMS	"SystemWebotsLarryOrderPickingWithAAS"  [[AASEntriesLOG_Command_START[[

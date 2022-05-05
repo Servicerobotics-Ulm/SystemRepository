@@ -7,21 +7,27 @@ DeploymentModel SystemWebotsLarrySlave using ComponentArchitecture SystemWebotsL
 	}
 	
 	
-	ComponentArtefact ComponentKB_2 deploy-to PC1
-	ComponentArtefact SmartAmcl_2 deploy-to PC1
-	ComponentArtefact SmartCdlServer_2 deploy-to PC1
-	ComponentArtefact SmartMapperGridMap_2 deploy-to PC1
-	ComponentArtefact SmartPlannerBreadthFirstSearch_2 deploy-to PC1
-	ComponentArtefact ComponentVisualization deploy-to PC1
-	ComponentArtefact SmartRobotConsole deploy-to PC1
-	ComponentArtefact ComponentWebots2DLidar_2 deploy-to PC1
-	ComponentArtefact ComponentTCLSequencer_2 deploy-to PC1
-	ComponentArtefact ComponentWebotsPTUServer deploy-to PC1
-	ComponentArtefact ComponentWebots3DCamera deploy-to PC1
-	ComponentArtefact ComponentWebotsRobotArm deploy-to PC1
-	ComponentArtefact ComponentRackDetection deploy-to PC1
-	ComponentArtefact ComponentKinectBoxDetection deploy-to PC1
-	ComponentArtefact ComponentOpenRave deploy-to PC1
-	ComponentArtefact ComponentWebotsMobileRobot_2 deploy-to PC1
-	ComponentArtefact ComponentSeq2SeqCom_2 deploy-to PC1
+	ComponentArtefact ComponentKB_Larry deploy-to PC1
+	ComponentArtefact SmartAmcl_Larry deploy-to PC1
+	ComponentArtefact SmartCdlServer_Larry deploy-to PC1
+	ComponentArtefact SmartMapperGridMap_Larry deploy-to PC1
+	ComponentArtefact SmartPlannerBreadthFirstSearch_Larry deploy-to PC1
+	ComponentArtefact ComponentVisualization_Larry deploy-to PC1
+	ComponentArtefact SmartRobotConsole_Larry deploy-to PC1
+	ComponentArtefact ComponentWebots2DLidar_Larry deploy-to PC1
+	ComponentArtefact ComponentTCLSequencer_Larry deploy-to PC1
+	ComponentArtefact ComponentWebotsPTUServer_Larry deploy-to PC1
+	ComponentArtefact ComponentWebots3DCamera_Larry deploy-to PC1
+	ComponentArtefact ComponentWebotsRobotArm_Larry deploy-to PC1
+	ComponentArtefact ComponentRackDetection_Larry deploy-to PC1
+	ComponentArtefact ComponentKinectBoxDetection_Larry deploy-to PC1
+	ComponentArtefact ComponentOpenRave_Larry deploy-to PC1
+	ComponentArtefact ComponentWebotsMobileRobot_Larry deploy-to PC1
+	ComponentArtefact ComponentSeq2SeqCom_Larry deploy-to PC1
+	
+	ComponentArtefact ComponentGoalNodeControl_Larry deploy-to PC1
+	
+	/*NamingService {
+		deploy-to PC1
+	}*/
 }

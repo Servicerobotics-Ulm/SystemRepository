@@ -3,7 +3,7 @@ SystemParameterModel SystemWebotsNavMpsDockingOpcuaParams extendsSystem SystemWe
 ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots {
 	ParameterRefinement General {
 		WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/ConveyorBeltIntralogistic.wbt"
-		enableEditor = true	
+		isEditorPresent = true	
 	}
 }
 

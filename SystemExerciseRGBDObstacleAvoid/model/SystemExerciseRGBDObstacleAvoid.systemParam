@@ -3,7 +3,7 @@ SystemParameterModel SystemExerciseRGBDObstacleAvoid extendsSystem SystemExercis
 	ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots { 
 		ParameterRefinement General {
 			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/ExerciseObstacleAvoid.wbt"
-			enableEditor = false
+			isEditorPresent = false
 		}
 	}	 	
 	ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct ComponentWebotsMobileRobotParams {		
@@ -18,7 +18,7 @@ SystemParameterModel SystemExerciseRGBDObstacleAvoid extendsSystem SystemExercis
 			maxRotVel = 4.0
 		}
   		ParameterRefinement Webots { 
-			robotName = "Pioneer 3-DX"
+			robotName = "Pioneer3dx"
 			motorName = ["left wheel", "right wheel"]
 			radius = [0.0975, 0.0975]
 			distanceToRobotCentre = [-0.165, 0.165]
@@ -36,9 +36,9 @@ SystemParameterModel SystemExerciseRGBDObstacleAvoid extendsSystem SystemExercis
 		ParameterRefinement scanner {
 			verbose = true
 			on_turret = false
-			x = 70
+			x = 0
 			y = 0
-			z = 500
+			z = 600
 			azimuth = 0
 			elevation = 0
 			roll = 0
@@ -65,14 +65,14 @@ SystemParameterModel SystemExerciseRGBDObstacleAvoid extendsSystem SystemExercis
     }
 	ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWebots2DLidarParams {
 		ParameterRefinement webots {
-			robotName = "LidarPioneer"
+			robotName = "Pioneer3dx_lidar"
 		}
 		ParameterRefinement scanner {      
 	  		verbose = true
 			on_turret = false
-			x = 70
+			x = 82
 			y = 0 
-			z = 318 /* height above ground in mm; in SmartLaserLMS200Server this value is 0 (perspective mounting point?) */
+			z = 306 /* height above ground in mm; in SmartLaserLMS200Server this value is 0 (perspective mounting point?) */
 			azimuth = 0
 			elevation = 0
 			roll = 0
@@ -95,7 +95,7 @@ SystemParameterModel SystemExerciseRGBDObstacleAvoid extendsSystem SystemExercis
 	}
 	ComponentParameterInstance ComponentWebots3DCamera refinesParamStruct ComponentWebots3DCameraParams { 		
 		ParameterRefinement webots {
-			robotName = "RealSenseD435"
+			robotName = "Pioneer3dx_camera"
 			cameraName = "RealSense_color"
 			rangeFinderName = "RealSense_range"
 			frequency = 31.25
@@ -107,9 +107,9 @@ SystemParameterModel SystemExerciseRGBDObstacleAvoid extendsSystem SystemExercis
 			pushnewest_depth_image = true
 		}
 		ParameterRefinement sensor_pose {
-			x = 70
+			x = 120
 			y = 0
-			z = 500
+			z = 600
 			azimuth = -1.5707963
 			elevation = 0
 			roll = -1.5707963

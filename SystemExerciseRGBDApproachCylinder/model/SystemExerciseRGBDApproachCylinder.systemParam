@@ -3,7 +3,7 @@ SystemParameterModel SystemExerciseRGBDApproachCylinder extendsSystem SystemExer
 	ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots { 
 		ParameterRefinement General {
 			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/ExerciseRGBDApproachCylinder.wbt"
-			enableEditor = false
+			isEditorPresent = false
 		}
 	}	 	
 	ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct ComponentWebotsMobileRobotParams {		
@@ -18,7 +18,7 @@ SystemParameterModel SystemExerciseRGBDApproachCylinder extendsSystem SystemExer
 			maxRotVel = 4.0
 		}
   		ParameterRefinement Webots { 
-			robotName = "Pioneer 3-DX"
+			robotName = "Pioneer3dx"
 			motorName = ["left wheel", "right wheel"]
 			radius = [0.0975, 0.0975]
 			distanceToRobotCentre = [-0.165, 0.165]
@@ -34,7 +34,7 @@ SystemParameterModel SystemExerciseRGBDApproachCylinder extendsSystem SystemExer
 	}
 	ComponentParameterInstance ComponentWebots3DCamera refinesParamStruct ComponentWebots3DCameraParams { 		
 		ParameterRefinement webots {
-			robotName = "RealSenseD435"
+			robotName = "Pioneer3dx_camera"
 			cameraName = "RealSense_color"
 			rangeFinderName = "RealSense_range"
 			frequency = 31.25
@@ -46,9 +46,9 @@ SystemParameterModel SystemExerciseRGBDApproachCylinder extendsSystem SystemExer
 			pushnewest_depth_image = true
 		}
 		ParameterRefinement sensor_pose {
-			x = 70
+			x = 120
 			y = 0
-			z = 500
+			z = 600
 			azimuth = -1.5707963
 			elevation = 0
 			roll = -1.5707963

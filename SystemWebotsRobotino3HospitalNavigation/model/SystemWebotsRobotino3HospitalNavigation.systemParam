@@ -23,7 +23,7 @@ SystemParameterModel SystemWebotsRobotino3HospitalNavigationPara extendsSystem S
 			alpha3 = 0.8
 			alpha4 = 0.2
 			alpha5 = 0.2
-			odom_model_type = "diff"			
+			odom_model_type = "omni"			
 			}
 	
 	}
@@ -52,6 +52,7 @@ ComponentParameterInstance SmartCdlServer refinesParamStruct SmartCdlServerParam
 		freeBehaviorDist_second = 350.0
 		
 	}
+	ParameterRefinement SAFETYCL { safetyClearance = 200 }
 }
 
 ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWebots2DLidarParams{
@@ -109,7 +110,7 @@ ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGrid
 	}
 	ParameterRefinement CurrentMap {
 			interval = 10
-			growing = "star16"
+			growing = "circle16"
 			xsize = 50000
 			ysize = 20000
 			xpos = -25000
@@ -136,7 +137,7 @@ ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGrid
 	ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots {
 		ParameterRefinement General{
 			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/RobotinoHospital.wbt"
-			enableEditor = true
+			isEditorPresent = true
 		}
 	}
 }

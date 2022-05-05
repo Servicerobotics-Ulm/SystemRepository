@@ -140,7 +140,7 @@ ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGrid
 	ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots {
 		ParameterRefinement General { 
 			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/TiagoTHU.wbt"
-			enableEditor = true 
+			isEditorPresent = true 
 		} 
 	}		
 }

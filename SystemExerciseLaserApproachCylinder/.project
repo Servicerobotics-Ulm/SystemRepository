@@ -4,7 +4,6 @@
 	<comment></comment>
 	<projects>
 		<project>ComponentExerciseApproachCylinder</project>
-		<project>ComponentExerciseDriveMidway</project>
 		<project>ComponentLaserObstacleAvoid</project>
 		<project>ComponentWebots</project>
 		<project>ComponentWebots2DLidar</project>

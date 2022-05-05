@@ -6,6 +6,7 @@
 		<project>BehaviorRobotinoSlave</project>
 		<project>ComponentFileMover</project>
 		<project>ComponentFileProvider</project>
+		<project>ComponentGoalNodeControl</project>
 		<project>ComponentKB</project>
 		<project>ComponentRobotToRobotDocking</project>
 		<project>ComponentSeq2SeqCom</project>

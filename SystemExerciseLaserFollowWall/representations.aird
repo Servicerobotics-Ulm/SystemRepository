@@ -32,6 +32,7 @@
     <semanticResources>platform:/resource/ComponentWebots2DLidar/model/ComponentWebots2DLidar.componentParameters</semanticResources>
     <semanticResources>platform:/resource/ComponentLaserObstacleAvoid/model/ComponentLaserObstacleAvoid.component</semanticResources>
     <semanticResources>platform:/resource/ComponentExerciseDriveMidway/model/ComponentExerciseDriveMidway.component</semanticResources>
+    <semanticResources>platform:/resource/ComponentExerciseFollowWall/model/ComponentExerciseFollowWall.component</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_GeIiUHHiEeuX4pdT4Rk-gg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Gj-roHHiEeuX4pdT4Rk-gg" name="SystemExerciseLaserFollowWallDeployment" repPath="#_Gjb5EHHiEeuX4pdT4Rk-gg" changeId="fa4a2ebd-d3f7-4f25-8306-146996dc7fac">

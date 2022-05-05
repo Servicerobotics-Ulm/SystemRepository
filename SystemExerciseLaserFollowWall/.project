@@ -3,9 +3,7 @@
 	<name>SystemExerciseLaserFollowWall</name>
 	<comment></comment>
 	<projects>
-		<project>ComponentExerciseDriveMidway</project>
-		<project>ComponentExerciseFollowWall</project>
-		<project>ComponentLaserObstacleAvoid</project>
+		<project>ComponentExerciseFollowWall</project>		
 		<project>ComponentWebots</project>
 		<project>ComponentWebots2DLidar</project>
 		<project>ComponentWebotsMobileRobot</project>

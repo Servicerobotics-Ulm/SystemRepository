@@ -6,20 +6,43 @@ DeploymentModel SystemWebotsRobotinoSlave using ComponentArchitecture SystemWebo
 		NetworkInterface eth2
 	}
 
-	ComponentArtefact ComponentKB deploy-to PC1
-	ComponentArtefact ComponentTCLSequencer deploy-to PC1
-	ComponentArtefact SmartCdlServer deploy-to PC1
-	ComponentArtefact SmartMapperGridMap deploy-to PC1
-	ComponentArtefact SmartAmcl deploy-to PC1	
-	ComponentArtefact ComponentWebotsMobileRobot deploy-to PC1 
-	ComponentArtefact ComponentWebots2DLidar deploy-to PC1
-	ComponentArtefact ComponentWebotsMpsDocking deploy-to PC1
-	ComponentArtefact ComponentWebotsConveyorBeltOpcua deploy-to PC1
-	ComponentArtefact ComponentSeq2SeqCom deploy-to PC1
-	ComponentArtefact SmartPlannerBreadthFirstSearch deploy-to PC1
+	ComponentArtefact ComponentKB_Robotino_1 deploy-to PC1
+	ComponentArtefact ComponentTCLSequencer_Robotino_1 deploy-to PC1
+	ComponentArtefact SmartCdlServer_Robotino_1 deploy-to PC1
+	ComponentArtefact SmartMapperGridMap_Robotino_1 deploy-to PC1
+	ComponentArtefact SmartAmcl_Robotino_1 deploy-to PC1	
+	ComponentArtefact ComponentWebotsMobileRobot_Robotino_1 deploy-to PC1 
+	ComponentArtefact ComponentWebots2DLidar_Robotino_1 deploy-to PC1
+	ComponentArtefact ComponentWebotsMpsDocking_Robotino_1 deploy-to PC1
+	ComponentArtefact ComponentWebotsConveyorBeltOpcua_Robotino_1 deploy-to PC1
+	ComponentArtefact ComponentSeq2SeqCom_Robotino_1 deploy-to PC1
+	ComponentArtefact SmartPlannerBreadthFirstSearch_Robotino_1 deploy-to PC1
 
-	ComponentArtefact ComponentFileProvider deploy-to PC1
+	ComponentArtefact ComponentRobotToRobotDocking_Robotino_1 deploy-to PC1
 	
-	ComponentArtefact ComponentRobotToRobotDocking deploy-to PC1
+	ComponentArtefact ComponentGoalNodeControl_Robotino_1 deploy-to PC1
+	
+//	TargetPlatformReference Robotino26 using SystemWebotsRobotinoSlave.Robotino26
+//	{
+//		UploadDirectory "/tmp"
+//		LoginAccount robotino
+//		NetworkInterface wifi
+//	}
+//	
+//	ComponentArtefact ComponentKB_Robotino_1 deploy-to Robotino26
+//	ComponentArtefact ComponentTCLSequencer_Robotino_1 deploy-to Robotino26
+//	ComponentArtefact SmartCdlServer_Robotino_1 deploy-to Robotino26
+//	ComponentArtefact SmartMapperGridMap_Robotino_1 deploy-to Robotino26
+//	ComponentArtefact SmartAmcl_Robotino_1 deploy-to Robotino26	
+//	ComponentArtefact ComponentWebotsMobileRobot_Robotino_1 deploy-to Robotino26 
+//	ComponentArtefact ComponentWebots2DLidar_Robotino_1 deploy-to Robotino26
+//	ComponentArtefact ComponentWebotsMpsDocking_Robotino_1 deploy-to Robotino26
+//	ComponentArtefact ComponentWebotsConveyorBeltOpcua_Robotino_1 deploy-to Robotino26
+//	ComponentArtefact ComponentSeq2SeqCom_Robotino_1 deploy-to Robotino26
+//	ComponentArtefact SmartPlannerBreadthFirstSearch_Robotino_1 deploy-to Robotino26
+//
+//	ComponentArtefact ComponentRobotToRobotDocking_Robotino_1 deploy-to Robotino26
+//	
+//	ComponentArtefact ComponentGoalNodeControl_Robotino_1 deploy-to Robotino26
 	
 }

@@ -3,6 +3,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="model"/>
 	<classpathentry kind="src" path="/BehaviorLarrySlave"/>
+	<classpathentry kind="src" path="/ComponentGoalNodeControl"/>
 	<classpathentry kind="src" path="/ComponentKB"/>
 	<classpathentry kind="src" path="/ComponentKinectBoxDetection"/>
 	<classpathentry kind="src" path="/ComponentOpenRave"/>

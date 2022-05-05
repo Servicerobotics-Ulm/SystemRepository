@@ -1353,7 +1353,76 @@
                                     <aas:kind>Instance</aas:kind>
                                     <aas:allowDuplicates>true</aas:allowDuplicates>
                                     <aas:ordered>true</aas:ordered>
+                                    <aas:value>
+                                        <aas:submodelElement>
+                                            <aas:submodelElementCollection>
+                                                <aas:idShort>Capabilities</aas:idShort>
+                                                <aas:parent>
+                                                    <aas:keys>
+                                                        <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                        <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentWebots3DCamera</aas:key>
+                                                    </aas:keys>
+                                                </aas:parent>
+                                                <aas:kind>Instance</aas:kind>
+                                                <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                <aas:ordered>true</aas:ordered>
+                                                <aas:value>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>activateCameraRequestResponse</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentWebots3DCamera</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
                                     <aas:value/>
+                                </aas:submodelElementCollection>
+                            </aas:submodelElement>
+                            <aas:submodelElement>
+                                <aas:submodelElementCollection>
+                                                            <aas:idShort>activateCameraPush</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentWebots3DCamera</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                    <aas:submodelElement>
+                                                        <aas:submodelElementCollection>
+                                                            <aas:idShort>deactivateCamera</aas:idShort>
+                                                            <aas:parent>
+                                                                <aas:keys>
+                                                                    <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/BOM</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Components</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">ComponentWebots3DCamera</aas:key>
+                                                                    <aas:key idType="IdShort" local="true" type="SubmodelElementCollection">Capabilities</aas:key>
+                                                                </aas:keys>
+                                                            </aas:parent>
+                                                            <aas:kind>Instance</aas:kind>
+                                                            <aas:allowDuplicates>true</aas:allowDuplicates>
+                                                            <aas:ordered>true</aas:ordered>
+                                                            <aas:value/>
+                                                        </aas:submodelElementCollection>
+                                                    </aas:submodelElement>
+                                                </aas:value>
+                                            </aas:submodelElementCollection>
+                                        </aas:submodelElement>
+                                    </aas:value>
                                 </aas:submodelElementCollection>
                             </aas:submodelElement>
                             <aas:submodelElement>
@@ -1517,7 +1586,7 @@
             <aas:submodelElements>
                 <aas:submodelElement>
                     <aas:submodelElementCollection>
-                        <aas:idShort>null</aas:idShort>
+                        <aas:idShort>BehaviorOrderPickingWithAAS</aas:idShort>
                         <aas:parent>
                             <aas:keys>
                                 <aas:key idType="IRI" local="true" type="Submodel">Smartaasid/SystemWebotsLarryOrderPickingWithAAS/Capabilities</aas:key>

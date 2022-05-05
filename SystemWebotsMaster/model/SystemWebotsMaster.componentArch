@@ -1,7 +1,7 @@
 SystemComponentArchitecture SystemWebotsMaster
 {
 	
-ComponentInstance ComponentKB_3 instantiates ComponentKB
+ComponentInstance ComponentKB_Master instantiates ComponentKB
 	{
 		RequiredService kbChainedEntriesEventClient
 		ProvidedService kbEventServer
@@ -22,18 +22,43 @@ ComponentInstance ComponentKB_3 instantiates ComponentKB
 		ProvidedService jobResultSendServer
 	RequiredService SymbolicPannerServiceReq
 	}
-	ComponentInstance ComponentSymbolicPlanner instantiates ComponentSymbolicPlanner
-	{
-		ProvidedService SymbolicPlannerQueryServer
-	}
+
 	ComponentInstance ComponentWebots instantiates ComponentWebots
 	{
 		RequiredService CommKBQueryReq
+	RequiredService NavPathServiceOut
+	}
+	ComponentInstance ComponentNavigationGraph instantiates ComponentNavigationGraph
+	{
+		ProvidedService NavPathServiceIn
+		ProvidedService ShortestPathRequestServiceAnsw
+		ProvidedService NodeStatusUpdateServiceAnsw
+	}
+	ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
+	{
+	}
+	ComponentInstance ComponentSymbolicPlanner instantiates ComponentSymbolicPlanner
+	{
+		ProvidedService SymbolicPlannerQueryServer
 	}
 	Connection SmartFestoFleetCom.TaskResultIn -> SmartJobDispatcher.TaskResultOut
 	Connection SmartFestoFleetCom.kbQueryClient -> ComponentKB_3.kbQuery
 	Connection SmartJobDispatcher.CommKBQueryReq -> ComponentKB_3.kbQuery
 	Connection SmartJobDispatcher.jobSourceEventClient -> SmartFestoFleetCom.TaskEventOut
+	Connection ComponentWebots.CommKBQueryReq -> ComponentKB_Master.kbQuery
+Connection ComponentWebots.NavPathServiceOut -> ComponentNavigationGraph.NavPathServiceIn
 Connection SmartJobDispatcher.SymbolicPannerServiceReq -> ComponentSymbolicPlanner.SymbolicPlannerQueryServer
-Connection ComponentWebots.CommKBQueryReq -> ComponentKB_3.kbQuery
+	BehaviorTaskRef BehaviorPathNavigationTest 
+	
+	CoordinationModuleMapping {
+		moduleInstance BehaviorPathNavigationTest.kb realizedby kbModule {
+			interfaceInstance kb realizedby ComponentKB_Master
+		}
+	}
+	
+	CoordinationModuleMapping {  
+		moduleInstance BehaviorPathNavigationTest.navPath realizedby navPath {
+			interfaceInstance navPath realizedby ComponentNavigationGraph
+		}
+	}
 }

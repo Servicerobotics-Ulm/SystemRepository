@@ -2,9 +2,11 @@ SystemComponentArchitecture SystemWebotsLarryOrderPicking
 {
 ComponentInstance ComponentWebots instantiates ComponentWebots
 	{
+	RequiredService CommKBQueryReq
 	}
 	ComponentInstance ComponentKB instantiates ComponentKB
 	{
+	ProvidedService kbQuery
 	}
 
 	ComponentInstance ComponentWebotsMobileRobot instantiates ComponentWebotsMobileRobot
@@ -120,6 +122,7 @@ ComponentInstance ComponentWebots instantiates ComponentWebots
 	Connection ComponentOpenRave.MobileManipulatorStateQueryServiceReq -> ComponentWebotsRobotArm.poseQueryServer
 	Connection ComponentOpenRave.SendTrajectoryOut -> ComponentWebotsRobotArm.trajectorySendServer
 	Connection ComponentWebotsRobotArm.baseStateServiceIn -> ComponentWebotsMobileRobot.BaseStateServiceOut
+	Connection ComponentWebots.CommKBQueryReq -> ComponentKB.kbQuery
 	BehaviorTaskRef BehaviorOrderPicking
 	
 	CoordinationModuleMapping {

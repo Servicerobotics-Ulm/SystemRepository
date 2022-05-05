@@ -5,6 +5,7 @@
 	<classpathentry kind="src" path="/BehaviorRobotinoSlave"/>
 	<classpathentry kind="src" path="/ComponentFileMover"/>
 	<classpathentry kind="src" path="/ComponentFileProvider"/>
+	<classpathentry kind="src" path="/ComponentGoalNodeControl"/>
 	<classpathentry kind="src" path="/ComponentKB"/>
 	<classpathentry kind="src" path="/ComponentRobotToRobotDocking"/>
 	<classpathentry kind="src" path="/ComponentSeq2SeqCom"/>

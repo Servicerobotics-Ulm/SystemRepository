@@ -1,13 +1,15 @@
 SystemParameterModel SystemWebotsRobotinoSlave extendsSystem SystemWebotsRobotinoSlave {
 	
-ComponentParameterInstance SmartAmcl refinesParamStruct SmartAmclParams {
+ComponentParameterInstance SmartAmcl_Robotino_1 refinesParamStruct SmartAmclParams {
 	
 	ParameterRefinement General {
 		initalizationType = INI_POSE
 		initPoseFileName = "/tmp/lastRobotPose.txt"
 		verbose = false
 		connect_services = true
-		yaml_file = "localization-map.yaml"
+		//yaml_file = "localization-map.yaml"
+		//yaml_file = "localization-map-warehouse.yaml"
+		yaml_file = "localization-map-werk150-sim.yaml"
 		initial_x = 0.0
 		initial_y = 0.0
 		initial_a = 0.0
@@ -30,7 +32,7 @@ ComponentParameterInstance SmartAmcl refinesParamStruct SmartAmclParams {
 	
 }
 
-ComponentParameterInstance SmartCdlServer refinesParamStruct SmartCdlServerParams {
+ComponentParameterInstance SmartCdlServer_Robotino_1 refinesParamStruct SmartCdlServerParams {
 	ParameterRefinement Cdl {
 		dataDir = "data/lookup-files/"
 		curvature_default_file = "CDLindex_Robotino3_600mm.dat"
@@ -52,9 +54,13 @@ ComponentParameterInstance SmartCdlServer refinesParamStruct SmartCdlServerParam
 		freeBehaviorDist = 350.0
 		freeBehaviorDist_second = 350.0
 	}
+	
+	ParameterRefinement Server {
+		pathNavInit = true
+	}
 }
 
-ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWebots2DLidarParams{
+ComponentParameterInstance ComponentWebots2DLidar_Robotino_1 refinesParamStruct ComponentWebots2DLidarParams{
 	ParameterRefinement scanner {
 			x = 190
 			y = 0
@@ -65,8 +71,11 @@ ComponentParameterInstance ComponentWebots2DLidar refinesParamStruct ComponentWe
 			resolution = 0.5
 			frequency = 50
 	}
+	ParameterRefinement webots {
+		robotName = "Lidar_1"
 }	
-ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGridMapParams{
+}	
+ComponentParameterInstance SmartMapperGridMap_Robotino_1 refinesParamStruct SmartMapperGridMapParams{
 	
 	ParameterRefinement General {
 		cellsize = 50
@@ -74,21 +83,41 @@ ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGrid
 		verbose = false
 		mapDataDir = ""
 	}
+	// SRRC Lab
+//	ParameterRefinement CurrentMap {
+//		interval = 10
+//		growing = "star32"
+//		xsize = 20000
+//		ysize = 20000
+//		xpos = -10000
+//		ypos = -10000
+//		id = 0
+//	}
+//	ParameterRefinement LtmMap { 
+//		kalman = 100
+//		xsize = 20000
+//		ysize = 20000
+//		xpos = -10000
+//		ypos = -10000
+//		id = 0
+//	}
+	
+	// Werk150
 	ParameterRefinement CurrentMap {
 		interval = 10
 		growing = "star32"
-		xsize = 20000
-		ysize = 20000
-		xpos = -10000
-		ypos = -10000
+		xsize = 60000
+		ysize = 30000
+		xpos = -40000
+		ypos = -5000
 		id = 0
 	}
 	ParameterRefinement LtmMap { 
 		kalman = 100
-		xsize = 20000
-		ysize = 20000
-		xpos = -10000
-		ypos = -10000
+		xsize = 60000
+		ysize = 30000
+		xpos = -40000
+		ypos = -5000
 		id = 0
 	}
 	ParameterRefinement CURLTM{ 
@@ -101,7 +130,7 @@ ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGrid
 	}
 }
 
-ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct ComponentWebotsMobileRobotParams {
+ComponentParameterInstance ComponentWebotsMobileRobot_Robotino_1 refinesParamStruct ComponentWebotsMobileRobotParams {
 	ParameterRefinement General {
 			verbose = false
 			useLocalizationEvent = false
@@ -113,18 +142,26 @@ ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct Compone
 		maxVelY = 1.0
 		maxRotVel = 4.0
 	}
+	
+	ParameterRefinement Webots {
+		robotName = "Robotino3_1"
+	}
 }
 
-	ComponentParameterInstance ComponentKB refinesParamStruct ComponentKBParams {
+	ComponentParameterInstance ComponentKB_Robotino_1 refinesParamStruct ComponentKBParams {
 		ParameterRefinement Settings {
 			connectChainedEntries = true
 		}
 	}
 	
-	ComponentParameterInstance ComponentWebotsMpsDocking refinesParamStruct ComponentWebotsMpsDocking {		
+	ComponentParameterInstance ComponentWebotsMpsDocking_Robotino_1 refinesParamStruct ComponentWebotsMpsDocking {
+		
+		ParameterRefinement Webots {
+			robotName = "MpsDocking_1"
+		}		
 	}
 	
-	ComponentParameterInstance ComponentRobotToRobotDocking refinesParamStruct ComponentRobotToRobotDocking {
+	ComponentParameterInstance ComponentRobotToRobotDocking_Robotino_1 refinesParamStruct ComponentRobotToRobotDocking {
 		ParameterRefinement docking {
 			connectToServices = true
 			useLaser = true
@@ -136,10 +173,20 @@ ComponentParameterInstance ComponentWebotsMobileRobot refinesParamStruct Compone
 		}
 	}
 	
-	//ComponentParameterInstance ComponentWebotsConveyorBeltOpcua refinesParamStruct ComponentWebotsConveyorBeltOpcua {
-	//	ParameterRefinement ProductionStations{
-	//		stationName = ["MPS0", "MPS1"]
-	//		stationUrl = ["opc.tcp://localhost:4840", "PASSIVE_STATION"]
+	ComponentParameterInstance ComponentWebotsConveyorBeltOpcua_Robotino_1 refinesParamStruct ComponentWebotsConveyorBeltOpcua {
+		
+		ParameterRefinement webots {
+			robotName = "RobotinoConveyorBelt_1"
+		}
+//		ParameterRefinement Robot {
+//			belt_time_out_sec = 10
+//			ignore_station_communication_unload_time_sec = 4
 	//	}
-	//}
+	}
+	
+	ComponentParameterInstance ComponentGoalNodeControl_Robotino_1 refinesParamStruct ComponentGoalNodeControl {
+		ParameterRefinement GoalNodeControl {
+			freeStrategy = CURRENT
+		}
+	}		
 }

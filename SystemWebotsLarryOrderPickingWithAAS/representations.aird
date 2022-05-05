@@ -117,9 +117,9 @@
     <semanticResources>platform:/resource/ComponentAASBridge/model/ComponentAASBridge.skillRealization</semanticResources>
     <semanticResources>platform:/resource/DomainRobotFleetNavigation/model/DomainRobotFleetNavigation.services</semanticResources>
     <semanticResources>platform:/resource/DomainRobotFleetNavigation/model/DomainRobotFleetNavigation.types</semanticResources>
+    <semanticResources>platform:/resource/BehaviorOrderPickingWithAAS/model/BehaviorOrderPickingWithAAS.taskRealization</semanticResources>
     <semanticResources>model/SystemWebotsLarryOrderPickingWithAAS.aas_command</semanticResources>
     <semanticResources>model/SystemWebotsLarryOrderPickingWithAAS.aas_sms</semanticResources>
-    <semanticResources>platform:/resource/BehaviorOrderPickingWithAAS/model/BehaviorOrderPickingWithAAS.taskRealization</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_fNw_kFy_Eeuc89J85frnxQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_fOtawVy_Eeuc89J85frnxQ" name="SystemWebotsLarryOrderPickingWithAASDeployment" repPath="#_fOqXcFy_Eeuc89J85frnxQ" changeId="dd0ecd81-49f2-4b55-bd8f-eba6d94551b9">

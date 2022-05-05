@@ -2,7 +2,7 @@ SystemParameterModel SystemP3dxNavigationRealWorldParams extendsSystem SystemP3d
 
 	ComponentParameterInstance SmartLaserLMS200Server refinesParamStruct SmartLaserLMS200ServerParams {
 		ParameterRefinement Laser {
-			device = "/dev/ttyUSB0"						
+			device = "/dev/sick"						
 		}
 	}
 	
@@ -16,8 +16,8 @@ SystemParameterModel SystemP3dxNavigationRealWorldParams extendsSystem SystemP3d
 			maxRotVel = 300
 			maxRotVelAcc = 100
 			maxRotVelDecel = 100
-			serialport = "/dev/ttyS0"
-			robotType = "p3atsh"
+			serialport = "/dev/pioneer"
+			robotType = "p3dx"
 		}
 	}
 	ComponentParameterInstance SmartAmcl refinesParamStruct SmartAmclParams{

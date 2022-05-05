@@ -2,9 +2,7 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="model"/>
-	<classpathentry kind="src" path="/ComponentExerciseDriveMidway"/>
 	<classpathentry kind="src" path="/ComponentExerciseFollowWall"/>
-	<classpathentry kind="src" path="/ComponentLaserObstacleAvoid"/>
 	<classpathentry kind="src" path="/ComponentWebots"/>
 	<classpathentry kind="src" path="/ComponentWebots2DLidar"/>
 	<classpathentry kind="src" path="/ComponentWebotsMobileRobot"/>

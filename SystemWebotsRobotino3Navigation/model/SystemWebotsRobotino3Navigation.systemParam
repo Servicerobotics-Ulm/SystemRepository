@@ -23,7 +23,7 @@ SystemParameterModel SystemWebotsRobotino3NavigationPara extendsSystem SystemWeb
 			alpha3 = 0.8
 			alpha4 = 0.2
 			alpha5 = 0.2
-			odom_model_type = "diff"			
+			odom_model_type = "omni"			
 			}
 	
 	}
@@ -134,7 +134,7 @@ ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGrid
 	ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots {
 		ParameterRefinement General{
 			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/RobotinoTHU.wbt"
-			enableEditor = true
+			isEditorPresent = true
 		}
 	}
 }

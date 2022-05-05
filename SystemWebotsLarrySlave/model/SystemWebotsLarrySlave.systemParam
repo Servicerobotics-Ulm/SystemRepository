@@ -1,12 +1,13 @@
 SystemParameterModel SystemWebotsLarrySlave extendsSystem SystemWebotsLarrySlave {
 		
-ComponentParameterInstance SmartAmcl_2 refinesParamStruct SmartAmclParams{
+ComponentParameterInstance SmartAmcl_Larry refinesParamStruct SmartAmclParams{
 	ParameterRefinement General {
 		initalizationType = INI_POSE
 		initPoseFileName = "/tmp/lastRobotPose.txt"
 		verbose = false
 		connect_services = true
-		yaml_file = "localization-map.yaml"
+		//yaml_file = "localization-map.yaml"
+		yaml_file = "localization-map-werk150-sim.yaml"
 		initial_x = 0.0
 		initial_y = 0.0
 		initial_a = 0.0
@@ -29,7 +30,7 @@ ComponentParameterInstance SmartAmcl_2 refinesParamStruct SmartAmclParams{
 	
 }
 
-ComponentParameterInstance SmartCdlServer_2 refinesParamStruct SmartCdlServerParams{
+ComponentParameterInstance SmartCdlServer_Larry refinesParamStruct SmartCdlServerParams{
 	ParameterRefinement Cdl { 
 		dataDir = "data/lookup-files/"
 
@@ -65,9 +66,13 @@ ComponentParameterInstance SmartCdlServer_2 refinesParamStruct SmartCdlServerPar
 		freeBehaviorDist = 350.0
 		freeBehaviorDist_second = 350.0 
 	}
+	
+	ParameterRefinement Server {
+		pathNavInit = true
+	}
 }
 
-ComponentParameterInstance ComponentWebots2DLidar_2 refinesParamStruct ComponentWebots2DLidarParams{
+ComponentParameterInstance ComponentWebots2DLidar_Larry refinesParamStruct ComponentWebots2DLidarParams{
   ParameterRefinement webots {
     robotName = "Sick LMS 100_Front"
 }
@@ -97,28 +102,48 @@ ComponentParameterInstance ComponentWebots2DLidar_2 refinesParamStruct Component
 	turret_a = 0
   }
 }	
-ComponentParameterInstance SmartMapperGridMap_2 refinesParamStruct SmartMapperGridMapParams{
+ComponentParameterInstance SmartMapperGridMap_Larry refinesParamStruct SmartMapperGridMapParams{
 	ParameterRefinement General {
 		cellsize = 50
 		connectLaser = true
 		verbose = false
 		mapDataDir = ""
 	}
+	// SRRC Lab
+//	ParameterRefinement CurrentMap {
+//		interval = 10
+//		growing = "star32"
+//		xsize = 20000
+//		ysize = 20000
+//		xpos = -10000
+//		ypos = -10000
+//		id = 0
+//	}
+//	ParameterRefinement LtmMap {
+//		kalman = 100
+//		xsize = 20000
+//		ysize = 20000
+//		xpos = -10000
+//		ypos = -10000
+//		id = 0
+//	}
+	
+	// Werk150
 	ParameterRefinement CurrentMap {
 		interval = 10
 		growing = "star32"
-		xsize = 20000
-		ysize = 20000
-		xpos = -10000
-		ypos = -10000
+		xsize = 60000
+		ysize = 30000
+		xpos = -40000
+		ypos = -5000
 		id = 0
 	}
 	ParameterRefinement LtmMap {
 		kalman = 100
-		xsize = 20000
-		ysize = 20000
-		xpos = -10000
-		ypos = -10000
+		xsize = 60000
+		ysize = 30000
+		xpos = -40000
+		ypos = -5000
 		id = 0
 	}
 	ParameterRefinement CURLTM{
@@ -131,7 +156,7 @@ ComponentParameterInstance SmartMapperGridMap_2 refinesParamStruct SmartMapperGr
 	}
 }
 
-ComponentParameterInstance ComponentWebotsMobileRobot_2 refinesParamStruct ComponentWebotsMobileRobotParams {
+ComponentParameterInstance ComponentWebotsMobileRobot_Larry refinesParamStruct ComponentWebotsMobileRobotParams {
   ParameterRefinement Webots { 
     robotName = "Larry"
 	motorName = ["LeftWheel", "RightWheel"]
@@ -147,7 +172,7 @@ ComponentParameterInstance ComponentWebotsMobileRobot_2 refinesParamStruct Compo
   }
 }
 
-ComponentParameterInstance ComponentWebots3DCamera refinesParamStruct ComponentWebots3DCameraParams { 
+ComponentParameterInstance ComponentWebots3DCamera_Larry refinesParamStruct ComponentWebots3DCameraParams { 
 		ParameterRefinement webots { 
 			robotName = "kinect_v2"
 			cameraName = "kinect_v2_color"
@@ -178,7 +203,7 @@ ComponentParameterInstance ComponentWebots3DCamera refinesParamStruct ComponentW
 		}
 }
 
-ComponentParameterInstance ComponentOpenRave refinesParamStruct ComponentOpenRaveParams {
+ComponentParameterInstance ComponentOpenRave_Larry refinesParamStruct ComponentOpenRaveParams {
 		ParameterRefinement OpenRave {
 			defaultEnvironmentPath = "env/defaultOpenRaveLarry.env.xml"
 			robotPath = "manip/UR6SchunkBigger-vacuum.robot.xml"
@@ -205,7 +230,7 @@ ComponentParameterInstance ComponentOpenRave refinesParamStruct ComponentOpenRav
 		}	
 }
 
-	ComponentParameterInstance ComponentWebotsRobotArm refinesParamStruct ComponentWebotsRobotArmParams { 
+	ComponentParameterInstance ComponentWebotsRobotArm_Larry refinesParamStruct ComponentWebotsRobotArmParams { 
        ParameterRefinement base {
                on_base = false              
 
@@ -225,7 +250,7 @@ ComponentParameterInstance ComponentOpenRave refinesParamStruct ComponentOpenRav
        }
 	}
 	
-	ComponentParameterInstance ComponentWebotsPTUServer refinesParamStruct ComponentWebotsPTUServerParams {
+	ComponentParameterInstance ComponentWebotsPTUServer_Larry refinesParamStruct ComponentWebotsPTUServerParams {
 		ParameterRefinement PTU {
 			device = "/dev/ptu"
 			verbose = false
@@ -238,7 +263,7 @@ ComponentParameterInstance ComponentOpenRave refinesParamStruct ComponentOpenRav
 		}
 	}
 	
-	ComponentParameterInstance ComponentKinectBoxDetection refinesParamStruct ComponentKinectBoxDetection {
+	ComponentParameterInstance ComponentKinectBoxDetection_Larry refinesParamStruct ComponentKinectBoxDetection {
 		ParameterRefinement General {
 			verbose = true
 			use_kinect = false
@@ -263,7 +288,7 @@ ComponentParameterInstance ComponentOpenRave refinesParamStruct ComponentOpenRav
 		}
 	}
 	
-	ComponentParameterInstance ComponentRackDetection refinesParamStruct ComponentRackDetection {
+	ComponentParameterInstance ComponentRackDetection_Larry refinesParamStruct ComponentRackDetection {
 
 		ParameterRefinement General {
 			model_path = "webots_rack_model_cloud.pcd"
@@ -342,9 +367,15 @@ ComponentParameterInstance ComponentOpenRave refinesParamStruct ComponentOpenRav
 		} 
 	}
 	
-	ComponentParameterInstance ComponentKB_2 refinesParamStruct ComponentKBParams {
+	ComponentParameterInstance ComponentKB_Larry refinesParamStruct ComponentKBParams {
 		ParameterRefinement Settings {
 			connectChainedEntries = true
+		}
+	}
+	
+	ComponentParameterInstance ComponentGoalNodeControl_Larry refinesParamStruct ComponentGoalNodeControl {
+		ParameterRefinement GoalNodeControl {
+			freeStrategy = CURRENT
 		}
 	}
 }

@@ -1,14 +1,9 @@
 SystemComponentArchitecture SystemWebotsRobotinoSlave
 {
-ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
+ComponentInstance ComponentTCLSequencer_Robotino_1 instantiates ComponentTCLSequencer
 	{
 	}
-	ComponentInstance ComponentFileProvider instantiates ComponentFileProvider
-	{
-		ProvidedService FileReadQueryAnsw
-		ProvidedService FileWriteQueryAnsw
-	}
-	ComponentInstance ComponentWebotsMobileRobot instantiates ComponentWebotsMobileRobot
+	ComponentInstance ComponentWebotsMobileRobot_Robotino_1 instantiates ComponentWebotsMobileRobot
 	{
 		RequiredService LocalizationEventServiceIn
 		ProvidedService BaseStateServiceOut
@@ -16,25 +11,25 @@ ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
 		ProvidedService LocalizationUpdateServiceIn
 		ProvidedService BaseStateQueryServiceAnsw
 	}
-	ComponentInstance ComponentRobotToRobotDocking instantiates ComponentRobotToRobotDocking
+	ComponentInstance ComponentRobotToRobotDocking_Robotino_1 instantiates ComponentRobotToRobotDocking
 	{
 		RequiredService baseStatePushClient
 		RequiredService laserClient
 		RequiredService navVelSendClient
 		ProvidedService dockingEventServer
 	}
-	ComponentInstance ComponentSeq2SeqCom instantiates ComponentSeq2SeqCom
+	ComponentInstance ComponentSeq2SeqCom_Robotino_1 instantiates ComponentSeq2SeqCom
 	{
 		RequiredService TaskSendOut
 		ProvidedService TaskEventOut
 		ProvidedService TaskSendIn
 	} 
-	ComponentInstance ComponentWebotsConveyorBeltOpcua instantiates ComponentWebotsConveyorBeltOpcua
+	ComponentInstance ComponentWebotsConveyorBeltOpcua_Robotino_1 instantiates ComponentWebotsConveyorBeltOpcua
 	{
 		RequiredService TrafficLightsServiceIn
 		ProvidedService RobotinoConveyerBeltEventOut
 	}
-	ComponentInstance ComponentWebotsMpsDocking instantiates ComponentWebotsMpsDocking
+	ComponentInstance ComponentWebotsMpsDocking_Robotino_1 instantiates ComponentWebotsMpsDocking
 	{
 		RequiredService BaseStateServiceIn
 		RequiredService LaserServiceIn
@@ -42,7 +37,7 @@ ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
 		ProvidedService TrafficLightsServiceOut
 		ProvidedService RobotDockingEventServiceOut
 	}
-	ComponentInstance SmartAmcl instantiates SmartAmcl
+	ComponentInstance SmartAmcl_Robotino_1 instantiates SmartAmcl
 	{
 		RequiredService LaserServiceIn
 		RequiredService LocalizationUpdateServiceOut
@@ -50,65 +45,68 @@ ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
 		ProvidedService AmclVisualizationInfoOut
 	}
 
-	ComponentInstance SmartCdlServer instantiates SmartCdlServer
+	ComponentInstance SmartCdlServer_Robotino_1 instantiates SmartCdlServer
 	{
 		RequiredService LaserClient
 		RequiredService PlannerClient
 		RequiredService NavVelSendClient
 		ProvidedService GoalEventServer
 		ProvidedService RobotBlockedEventServer
+	RequiredService PathNavigationGoalClient
 	}
-	ComponentInstance ComponentKB instantiates ComponentKB
+	ComponentInstance ComponentKB_Robotino_1 instantiates ComponentKB
 	{
 		RequiredService kbChainedEntriesEventClient
 		ProvidedService kbEventServer
 		ProvidedService kbQuery
 	}
-	ComponentInstance SmartMapperGridMap instantiates SmartMapperGridMap
+	ComponentInstance SmartMapperGridMap_Robotino_1 instantiates SmartMapperGridMap
 	{
 		RequiredService LaserServiceIn
 		ProvidedService CurrMapOut
 		ProvidedService CurrQueryServer
 		ProvidedService LtmQueryServer
 	}
-	ComponentInstance ComponentWebots2DLidar instantiates ComponentWebots2DLidar
+	ComponentInstance ComponentWebots2DLidar_Robotino_1 instantiates ComponentWebots2DLidar
 	{
 		RequiredService BaseStateServiceIn
 		ProvidedService LaserServiceOut
 		ProvidedService LaserQueryServiceAnsw
 	}
-	ComponentInstance ComponentFileMover instantiates ComponentFileMover
-	{
-		RequiredService CommFileReadQueryReq
-		RequiredService CommFileWriteQueryReq
-		ProvidedService CommFileMoveEventOut
-	}
-	ComponentInstance SmartPlannerBreadthFirstSearch instantiates SmartPlannerBreadthFirstSearch
+	ComponentInstance SmartPlannerBreadthFirstSearch_Robotino_1 instantiates SmartPlannerBreadthFirstSearch
 	{
 		RequiredService CurMapClient
 		RequiredService BaseStateClient
 		ProvidedService PlannerGoalServer
 	}
+	ComponentInstance ComponentGoalNodeControl_Robotino_1 instantiates ComponentGoalNodeControl
+	{
+		RequiredService BaseStateServiceIn
+		RequiredService ShortestPathRequestServiceReq
+		RequiredService NodeStatusUpdateServiceReq
+		ProvidedService CorridorNavigationNextGoalOut
+	}
 
-	Connection ComponentWebotsMpsDocking.NavigationVelocityServiceOut -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
-	Connection ComponentWebotsConveyorBeltOpcua.TrafficLightsServiceIn -> ComponentWebotsMpsDocking.TrafficLightsServiceOut
-	Connection ComponentRobotToRobotDocking.navVelSendClient -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
-	Connection ComponentWebotsMpsDocking.BaseStateServiceIn -> ComponentWebotsMobileRobot.BaseStateServiceOut
-	Connection ComponentRobotToRobotDocking.laserClient -> ComponentWebots2DLidar.LaserServiceOut
-	Connection SmartMapperGridMap.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
-	Connection SmartAmcl.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
-	Connection ComponentWebotsMpsDocking.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
-	Connection SmartCdlServer.LaserClient -> ComponentWebots2DLidar.LaserServiceOut
-	Connection ComponentWebots2DLidar.BaseStateServiceIn -> ComponentWebotsMobileRobot.BaseStateServiceOut
-	Connection SmartAmcl.LocalizationUpdateServiceOut -> ComponentWebotsMobileRobot.LocalizationUpdateServiceIn
-	Connection ComponentWebotsMobileRobot.LocalizationEventServiceIn -> SmartAmcl.LocalizationEventServiceOut
-	Connection SmartCdlServer.NavVelSendClient -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
-    Connection ComponentFileMover.CommFileReadQueryReq -> ComponentFileProvider.FileReadQueryAnsw
-	Connection ComponentFileMover.CommFileWriteQueryReq -> ComponentFileProvider.FileWriteQueryAnsw
-	Connection SmartPlannerBreadthFirstSearch.BaseStateClient -> ComponentWebotsMobileRobot.BaseStateServiceOut
-	Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.CurrMapOut
-	Connection SmartCdlServer.PlannerClient -> SmartPlannerBreadthFirstSearch.PlannerGoalServer
-	Connection ComponentRobotToRobotDocking.baseStatePushClient -> ComponentWebotsMobileRobot.BaseStateServiceOut
+	Connection ComponentWebotsMpsDocking_Robotino_1.NavigationVelocityServiceOut -> ComponentWebotsMobileRobot_Robotino_1.NavigationVelocityServiceIn
+	Connection ComponentWebotsConveyorBeltOpcua_Robotino_1.TrafficLightsServiceIn -> ComponentWebotsMpsDocking_Robotino_1.TrafficLightsServiceOut
+	Connection ComponentRobotToRobotDocking_Robotino_1.navVelSendClient -> ComponentWebotsMobileRobot_Robotino_1.NavigationVelocityServiceIn
+	Connection ComponentWebotsMpsDocking_Robotino_1.BaseStateServiceIn -> ComponentWebotsMobileRobot_Robotino_1.BaseStateServiceOut
+	Connection ComponentRobotToRobotDocking_Robotino_1.laserClient -> ComponentWebots2DLidar_Robotino_1.LaserServiceOut
+	Connection SmartMapperGridMap_Robotino_1.LaserServiceIn -> ComponentWebots2DLidar_Robotino_1.LaserServiceOut
+	Connection SmartAmcl_Robotino_1.LaserServiceIn -> ComponentWebots2DLidar_Robotino_1.LaserServiceOut
+	Connection ComponentWebotsMpsDocking_Robotino_1.LaserServiceIn -> ComponentWebots2DLidar_Robotino_1.LaserServiceOut
+	Connection SmartCdlServer_Robotino_1.LaserClient -> ComponentWebots2DLidar_Robotino_1.LaserServiceOut
+	Connection ComponentWebots2DLidar_Robotino_1.BaseStateServiceIn -> ComponentWebotsMobileRobot_Robotino_1.BaseStateServiceOut
+	Connection SmartAmcl_Robotino_1.LocalizationUpdateServiceOut -> ComponentWebotsMobileRobot_Robotino_1.LocalizationUpdateServiceIn
+	Connection ComponentWebotsMobileRobot_Robotino_1.LocalizationEventServiceIn -> SmartAmcl_Robotino_1.LocalizationEventServiceOut
+	Connection SmartCdlServer_Robotino_1.NavVelSendClient -> ComponentWebotsMobileRobot_Robotino_1.NavigationVelocityServiceIn
+
+	Connection SmartPlannerBreadthFirstSearch_Robotino_1.BaseStateClient -> ComponentWebotsMobileRobot_Robotino_1.BaseStateServiceOut
+	Connection SmartPlannerBreadthFirstSearch_Robotino_1.CurMapClient -> SmartMapperGridMap_Robotino_1.CurrMapOut
+	Connection SmartCdlServer_Robotino_1.PlannerClient -> SmartPlannerBreadthFirstSearch_Robotino_1.PlannerGoalServer
+	Connection ComponentRobotToRobotDocking_Robotino_1.baseStatePushClient -> ComponentWebotsMobileRobot_Robotino_1.BaseStateServiceOut
+	Connection ComponentGoalNodeControl_Robotino_1.BaseStateServiceIn -> ComponentWebotsMobileRobot_Robotino_1.BaseStateServiceOut
+	Connection SmartCdlServer_Robotino_1.PathNavigationGoalClient -> ComponentGoalNodeControl_Robotino_1.CorridorNavigationNextGoalOut
 
 	
 	BehaviorTaskRef BehaviorRobotinoSlave 
@@ -116,46 +114,55 @@ ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
 	CoordinationModuleMapping {
 		moduleInstance BehaviorRobotinoSlave.navigation realizedby MovementMod2
 		{
-			interfaceInstance cdl realizedby SmartCdlServer
-			interfaceInstance mapper realizedby SmartMapperGridMap
-			interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch
+			interfaceInstance cdl realizedby SmartCdlServer_Robotino_1
+			interfaceInstance mapper realizedby SmartMapperGridMap_Robotino_1
+			interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch_Robotino_1
 		}
 	}
 	
 	CoordinationModuleMapping {
 		moduleInstance BehaviorRobotinoSlave.localizationModInst realizedby locModRealization {
-			interfaceInstance amcl realizedby SmartAmcl
+			interfaceInstance amcl realizedby SmartAmcl_Robotino_1
 		}
 	}
 	
 	CoordinationModuleMapping {
 		moduleInstance BehaviorRobotinoSlave.kbModInst realizedby kbModule
 		{
-			interfaceInstance kb realizedby ComponentKB
+			interfaceInstance kb realizedby ComponentKB_Robotino_1
 		}
 	}
 	CoordinationModuleMapping {
 		moduleInstance BehaviorRobotinoSlave.base realizedby baseInst {
-			interfaceInstance base realizedby ComponentWebotsMobileRobot
+			interfaceInstance base realizedby ComponentWebotsMobileRobot_Robotino_1
 		}
 	}
 	
 	CoordinationModuleMapping { 
 		moduleInstance BehaviorRobotinoSlave.MPS realizedby mpsModRealization {
-			interfaceInstance BELT realizedby ComponentWebotsConveyorBeltOpcua
-			interfaceInstance MPSDOCKING realizedby ComponentWebotsMpsDocking
+			interfaceInstance BELT realizedby ComponentWebotsConveyorBeltOpcua_Robotino_1
+			interfaceInstance MPSDOCKING realizedby ComponentWebotsMpsDocking_Robotino_1
 		}
 	}	
 	
 	CoordinationModuleMapping {
 		moduleInstance BehaviorRobotinoSlave.seq2seq realizedby seq2seq {
-			interfaceInstance cs_seq2seq realizedby ComponentSeq2SeqCom
+			interfaceInstance cs_seq2seq realizedby ComponentSeq2SeqCom_Robotino_1
 		}
 	}
 	
 	CoordinationModuleMapping {
 		moduleInstance BehaviorRobotinoSlave.robotDocking realizedby robotDocking {
-			interfaceInstance cs_r2rDocking realizedby ComponentRobotToRobotDocking
+			interfaceInstance cs_r2rDocking realizedby ComponentRobotToRobotDocking_Robotino_1
+		}
+	}
+	
+	CoordinationModuleMapping {
+		moduleInstance BehaviorRobotinoSlave.navPathClient realizedby navPathClient {
+			interfaceInstance cdl realizedby SmartCdlServer_Robotino_1
+			interfaceInstance mapper realizedby SmartMapperGridMap_Robotino_1
+			interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch_Robotino_1
+			interfaceInstance navPathClient realizedby ComponentGoalNodeControl_Robotino_1
 		}
 	}	
 	

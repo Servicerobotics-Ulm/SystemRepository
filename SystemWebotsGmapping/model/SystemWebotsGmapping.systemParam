@@ -153,6 +153,7 @@ ComponentParameterInstance ComponentGMapping refinesParamStruct ComponentGMappin
 ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots {
 	ParameterRefinement General {
 		 WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/RobotinoHome.wbt"
+		 isEditorPresent = false
 }
 }
 }

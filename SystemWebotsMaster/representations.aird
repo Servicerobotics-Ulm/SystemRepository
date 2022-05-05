@@ -34,6 +34,12 @@
     <semanticResources>platform:/resource/ComponentSymbolicPlanner/model/ComponentSymbolicPlanner.component</semanticResources>
     <semanticResources>platform:/resource/ComponentWebots/model/ComponentWebots.componentParameters</semanticResources>
     <semanticResources>platform:/resource/ComponentWebots/model/ComponentWebots.component</semanticResources>
+    <semanticResources>platform:/resource/DomainRobotFleetNavigation/model/DomainRobotFleetNavigation.services</semanticResources>
+    <semanticResources>platform:/resource/DomainRobotFleetNavigation/model/DomainRobotFleetNavigation.types</semanticResources>
+    <semanticResources>platform:/resource/BehaviorPathNavigationTest/model/BehaviorPathNavigationTest.taskRealization</semanticResources>
+    <semanticResources>platform:/resource/DomainRobotFleetNavigation/model/DomainRobotFleetNavigation.skills</semanticResources>
+    <semanticResources>platform:/resource/ComponentNavigationGraph/model/ComponentNavigationGraph.component</semanticResources>
+    <semanticResources>platform:/resource/ComponentNavigationGraph/model/ComponentNavigationGraph.skillRealization</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_VmwUkKgXEeul85islEAVKw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_VnkM4KgXEeul85islEAVKw" name="SystemWebotsMasterDeployment" repPath="#_VnfUYKgXEeul85islEAVKw" changeId="3b646649-0f78-42ab-8ba6-b711aba5a0d9">
@@ -966,8 +972,8 @@
       <target xmi:type="componentArchitecture:ComponentInstance" href="model/SystemWebotsMaster.componentArch#//@components.3"/>
       <semanticElements xmi:type="componentArchitecture:ComponentInstance" href="model/SystemWebotsMaster.componentArch#//@components.3"/>
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_y_l9MagfEeul85islEAVKw" name="SymbolicPlannerQueryServer" tooltipText="2WayAnswer" incomingEdges="_8_HhYKgfEeul85islEAVKw" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemWebotsMaster.componentArch#//@components.3/@ports.0"/>
-        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemWebotsMaster.componentArch#//@components.3/@ports.0"/>
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemWebotsMaster.componentArch#//@components.3/@ports.0"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemWebotsMaster.componentArch#//@components.3/@ports.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1000,8 +1006,8 @@
       <target xmi:type="componentArchitecture:ComponentInstance" href="model/SystemWebotsMaster.componentArch#//@components.4"/>
       <semanticElements xmi:type="componentArchitecture:ComponentInstance" href="model/SystemWebotsMaster.componentArch#//@components.4"/>
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_FmozgCXlEeyhzO0KQBXAig" name="CommKBQueryReq" tooltipText="2WayRequestor" outgoingEdges="_6nhOBCX5EeyhzO0KQBXAig" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemWebotsMaster.componentArch#//@components.4/@ports.0"/>
-        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemWebotsMaster.componentArch#//@components.4/@ports.0"/>
+        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemWebotsMaster.componentArch#//@components.4/@ports.0"/>
+        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemWebotsMaster.componentArch#//@components.4/@ports.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>

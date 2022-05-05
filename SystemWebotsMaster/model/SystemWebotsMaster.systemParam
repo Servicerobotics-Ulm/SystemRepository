@@ -10,8 +10,11 @@ SystemParameterModel SystemWebotsMaster extendsSystem SystemWebotsMaster {
 	
 	ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots { 
 		ParameterRefinement General { 
-			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/ZAFH.wbt"
-			enableEditor = true
+			//WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/ZAFH-no-robots.wbt"
+			//WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/PathNavigation.wbt"
+			//WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/Werk150-layout1.wbt"
+			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/Werk150-layout2-video-sim.wbt"
+			isEditorPresent = true
 		}
 	}
 }

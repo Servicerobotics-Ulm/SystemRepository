@@ -4,6 +4,7 @@
 	<comment></comment>
 	<projects>
 		<project>BehaviorLarrySlave</project>
+		<project>ComponentGoalNodeControl</project>
 		<project>ComponentKB</project>
 		<project>ComponentKinectBoxDetection</project>
 		<project>ComponentOpenRave</project>

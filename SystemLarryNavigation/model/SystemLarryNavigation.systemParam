@@ -130,15 +130,16 @@ ComponentParameterInstance ComponentRMPBaseServer refinesParamStruct ComponentRM
 			enable_motors = true
 			max_vel = 1000
 			max_rot_vel = 600
-			max_velocity_scale_factor = 16
-			max_acceleration_scale_factor = 16
-			max_turn_rate_scale_factor = 16
+			max_velocity_scale_factor = 4
+			max_acceleration_scale_factor = 4
+			max_turn_rate_scale_factor = 4
 			gain_schedule = 1
 			limit_scale_factor = 256
-			accelerationForward = 100
-			decelerationFoward = 1000
-			accelerationBackward = 100
-			decelerationBackward = 100
+			accelerationBackward = 500
+			accelerationForward = 300
+			
+			decelerationFoward = 300
+			decelerationBackward = 2000
 			accelerationLeftward = 0.4
 			decelerationLeftward = 0.4
 			accelerationRightward = 0.4

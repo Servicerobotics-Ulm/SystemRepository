@@ -42,8 +42,8 @@ ComponentInstance ComponentKB_Master instantiates ComponentKB
 		ProvidedService SymbolicPlannerQueryServer
 	}
 	Connection SmartFestoFleetCom.TaskResultIn -> SmartJobDispatcher.TaskResultOut
-	Connection SmartFestoFleetCom.kbQueryClient -> ComponentKB_3.kbQuery
-	Connection SmartJobDispatcher.CommKBQueryReq -> ComponentKB_3.kbQuery
+	Connection SmartFestoFleetCom.kbQueryClient -> ComponentKB_Master.kbQuery
+	Connection SmartJobDispatcher.CommKBQueryReq -> ComponentKB_Master.kbQuery
 	Connection SmartJobDispatcher.jobSourceEventClient -> SmartFestoFleetCom.TaskEventOut
 	Connection ComponentWebots.CommKBQueryReq -> ComponentKB_Master.kbQuery
 Connection ComponentWebots.NavPathServiceOut -> ComponentNavigationGraph.NavPathServiceIn

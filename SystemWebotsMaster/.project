@@ -3,11 +3,8 @@
 	<name>SystemWebotsMaster</name>
 	<comment></comment>
 	<projects>
-		<project>BehaviorPathNavigationTest</project>
 		<project>ComponentKB</project>
-		<project>ComponentNavigationGraph</project>
 		<project>ComponentSymbolicPlanner</project>
-		<project>ComponentTCLSequencer</project>
 		<project>ComponentWebots</project>
 		<project>SmartFestoFleetCom</project>
 		<project>SmartJobDispatcher</project>

@@ -6,8 +6,8 @@ ComponentParameterInstance SmartAmcl_Larry refinesParamStruct SmartAmclParams{
 		initPoseFileName = "/tmp/lastRobotPose.txt"
 		verbose = false
 		connect_services = true
-		//yaml_file = "localization-map.yaml"
-		yaml_file = "localization-map-werk150-sim.yaml"
+		yaml_file = "localization-map.yaml"
+		//yaml_file = "localization-map-werk150-sim.yaml"
 		initial_x = 0.0
 		initial_y = 0.0
 		initial_a = 0.0
@@ -110,42 +110,44 @@ ComponentParameterInstance SmartMapperGridMap_Larry refinesParamStruct SmartMapp
 		mapDataDir = ""
 	}
 	// SRRC Lab
-//	ParameterRefinement CurrentMap {
-//		interval = 10
-//		growing = "star32"
-//		xsize = 20000
-//		ysize = 20000
-//		xpos = -10000
-//		ypos = -10000
-//		id = 0
-//	}
-//	ParameterRefinement LtmMap {
-//		kalman = 100
-//		xsize = 20000
-//		ysize = 20000
-//		xpos = -10000
-//		ypos = -10000
-//		id = 0
-//	}
-	
-	// Werk150
 	ParameterRefinement CurrentMap {
 		interval = 10
 		growing = "star32"
-		xsize = 60000
-		ysize = 30000
-		xpos = -40000
-		ypos = -5000
+		xsize = 20000
+		ysize = 20000
+		xpos = -10000
+		ypos = -10000
 		id = 0
 	}
 	ParameterRefinement LtmMap {
 		kalman = 100
-		xsize = 60000
-		ysize = 30000
-		xpos = -40000
-		ypos = -5000
+		xsize = 20000
+		ysize = 20000
+		xpos = -10000
+		ypos = -10000
 		id = 0
 	}
+	
+	// Werk150
+//	ParameterRefinement CurrentMap {
+//		interval = 10
+//		growing = "star32"
+//		xsize = 60000
+//		ysize = 30000
+//		xpos = -40000
+//		ypos = -5000
+//		id = 0
+//	}
+//	ParameterRefinement LtmMap {
+//		kalman = 100
+//		xsize = 60000
+//		ysize = 30000
+//		xpos = -40000
+//		ypos = -5000
+//		id = 0
+//	}
+	
+
 	ParameterRefinement CURLTM{
 		preoccupation = ENABLE
 		threshold = 20

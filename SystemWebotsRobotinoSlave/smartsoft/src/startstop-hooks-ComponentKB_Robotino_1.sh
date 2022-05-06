@@ -33,6 +33,11 @@ pre-start)
 	
 	# ...then call user/deployment specific hook:
 	echo "Triggering pre-start hooks ..."
+	echo $(date +%T)
+        echo "Before replace  ..."
+	        # Update the knowledge base ini param to connect robotino kb event client to master event server
+	sed -i -z 's/wiringName kbChainedEntriesEventClient\nserverName unknown\nserviceName unknown/wiringName kbChainedEntriesEventClient\nserverName ComponentKB_Master\nserviceName kbEventServer/g' ComponentKB_Robotino_1.ini
+	echo $(date +%T)
 ;;
 
 post-start)

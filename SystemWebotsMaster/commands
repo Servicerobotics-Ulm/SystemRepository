@@ -1,3 +1,13 @@
+-------------------
+ZAFH.wbt
+-------------------
+Command to execute robot commissioning with free navigation
+
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 2, "priority" : 0, "robot-id" : 1, "job" : { "type" : "RobotCommissioning", "commissioning-robot-id" : 22, "from-box-station-id" : 0, "from-box-station-belt" : 1, "docking-waypoint" : -1, "to-station-id" : 1, "to-station-belt" : 1, "order-items": [{ "type" : "CHOCO", "quantity" : 1 }] }}
+
+----------------------------
+Other commands
+----------------------------
 // changed orientation of position-id from 180 to 0
 // { "msg-type": "command", "command": { "type": "replace-positions", "positions": [{"position-id" : 0,"x" : 0.0,"y" : 0.0,"phi" : 180,"type" : "pose","approach-type" : "(region)"}, {"position-id" : 1,"x" : 0.1,"y" : 1.7,"phi" : 0,"type" : "pose","approach-type" : "(region)"}, {"position-id" : 2,"x" : -1.0,"y" : 1.7,"phi" : 135,"type" : "pose","approach-type" : "(region)"}, {"position-id" : 3,"x" : 0.2,"y" : -2.5,"phi" : 0,"type" : "pose","approach-type" : "(region)"}, {"position-id" : 4,"x" : -1.5,"y" : -2.5,"phi" : 0,"type" : "pose","approach-type" : "(region)"}] } }
 
@@ -30,6 +40,7 @@
 
 
 { "msg-type" : "job", "action" : "push-job", "job-id" : 2, "priority" : 0, "robot-id" : 1, "job" : { "type" : "RobotCommissioning", "commissioning-robot-id" : 22, "from-box-station-id" : 0, "from-box-station-belt" : 1, "to-station-id" : 1, "to-station-belt" : 1, "order-items": [{ "type" : "CHOCO", "quantity" : 1 }] }}
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 2, "priority" : 0, "robot-id" : 1, "job" : { "type" : "RobotCommissioning", "commissioning-robot-id" : 22, "from-box-station-id" : 0, "from-box-station-belt" : 1, "docking-waypoint" : -1, "to-station-id" : 1, "to-station-belt" : 1, "order-items": [{ "type" : "CHOCO", "quantity" : 1 }] }}
 
 
 { "msg-type" : "job", "action" : "push-job", "job-id" : 2, "priority" : 0, "robot-id" : 1, "job" : { "type" : "RobotCommissioning", "commissioning-robot-id" : 22, "from-box-station-id" : 0, "from-box-station-belt" : 1, "to-station-id" : 1, "to-station-belt" : 1, "order-items": [{ "type" : "CHOCO", "quantity" : 2 }, { "type" : "SPECIAL", "quantity" : 1 }] }}

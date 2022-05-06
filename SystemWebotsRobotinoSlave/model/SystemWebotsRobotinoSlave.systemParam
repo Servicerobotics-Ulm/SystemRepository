@@ -7,9 +7,9 @@ ComponentParameterInstance SmartAmcl_Robotino_1 refinesParamStruct SmartAmclPara
 		initPoseFileName = "/tmp/lastRobotPose.txt"
 		verbose = false
 		connect_services = true
-		//yaml_file = "localization-map.yaml"
+		yaml_file = "localization-map.yaml"
 		//yaml_file = "localization-map-warehouse.yaml"
-		yaml_file = "localization-map-werk150-sim.yaml"
+		//yaml_file = "localization-map-werk150-sim.yaml"
 		initial_x = 0.0
 		initial_y = 0.0
 		initial_a = 0.0
@@ -72,7 +72,8 @@ ComponentParameterInstance ComponentWebots2DLidar_Robotino_1 refinesParamStruct 
 			frequency = 50
 	}
 	ParameterRefinement webots {
-		robotName = "Lidar_1"
+		//robotName = "Lidar_1"
+		robotName = "Lidar"
 }	
 }	
 ComponentParameterInstance SmartMapperGridMap_Robotino_1 refinesParamStruct SmartMapperGridMapParams{
@@ -84,42 +85,44 @@ ComponentParameterInstance SmartMapperGridMap_Robotino_1 refinesParamStruct Smar
 		mapDataDir = ""
 	}
 	// SRRC Lab
-//	ParameterRefinement CurrentMap {
-//		interval = 10
-//		growing = "star32"
-//		xsize = 20000
-//		ysize = 20000
-//		xpos = -10000
-//		ypos = -10000
-//		id = 0
-//	}
-//	ParameterRefinement LtmMap { 
-//		kalman = 100
-//		xsize = 20000
-//		ysize = 20000
-//		xpos = -10000
-//		ypos = -10000
-//		id = 0
-//	}
-	
-	// Werk150
 	ParameterRefinement CurrentMap {
 		interval = 10
 		growing = "star32"
-		xsize = 60000
-		ysize = 30000
-		xpos = -40000
-		ypos = -5000
+		xsize = 20000
+		ysize = 20000
+		xpos = -10000
+		ypos = -10000
 		id = 0
 	}
 	ParameterRefinement LtmMap { 
 		kalman = 100
-		xsize = 60000
-		ysize = 30000
-		xpos = -40000
-		ypos = -5000
+		xsize = 20000
+		ysize = 20000
+		xpos = -10000
+		ypos = -10000
 		id = 0
 	}
+	
+	// Werk150
+//	ParameterRefinement CurrentMap {
+//		interval = 10
+//		growing = "star32"
+//		xsize = 60000
+//		ysize = 30000
+//		xpos = -40000
+//		ypos = -5000
+//		id = 0
+//	}
+//	ParameterRefinement LtmMap { 
+//		kalman = 100
+//		xsize = 60000
+//		ysize = 30000
+//		xpos = -40000
+//		ypos = -5000
+//		id = 0
+//	}
+	
+
 	ParameterRefinement CURLTM{ 
 		preoccupation = ENABLE
 		threshold = 20
@@ -144,7 +147,8 @@ ComponentParameterInstance ComponentWebotsMobileRobot_Robotino_1 refinesParamStr
 	}
 	
 	ParameterRefinement Webots {
-		robotName = "Robotino3_1"
+		//robotName = "Robotino3_1"
+		robotName = "Robotino 3"
 	}
 }
 
@@ -157,7 +161,8 @@ ComponentParameterInstance ComponentWebotsMobileRobot_Robotino_1 refinesParamStr
 	ComponentParameterInstance ComponentWebotsMpsDocking_Robotino_1 refinesParamStruct ComponentWebotsMpsDocking {
 		
 		ParameterRefinement Webots {
-			robotName = "MpsDocking_1"
+			//robotName = "MpsDocking_1"
+			robotName = "MpsDocking"
 		}		
 	}
 	
@@ -176,7 +181,8 @@ ComponentParameterInstance ComponentWebotsMobileRobot_Robotino_1 refinesParamStr
 	ComponentParameterInstance ComponentWebotsConveyorBeltOpcua_Robotino_1 refinesParamStruct ComponentWebotsConveyorBeltOpcua {
 		
 		ParameterRefinement webots {
-			robotName = "RobotinoConveyorBelt_1"
+			//robotName = "RobotinoConveyorBelt_1"
+			robotName = "RobotinoConveyorBelt"
 		}
 //		ParameterRefinement Robot {
 //			belt_time_out_sec = 10

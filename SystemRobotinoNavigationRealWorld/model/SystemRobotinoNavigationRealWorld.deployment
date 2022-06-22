@@ -3,7 +3,7 @@ DeploymentModel SystemRobotinoNavigationRealWorld using ComponentArchitecture Sy
 	TargetPlatformReference Robotino using SystemRobotinoNavigationRealWorld.Robotino {
 		UploadDirectory "/tmp"
 		NetworkInterface wifi
-		LoginAccount student
+		LoginAccount robotino
 	}
 	NamingService {
 		deploy-to Robotino

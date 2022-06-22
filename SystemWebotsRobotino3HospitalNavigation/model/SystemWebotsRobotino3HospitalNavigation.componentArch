@@ -3,6 +3,7 @@ SystemComponentArchitecture SystemWebotsRobotino3HospitalNavigation
 ComponentInstance ComponentWebots instantiates ComponentWebots
 	{
 	RequiredService CommKBQueryReq
+	RequiredService CurrGridMapPushServiceIn
 	}
 	ComponentInstance ComponentKB instantiates ComponentKB
 	{

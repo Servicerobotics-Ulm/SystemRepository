@@ -24,7 +24,7 @@ SystemParameterModel SystemP3dxLaserObstacleAvoidRealWorld extendsSystem SystemP
 			maxRotVel = 300
 			maxRotVelAcc = 100
 			maxRotVelDecel = 100
-			serialport = "/dev/ttyS0"
+			serialport = "/dev/pioneer"
 			robotType = "p3dx"
 		}
 	}

@@ -1,1 +1,11 @@
-SystemParameterModel SystemRobotinoLaserObstacleAvoidRealWorld extendsSystem SystemRobotinoLaserObstacleAvoidRealWorld { }
+SystemParameterModel SystemRobotinoLaserObstacleAvoidRealWorld extendsSystem SystemRobotinoLaserObstacleAvoidRealWorld { 
+	ComponentParameterInstance ComponentLaserLMS1xx refinesParamStruct ComponentLaserLMS1xxParams{
+		ParameterRefinement scanner {
+			ip_address = "192.168.0.2"
+			verbose = true
+			on_turret = false
+			x = 190
+			opening_angle = 210
+		}
+	}	
+}	

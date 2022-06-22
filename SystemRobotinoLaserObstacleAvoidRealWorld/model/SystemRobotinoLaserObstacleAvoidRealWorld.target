@@ -2,6 +2,7 @@ TargetPlatformModel SystemRobotinoLaserObstacleAvoidRealWorld
 {
 TargetPlatformDefinition Robotino
 	{
-		NetworkInterface wifi { HostAddress "10.36.32.130" }
-		LoginAccount student { FullName "Guest" Email "guest@example.com" }
+//		NetworkInterface wifi { HostAddress "c26-26-robotino3" }
+		NetworkInterface wifi { HostAddress "10.36.32.135" }
+		LoginAccount robotino { FullName "Guest" Email "guest@example.com" }
 	} }

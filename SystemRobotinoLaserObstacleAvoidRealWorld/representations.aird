@@ -1,11 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:componentArchitecture="http://www.eclipse.org/smartmdsd/system/componentArchitecture" xmlns:deployment="http://www.eclipse.org/smartmdsd/system/deployment" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:targetPlatform="http://www.eclipse.org/smartmdsd/system/targetPlatform" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis uid="_GULe8JebEeuJWvPDZjxRdg" selectedViews="_GUhdMJebEeuJWvPDZjxRdg _GVr60JebEeuJWvPDZjxRdg _GXvJQJebEeuJWvPDZjxRdg" version="14.3.1.202003261200">
+  <viewpoint:DAnalysis uid="_GULe8JebEeuJWvPDZjxRdg" selectedViews="_GUhdMJebEeuJWvPDZjxRdg _GVr60JebEeuJWvPDZjxRdg _GXvJQJebEeuJWvPDZjxRdg" version="14.5.1.202106111100">
     <semanticResources>model/SystemRobotinoLaserObstacleAvoidRealWorld.componentArch</semanticResources>
     <semanticResources>model/SystemRobotinoLaserObstacleAvoidRealWorld.deployment</semanticResources>
     <semanticResources>model/SystemRobotinoLaserObstacleAvoidRealWorld.systemDatasheet</semanticResources>
     <semanticResources>model/SystemRobotinoLaserObstacleAvoidRealWorld.systemParam</semanticResources>
     <semanticResources>model/SystemRobotinoLaserObstacleAvoidRealWorld.target</semanticResources>
+    <semanticResources>platform:/resource/ComponentLaserLMS1xx/model/ComponentLaserLMS1xx.component</semanticResources>
+    <semanticResources>platform:/resource/CommBasicObjects/model/CommBasicObjects.services</semanticResources>
+    <semanticResources>platform:/resource/CommBasicObjects/model/CommBasicObjects.types</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.xtext.base.stateMachine/componentLifecycle/ComponentLifecycle.automaton</semanticResources>
+    <semanticResources>platform:/resource/CommBasicObjects/model/CommBasicObjects.modes</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.smartmdsd.xtext.service.parameterDefinition/defaultParameterLib/defaultParameterLib.parameters</semanticResources>
+    <semanticResources>platform:/resource/CommBasicObjects/model/CommBasicObjects.parameters</semanticResources>
+    <semanticResources>platform:/resource/ComponentLaserLMS1xx/model/ComponentLaserLMS1xx.skillRealization</semanticResources>
+    <semanticResources>platform:/resource/CommBasicObjects/model/CommBasicObjects.skills</semanticResources>
+    <semanticResources>platform:/resource/ComponentLaserLMS1xx/model/ComponentLaserLMS1xx.componentParameters</semanticResources>
+    <semanticResources>platform:/resource/ComponentRobotinoBaseServer/model/ComponentRobotinoBaseServer.component</semanticResources>
+    <semanticResources>platform:/resource/CommNavigationObjects/model/CommNavigationObjects.services</semanticResources>
+    <semanticResources>platform:/resource/CommNavigationObjects/model/CommNavigationObjects.types</semanticResources>
+    <semanticResources>platform:/resource/CommNavigationObjects/model/CommNavigationObjects.parameters</semanticResources>
+    <semanticResources>platform:/resource/CommNavigationObjects/model/CommNavigationObjects.modes</semanticResources>
+    <semanticResources>platform:/resource/CommLocalizationObjects/model/CommLocalizationObjects.services</semanticResources>
+    <semanticResources>platform:/resource/CommLocalizationObjects/model/CommLocalizationObjects.types</semanticResources>
+    <semanticResources>platform:/resource/CommLocalizationObjects/model/CommLocalizationObjects.modes</semanticResources>
+    <semanticResources>platform:/resource/CommLocalizationObjects/model/CommLocalizationObjects.parameters</semanticResources>
+    <semanticResources>platform:/resource/ComponentRobotinoBaseServer/model/ComponentRobotinoBaseServer.skillRealization</semanticResources>
+    <semanticResources>platform:/resource/CommNavigationObjects/model/CommNavigationObjects.skills</semanticResources>
+    <semanticResources>platform:/resource/ComponentRobotinoBaseServer/model/ComponentRobotinoBaseServer.componentParameters</semanticResources>
+    <semanticResources>platform:/resource/CommRobotinoObjects/model/CommRobotinoObjects.services</semanticResources>
+    <semanticResources>platform:/resource/CommRobotinoObjects/model/CommRobotinoObjects.types</semanticResources>
+    <semanticResources>platform:/resource/CommRobotinoObjects/model/CommRobotinoObjects.modes</semanticResources>
+    <semanticResources>platform:/resource/CommRobotinoObjects/model/CommRobotinoObjects.parameters</semanticResources>
+    <semanticResources>platform:/resource/CommTrackingObjects/model/CommTrackingObjects.services</semanticResources>
+    <semanticResources>platform:/resource/CommTrackingObjects/model/CommTrackingObjects.types</semanticResources>
+    <semanticResources>platform:/resource/CommTrackingObjects/model/CommTrackingObjects.modes</semanticResources>
+    <semanticResources>platform:/resource/CommTrackingObjects/model/CommTrackingObjects.parameters</semanticResources>
+    <semanticResources>platform:/resource/ComponentLaserObstacleAvoid/model/ComponentLaserObstacleAvoid.component</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_GUhdMJebEeuJWvPDZjxRdg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_GVcDMZebEeuJWvPDZjxRdg" name="SystemRobotinoLaserObstacleAvoidRealWorldDeployment" repPath="#_GVbcIJebEeuJWvPDZjxRdg" changeId="9d7728a1-1e8c-40f9-99c4-db691bad8c59">
@@ -15,7 +46,7 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_GVr60JebEeuJWvPDZjxRdg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_GXTEYZebEeuJWvPDZjxRdg" name="SystemRobotinoLaserObstacleAvoidRealWorldComponentArchitecture" repPath="#_GXR2QJebEeuJWvPDZjxRdg" changeId="fcb6d783-9f0f-48af-8c9f-940c248097c9">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_GXTEYZebEeuJWvPDZjxRdg" name="SystemRobotinoLaserObstacleAvoidRealWorldComponentArchitecture" repPath="#_GXR2QJebEeuJWvPDZjxRdg" changeId="e55754d7-bcea-4511-8658-f07e80828610">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']"/>
         <target xmi:type="componentArchitecture:SystemComponentArchitecture" href="model/SystemRobotinoLaserObstacleAvoidRealWorld.componentArch#SystemRobotinoLaserObstacleAvoidRealWorld"/>
       </ownedRepresentationDescriptors>

@@ -3,7 +3,7 @@ DeploymentModel SystemRobotinoLaserObstacleAvoidRealWorld using ComponentArchite
 TargetPlatformReference Robotino using SystemRobotinoLaserObstacleAvoidRealWorld.Robotino
 	{
 		UploadDirectory "/tmp"
-		LoginAccount student
+		LoginAccount robotino
 		NetworkInterface wifi
 	}
 	NamingService

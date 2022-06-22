@@ -1,0 +1,82 @@
+SystemComponentArchitecture SystemGmapping usingActivityArchitecture SystemGmapping
+{
+ComponentInstance ComponentGMapping instantiates ComponentGMapping
+	{
+		RequiredService laserClient
+		RequiredService basePositionUpdateClient
+		ProvidedService newestMapPushServer
+	}
+	ComponentInstance ComponentVisualization instantiates ComponentVisualization
+	{
+		RequiredService rgbdPushNewestClient
+		RequiredService rgbdQueryClient
+		RequiredService baseClient
+		RequiredService laserClient1
+		RequiredService laserClient2
+		RequiredService laserClient3
+		RequiredService irPushNewestClient
+		RequiredService imagePushNewestClient
+		RequiredService curPushClient
+		RequiredService depthPushNewestClient
+		RequiredService ultrasonicPushNewestClient
+		RequiredService personDetectionEventClient
+		RequiredService MarkerListDetectionServiceIn
+		RequiredService AmclVisualizationInfoIn
+		RequiredService RGBDImageQueryServiceReq
+		RequiredService ltmQueryClient
+		RequiredService personDetectionQueryClient
+	}
+
+	ComponentInstance SmartJoystickNavigation instantiates SmartJoystickNavigation
+	{
+		RequiredService JoystickServiceIn
+		RequiredService NavVelServiceOut
+	}
+	ComponentInstance SmartJoystickServer instantiates SmartJoystickServer
+	{
+		ProvidedService JoystickServcieOut
+	}
+
+	ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
+	{
+	}
+	ComponentInstance ComponentLaserLMS1xx instantiates ComponentLaserLMS1xx
+	{
+		RequiredService BaseStateServiceIn
+		ProvidedService LaserServiceOut
+		ProvidedService LaserQueryServiceAnsw
+	}
+	ComponentInstance ComponentRobotinoBaseServer instantiates ComponentRobotinoBaseServer
+	{
+		ProvidedService DigitalInputEventOut
+		ProvidedService BaseStateServiceOut
+		ProvidedService NavigationVelocityServiceIn
+		ProvidedService LocalizationUpdateServiceIn
+	}
+	Connection SmartJoystickNavigation.JoystickServiceIn -> SmartJoystickServer.JoystickServcieOut
+	Connection ComponentGMapping.basePositionUpdateClient -> ComponentRobotinoBaseServer.LocalizationUpdateServiceIn
+	Connection ComponentGMapping.laserClient -> ComponentLaserLMS1xx.LaserServiceOut
+	Connection ComponentLaserLMS1xx.BaseStateServiceIn -> ComponentRobotinoBaseServer.BaseStateServiceOut
+	Connection SmartJoystickNavigation.NavVelServiceOut -> ComponentRobotinoBaseServer.NavigationVelocityServiceIn
+	
+	
+	
+	
+	
+	BehaviorTaskRef BehaviorMapping
+//	CoordinationModuleMapping {
+//		moduleInstance BehaviorMapping.base realizedby baseInst {
+//			 
+//		}	
+//	}
+	CoordinationModuleMapping {
+		moduleInstance BehaviorMapping.slam realizedby slamModule {
+			interfaceInstance gmapping realizedby ComponentGMapping
+		}
+	}
+	CoordinationModuleMapping {
+		moduleInstance BehaviorMapping.vis realizedby visualizationmod{
+			interfaceInstance vis realizedby ComponentVisualization
+		}
+	}
+}

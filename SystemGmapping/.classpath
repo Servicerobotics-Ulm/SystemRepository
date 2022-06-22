@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="model"/>
+	<classpathentry kind="src" path="/BehaviorMapping"/>
+	<classpathentry kind="src" path="/ComponentGMapping"/>
+	<classpathentry kind="src" path="/ComponentLaserLMS1xx"/>
+	<classpathentry kind="src" path="/ComponentRobotinoBaseServer"/>
+	<classpathentry kind="src" path="/ComponentTCLSequencer"/>
+	<classpathentry kind="src" path="/ComponentVisualization"/>
+	<classpathentry kind="src" path="/SmartJoystickNavigation"/>
+	<classpathentry kind="src" path="/SmartJoystickServer"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

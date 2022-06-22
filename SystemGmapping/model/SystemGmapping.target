@@ -1,0 +1,12 @@
+TargetPlatformModel SystemGmapping
+{
+		
+TargetPlatformDefinition PC1
+	{
+//		NetworkInterface eth2 { HostAddress "c26-26-robotino3" }
+		NetworkInterface eth2 { HostAddress "10.36.32.135" }
+	LoginAccount robotino { FullName "Guest" Email "guest@example.com" }
+	} 
+		
+	
+}

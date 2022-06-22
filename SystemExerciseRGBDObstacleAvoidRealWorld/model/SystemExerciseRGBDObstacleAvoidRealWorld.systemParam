@@ -1,0 +1,101 @@
+SystemParameterModel SystemExerciseRGBDObstacleAvoidRealWorld extendsSystem SystemExerciseRGBDObstacleAvoidRealWorld {	 
+	ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots { 
+		ParameterRefinement General {
+			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/ExerciseObstacleAvoidRealWorld.wbt"
+			isEditorPresent = true
+		}
+	}
+	ComponentParameterInstance SmartPioneerBaseServer refinesParamStruct SmartPioneerBaseServerParams {
+		ParameterRefinement Robot{
+			enable_motors = true
+			enable_sonar = false
+			maxVel = 1000
+			maxVelAcc = 300
+			maxVelDecel = 300
+			maxRotVel = 300
+			maxRotVelAcc = 100
+			maxRotVelDecel = 100
+			serialport = "/dev/pioneer"
+			robotType = "p3dx"
+		}
+	}		 	
+	ComponentParameterInstance ComponentLaserFromRGBDServer refinesParamStruct ComponentLaserFromRGBDServerParams {    	
+		ParameterRefinement scanner {
+			verbose = true
+			on_turret = false
+			x = 0
+			y = 0
+			z = 600
+			azimuth = 0
+			elevation = 0
+			roll = 0
+		}
+		ParameterRefinement laser_generator {
+			min_range = 10
+			max_range = 20000
+			vertical_fov = 0.0
+			angle_resolution = 0.5
+			generationPeriodSec = 0
+			generationPeriodMilliSec = 100
+			floor_threshold_distance = 0.05
+			rgbd_source = 0			
+		}
+		ParameterRefinement base_manipulator {
+			on_base = true
+			x = 0
+			y = 0
+			z = 0
+			base_a = 0
+			steer_a = 0
+			turret_a = 0
+		}
+    }
+
+    /* from SystemRealsenseVirtualLaserNavigation with Robotino */    
+    ComponentParameterInstance ComponentRealSenseV2Server refinesParamStruct ComponentRealSenseV2ServerParams { 
+ 		ParameterRefinement base {
+ 			on_manipulator = false
+			on_ptu = false
+			on_base = true
+			on_ur = false
+			x = 0
+			y = 0
+			z = 0
+			base_a = 0
+			steer_a = 0
+		}
+		ParameterRefinement Depth_config { 
+			width = 640
+			height = 480
+			framerate = 30
+		}			
+		ParameterRefinement RGB_config { 
+			width = 640
+			height = 480
+			framerate = 30
+		}					
+		// realsense height=620mm above ground
+		// a wall is seen from ground level to 705mm height at 810mm horizontal distance to camera
+		// => realsense camera is rotated downwards by this angle :  
+		// atan(620-705/3,810) = 0.3190 radians		
+		ParameterRefinement sensor_pose { 
+			x = 130
+			y = 34
+			z = 620
+			azimuth = -1.57079632679 
+			elevation = 0
+			roll = -1.88979632679
+		}
+		ParameterRefinement settings { 
+			debug_info = true
+			valid_image_time = 1.0
+			undistort_image = true
+			pushnewest_rgbd_image = true
+			pushnewest_color_image = true
+			pushnewest_depth_image = false
+			post_processing = false
+			device_serial_number = "938422076702"	
+		}
+	}
+
+}

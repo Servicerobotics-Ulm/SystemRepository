@@ -1,0 +1,83 @@
+SystemComponentArchitecture SystemExerciseRGBDObstacleAvoidRealWorld
+{
+	ComponentInstance ComponentWebots instantiates ComponentWebots 
+	{
+	}
+
+	ComponentInstance ComponentLaserObstacleAvoid instantiates ComponentLaserObstacleAvoid
+	{
+		RequiredService LaserServiceIn
+		RequiredService NavigationVelocityServiceOut
+	}
+	ComponentInstance ComponentLaserFromRGBDServer instantiates ComponentLaserFromRGBDServer
+	{
+		RequiredService rgbdClient
+		ProvidedService LaserServiceOut
+		ProvidedService laserQueryServer
+	}
+	ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer {       
+	}
+	ComponentInstance ComponentVisualization instantiates ComponentVisualization
+	{
+		RequiredService rgbdPushNewestClient
+		RequiredService rgbdQueryClient
+		RequiredService baseClient
+		RequiredService laserClient1
+		RequiredService laserClient2
+		RequiredService laserClient3
+		RequiredService irPushNewestClient
+		RequiredService imagePushNewestClient
+		RequiredService curPushClient
+		RequiredService depthPushNewestClient
+		RequiredService ultrasonicPushNewestClient
+		RequiredService personDetectionEventClient
+		RequiredService MarkerListDetectionServiceIn
+		RequiredService AmclVisualizationInfoIn
+		RequiredService plannerGoalPushClient
+		RequiredService plannerWavefrontGridMap
+		RequiredService RGBDImageQueryServiceReq
+		RequiredService ltmQueryClient
+		RequiredService personDetectionQueryClient
+		RequiredService VisualMarkers
+	}
+	ComponentInstance SmartPioneerBaseServer instantiates SmartPioneerBaseServer
+	{
+		ProvidedService BasePositionOut
+		ProvidedService BatteryEventServer
+		ProvidedService NavVelIn
+		ProvidedService LocalizationUpdate
+		ProvidedService BaseStateQueryServer
+	}
+	ComponentInstance ComponentRealSenseV2Server instantiates ComponentRealSenseV2Server
+	{
+		RequiredService basePushTimedClient
+		RequiredService ptuPosePushNewestClient
+		RequiredService UrPosePushTimedClient
+		RequiredService UrPoseQueryClient
+		ProvidedService depthPushNewestServer
+		ProvidedService RGBDImagePushServiceOut
+		ProvidedService RGBImagePushServiceOut
+		ProvidedService imageQueryServer
+		ProvidedService colorImageQueryServer
+	}
+
+	Connection ComponentLaserObstacleAvoid.NavigationVelocityServiceOut -> SmartPioneerBaseServer.NavVelIn
+	Connection ComponentLaserFromRGBDServer.rgbdClient -> ComponentRealSenseV2Server.RGBDImagePushServiceOut
+	Connection ComponentRealSenseV2Server.basePushTimedClient -> SmartPioneerBaseServer.BasePositionOut
+	Connection ComponentLaserObstacleAvoid.LaserServiceIn -> ComponentLaserFromRGBDServer.LaserServiceOut
+
+
+	BehaviorTaskRef BehaviorExerciseRGBDObstacleAvoid 
+	CoordinationModuleMapping { 
+		moduleInstance BehaviorExerciseRGBDObstacleAvoid.laserFromRGBDGen realizedby LaserFromRGBDModule { 
+			interfaceInstance laserfromrgbd realizedby ComponentLaserFromRGBDServer
+		}
+	}
+	CoordinationModuleMapping { 
+		moduleInstance BehaviorExerciseRGBDObstacleAvoid.turnOnOffCamera realizedby CameraModule {
+			interfaceInstance camera realizedby ComponentRealSenseV2Server 			
+		}
+	}
+	
+	
+}

@@ -1,0 +1,15 @@
+TargetPlatformModel SystemExerciseRGBDObstacleAvoidRealWorld
+{
+	
+    TargetPlatformDefinition P3dx
+	{
+		LoginAccount student { FullName "Guest" Email "guest@example.com" }
+		NetworkInterface wifi { HostAddress "10.36.32.226" }
+	}	 
+	
+	TargetPlatformDefinition LocalhostTarget
+	{
+		NetworkInterface localhost { HostAddress "127.0.0.1" }
+	}
+	
+}

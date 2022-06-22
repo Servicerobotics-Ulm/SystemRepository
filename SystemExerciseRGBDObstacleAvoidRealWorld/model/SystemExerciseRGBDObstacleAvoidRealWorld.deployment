@@ -1,0 +1,21 @@
+DeploymentModel SystemExerciseRGBDObstacleAvoidRealWorld using ComponentArchitecture SystemExerciseRGBDObstacleAvoidRealWorld
+{
+	TargetPlatformReference P3dx using SystemExerciseRGBDObstacleAvoidRealWorld.P3dx
+	{
+		UploadDirectory "/tmp"
+		LoginAccount student
+		NetworkInterface wifi
+	}
+	NamingService
+	{
+		deploy-to P3dx }
+
+	ComponentArtefact  ComponentLaserFromRGBDServer deploy-to P3dx
+
+	ComponentArtefact  ComponentLaserObstacleAvoid deploy-to P3dx
+
+	ComponentArtefact  SmartPioneerBaseServer deploy-to P3dx
+	ComponentArtefact ComponentTCLSequencer deploy-to P3dx
+
+	ComponentArtefact  ComponentRealSenseV2Server deploy-to P3dx
+}

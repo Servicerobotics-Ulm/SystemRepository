@@ -1,23 +1,14 @@
 SystemParameterModel SystemP3dxNavigationRealWorldParams extendsSystem SystemP3dxNavigationRealWorld {
 
 	ComponentParameterInstance SmartLaserLMS200Server refinesParamStruct SmartLaserLMS200ServerParams {
-		ParameterRefinement Laser {
-			device = "/dev/sick"						
-		}
-	}
-	
+	}	
 	ComponentParameterInstance SmartPioneerBaseServer refinesParamStruct SmartPioneerBaseServerParams {
 		ParameterRefinement Robot {
-			enable_motors = true
-			enable_sonar = false
-			maxVel = 1000
-			maxVelAcc = 300
-			maxVelDecel = 300
-			maxRotVel = 300
-			maxRotVelAcc = 100
-			maxRotVelDecel = 100
 			serialport = "/dev/pioneer"
-			robotType = "p3dx"
+// https://www.conscious-robots.com/2007/04/10/mobilerobots-pioneer-3-p3-dx/
+// P3-SH microcontroller with ARCOS
+			robotType = "p3atsh"
+//			robotType = "p3dx"
 		}
 	}
 	ComponentParameterInstance SmartAmcl refinesParamStruct SmartAmclParams{

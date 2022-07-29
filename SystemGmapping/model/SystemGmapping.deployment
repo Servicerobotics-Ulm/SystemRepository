@@ -1,22 +1,19 @@
 DeploymentModel SystemGmapping using ComponentArchitecture SystemGmapping
 {
-TargetPlatformReference PC1 using SystemGmapping.PC1
-	{
-		UploadDirectory "/tmp"		
-		NetworkInterface eth2
-		LoginAccount robotino
-	}
-	NamingService
-	{
-		deploy-to PC1 }
-	ComponentArtefact ComponentGMapping deploy-to PC1
-	ComponentArtefact ComponentVisualization deploy-to PC1	
+    TargetPlatformReference PC1 using SystemGmapping.PC1
+    {
+        UploadDirectory "/tmp"
+        NetworkInterface eth2
+        LoginAccount robotino
+    }
+    NamingService
+    {
+        deploy-to PC1 
+    }
+    ComponentArtefact ComponentGMapping deploy-to PC1
+    ComponentArtefact ComponentVisualization deploy-to PC1
 
-	ComponentArtefact SmartJoystickNavigation deploy-to PC1
-	ComponentArtefact SmartJoystickServer deploy-to PC1
-
-	
-ComponentArtefact ComponentTCLSequencer deploy-to PC1
-ComponentArtefact ComponentLaserLMS1xx deploy-to PC1
-	ComponentArtefact ComponentRobotinoBaseServer deploy-to PC1
+	ComponentArtefact ComponentTCLSequencer deploy-to PC1
+    ComponentArtefact ComponentLaserLMS1xx deploy-to PC1
+    ComponentArtefact ComponentRobotinoBaseServer deploy-to PC1
 }

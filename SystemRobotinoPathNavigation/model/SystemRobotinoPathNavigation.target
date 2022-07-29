@@ -1,0 +1,15 @@
+TargetPlatformModel SystemRobotinoPathNavigation
+{
+
+    TargetPlatformDefinition Robotino
+    {
+        NetworkInterface wifi { HostAddress "10.36.32.135" }
+        LoginAccount robotino { FullName "Guest" Email "guest@example.com" }
+    }
+    
+    TargetPlatformDefinition PC1 {
+        NetworkInterface eth1 { HostAddress "i-srrc-ws-12" }
+        LoginAccount feldmeier { FullName "Guest" Email "guest@example.com" }
+    }
+    
+}

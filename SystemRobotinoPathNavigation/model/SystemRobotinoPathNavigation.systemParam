@@ -1,0 +1,84 @@
+SystemParameterModel SystemRobotinoPathNavigation extendsSystem SystemRobotinoPathNavigation {
+
+ComponentParameterInstance SmartFestoFleetCom refinesParamStruct SmartFestoFleetCom {
+    ParameterRefinement Settings {
+        port = "13000"
+        pushCyclicSystemState = false
+    }
+}
+    
+ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots { 
+    ParameterRefinement General { 
+        WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/RobotinoPathNavigation.wbt"
+        isEditorPresent = true
+    }
+}
+
+ComponentParameterInstance ComponentKB_Robotino_1 refinesParamStruct ComponentKBParams {
+    ParameterRefinement Settings {
+        connectChainedEntries = true
+    }
+}
+ 
+ComponentParameterInstance SmartAmcl refinesParamStruct SmartAmclParams{
+    ParameterRefinement General {
+        verbose = false
+//        yaml_file = "localization-map.yaml"
+        yaml_file = "laserMap.yaml"
+        enable_visualization = false
+    }    
+    ParameterRefinement Odometry {
+        odom_model_type = "omni"
+    }
+}
+
+ComponentParameterInstance SmartCdlServer refinesParamStruct SmartCdlServerParams{
+    ParameterRefinement Cdl {
+        accel_default_file = "CDLacc_Robotino3_600mm.dat"
+        accel_second_file = "CDLacc_Robotino3_600mm.dat"
+        contour_default_file = "CDLcontour_Robotino3_600mm.dat"
+        contour_second_file = "CDLcontour_Robotino3_600mm.dat"
+        curvature_default_file = "CDLindex_Robotino3_600mm.dat"
+        curvature_second_file = "CDLindex_Robotino3_600mm.dat"
+        lookup_default_file = "CDLdist_Robotino3_600mm.dat.compressed"
+        lookup_default_file_compressed = true
+        lookup_second_file = "CDLdist_Robotino3_600mm.dat.compressed"
+        lookup_second_file_compressed = true
+    }
+    ParameterRefinement Server { 
+        pathNavInit = true
+    }
+}
+
+ComponentParameterInstance ComponentLaserLMS1xx refinesParamStruct ComponentLaserLMS1xxParams {
+    ParameterRefinement scanner {
+        verbose = true
+        x = 190
+        z = 200
+        ip_address = "192.168.0.2"
+        opening_angle = 210
+    }
+}
+
+ComponentParameterInstance ComponentRobotinoBaseServer refinesParamStruct ComponentRobotinoBaseServerParams {
+}
+
+ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGridMapParams{
+    ParameterRefinement General {
+        mapDataDir = ""
+    }
+//  SRRC Lab
+    ParameterRefinement CurrentMap {
+        growing = "star32"
+        
+    }
+
+    ParameterRefinement CURLTM {
+        preoccupation = ENABLE
+    }
+    ParameterRefinement CUREMPTY {
+        mapmode = EMPTY
+    }
+}
+
+}

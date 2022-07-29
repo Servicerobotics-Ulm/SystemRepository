@@ -1,0 +1,38 @@
+DeploymentModel SystemRobotinoPathNavigation using ComponentArchitecture SystemRobotinoPathNavigation
+{
+    TargetPlatformReference Robotino using SystemRobotinoPathNavigation.Robotino
+    {
+        UploadDirectory "/tmp"
+        LoginAccount robotino
+        NetworkInterface wifi
+    }
+    ComponentArtefact ComponentKB_Robotino_1 deploy-to Robotino
+    ComponentArtefact ComponentTCLSequencer deploy-to Robotino
+    ComponentArtefact ComponentVisualization deploy-to Robotino
+    ComponentArtefact SmartAmcl deploy-to Robotino
+    ComponentArtefact SmartCdlServer deploy-to Robotino
+    ComponentArtefact SmartMapperGridMap deploy-to Robotino
+	ComponentArtefact SmartPlannerBreadthFirstSearch deploy-to Robotino
+    ComponentArtefact SmartRobotConsole deploy-to Robotino
+    ComponentArtefact ComponentGoalNodeControl deploy-to Robotino
+	ComponentArtefact ComponentSeq2SeqCom deploy-to Robotino
+	ComponentArtefact ComponentLaserLMS1xx deploy-to Robotino
+	ComponentArtefact ComponentRobotinoBaseServer deploy-to Robotino
+	
+    NamingService
+	{
+		deploy-to PC1
+	}
+	TargetPlatformReference PC1 using SystemRobotinoPathNavigation.PC1
+	{
+		UploadDirectory "/tmp"
+		LoginAccount feldmeier
+		NetworkInterface eth1
+	}
+    ComponentArtefact ComponentNavigationGraph deploy-to PC1
+	ComponentArtefact SmartFestoFleetCom deploy-to PC1
+	ComponentArtefact ComponentSymbolicPlanner deploy-to PC1
+	ComponentArtefact ComponentWebots deploy-to PC1
+	ComponentArtefact ComponentKB_Master deploy-to PC1
+	ComponentArtefact SmartJobDispatcher deploy-to PC1
+}

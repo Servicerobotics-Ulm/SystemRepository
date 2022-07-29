@@ -1,0 +1,14 @@
+SystemDatasheet SystemRobotinoPathNavigation
+{
+	BaseURI "http://www.servicerobotik-ulm.de"
+	ShortDescription "A short description for the SystemRobotinoPathNavigation datasheet"
+	DatasheetProperty Supplier {
+		value "No supplier specified"
+	}
+	DatasheetProperty Homepage {
+		value "http://www.example.com"
+	}
+	DatasheetProperty Purpose {
+		value "Example"
+	}
+}

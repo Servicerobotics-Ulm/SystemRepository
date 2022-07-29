@@ -1,5 +1,11 @@
-SystemParameterModel SystemRobotinoNavigationRealWorld extendsSystem SystemRobotinoNavigationRealWorld { 
-		ComponentParameterInstance SmartAmcl refinesParamStruct SmartAmclParams{
+SystemParameterModel SystemRobotinoNavigationRealWorld extendsSystem SystemRobotinoNavigationRealWorld {
+ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots {
+	ParameterRefinement General {
+			WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/EmptyLab.wbt"
+			isEditorPresent = true			
+	}
+} 
+ComponentParameterInstance SmartAmcl refinesParamStruct SmartAmclParams{
 		ParameterRefinement General {
 			initalizationType = INI_POSE
 			initPoseFileName = "/tmp/lastRobotPose.txt"
@@ -12,7 +18,7 @@ SystemParameterModel SystemRobotinoNavigationRealWorld extendsSystem SystemRobot
 			initial_cov_xx = 0.03
 			initial_cov_yy = 0.03
 			initial_cov_aa = 0.068539
-			enable_visualization = true
+			enable_visualization = false
 			lostEventMaxHypothese = 3
 			lostEventMaxEigValueSum = 0.2
 	}
@@ -85,7 +91,7 @@ ComponentParameterInstance ComponentLaserLMS1xx refinesParamStruct ComponentLase
 			}
 }	
 ComponentParameterInstance ComponentRobotinoBaseServer refinesParamStruct ComponentRobotinoBaseServerParams {
-  ParameterRefinement General { verbose = false
+  ParameterRefinement General { verbose = true
 			hasSignalState = true
 			useLocalizationEvent = true
 			poseFileName = "/tmp/lastRobotPose.txt"

@@ -8,6 +8,8 @@
 		<project>ComponentLaserLMS1xx</project>
 		<project>ComponentRobotinoBaseServer</project>
 		<project>ComponentTCLSequencer</project>
+		<project>ComponentVisualization</project>
+		<project>ComponentWebots</project>
 		<project>SmartAmcl</project>
 		<project>SmartCdlServer</project>
 		<project>SmartMapperGridMap</project>

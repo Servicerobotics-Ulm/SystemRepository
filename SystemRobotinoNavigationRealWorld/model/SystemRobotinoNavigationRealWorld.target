@@ -2,8 +2,13 @@ TargetPlatformModel SystemRobotinoNavigationRealWorld
 {
 TargetPlatformDefinition Robotino
 	{
-		NetworkInterface wifi { HostAddress "c26-26-robotino3" Kind "WLAN" }
-//		NetworkInterface wifi { HostAddress "10.36.32.135" Kind "WLAN" }
+//		NetworkInterface wifi { HostAddress "c26-26-robotino3" Kind "WLAN" }
+		NetworkInterface wifi { HostAddress "10.36.32.135" Kind "WLAN" }
 		LoginAccount robotino { FullName "Guest" Email "guest@example.com" }
 	} 
-}
+TargetPlatformDefinition PC2
+	{
+//		NetworkInterface eth1 { HostAddress "localhost" }		
+		NetworkInterface eth1 { HostAddress "i-srrc-ws-12" }
+		LoginAccount feldmeier { FullName "Guest" Email "guest@example.com" }
+	} }

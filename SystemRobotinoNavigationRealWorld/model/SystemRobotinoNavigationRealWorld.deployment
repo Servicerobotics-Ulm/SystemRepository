@@ -6,7 +6,9 @@ DeploymentModel SystemRobotinoNavigationRealWorld using ComponentArchitecture Sy
 		LoginAccount robotino
 	}
 	NamingService {
-		deploy-to Robotino
+		deploy-to PC2
+// if deploy to Robotino, must add "sleep 5" in startstop-hooks-ComponentWebots.sh and startstop-hooks-ComponentVisualization.sh		
+//        deploy-to Robotino
 	}
 	ComponentArtefact ComponentKB deploy-to Robotino
 	ComponentArtefact ComponentLaserLMS1xx deploy-to Robotino
@@ -16,4 +18,12 @@ DeploymentModel SystemRobotinoNavigationRealWorld using ComponentArchitecture Sy
 	ComponentArtefact SmartCdlServer deploy-to Robotino
 	ComponentArtefact SmartMapperGridMap deploy-to Robotino
 	ComponentArtefact SmartPlannerBreadthFirstSearch deploy-to Robotino	
+    TargetPlatformReference PC2 using SystemRobotinoNavigationRealWorld.PC2
+	{
+		UploadDirectory "/tmp"
+		LoginAccount feldmeier
+		NetworkInterface eth1
+	}
+	ComponentArtefact ComponentWebots deploy-to PC2
+	ComponentArtefact ComponentVisualization deploy-to PC2
 }

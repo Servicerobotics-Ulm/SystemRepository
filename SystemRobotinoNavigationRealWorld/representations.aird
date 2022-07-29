@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:componentArchitecture="http://www.eclipse.org/smartmdsd/system/componentArchitecture" xmlns:deployment="http://www.eclipse.org/smartmdsd/system/deployment" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:targetPlatform="http://www.eclipse.org/smartmdsd/system/targetPlatform" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis uid="_NtlYgIWfEeuubrEEiisDUQ" selectedViews="_NvF0YIWfEeuubrEEiisDUQ _NyH6QIWfEeuubrEEiisDUQ _N0QBMIWfEeuubrEEiisDUQ" version="14.3.1.202003261200">
+  <viewpoint:DAnalysis uid="_NtlYgIWfEeuubrEEiisDUQ" selectedViews="_NvF0YIWfEeuubrEEiisDUQ _NyH6QIWfEeuubrEEiisDUQ _N0QBMIWfEeuubrEEiisDUQ" version="14.5.1.202106111100">
     <semanticResources>model/SystemRobotinoNavigationRealWorld.componentArch</semanticResources>
     <semanticResources>model/SystemRobotinoNavigationRealWorld.deployment</semanticResources>
     <semanticResources>model/SystemRobotinoNavigationRealWorld.systemDatasheet</semanticResources>
@@ -53,23 +53,35 @@
     <semanticResources>platform:/resource/SmartPlannerBreadthFirstSearch/model/SmartPlannerBreadthFirstSearch.componentParameters</semanticResources>
     <semanticResources>platform:/resource/ComponentTCLSequencer/model/ComponentTCLSequencer.component</semanticResources>
     <semanticResources>platform:/resource/ComponentTCLSequencer/model/ComponentTCLSequencer.componentParameters</semanticResources>
+    <semanticResources>platform:/resource/CommTrackingObjects/model/CommTrackingObjects.parameters</semanticResources>
+    <semanticResources>platform:/resource/ComponentWebots/model/ComponentWebots.componentParameters</semanticResources>
+    <semanticResources>platform:/resource/ComponentWebots/model/ComponentWebots.component</semanticResources>
+    <semanticResources>platform:/resource/DomainRobotFleetNavigation/model/DomainRobotFleetNavigation.services</semanticResources>
+    <semanticResources>platform:/resource/DomainRobotFleetNavigation/model/DomainRobotFleetNavigation.types</semanticResources>
+    <semanticResources>platform:/resource/ComponentVisualization/model/ComponentVisualization.component</semanticResources>
+    <semanticResources>platform:/resource/DomainVision/model/DomainVision.services</semanticResources>
+    <semanticResources>platform:/resource/DomainVision/model/DomainVision.types</semanticResources>
+    <semanticResources>platform:/resource/CommManipulatorObjects/model/CommManipulatorObjects.types</semanticResources>
+    <semanticResources>platform:/resource/DomainVision/model/DomainVision.modes</semanticResources>
+    <semanticResources>platform:/resource/ComponentVisualization/model/ComponentVisualization.componentParameters</semanticResources>
+    <semanticResources>platform:/resource/ComponentVisualization/model/ComponentVisualization.skillRealization</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_NvF0YIWfEeuubrEEiisDUQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_NxTa4IWfEeuubrEEiisDUQ" name="SystemRobotinoNavigationRealWorldDeployment" repPath="#_NxPwgIWfEeuubrEEiisDUQ" changeId="71185bec-f272-4fe3-bf25-3ee08f07c0fb">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_NxTa4IWfEeuubrEEiisDUQ" name="SystemRobotinoNavigationRealWorldDeployment" repPath="#_NxPwgIWfEeuubrEEiisDUQ" changeId="f2f0f28d-88c0-4bb2-9437-af5be174ea6b">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']"/>
         <target xmi:type="deployment:DeploymentModel" href="model/SystemRobotinoNavigationRealWorld.deployment#SystemRobotinoNavigationRealWorld"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_NyH6QIWfEeuubrEEiisDUQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Nz74IIWfEeuubrEEiisDUQ" name="SystemRobotinoNavigationRealWorldComponentArchitecture" repPath="#_Nz5b4IWfEeuubrEEiisDUQ" changeId="05dfd1fa-42ea-420a-b1cc-9bd8e0ec2dda">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Nz74IIWfEeuubrEEiisDUQ" name="SystemRobotinoNavigationRealWorldComponentArchitecture" repPath="#_Nz5b4IWfEeuubrEEiisDUQ" changeId="cdfc45e8-7952-4e10-93d5-caf3c8d3d706">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']"/>
         <target xmi:type="componentArchitecture:SystemComponentArchitecture" href="model/SystemRobotinoNavigationRealWorld.componentArch#SystemRobotinoNavigationRealWorld"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_N0QBMIWfEeuubrEEiisDUQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_N1sysYWfEeuubrEEiisDUQ" name="SystemRobotinoNavigationRealWorldTargetPlatform" repPath="#_N1rkkIWfEeuubrEEiisDUQ" changeId="9bbae512-583d-46bf-8ab6-6694aa6b8e97">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_N1sysYWfEeuubrEEiisDUQ" name="SystemRobotinoNavigationRealWorldTargetPlatform" repPath="#_N1rkkIWfEeuubrEEiisDUQ" changeId="9def49f3-2519-4d44-9ed3-d103c79daeea">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']"/>
         <target xmi:type="targetPlatform:TargetPlatformModel" href="model/SystemRobotinoNavigationRealWorld.target#SystemRobotinoNavigationRealWorld"/>
       </ownedRepresentationDescriptors>
@@ -195,23 +207,61 @@
           <styles xmi:type="notation:ShapeStyle" xmi:id="_zO4vWIWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zO4vWYWiEeuubrEEiisDUQ" x="180" y="264"/>
         </children>
+        <children xmi:type="notation:Node" xmi:id="_AcMjIPOiEeypVIBZv6YNTQ" type="2002" element="_AbmtQPOiEeypVIBZv6YNTQ">
+          <children xmi:type="notation:Node" xmi:id="_AcNKMPOiEeypVIBZv6YNTQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_AcNKMfOiEeypVIBZv6YNTQ" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_C0_mgPOiEeypVIBZv6YNTQ" type="3008" element="_C0TC8POiEeypVIBZv6YNTQ">
+              <children xmi:type="notation:Node" xmi:id="_C0_mg_OiEeypVIBZv6YNTQ" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_C1ANkPOiEeypVIBZv6YNTQ" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_C1ANkfOiEeypVIBZv6YNTQ"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_C1ANkvOiEeypVIBZv6YNTQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_C0_mgfOiEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C0_mgvOiEeypVIBZv6YNTQ" x="19" y="18" width="78" height="56"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Esc3YPOiEeypVIBZv6YNTQ" type="3008" element="_ErRLoPOiEeypVIBZv6YNTQ">
+              <children xmi:type="notation:Node" xmi:id="_Esc3Y_OiEeypVIBZv6YNTQ" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_Esc3ZPOiEeypVIBZv6YNTQ" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_Esc3ZfOiEeypVIBZv6YNTQ"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_Esc3ZvOiEeypVIBZv6YNTQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_Esc3YfOiEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Esc3YvOiEeypVIBZv6YNTQ" x="139" y="20" width="75" height="51"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Y1pQoPbLEeyPUbEXge79pw" type="3008" element="_Yz150vbLEeyPUbEXge79pw">
+              <children xmi:type="notation:Node" xmi:id="_Y1pQo_bLEeyPUbEXge79pw" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_Y1pQpPbLEeyPUbEXge79pw" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_Y1pQpfbLEeyPUbEXge79pw"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_Y1pQpvbLEeyPUbEXge79pw"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_Y1pQofbLEeyPUbEXge79pw" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y1pQovbLEeyPUbEXge79pw" x="127" y="102"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_AcNKMvOiEeypVIBZv6YNTQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_AcNKM_OiEeypVIBZv6YNTQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_AcMjIfOiEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="10" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AcMjIvOiEeypVIBZv6YNTQ" x="408" y="432" width="387" height="99"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_RND4QPOiEeypVIBZv6YNTQ" type="2002" element="_RL5aoPOiEeypVIBZv6YNTQ">
+          <children xmi:type="notation:Node" xmi:id="_RNEfUPOiEeypVIBZv6YNTQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_RNEfUfOiEeypVIBZv6YNTQ" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_RNEfUvOiEeypVIBZv6YNTQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_RNEfU_OiEeypVIBZv6YNTQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_RND4QfOiEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RND4QvOiEeypVIBZv6YNTQ" x="180" y="468"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_R8ejAPOiEeypVIBZv6YNTQ" type="2002" element="_R7-zwPOiEeypVIBZv6YNTQ">
+          <children xmi:type="notation:Node" xmi:id="_R8ejA_OiEeypVIBZv6YNTQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_R8ejBPOiEeypVIBZv6YNTQ" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_R8ejBfOiEeypVIBZv6YNTQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_R8ejBvOiEeypVIBZv6YNTQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_R8ejAfOiEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R8ejAvOiEeypVIBZv6YNTQ" x="180" y="384"/>
+        </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_NxbWsoWfEeuubrEEiisDUQ"/>
-        <edges xmi:type="notation:Edge" xmi:id="_zO6kgIWiEeuubrEEiisDUQ" type="4001" element="_zOtJIIWiEeuubrEEiisDUQ" source="_zO4vV4WiEeuubrEEiisDUQ" target="_zO1sAIWiEeuubrEEiisDUQ">
-          <children xmi:type="notation:Node" xmi:id="_zO6khIWiEeuubrEEiisDUQ" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zO6khYWiEeuubrEEiisDUQ" x="-5" y="-8"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_zO6khoWiEeuubrEEiisDUQ" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zO6kh4WiEeuubrEEiisDUQ" x="7" y="11"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_zO6kiIWiEeuubrEEiisDUQ" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zO6kiYWiEeuubrEEiisDUQ" x="9" y="6"/>
-          </children>
-          <styles xmi:type="notation:ConnectorStyle" xmi:id="_zO6kgYWiEeuubrEEiisDUQ"/>
-          <styles xmi:type="notation:FontStyle" xmi:id="_zO6kgoWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zO6kg4WiEeuubrEEiisDUQ" points="[0, 0, -290, -2]$[290, 2, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zO7LkIWiEeuubrEEiisDUQ" id="(1.0,0.38235294117647056)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zO7LkYWiEeuubrEEiisDUQ" id="(0.5062111801242236,1.0)"/>
-        </edges>
         <edges xmi:type="notation:Edge" xmi:id="_zO7LkoWiEeuubrEEiisDUQ" type="4001" element="_zOyBoIWiEeuubrEEiisDUQ" source="_zO2TFIWiEeuubrEEiisDUQ" target="_zO1sAIWiEeuubrEEiisDUQ">
           <children xmi:type="notation:Node" xmi:id="_zO7LloWiEeuubrEEiisDUQ" type="6001">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zO7Ll4WiEeuubrEEiisDUQ" x="14" y="12"/>
@@ -340,12 +390,60 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zO_dDIWiEeuubrEEiisDUQ" id="(0.5067567567567568,0.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zO_dDYWiEeuubrEEiisDUQ" id="(0.5062111801242236,1.0)"/>
         </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_WEKxIPOiEeypVIBZv6YNTQ" type="4001" element="_WCumuPOiEeypVIBZv6YNTQ" source="_R8ejAPOiEeypVIBZv6YNTQ" target="_AcMjIPOiEeypVIBZv6YNTQ">
+          <children xmi:type="notation:Node" xmi:id="_WELYMPOiEeypVIBZv6YNTQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WELYMfOiEeypVIBZv6YNTQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WEL_QPOiEeypVIBZv6YNTQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WEL_QfOiEeypVIBZv6YNTQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WEL_QvOiEeypVIBZv6YNTQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WEL_Q_OiEeypVIBZv6YNTQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_WEKxIfOiEeypVIBZv6YNTQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_WEKxIvOiEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WEKxI_OiEeypVIBZv6YNTQ" points="[0, 0, -80, -33]$[80, 33, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WENNYPOiEeypVIBZv6YNTQ" id="(1.0,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WENNYfOiEeypVIBZv6YNTQ" id="(0.0,0.1958762886597938)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ecvecPPKEeypVIBZv6YNTQ" type="4001" element="_eclGZPPKEeypVIBZv6YNTQ" source="_zO4vV4WiEeuubrEEiisDUQ" target="_AcMjIPOiEeypVIBZv6YNTQ">
+          <children xmi:type="notation:Node" xmi:id="_ecvedPPKEeypVIBZv6YNTQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ecvedfPKEeypVIBZv6YNTQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ecwFgPPKEeypVIBZv6YNTQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ecwFgfPKEeypVIBZv6YNTQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ecwFgvPKEeypVIBZv6YNTQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ecwFg_PKEeypVIBZv6YNTQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ecvecfPKEeypVIBZv6YNTQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ecvecvPKEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ecvec_PKEeypVIBZv6YNTQ" points="[0, 0, -164, -141]$[164, 141, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ecwFhPPKEeypVIBZv6YNTQ" id="(1.0,0.39705882352941174)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ecwFhfPKEeypVIBZv6YNTQ" id="(0.21818181818181817,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_PK6bQPbMEeyPUbEXge79pw" type="4001" element="_PKeWYvbMEeyPUbEXge79pw" source="_RND4QPOiEeypVIBZv6YNTQ" target="_AcMjIPOiEeypVIBZv6YNTQ">
+          <children xmi:type="notation:Node" xmi:id="_PK7CUPbMEeyPUbEXge79pw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PK7CUfbMEeyPUbEXge79pw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PK7CUvbMEeyPUbEXge79pw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PK7CU_bMEeyPUbEXge79pw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PK7CVPbMEeyPUbEXge79pw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PK7CVfbMEeyPUbEXge79pw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_PK6bQfbMEeyPUbEXge79pw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_PK6bQvbMEeyPUbEXge79pw" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PK6bQ_bMEeyPUbEXge79pw" points="[0, 0, -80, 11]$[80, -11, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PK7CVvbMEeyPUbEXge79pw" id="(1.0,0.35294117647058826)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PK7CV_bMEeyPUbEXge79pw" id="(0.0,0.5051546391752577)"/>
+        </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_NxjSgIWfEeuubrEEiisDUQ" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_Nxj5kIWfEeuubrEEiisDUQ"/>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_zNlHwIWiEeuubrEEiisDUQ" name="Robotino" tooltipText="ComputationPlatformReference" incomingEdges="_zOtJIIWiEeuubrEEiisDUQ _zOyBoIWiEeuubrEEiisDUQ _zOyosIWiEeuubrEEiisDUQ _zOzPwIWiEeuubrEEiisDUQ _zOzPxYWiEeuubrEEiisDUQ _zOz21IWiEeuubrEEiisDUQ _zO0d4IWiEeuubrEEiisDUQ _zO0d5YWiEeuubrEEiisDUQ _zO1E8IWiEeuubrEEiisDUQ">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_zNlHwIWiEeuubrEEiisDUQ" name="Robotino" tooltipText="ComputationPlatformReference" incomingEdges="_zOyBoIWiEeuubrEEiisDUQ _zOyosIWiEeuubrEEiisDUQ _zOzPwIWiEeuubrEEiisDUQ _zOzPxYWiEeuubrEEiisDUQ _zOz21IWiEeuubrEEiisDUQ _zO0d4IWiEeuubrEEiisDUQ _zO0d5YWiEeuubrEEiisDUQ _zO1E8IWiEeuubrEEiisDUQ">
       <target xmi:type="deployment:TargetPlatformReference" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.0"/>
       <semanticElements xmi:type="deployment:TargetPlatformReference" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -378,7 +476,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='NetworkInterfaceContainer']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_TA7LVIWoEeuubrEEiisDUQ" name="student" tooltipText="LoginAccount">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_TA7LVIWoEeuubrEEiisDUQ" name="robotino" tooltipText="LoginAccount">
         <target xmi:type="deployment:LoginAccountSelection" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.0/@login"/>
         <semanticElements xmi:type="deployment:LoginAccountSelection" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.0/@login"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -478,7 +576,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='ComponentArtefactContainer']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_zNnkCIWiEeuubrEEiisDUQ" name="NamingService" outgoingEdges="_zOtJIIWiEeuubrEEiisDUQ">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_zNnkCIWiEeuubrEEiisDUQ" name="NamingService" outgoingEdges="_eclGZPPKEeypVIBZv6YNTQ">
       <target xmi:type="deployment:NamingService" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.1"/>
       <semanticElements xmi:type="deployment:NamingService" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -488,15 +586,6 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='NamingServiceContainer']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='NamingServiceContainer']"/>
-    </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_zOtJIIWiEeuubrEEiisDUQ" name="Deployment" sourceNode="_zNnkCIWiEeuubrEEiisDUQ" targetNode="_zNlHwIWiEeuubrEEiisDUQ">
-      <target xmi:type="deployment:Deployment" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.1/@deploy"/>
-      <semanticElements xmi:type="deployment:Deployment" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.1/@deploy"/>
-      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_zOtwMIWiEeuubrEEiisDUQ" size="2">
-        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']/@style"/>
-        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_zOtwMYWiEeuubrEEiisDUQ"/>
-      </ownedStyle>
-      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_zOyBoIWiEeuubrEEiisDUQ" name="Deployment" sourceNode="_zNmV4YWiEeuubrEEiisDUQ" targetNode="_zNlHwIWiEeuubrEEiisDUQ">
       <target xmi:type="deployment:Deployment" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.2/@deploy"/>
@@ -570,6 +659,97 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']"/>
     </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_AbmtQPOiEeypVIBZv6YNTQ" name="PC2" tooltipText="ComputationPlatformReference" incomingEdges="_WCumuPOiEeypVIBZv6YNTQ _eclGZPPKEeypVIBZv6YNTQ _PKeWYvbMEeyPUbEXge79pw">
+      <target xmi:type="deployment:TargetPlatformReference" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.10"/>
+      <semanticElements xmi:type="deployment:TargetPlatformReference" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.10"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_AbmtQfOiEeypVIBZv6YNTQ" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_C0TC8POiEeypVIBZv6YNTQ" name="/tmp" tooltipText="UploadFolder">
+        <target xmi:type="deployment:UploadDirectory" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.10/@directory"/>
+        <semanticElements xmi:type="deployment:UploadDirectory" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.10/@directory"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_C0TC8fOiEeypVIBZv6YNTQ" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='UploadDirectoryContainer']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='UploadDirectoryContainer']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_ErRLoPOiEeypVIBZv6YNTQ" name="eth1" tooltipText="HostInterface">
+        <target xmi:type="deployment:NetworkInterfaceSelection" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.10/@host"/>
+        <semanticElements xmi:type="deployment:NetworkInterfaceSelection" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.10/@host"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_ErRysPOiEeypVIBZv6YNTQ" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='NetworkInterfaceContainer']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='NetworkInterfaceContainer']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_Yz150vbLEeyPUbEXge79pw" name="feldmeier" tooltipText="LoginAccount">
+        <target xmi:type="deployment:LoginAccountSelection" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.10/@login"/>
+        <semanticElements xmi:type="deployment:LoginAccountSelection" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.10/@login"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_Yz150_bLEeyPUbEXge79pw" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='LoginAccountContainer']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformRefContainer']/@subContainerMappings[name='LoginAccountContainer']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_RL5aoPOiEeypVIBZv6YNTQ" name="ComponentWebots" tooltipText="ComponentArtefact" outgoingEdges="_PKeWYvbMEeyPUbEXge79pw">
+      <target xmi:type="deployment:ComponentArtefact" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.11"/>
+      <semanticElements xmi:type="deployment:ComponentArtefact" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.11"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_RL5aofOiEeypVIBZv6YNTQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='ComponentArtefactContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='ComponentArtefactContainer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_R7-zwPOiEeypVIBZv6YNTQ" name="ComponentVisualization" tooltipText="ComponentArtefact" outgoingEdges="_WCumuPOiEeypVIBZv6YNTQ">
+      <target xmi:type="deployment:ComponentArtefact" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.12"/>
+      <semanticElements xmi:type="deployment:ComponentArtefact" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.12"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_R7_a0POiEeypVIBZv6YNTQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='ComponentArtefactContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@containerMappings[name='ComponentArtefactContainer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_WCumuPOiEeypVIBZv6YNTQ" name="Deployment" sourceNode="_R7-zwPOiEeypVIBZv6YNTQ" targetNode="_AbmtQPOiEeypVIBZv6YNTQ">
+      <target xmi:type="deployment:Deployment" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.12/@deploy"/>
+      <semanticElements xmi:type="deployment:Deployment" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.12/@deploy"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_WCumufOiEeypVIBZv6YNTQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_WCumuvOiEeypVIBZv6YNTQ"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_eclGZPPKEeypVIBZv6YNTQ" name="Deployment" sourceNode="_zNnkCIWiEeuubrEEiisDUQ" targetNode="_AbmtQPOiEeypVIBZv6YNTQ">
+      <target xmi:type="deployment:Deployment" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.1/@deploy"/>
+      <semanticElements xmi:type="deployment:Deployment" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.1/@deploy"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_eclGZfPKEeypVIBZv6YNTQ" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_eclGZvPKEeypVIBZv6YNTQ"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_PKeWYvbMEeyPUbEXge79pw" name="Deployment" sourceNode="_RL5aoPOiEeypVIBZv6YNTQ" targetNode="_AbmtQPOiEeypVIBZv6YNTQ">
+      <target xmi:type="deployment:Deployment" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.11/@deploy"/>
+      <semanticElements xmi:type="deployment:Deployment" href="model/SystemRobotinoNavigationRealWorld.deployment#//@elements.11/@deploy"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_PKeWY_bMEeyPUbEXge79pw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_PKeWZPbMEeyPUbEXge79pw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer/@edgeMappings[name='DeployEdge']"/>
+    </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_NxPwgYWfEeuubrEEiisDUQ"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.deployment.design/description/deployment.odesign#//@ownedViewpoints[name='DeploymentViewpoint']/@ownedRepresentations[name='DeploymentDiagram']/@defaultLayer"/>
@@ -584,28 +764,6 @@
             <styles xmi:type="notation:SortingStyle" xmi:id="_ljmEBYWiEeuubrEEiisDUQ"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_ljmEBoWiEeuubrEEiisDUQ"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_ljpHW4WiEeuubrEEiisDUQ" type="3012" element="_ljFGooWiEeuubrEEiisDUQ">
-            <children xmi:type="notation:Node" xmi:id="_ljpHXoWiEeuubrEEiisDUQ" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_ljpHX4WiEeuubrEEiisDUQ" x="31" y="9"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_ljrjkIWiEeuubrEEiisDUQ" type="3014" element="_ljGUwIWiEeuubrEEiisDUQ">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_ljrjkYWiEeuubrEEiisDUQ" fontName="Ubuntu"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljrjkoWiEeuubrEEiisDUQ"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_ljpHXIWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljpHXYWiEeuubrEEiisDUQ" x="-22" y="36" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_ljpuYIWiEeuubrEEiisDUQ" type="3012" element="_ljG70IWiEeuubrEEiisDUQ">
-            <children xmi:type="notation:Node" xmi:id="_ljqVcIWiEeuubrEEiisDUQ" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_ljqVcYWiEeuubrEEiisDUQ" x="-71" y="9"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_ljsKoIWiEeuubrEEiisDUQ" type="3014" element="_ljG70YWiEeuubrEEiisDUQ">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_ljsKoYWiEeuubrEEiisDUQ" fontName="Ubuntu"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljsKooWiEeuubrEEiisDUQ"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_ljpuYYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljpuYoWiEeuubrEEiisDUQ" x="269" y="36" width="30" height="30"/>
-          </children>
           <children xmi:type="notation:Node" xmi:id="_ljq8gIWiEeuubrEEiisDUQ" type="3012" element="_ljG704WiEeuubrEEiisDUQ">
             <children xmi:type="notation:Node" xmi:id="_ljq8g4WiEeuubrEEiisDUQ" type="5010">
               <layoutConstraint xmi:type="notation:Location" xmi:id="_ljq8hIWiEeuubrEEiisDUQ" x="31" y="9"/>
@@ -615,10 +773,10 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljsKpYWiEeuubrEEiisDUQ"/>
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_ljq8gYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljq8goWiEeuubrEEiisDUQ" x="-22" y="72" width="30" height="30"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljq8goWiEeuubrEEiisDUQ" x="-22" y="36" width="30" height="30"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_ljmEAYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="10" bold="true"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljmEAoWiEeuubrEEiisDUQ" x="84" y="300" width="279" height="111"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljmEAoWiEeuubrEEiisDUQ" x="960" y="432" width="219" height="111"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_ljmrEIWiEeuubrEEiisDUQ" type="2002" element="_li_AAIWiEeuubrEEiisDUQ">
           <children xmi:type="notation:Node" xmi:id="_ljmrE4WiEeuubrEEiisDUQ" type="5006"/>
@@ -645,17 +803,6 @@
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_ljsKp4WiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljsKqIWiEeuubrEEiisDUQ" x="269" y="48" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_ljsxsoWiEeuubrEEiisDUQ" type="3012" element="_ljJ_I4WiEeuubrEEiisDUQ">
-            <children xmi:type="notation:Node" xmi:id="_ljtYwIWiEeuubrEEiisDUQ" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_ljtYwYWiEeuubrEEiisDUQ" x="31" y="8"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_ljvN8IWiEeuubrEEiisDUQ" type="3014" element="_ljKmMIWiEeuubrEEiisDUQ">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_ljvN8YWiEeuubrEEiisDUQ" fontName="Ubuntu"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljvN8oWiEeuubrEEiisDUQ"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_ljsxs4WiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljsxtIWiEeuubrEEiisDUQ" x="-22" y="96" width="30" height="30"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_ljtYwoWiEeuubrEEiisDUQ" type="3012" element="_ljKmMoWiEeuubrEEiisDUQ">
             <children xmi:type="notation:Node" xmi:id="_ljtYxYWiEeuubrEEiisDUQ" type="5010">
@@ -710,28 +857,6 @@
             <styles xmi:type="notation:ShapeStyle" xmi:id="_ljwcEYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljwcEoWiEeuubrEEiisDUQ" x="-22" y="204" width="30" height="30"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_ljxDIIWiEeuubrEEiisDUQ" type="3012" element="_ljMbYIWiEeuubrEEiisDUQ">
-            <children xmi:type="notation:Node" xmi:id="_ljxDI4WiEeuubrEEiisDUQ" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_ljxDJIWiEeuubrEEiisDUQ" x="31" y="8"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_lj3JxoWiEeuubrEEiisDUQ" type="3014" element="_ljMbYYWiEeuubrEEiisDUQ">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_lj3Jx4WiEeuubrEEiisDUQ" fontName="Ubuntu"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj3JyIWiEeuubrEEiisDUQ"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_ljxDIYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljxDIoWiEeuubrEEiisDUQ" x="-22" y="247" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_ljxqMIWiEeuubrEEiisDUQ" type="3012" element="_ljMbY4WiEeuubrEEiisDUQ">
-            <children xmi:type="notation:Node" xmi:id="_ljxqM4WiEeuubrEEiisDUQ" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_ljxqNIWiEeuubrEEiisDUQ" x="31" y="9"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_lj3w0IWiEeuubrEEiisDUQ" type="3014" element="_ljMbZIWiEeuubrEEiisDUQ">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_lj3w0YWiEeuubrEEiisDUQ" fontName="Ubuntu"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj3w0oWiEeuubrEEiisDUQ"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_ljxqMYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljxqMoWiEeuubrEEiisDUQ" x="-22" y="168" width="30" height="30"/>
-          </children>
           <children xmi:type="notation:Node" xmi:id="_ljyRQIWiEeuubrEEiisDUQ" type="3012" element="_ljNCcYWiEeuubrEEiisDUQ">
             <children xmi:type="notation:Node" xmi:id="_ljy4UIWiEeuubrEEiisDUQ" type="5010">
               <layoutConstraint xmi:type="notation:Location" xmi:id="_ljy4UYWiEeuubrEEiisDUQ" x="31" y="8"/>
@@ -743,17 +868,6 @@
             <styles xmi:type="notation:ShapeStyle" xmi:id="_ljyRQYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljyRQoWiEeuubrEEiisDUQ" x="-22" y="84" width="30" height="30"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_ljy4UoWiEeuubrEEiisDUQ" type="3012" element="_ljNCdIWiEeuubrEEiisDUQ">
-            <children xmi:type="notation:Node" xmi:id="_ljzfYIWiEeuubrEEiisDUQ" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_ljzfYYWiEeuubrEEiisDUQ" x="-126" y="9"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_lj3w1oWiEeuubrEEiisDUQ" type="3014" element="_ljNCdYWiEeuubrEEiisDUQ">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_lj3w14WiEeuubrEEiisDUQ" fontName="Ubuntu"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj3w2IWiEeuubrEEiisDUQ"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_ljy4U4WiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljy4VIWiEeuubrEEiisDUQ" x="245" y="156" width="30" height="30"/>
-          </children>
           <children xmi:type="notation:Node" xmi:id="_ljzfYoWiEeuubrEEiisDUQ" type="3012" element="_ljNpgYWiEeuubrEEiisDUQ">
             <children xmi:type="notation:Node" xmi:id="_lj0GcIWiEeuubrEEiisDUQ" type="5010">
               <layoutConstraint xmi:type="notation:Location" xmi:id="_lj0GcYWiEeuubrEEiisDUQ" x="31" y="8"/>
@@ -764,39 +878,6 @@
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_ljzfY4WiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljzfZIWiEeuubrEEiisDUQ" x="-22" y="12" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_lj0GcoWiEeuubrEEiisDUQ" type="3012" element="_ljNphIWiEeuubrEEiisDUQ">
-            <children xmi:type="notation:Node" xmi:id="_lj0tgIWiEeuubrEEiisDUQ" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_lj0tgYWiEeuubrEEiisDUQ" x="-81" y="9"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_lj4X4IWiEeuubrEEiisDUQ" type="3014" element="_ljOQkIWiEeuubrEEiisDUQ">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_lj4X4YWiEeuubrEEiisDUQ" fontName="Ubuntu"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj4X4oWiEeuubrEEiisDUQ"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_lj0Gc4WiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj0GdIWiEeuubrEEiisDUQ" x="245" y="115" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_lj1UkIWiEeuubrEEiisDUQ" type="3012" element="_ljOQkoWiEeuubrEEiisDUQ">
-            <children xmi:type="notation:Node" xmi:id="_lj17oIWiEeuubrEEiisDUQ" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_lj17oYWiEeuubrEEiisDUQ" x="-126" y="9"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_lj4X44WiEeuubrEEiisDUQ" type="3014" element="_ljO3oIWiEeuubrEEiisDUQ">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_lj4X5IWiEeuubrEEiisDUQ" fontName="Ubuntu"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj4X5YWiEeuubrEEiisDUQ"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_lj1UkYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj1UkoWiEeuubrEEiisDUQ" x="245" y="192" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_lj2isIWiEeuubrEEiisDUQ" type="3012" element="_ljO3ooWiEeuubrEEiisDUQ">
-            <children xmi:type="notation:Node" xmi:id="_lj2is4WiEeuubrEEiisDUQ" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_lj2itIWiEeuubrEEiisDUQ" x="-90" y="9"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_lj4X5oWiEeuubrEEiisDUQ" type="3014" element="_ljO3o4WiEeuubrEEiisDUQ">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_lj4X54WiEeuubrEEiisDUQ" fontName="Ubuntu"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj4X6IWiEeuubrEEiisDUQ"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_lj2isYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj2isoWiEeuubrEEiisDUQ" x="245" y="228" width="30" height="30"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_ljnSIYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="10" bold="true"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljnSIoWiEeuubrEEiisDUQ" x="564" y="216" width="255" height="279"/>
@@ -828,28 +909,6 @@
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_lj5mAYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj5mAoWiEeuubrEEiisDUQ" x="-22" y="108" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_lj6NEIWiEeuubrEEiisDUQ" type="3012" element="_ljQFw4WiEeuubrEEiisDUQ">
-            <children xmi:type="notation:Node" xmi:id="_lj6NE4WiEeuubrEEiisDUQ" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_lj6NFIWiEeuubrEEiisDUQ" x="-81" y="12"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_lj7bM4WiEeuubrEEiisDUQ" type="3014" element="_ljQs0IWiEeuubrEEiisDUQ">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_lj7bNIWiEeuubrEEiisDUQ" fontName="Ubuntu"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj7bNYWiEeuubrEEiisDUQ"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_lj6NEYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj6NEoWiEeuubrEEiisDUQ" x="245" y="72" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_lj6NFYWiEeuubrEEiisDUQ" type="3012" element="_ljQs0oWiEeuubrEEiisDUQ">
-            <children xmi:type="notation:Node" xmi:id="_lj60IIWiEeuubrEEiisDUQ" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_lj60IYWiEeuubrEEiisDUQ" x="-80" y="9"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_lj7bNoWiEeuubrEEiisDUQ" type="3014" element="_ljQs04WiEeuubrEEiisDUQ">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_lj7bN4WiEeuubrEEiisDUQ" fontName="Ubuntu"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj7bOIWiEeuubrEEiisDUQ"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_lj6NFoWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj6NF4WiEeuubrEEiisDUQ" x="245" y="108" width="30" height="30"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_ljnSKIWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="10" bold="true"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljnSKYWiEeuubrEEiisDUQ" x="564" y="528" width="255" height="147"/>
@@ -893,17 +952,6 @@
             <styles xmi:type="notation:ShapeStyle" xmi:id="_lj8pU4WiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj8pVIWiEeuubrEEiisDUQ" x="269" y="97" width="30" height="30"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_lj93cIWiEeuubrEEiisDUQ" type="3012" element="_ljR69IWiEeuubrEEiisDUQ">
-            <children xmi:type="notation:Node" xmi:id="_lj93c4WiEeuubrEEiisDUQ" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_lj93dIWiEeuubrEEiisDUQ" x="31" y="8"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_lj_FkIWiEeuubrEEiisDUQ" type="3014" element="_ljSiAIWiEeuubrEEiisDUQ">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_lj_FkYWiEeuubrEEiisDUQ" fontName="Ubuntu"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj_FkoWiEeuubrEEiisDUQ"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_lj93cYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj93coWiEeuubrEEiisDUQ" x="-22" y="96" width="30" height="30"/>
-          </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_ljn5NIWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="10" bold="true"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljn5NYWiEeuubrEEiisDUQ" x="84" y="504" width="279" height="171"/>
         </children>
@@ -934,28 +982,6 @@
             </children>
             <styles xmi:type="notation:ShapeStyle" xmi:id="_lj_soYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lj_sooWiEeuubrEEiisDUQ" x="-22" y="132" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_lkATsIWiEeuubrEEiisDUQ" type="3012" element="_ljTJE4WiEeuubrEEiisDUQ">
-            <children xmi:type="notation:Node" xmi:id="_lkATs4WiEeuubrEEiisDUQ" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_lkATtIWiEeuubrEEiisDUQ" x="31" y="8"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_lkBh1oWiEeuubrEEiisDUQ" type="3014" element="_ljTJFIWiEeuubrEEiisDUQ">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_lkBh14WiEeuubrEEiisDUQ" fontName="Ubuntu"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lkBh2IWiEeuubrEEiisDUQ"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_lkATsYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lkATsoWiEeuubrEEiisDUQ" x="-22" y="163" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_lkA6wIWiEeuubrEEiisDUQ" type="3012" element="_ljTwIYWiEeuubrEEiisDUQ">
-            <children xmi:type="notation:Node" xmi:id="_lkA6w4WiEeuubrEEiisDUQ" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_lkA6xIWiEeuubrEEiisDUQ" x="31" y="9"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_lkBh2YWiEeuubrEEiisDUQ" type="3014" element="_ljTwIoWiEeuubrEEiisDUQ">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_lkBh2oWiEeuubrEEiisDUQ" fontName="Ubuntu"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lkBh24WiEeuubrEEiisDUQ"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_lkA6wYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lkA6woWiEeuubrEEiisDUQ" x="-22" y="96" width="30" height="30"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_ljogRYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="10" bold="true"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljogRoWiEeuubrEEiisDUQ" x="960" y="48" width="219" height="195"/>
@@ -988,19 +1014,257 @@
             <styles xmi:type="notation:ShapeStyle" xmi:id="_lkCv8YWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lkCv8oWiEeuubrEEiisDUQ" x="245" y="48" width="30" height="30"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_lkCv9YWiEeuubrEEiisDUQ" type="3012" element="_ljU-QYWiEeuubrEEiisDUQ">
-            <children xmi:type="notation:Node" xmi:id="_lkDXAIWiEeuubrEEiisDUQ" type="5010">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_lkDXAYWiEeuubrEEiisDUQ" x="31" y="9"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_lkD-E4WiEeuubrEEiisDUQ" type="3014" element="_ljU-QoWiEeuubrEEiisDUQ">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_lkD-FIWiEeuubrEEiisDUQ" fontName="Ubuntu"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lkD-FYWiEeuubrEEiisDUQ"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_lkCv9oWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lkCv94WiEeuubrEEiisDUQ" x="-22" y="96" width="30" height="30"/>
-          </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_ljpHVYWiEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="10" bold="true"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ljpHVoWiEeuubrEEiisDUQ" x="564" y="48" width="255" height="135"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_qH7P0POhEeypVIBZv6YNTQ" type="2002" element="_qGfscPOhEeypVIBZv6YNTQ">
+          <children xmi:type="notation:Node" xmi:id="_qH724POhEeypVIBZv6YNTQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_qH8d8POhEeypVIBZv6YNTQ" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_qH8d8fOhEeypVIBZv6YNTQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_qH8d8vOhEeypVIBZv6YNTQ"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_qIDLoPOhEeypVIBZv6YNTQ" type="3012" element="_qGoPUfOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_qIDLo_OhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_qIDLpPOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_qIJSQPOhEeypVIBZv6YNTQ" type="3014" element="_qGoPUvOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_qIJSQfOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qIJSQvOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_qIDLofOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qIDLovOhEeypVIBZv6YNTQ" x="-22" y="48" width="30" height="30"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_qH7P0fOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="10" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qH7P0vOhEeypVIBZv6YNTQ" x="960" y="264" width="219" height="111"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_rfXj4POhEeypVIBZv6YNTQ" type="2002" element="_repyMPOhEeypVIBZv6YNTQ">
+          <children xmi:type="notation:Node" xmi:id="_rfYK8POhEeypVIBZv6YNTQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_rfYK8fOhEeypVIBZv6YNTQ" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_rfYK8vOhEeypVIBZv6YNTQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_rfYK8_OhEeypVIBZv6YNTQ"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfYyAPOhEeypVIBZv6YNTQ" visible="false" type="3012" element="_rerAUfOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfYyA_OhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfYyBPOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfm0cPOhEeypVIBZv6YNTQ" type="3014" element="_rerAUvOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfm0cfOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfm0cvOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfYyAfOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfYyAvOhEeypVIBZv6YNTQ" x="-22" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfZZEPOhEeypVIBZv6YNTQ" visible="false" type="3012" element="_rernYPOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfZZE_OhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfZZFPOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfm0c_OhEeypVIBZv6YNTQ" type="3014" element="_rernYfOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfnbgPOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfnbgfOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfZZEfOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfZZEvOhEeypVIBZv6YNTQ" x="-22" y="36" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfaAIPOhEeypVIBZv6YNTQ" visible="false" type="3012" element="_resOcPOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfaAI_OhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfanMPOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfnbgvOhEeypVIBZv6YNTQ" type="3014" element="_resOcfOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfnbg_OhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfnbhPOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfaAIfOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfaAIvOhEeypVIBZv6YNTQ" x="12" y="113" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfanMfOhEeypVIBZv6YNTQ" visible="false" type="3012" element="_resOcvOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfanNPOhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfanNfOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfnbhfOhEeypVIBZv6YNTQ" type="3014" element="_res1gPOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfnbhvOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfnbh_OhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfanMvOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfanM_OhEeypVIBZv6YNTQ" x="48" y="133" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfbOQPOhEeypVIBZv6YNTQ" visible="false" type="3012" element="_res1gfOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfbOQ_OhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfbORPOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfnbiPOhEeypVIBZv6YNTQ" type="3014" element="_res1gvOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfnbifOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfnbivOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfbOQfOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfbOQvOhEeypVIBZv6YNTQ" x="-22" y="125" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfb1UPOhEeypVIBZv6YNTQ" visible="false" type="3012" element="_retckPOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfb1U_OhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfb1VPOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfnbi_OhEeypVIBZv6YNTQ" type="3014" element="_retckfOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfnbjPOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfnbjfOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfb1UfOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfb1UvOhEeypVIBZv6YNTQ" x="12" y="153" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfccYPOhEeypVIBZv6YNTQ" visible="false" type="3012" element="_retckvOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfdDcPOhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfdDcfOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfoCkPOhEeypVIBZv6YNTQ" type="3014" element="_reuDoPOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfoCkfOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfoCkvOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfccYfOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfccYvOhEeypVIBZv6YNTQ" x="48" y="173" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfdDcvOhEeypVIBZv6YNTQ" visible="false" type="3012" element="_reuDofOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfdqgPOhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfdqgfOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfoCk_OhEeypVIBZv6YNTQ" type="3014" element="_reuqsPOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfoClPOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfoClfOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfdDc_OhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfdDdPOhEeypVIBZv6YNTQ" x="-22" y="161" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfdqgvOhEeypVIBZv6YNTQ" visible="false" type="3012" element="_reuqsfOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfeRkPOhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfeRkfOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfoClvOhEeypVIBZv6YNTQ" type="3014" element="_reuqsvOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfoCl_OhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfoCmPOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfdqg_OhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfdqhPOhEeypVIBZv6YNTQ" x="12" y="193" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfeRkvOhEeypVIBZv6YNTQ" visible="false" type="3012" element="_revRwPOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfe4oPOhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfe4ofOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfoCmfOhEeypVIBZv6YNTQ" type="3014" element="_revRwfOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfoCmvOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfoCm_OhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfeRk_OhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfeRlPOhEeypVIBZv6YNTQ" x="48" y="213" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfffsPOhEeypVIBZv6YNTQ" visible="false" type="3012" element="_revRwvOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfgGwPOhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfgGwfOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfopoPOhEeypVIBZv6YNTQ" type="3014" element="_rev40POhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfopofOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfopovOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfffsfOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfffsvOhEeypVIBZv6YNTQ" x="-22" y="197" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfgt0POhEeypVIBZv6YNTQ" visible="false" type="3012" element="_rev40fOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfgt0_OhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfgt1POhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfopo_OhEeypVIBZv6YNTQ" type="3014" element="_rev40vOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfoppPOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfoppfOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfgt0fOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfgt0vOhEeypVIBZv6YNTQ" x="12" y="233" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfhU4POhEeypVIBZv6YNTQ" visible="false" type="3012" element="_rewf4POhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfhU4_OhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfhU5POhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfoppvOhEeypVIBZv6YNTQ" type="3014" element="_rewf4fOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfopp_OhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfopqPOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfhU4fOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfhU4vOhEeypVIBZv6YNTQ" x="48" y="253" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfh78POhEeypVIBZv6YNTQ" visible="false" type="3012" element="_rewf4vOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfijAPOhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfijAfOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfpQsPOhEeypVIBZv6YNTQ" type="3014" element="_rexG8POhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfpQsfOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfpQsvOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfh78fOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfh78vOhEeypVIBZv6YNTQ" x="-22" y="233" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfijAvOhEeypVIBZv6YNTQ" visible="false" type="3012" element="_rexG8fOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfjKEPOhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfjKEfOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfpQs_OhEeypVIBZv6YNTQ" type="3014" element="_rexuAPOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfpQtPOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfpQtfOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfijA_OhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfijBPOhEeypVIBZv6YNTQ" x="12" y="273" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfjxIPOhEeypVIBZv6YNTQ" visible="false" type="3012" element="_rexuAfOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfjxI_OhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfjxJPOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfpQtvOhEeypVIBZv6YNTQ" type="3014" element="_rexuAvOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfpQt_OhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfpQuPOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfjxIfOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfjxIvOhEeypVIBZv6YNTQ" x="-22" y="269" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfkYMPOhEeypVIBZv6YNTQ" visible="false" type="3012" element="_rexuA_OhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfkYM_OhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfkYNPOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfpQufOhEeypVIBZv6YNTQ" type="3014" element="_reyVEPOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfpQuvOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfpQu_OhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfkYMfOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfkYMvOhEeypVIBZv6YNTQ" x="48" y="293" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfk_QPOhEeypVIBZv6YNTQ" visible="false" type="3012" element="_reyVEfOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfk_Q_OhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfk_RPOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfpQvPOhEeypVIBZv6YNTQ" type="3014" element="_reyVEvOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfpQvfOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfpQvvOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfk_QfOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfk_QvOhEeypVIBZv6YNTQ" x="12" y="313" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rflmUPOhEeypVIBZv6YNTQ" visible="false" type="3012" element="_rey8IPOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rflmU_OhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rflmVPOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfp3wPOhEeypVIBZv6YNTQ" type="3014" element="_rey8IfOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfp3wfOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfp3wvOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rflmUfOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rflmUvOhEeypVIBZv6YNTQ" x="-22" y="305" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_rfmNYPOhEeypVIBZv6YNTQ" visible="false" type="3012" element="_rey8IvOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_rfmNY_OhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_rfmNZPOhEeypVIBZv6YNTQ" x="31" y="8"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_rfp3w_OhEeypVIBZv6YNTQ" type="3014" element="_rezjMPOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_rfp3xPOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfp3xfOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_rfmNYfOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfmNYvOhEeypVIBZv6YNTQ" x="48" y="333" width="30" height="30"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_rfXj4fOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="10" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rfXj4vOhEeypVIBZv6YNTQ" x="960" y="612" width="219" height="63"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_Nz74I4WfEeuubrEEiisDUQ"/>
         <edges xmi:type="notation:Edge" xmi:id="_lkFzQIWiEeuubrEEiisDUQ" type="4001" element="_ljgkcIWiEeuubrEEiisDUQ" source="_lj_soIWiEeuubrEEiisDUQ" target="_ljtYwoWiEeuubrEEiisDUQ">
@@ -1149,7 +1413,7 @@
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_lkPkToWiEeuubrEEiisDUQ" type="4001" element="_ljkO1YWiEeuubrEEiisDUQ" source="_lj4-8IWiEeuubrEEiisDUQ" target="_lkCv8IWiEeuubrEEiisDUQ">
           <children xmi:type="notation:Node" xmi:id="_lkQLUIWiEeuubrEEiisDUQ" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lkQLUYWiEeuubrEEiisDUQ" x="-8" y="78"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lkQLUYWiEeuubrEEiisDUQ" x="-224" y="78"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_lkQLUoWiEeuubrEEiisDUQ" type="6002">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lkQLU4WiEeuubrEEiisDUQ" x="-13" y="-1"/>
@@ -1163,6 +1427,22 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lkQLVoWiEeuubrEEiisDUQ" id="(0.8,0.6333333333333333)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lkQLV4WiEeuubrEEiisDUQ" id="(0.5,0.5)"/>
         </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_tmIP8AHiEe2BOY1yK-bQ6g" type="4001" element="_tl1VFAHiEe2BOY1yK-bQ6g" source="_qIDLoPOhEeypVIBZv6YNTQ" target="_ljq8gIWiEeuubrEEiisDUQ">
+          <children xmi:type="notation:Node" xmi:id="_tmIP9AHiEe2BOY1yK-bQ6g" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tmIP9QHiEe2BOY1yK-bQ6g" y="-121"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_tmIP9gHiEe2BOY1yK-bQ6g" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tmIP9wHiEe2BOY1yK-bQ6g" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_tmIP-AHiEe2BOY1yK-bQ6g" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tmIP-QHiEe2BOY1yK-bQ6g" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_tmIP8QHiEe2BOY1yK-bQ6g"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_tmIP8gHiEe2BOY1yK-bQ6g" fontName="Ubuntu" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_tmIP8wHiEe2BOY1yK-bQ6g" points="[0, 0, 0, -126]$[0, 126, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tmIP-gHiEe2BOY1yK-bQ6g" id="(0.5,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_tmIP-wHiEe2BOY1yK-bQ6g" id="(0.5,0.0)"/>
+        </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_Nz9GQIWfEeuubrEEiisDUQ" source="DANNOTATION_CUSTOMIZATION_KEY">
@@ -1171,31 +1451,9 @@
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_liGPMIWiEeuubrEEiisDUQ" name="ComponentKB: ComponentKB" tooltipText="ComponentInstance">
       <target xmi:type="componentArchitecture:ComponentInstance" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.0"/>
       <semanticElements xmi:type="componentArchitecture:ComponentInstance" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.0"/>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljFGooWiEeuubrEEiisDUQ" name="kbChainedEntriesEventClient" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.0/@ports.0"/>
-        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.0/@ports.0"/>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:CustomStyle" uid="_ljGUwIWiEeuubrEEiisDUQ" showIcon="false" id="inreq">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
-      </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljG70IWiEeuubrEEiisDUQ" name="kbEventServer" tooltipText="OutputProvider" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.0/@ports.1"/>
-        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.0/@ports.1"/>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:CustomStyle" uid="_ljG70YWiEeuubrEEiisDUQ" showIcon="false" id="outprov">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
-      </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljG704WiEeuubrEEiisDUQ" name="kbQuery" tooltipText="2WayAnswer" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.0/@ports.2"/>
-        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.0/@ports.2"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljG704WiEeuubrEEiisDUQ" name="kbQuery" tooltipText="2WayAnswer" incomingEdges="_tl1VFAHiEe2BOY1yK-bQ6g" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.0/@ports.0"/>
+        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.0/@ports.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1239,20 +1497,9 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
       </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljJ_I4WiEeuubrEEiisDUQ" name="BatteryEventServiceOut" tooltipText="OutputProvider" width="3" height="3" resizeKind="NSEW">
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljKmMoWiEeuubrEEiisDUQ" name="LocalizationUpdateServiceIn" tooltipText="InputProvider" incomingEdges="_ljgkcIWiEeuubrEEiisDUQ" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.2/@ports.1"/>
         <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.2/@ports.1"/>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:CustomStyle" uid="_ljKmMIWiEeuubrEEiisDUQ" showIcon="false" id="outprov">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
-      </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljKmMoWiEeuubrEEiisDUQ" name="LocalizationUpdateServiceIn" tooltipText="InputProvider" incomingEdges="_ljgkcIWiEeuubrEEiisDUQ" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.2/@ports.2"/>
-        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.2/@ports.2"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1262,8 +1509,8 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
       </ownedBorderedNodes>
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljLNQIWiEeuubrEEiisDUQ" name="NavigationVelocityServiceIn" tooltipText="InputProvider" incomingEdges="_ljhykoWiEeuubrEEiisDUQ" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.2/@ports.3"/>
-        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.2/@ports.3"/>
+        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.2/@ports.2"/>
+        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.2/@ports.2"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1306,31 +1553,9 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
       </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljMbYIWiEeuubrEEiisDUQ" name="TrackingClient" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljNCcYWiEeuubrEEiisDUQ" name="BaseStateClient" tooltipText="InputRequestor" outgoingEdges="_ljjAuoWiEeuubrEEiisDUQ" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.2"/>
         <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.2"/>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:CustomStyle" uid="_ljMbYYWiEeuubrEEiisDUQ" showIcon="false" id="inreq">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
-      </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljMbY4WiEeuubrEEiisDUQ" name="IRClient" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.3"/>
-        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.3"/>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:CustomStyle" uid="_ljMbZIWiEeuubrEEiisDUQ" showIcon="false" id="inreq">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
-      </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljNCcYWiEeuubrEEiisDUQ" name="BaseStateClient" tooltipText="InputRequestor" outgoingEdges="_ljjAuoWiEeuubrEEiisDUQ" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.4"/>
-        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.4"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1339,20 +1564,9 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
       </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljNCdIWiEeuubrEEiisDUQ" name="PathNavigationGoalClient" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.5"/>
-        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.5"/>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:CustomStyle" uid="_ljNCdYWiEeuubrEEiisDUQ" showIcon="false" id="inreq">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
-      </ownedBorderedNodes>
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljNpgYWiEeuubrEEiisDUQ" name="NavVelSendClient" tooltipText="OutputRequestor" outgoingEdges="_ljhykoWiEeuubrEEiisDUQ" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.6"/>
-        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.6"/>
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.3"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.3"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1360,39 +1574,6 @@
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@conditionnalStyles.0/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
-      </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljNphIWiEeuubrEEiisDUQ" name="GoalEventServer" tooltipText="OutputProvider" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.7"/>
-        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.7"/>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:CustomStyle" uid="_ljOQkIWiEeuubrEEiisDUQ" showIcon="false" id="outprov">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
-      </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljOQkoWiEeuubrEEiisDUQ" name="RobotBlockedEventServer" tooltipText="OutputProvider" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.8"/>
-        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.8"/>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:CustomStyle" uid="_ljO3oIWiEeuubrEEiisDUQ" showIcon="false" id="outprov">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
-      </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljO3ooWiEeuubrEEiisDUQ" name="NavVelSendServer" tooltipText="InputProvider" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.9"/>
-        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.3/@ports.9"/>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:CustomStyle" uid="_ljO3o4WiEeuubrEEiisDUQ" showIcon="false" id="inprov">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@conditionnalStyles.0/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
       </ownedBorderedNodes>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
@@ -1425,28 +1606,6 @@
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" uid="_ljQFwYWiEeuubrEEiisDUQ" showIcon="false" id="outprov">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
-      </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljQFw4WiEeuubrEEiisDUQ" name="CurrQueryServer" tooltipText="2WayAnswer" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.4/@ports.2"/>
-        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.4/@ports.2"/>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:CustomStyle" uid="_ljQs0IWiEeuubrEEiisDUQ" showIcon="false" id="2wansw">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@conditionnalStyles.1/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
-      </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljQs0oWiEeuubrEEiisDUQ" name="LtmQueryServer" tooltipText="2WayAnswer" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.4/@ports.3"/>
-        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.4/@ports.3"/>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:CustomStyle" uid="_ljQs04WiEeuubrEEiisDUQ" showIcon="false" id="2wansw">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@conditionnalStyles.1/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
       </ownedBorderedNodes>
@@ -1495,17 +1654,6 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
       </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljR69IWiEeuubrEEiisDUQ" name="PlannerEventServer" tooltipText="OutputProvider" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.5/@ports.3"/>
-        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.5/@ports.3"/>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:CustomStyle" uid="_ljSiAIWiEeuubrEEiisDUQ" showIcon="false" id="outprov">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
-      </ownedBorderedNodes>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1540,28 +1688,6 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
       </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljTJE4WiEeuubrEEiisDUQ" name="LocalizationEventServiceOut" tooltipText="OutputProvider" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.6/@ports.2"/>
-        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.6/@ports.2"/>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:CustomStyle" uid="_ljTJFIWiEeuubrEEiisDUQ" showIcon="false" id="outprov">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
-      </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljTwIYWiEeuubrEEiisDUQ" name="AmclVisualizationInfoOut" tooltipText="OutputProvider" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.6/@ports.3"/>
-        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.6/@ports.3"/>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:CustomStyle" uid="_ljTwIoWiEeuubrEEiisDUQ" showIcon="false" id="outprov">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
-      </ownedBorderedNodes>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -1593,17 +1719,6 @@
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:CustomStyle" uid="_ljUXNIWiEeuubrEEiisDUQ" showIcon="false" id="outprov">
           <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
-      </ownedBorderedNodes>
-      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_ljU-QYWiEeuubrEEiisDUQ" name="LaserQueryServiceAnsw" tooltipText="2WayAnswer" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.7/@ports.2"/>
-        <semanticElements xmi:type="componentArchitecture:ProvidedService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.7/@ports.2"/>
-        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
-        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
-        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:CustomStyle" uid="_ljU-QoWiEeuubrEEiisDUQ" showIcon="false" id="2wansw">
-          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']/@conditionnalStyles.1/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='ProvidedServiceNode']"/>
       </ownedBorderedNodes>
@@ -1706,6 +1821,230 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@edgeMappings[name='ConnectionEdge']"/>
     </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_qGfscPOhEeypVIBZv6YNTQ" name="ComponentWebots: ComponentWebots" tooltipText="ComponentInstance">
+      <target xmi:type="componentArchitecture:ComponentInstance" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.8"/>
+      <semanticElements xmi:type="componentArchitecture:ComponentInstance" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.8"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_qGoPUfOhEeypVIBZv6YNTQ" name="CommKBQueryReq" tooltipText="2WayRequestor" outgoingEdges="_tl1VFAHiEe2BOY1yK-bQ6g" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.8/@ports.0"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.8/@ports.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_qGoPUvOhEeypVIBZv6YNTQ" showIcon="false" id="2wreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_qGlMAPOhEeypVIBZv6YNTQ" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_repyMPOhEeypVIBZv6YNTQ" name="ComponentVisualization: ComponentVisualization" tooltipText="ComponentInstance">
+      <target xmi:type="componentArchitecture:ComponentInstance" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9"/>
+      <semanticElements xmi:type="componentArchitecture:ComponentInstance" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_rerAUfOhEeypVIBZv6YNTQ" name="rgbdPushNewestClient" visible="false" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.0"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.0"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_xnqX0POhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_rerAUvOhEeypVIBZv6YNTQ" showIcon="false" id="inreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_rernYPOhEeypVIBZv6YNTQ" name="rgbdQueryClient" visible="false" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.1"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.1"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_2Mo-4POhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_rernYfOhEeypVIBZv6YNTQ" showIcon="false" id="inreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_resOcPOhEeypVIBZv6YNTQ" name="baseClient" visible="false" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.2"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.2"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_5DMVQPOhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_resOcfOhEeypVIBZv6YNTQ" showIcon="false" id="inreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_resOcvOhEeypVIBZv6YNTQ" name="laserClient1" visible="false" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.3"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.3"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_5XrXgPOhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_res1gPOhEeypVIBZv6YNTQ" showIcon="false" id="inreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_res1gfOhEeypVIBZv6YNTQ" name="laserClient2" visible="false" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.4"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.4"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_4riqQPOhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_res1gvOhEeypVIBZv6YNTQ" showIcon="false" id="inreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_retckPOhEeypVIBZv6YNTQ" name="laserClient3" visible="false" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.5"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.5"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_4UyXIPOhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_retckfOhEeypVIBZv6YNTQ" showIcon="false" id="inreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_retckvOhEeypVIBZv6YNTQ" name="irPushNewestClient" visible="false" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.6"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.6"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_5uLL8POhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_reuDoPOhEeypVIBZv6YNTQ" showIcon="false" id="inreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_reuDofOhEeypVIBZv6YNTQ" name="imagePushNewestClient" visible="false" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.7"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.7"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_3-8C8POhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_reuqsPOhEeypVIBZv6YNTQ" showIcon="false" id="inreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_reuqsfOhEeypVIBZv6YNTQ" name="curPushClient" visible="false" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.8"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.8"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_3XMGcPOhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_reuqsvOhEeypVIBZv6YNTQ" showIcon="false" id="inreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_revRwPOhEeypVIBZv6YNTQ" name="depthPushNewestClient" visible="false" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.9"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.9"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_3BpUQPOhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_revRwfOhEeypVIBZv6YNTQ" showIcon="false" id="inreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_revRwvOhEeypVIBZv6YNTQ" name="ultrasonicPushNewestClient" visible="false" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.10"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.10"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_2q190POhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_rev40POhEeypVIBZv6YNTQ" showIcon="false" id="inreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_rev40fOhEeypVIBZv6YNTQ" name="personDetectionEventClient" visible="false" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.11"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.11"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_10oukPOhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_rev40vOhEeypVIBZv6YNTQ" showIcon="false" id="inreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_rewf4POhEeypVIBZv6YNTQ" name="MarkerListDetectionServiceIn" visible="false" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.12"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.12"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_1cNngPOhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_rewf4fOhEeypVIBZv6YNTQ" showIcon="false" id="inreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_rewf4vOhEeypVIBZv6YNTQ" name="AmclVisualizationInfoIn" visible="false" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.13"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.13"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_1DzHgPOhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_rexG8POhEeypVIBZv6YNTQ" showIcon="false" id="inreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_rexG8fOhEeypVIBZv6YNTQ" name="plannerGoalPushClient" visible="false" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.14"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.14"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_0tHF0POhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_rexuAPOhEeypVIBZv6YNTQ" showIcon="false" id="inreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_rexuAfOhEeypVIBZv6YNTQ" name="plannerWavefrontGridMap" visible="false" tooltipText="InputRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.15"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.15"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_0VXUMPOhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_rexuAvOhEeypVIBZv6YNTQ" showIcon="false" id="inreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_rexuA_OhEeypVIBZv6YNTQ" name="RGBDImageQueryServiceReq" visible="false" tooltipText="2WayRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.16"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.16"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_yxZnEPOhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_reyVEPOhEeypVIBZv6YNTQ" showIcon="false" id="2wreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_reyVEfOhEeypVIBZv6YNTQ" name="ltmQueryClient" visible="false" tooltipText="2WayRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.17"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.17"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_zkQnYPOhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_reyVEvOhEeypVIBZv6YNTQ" showIcon="false" id="2wreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_rey8IPOhEeypVIBZv6YNTQ" name="personDetectionQueryClient" visible="false" tooltipText="2WayRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.18"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.18"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_zNa0sPOhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_rey8IfOhEeypVIBZv6YNTQ" showIcon="false" id="2wreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_rey8IvOhEeypVIBZv6YNTQ" name="VisualMarkers" visible="false" tooltipText="2WayRequestor" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.19"/>
+        <semanticElements xmi:type="componentArchitecture:RequiredService" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@components.9/@ports.19"/>
+        <graphicalFilters xmi:type="diagram:HideFilter" uid="_z7ZVAPOhEeypVIBZv6YNTQ"/>
+        <ownedStyle xmi:type="diagram:CustomStyle" uid="_rezjMPOhEeypVIBZv6YNTQ" showIcon="false" id="2wreq">
+          <description xmi:type="style:CustomStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@borderedNodeMappings[name='RequiredServiceNode']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_reqZQPOhEeypVIBZv6YNTQ" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@containerMappings[name='ComponentInstanceContainer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_tl1VFAHiEe2BOY1yK-bQ6g" name="R=CommKBRequest / A=CommKBResponse" sourceNode="_qGoPUfOhEeypVIBZv6YNTQ" targetNode="_ljG704WiEeuubrEEiisDUQ">
+      <target xmi:type="componentArchitecture:Connection" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@connections.10"/>
+      <semanticElements xmi:type="componentArchitecture:Connection" href="model/SystemRobotinoNavigationRealWorld.componentArch#//@connections.10"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_tl18EAHiEe2BOY1yK-bQ6g" targetArrow="NoDecoration" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@edgeMappings[name='ConnectionEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_tl18EQHiEe2BOY1yK-bQ6g" iconPath="/org.eclipse.smartmdsd.sirius.utils/icons/commObj_16x16.gif"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer/@edgeMappings[name='ConnectionEdge']"/>
+    </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_Nz5b4YWfEeuubrEEiisDUQ"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.componentArchitecture.design/description/componentArchitecture.odesign#//@ownedViewpoints[name='SystemArchitectureViewpoint']/@ownedRepresentations[name='SystemArchitectureDiagram']/@defaultLayer"/>
@@ -1753,6 +2092,44 @@
           <styles xmi:type="notation:ShapeStyle" xmi:id="_6yej8YWfEeuubrEEiisDUQ" fontName="Ubuntu" fontHeight="10" bold="true"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6yej8oWfEeuubrEEiisDUQ" x="192" y="132" width="267" height="126"/>
         </children>
+        <children xmi:type="notation:Node" xmi:id="_ED--oPOhEeypVIBZv6YNTQ" type="2002" element="_EDpAYPOhEeypVIBZv6YNTQ">
+          <children xmi:type="notation:Node" xmi:id="_EECpAPOhEeypVIBZv6YNTQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_EECpAfOhEeypVIBZv6YNTQ" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_EED3IPOhEeypVIBZv6YNTQ" type="3009" element="_ED3C0POhEeypVIBZv6YNTQ">
+              <children xmi:type="notation:Node" xmi:id="_EEEeMPOhEeypVIBZv6YNTQ" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_EEEeMfOhEeypVIBZv6YNTQ" type="7003">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_EEEeMvOhEeypVIBZv6YNTQ"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_EEEeM_OhEeypVIBZv6YNTQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_EED3IfOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EED3IvOhEeypVIBZv6YNTQ" x="132" y="24"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_HEG10POjEeypVIBZv6YNTQ" type="3008" element="_HCV7QPOjEeypVIBZv6YNTQ">
+              <children xmi:type="notation:Node" xmi:id="_HEHc4POjEeypVIBZv6YNTQ" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_HEHc4fOjEeypVIBZv6YNTQ" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_HEHc4vOjEeypVIBZv6YNTQ"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_HEHc4_OjEeypVIBZv6YNTQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_HEG10fOjEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HEG10vOjEeypVIBZv6YNTQ" x="7" y="25" width="111" height="37"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_EECpAvOhEeypVIBZv6YNTQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_EECpA_OhEeypVIBZv6YNTQ"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_EsyEAPOhEeypVIBZv6YNTQ" type="3012" element="_Esg-QPOhEeypVIBZv6YNTQ">
+            <children xmi:type="notation:Node" xmi:id="_EsyrEPOhEeypVIBZv6YNTQ" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_EsyrEfOhEeypVIBZv6YNTQ" y="-14"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Es28gPOhEeypVIBZv6YNTQ" type="3005" element="_Esg-QfOhEeypVIBZv6YNTQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_Es28gfOhEeypVIBZv6YNTQ" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Es28gvOhEeypVIBZv6YNTQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_EsyEAfOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EsyEAvOhEeypVIBZv6YNTQ" x="36" y="117" width="30" height="30"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ED--ofOhEeypVIBZv6YNTQ" fontName="Ubuntu" fontHeight="10" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ED--ovOhEeypVIBZv6YNTQ" x="492" y="127" width="291" height="135"/>
+        </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_N1tZwoWfEeuubrEEiisDUQ"/>
       </data>
     </ownedAnnotationEntries>
@@ -1792,13 +2169,52 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='TargetMiddlewares']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_o7PtkIWoEeuubrEEiisDUQ" name="student" tooltipText="LoginAccount">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_o7PtkIWoEeuubrEEiisDUQ" name="robotino" tooltipText="LoginAccount">
         <target xmi:type="targetPlatform:LoginAccount" href="model/SystemRobotinoNavigationRealWorld.target#//@elements.0/@elements.1"/>
         <semanticElements xmi:type="targetPlatform:LoginAccount" href="model/SystemRobotinoNavigationRealWorld.target#//@elements.0/@elements.1"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_o7PtkYWoEeuubrEEiisDUQ" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='LoginAccountContainer']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='LoginAccountContainer']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_EDpAYPOhEeypVIBZv6YNTQ" name="PC2" tooltipText="ComputationPlatform">
+      <target xmi:type="targetPlatform:TargetPlatformDefinition" href="model/SystemRobotinoNavigationRealWorld.target#//@elements.1"/>
+      <semanticElements xmi:type="targetPlatform:TargetPlatformDefinition" href="model/SystemRobotinoNavigationRealWorld.target#//@elements.1"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_Esg-QPOhEeypVIBZv6YNTQ" name="eth1" tooltipText="NetworkInterface" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="targetPlatform:NetworkInterface" href="model/SystemRobotinoNavigationRealWorld.target#//@elements.1/@elements.0"/>
+        <semanticElements xmi:type="targetPlatform:NetworkInterface" href="model/SystemRobotinoNavigationRealWorld.target#//@elements.1/@elements.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_Esg-QfOhEeypVIBZv6YNTQ" showIcon="false" workspacePath="/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/icons/EthernetPort.png">
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@borderedNodeMappings[name='NetworkInterfaceNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@borderedNodeMappings[name='NetworkInterfaceNode']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_EDpncPOhEeypVIBZv6YNTQ" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="200,230,255">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_ED3C0POhEeypVIBZv6YNTQ" name="TargetMiddlewares" tooltipText="TargetMiddlewares">
+        <target xmi:type="targetPlatform:TargetPlatformDefinition" href="model/SystemRobotinoNavigationRealWorld.target#//@elements.1"/>
+        <semanticElements xmi:type="targetPlatform:TargetPlatformDefinition" href="model/SystemRobotinoNavigationRealWorld.target#//@elements.1"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_ED3p4POhEeypVIBZv6YNTQ" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='TargetMiddlewares']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='TargetMiddlewares']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_HCV7QPOjEeypVIBZv6YNTQ" name="feldmeier" tooltipText="LoginAccount">
+        <target xmi:type="targetPlatform:LoginAccount" href="model/SystemRobotinoNavigationRealWorld.target#//@elements.1/@elements.1"/>
+        <semanticElements xmi:type="targetPlatform:LoginAccount" href="model/SystemRobotinoNavigationRealWorld.target#//@elements.1/@elements.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_HCV7QfOjEeypVIBZv6YNTQ" borderSize="1" borderSizeComputationExpression="1">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='LoginAccountContainer']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.smartmdsd.sirius.system.targetPlatform.design/description/targetPlatform.odesign#//@ownedViewpoints[name='TargetPlatformViewpoint']/@ownedRepresentations[name='TargetPlatformDiagram']/@defaultLayer/@containerMappings[name='TargetPlatformContainer']/@subContainerMappings[name='LoginAccountContainer']"/>

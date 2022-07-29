@@ -2,8 +2,6 @@ SystemComponentArchitecture SystemRobotinoNavigationRealWorld
 {
 	ComponentInstance ComponentKB instantiates ComponentKB
 	{
-		RequiredService kbChainedEntriesEventClient
-		ProvidedService kbEventServer
 		ProvidedService kbQuery
 	}
 	ComponentInstance ComponentTCLSequencer instantiates ComponentTCLSequencer
@@ -12,7 +10,6 @@ SystemComponentArchitecture SystemRobotinoNavigationRealWorld
 	ComponentInstance ComponentRobotinoBaseServer instantiates ComponentRobotinoBaseServer {
 			
 		ProvidedService BaseStateServiceOut
-		ProvidedService BatteryEventServiceOut
 		ProvidedService LocalizationUpdateServiceIn
 		ProvidedService NavigationVelocityServiceIn
 	}
@@ -20,41 +17,59 @@ SystemComponentArchitecture SystemRobotinoNavigationRealWorld
 	{
 		RequiredService LaserClient
 		RequiredService PlannerClient
-		RequiredService TrackingClient
-		RequiredService IRClient
+
 		RequiredService BaseStateClient
-		RequiredService PathNavigationGoalClient
+
 		RequiredService NavVelSendClient
-		ProvidedService GoalEventServer
-		ProvidedService RobotBlockedEventServer
-		ProvidedService NavVelSendServer
 	}
 	ComponentInstance SmartMapperGridMap instantiates SmartMapperGridMap
 	{
 		RequiredService LaserServiceIn
 		ProvidedService CurrMapOut
-		ProvidedService CurrQueryServer
-		ProvidedService LtmQueryServer
 	}
 	ComponentInstance SmartPlannerBreadthFirstSearch instantiates SmartPlannerBreadthFirstSearch
 	{
 		RequiredService CurMapClient
 		RequiredService BaseStateClient
 		ProvidedService PlannerGoalServer
-		ProvidedService PlannerEventServer
 	}
 	ComponentInstance SmartAmcl instantiates SmartAmcl
 	{
 		RequiredService LaserServiceIn
 		RequiredService LocalizationUpdateServiceOut
-		ProvidedService LocalizationEventServiceOut
-		ProvidedService AmclVisualizationInfoOut
 	}
 
 	ComponentInstance ComponentLaserLMS1xx instantiates ComponentLaserLMS1xx {	
 		RequiredService BaseStateServiceIn
 		ProvidedService LaserServiceOut
-		ProvidedService LaserQueryServiceAnsw
+	}
+	ComponentInstance ComponentWebots instantiates ComponentWebots
+	{
+		RequiredService CommKBQueryReq
+    }
+
+	ComponentInstance ComponentVisualization instantiates ComponentVisualization
+	{
+		RequiredService rgbdPushNewestClient
+		RequiredService rgbdQueryClient
+		RequiredService baseClient
+		RequiredService laserClient1
+		RequiredService laserClient2
+		RequiredService laserClient3
+		RequiredService irPushNewestClient
+		RequiredService imagePushNewestClient
+		RequiredService curPushClient
+		RequiredService depthPushNewestClient
+		RequiredService ultrasonicPushNewestClient
+		RequiredService personDetectionEventClient
+		RequiredService MarkerListDetectionServiceIn
+		RequiredService AmclVisualizationInfoIn
+		RequiredService plannerGoalPushClient
+		RequiredService plannerWavefrontGridMap
+		RequiredService RGBDImageQueryServiceReq
+		RequiredService ltmQueryClient
+		RequiredService personDetectionQueryClient
+		RequiredService VisualMarkers
 	}
 	Connection SmartAmcl.LocalizationUpdateServiceOut -> ComponentRobotinoBaseServer.LocalizationUpdateServiceIn
 	Connection SmartCdlServer.NavVelSendClient -> ComponentRobotinoBaseServer.NavigationVelocityServiceIn
@@ -66,6 +81,7 @@ SystemComponentArchitecture SystemRobotinoNavigationRealWorld
 	Connection SmartAmcl.LaserServiceIn -> ComponentLaserLMS1xx.LaserServiceOut
 	Connection SmartCdlServer.LaserClient -> ComponentLaserLMS1xx.LaserServiceOut
 	Connection SmartMapperGridMap.LaserServiceIn -> ComponentLaserLMS1xx.LaserServiceOut
+	Connection ComponentWebots.CommKBQueryReq -> ComponentKB.kbQuery
 	
 	BehaviorTaskRef NavigationTasks
 	CoordinationModuleMapping 

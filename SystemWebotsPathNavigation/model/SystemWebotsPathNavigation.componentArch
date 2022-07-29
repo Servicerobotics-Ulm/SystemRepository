@@ -1,0 +1,189 @@
+SystemComponentArchitecture SystemWebotsPathNavigation
+{
+    ComponentInstance ComponentWebotsMobileRobot instantiates ComponentWebotsMobileRobot
+    {
+        ProvidedService BaseStateServiceOut
+        ProvidedService LocalizationUpdateServiceIn
+        ProvidedService NavigationVelocityServiceIn
+    }
+    ComponentInstance SmartCdlServer instantiates SmartCdlServer
+    {
+        RequiredService LaserClient
+        RequiredService PlannerClient
+
+        RequiredService BaseStateClient
+        RequiredService PathNavigationGoalClient
+        RequiredService NavVelSendClient
+    }
+    ComponentInstance SmartMapperGridMap instantiates SmartMapperGridMap
+    {
+        RequiredService LaserServiceIn
+        ProvidedService CurrMapOut
+    }
+    ComponentInstance SmartPlannerBreadthFirstSearch instantiates SmartPlannerBreadthFirstSearch
+    {
+        RequiredService CurMapClient
+        RequiredService BaseStateClient
+        ProvidedService PlannerGoalServer
+    }
+    ComponentInstance SmartAmcl instantiates SmartAmcl
+    {
+        RequiredService LaserServiceIn
+        RequiredService LocalizationUpdateServiceOut
+    }
+    ComponentInstance ComponentVisualization instantiates ComponentVisualization
+    {
+    }
+    ComponentInstance SmartRobotConsole instantiates SmartRobotConsole
+    {
+    }
+
+    ComponentInstance ComponentWebots2DLidar instantiates ComponentWebots2DLidar
+    {
+        RequiredService BaseStateServiceIn
+        ProvidedService LaserServiceOut
+    }
+    ComponentInstance ComponentKB_Robotino_1 instantiates ComponentKB
+    {
+        RequiredService kbChainedEntriesEventClient
+        ProvidedService kbEventServer
+        ProvidedService kbQuery
+    }
+    ComponentInstance ComponentTCLSequencer_Robotino_1 instantiates ComponentTCLSequencer
+    {
+    }
+	ComponentInstance ComponentSeq2SeqCom instantiates ComponentSeq2SeqCom
+	{
+	}
+	ComponentInstance ComponentGoalNodeControl instantiates ComponentGoalNodeControl
+	{
+		RequiredService BaseStateServiceIn
+		RequiredService ShortestPathRequestServiceReq
+		RequiredService NodeStatusUpdateServiceReq
+		RequiredService ClosestFreeNodeServiceReq
+		ProvidedService PlannerGoalServiceOut
+		ProvidedService CorridorNavigationNextGoalOut
+		ProvidedService ClosestFreeNodeServiceAnsw
+	}
+	ComponentInstance ComponentKB_Master instantiates ComponentKB
+	{
+		RequiredService kbChainedEntriesEventClient
+		ProvidedService kbEventServer
+		ProvidedService kbQuery
+	}
+	ComponentInstance ComponentNavigationGraph instantiates ComponentNavigationGraph
+	{
+		ProvidedService NavPathServiceIn
+		ProvidedService ShortestPathRequestServiceAnsw
+		ProvidedService NodeStatusUpdateServiceAnsw
+		ProvidedService ClosestFreeNodeServiceAnsw
+	}
+	ComponentInstance ComponentWebots instantiates ComponentWebots
+	{
+		RequiredService BaseStateServiceIn
+		RequiredService CurrGridMapPushServiceIn
+		RequiredService NavPathServiceOut
+		RequiredService CommKBQueryReq
+	}
+	ComponentInstance SmartJobDispatcher instantiates SmartJobDispatcher
+	{
+		RequiredService jobSourceEventClient
+		RequiredService SymbolicPannerServiceReq
+		RequiredService CommKBQueryReq
+		ProvidedService TaskResultOut
+	}
+	ComponentInstance SmartFestoFleetCom instantiates SmartFestoFleetCom
+	{
+		RequiredService TaskResultIn
+		RequiredService kbQueryClient
+		ProvidedService TaskEventOut
+	}
+	ComponentInstance ComponentSymbolicPlanner instantiates ComponentSymbolicPlanner
+	{
+		ProvidedService SymbolicPlannerQueryServer
+	}
+
+    Connection SmartAmcl.LocalizationUpdateServiceOut -> ComponentWebotsMobileRobot.LocalizationUpdateServiceIn
+    Connection SmartCdlServer.NavVelSendClient -> ComponentWebotsMobileRobot.NavigationVelocityServiceIn
+    Connection SmartPlannerBreadthFirstSearch.CurMapClient -> SmartMapperGridMap.CurrMapOut
+    Connection SmartPlannerBreadthFirstSearch.BaseStateClient -> ComponentWebotsMobileRobot.BaseStateServiceOut
+
+    Connection SmartCdlServer.PlannerClient -> SmartPlannerBreadthFirstSearch.PlannerGoalServer
+    Connection SmartCdlServer.BaseStateClient -> ComponentWebotsMobileRobot.BaseStateServiceOut
+
+    Connection  SmartAmcl.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
+
+    Connection SmartMapperGridMap.LaserServiceIn -> ComponentWebots2DLidar.LaserServiceOut
+
+    Connection ComponentWebots2DLidar.BaseStateServiceIn -> ComponentWebotsMobileRobot.BaseStateServiceOut
+
+	Connection ComponentGoalNodeControl.BaseStateServiceIn -> ComponentWebotsMobileRobot.BaseStateServiceOut 
+    Connection SmartCdlServer.PathNavigationGoalClient -> ComponentGoalNodeControl.CorridorNavigationNextGoalOut
+	Connection ComponentGoalNodeControl.NodeStatusUpdateServiceReq -> ComponentNavigationGraph.NodeStatusUpdateServiceAnsw
+	Connection ComponentGoalNodeControl.ClosestFreeNodeServiceReq -> ComponentNavigationGraph.ClosestFreeNodeServiceAnsw
+	Connection ComponentGoalNodeControl.ShortestPathRequestServiceReq -> ComponentNavigationGraph.ShortestPathRequestServiceAnsw
+	Connection ComponentKB_Robotino_1.kbChainedEntriesEventClient -> ComponentKB_Master.kbEventServer
+    
+    Connection SmartCdlServer.LaserClient -> ComponentWebots2DLidar.LaserServiceOut
+	Connection ComponentWebots.CommKBQueryReq -> ComponentKB_Master.kbQuery
+	Connection ComponentWebots.NavPathServiceOut -> ComponentNavigationGraph.NavPathServiceIn
+	Connection SmartJobDispatcher.CommKBQueryReq -> ComponentKB_Master.kbQuery
+	Connection SmartFestoFleetCom.TaskResultIn -> SmartJobDispatcher.TaskResultOut
+	Connection SmartJobDispatcher.jobSourceEventClient -> SmartFestoFleetCom.TaskEventOut
+	Connection SmartFestoFleetCom.kbQueryClient -> ComponentKB_Master.kbQuery
+	Connection SmartJobDispatcher.SymbolicPannerServiceReq -> ComponentSymbolicPlanner.SymbolicPlannerQueryServer
+	BehaviorTaskRef BehaviorRobotinoPathNavigation 
+    
+    
+    CoordinationModuleMapping {
+        moduleInstance BehaviorRobotinoPathNavigation.navigation realizedby MovementMod2
+        {
+            interfaceInstance cdl realizedby SmartCdlServer
+            interfaceInstance mapper realizedby SmartMapperGridMap
+            interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch
+        }
+    }
+    
+    CoordinationModuleMapping {
+        moduleInstance BehaviorRobotinoPathNavigation.localizationModInst realizedby locModRealization {
+            interfaceInstance amcl realizedby SmartAmcl
+        }
+    }
+    
+    CoordinationModuleMapping {
+        moduleInstance BehaviorRobotinoPathNavigation.kbModInst realizedby kbModule
+        {
+            interfaceInstance kb realizedby ComponentKB_Robotino_1
+        }
+    }
+    CoordinationModuleMapping {
+        moduleInstance BehaviorRobotinoPathNavigation.base realizedby baseInst {
+            interfaceInstance base realizedby ComponentWebotsMobileRobot
+        }
+    }
+    
+    
+    CoordinationModuleMapping {
+        moduleInstance BehaviorRobotinoPathNavigation.seq2seq realizedby seq2seq {
+            interfaceInstance cs_seq2seq realizedby ComponentSeq2SeqCom
+        }
+    }
+    
+    
+    CoordinationModuleMapping {
+        moduleInstance BehaviorRobotinoPathNavigation.navPathClient realizedby navPathClient {
+            interfaceInstance cdl realizedby SmartCdlServer
+            interfaceInstance mapper realizedby SmartMapperGridMap
+            interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch
+            interfaceInstance navPathClient realizedby ComponentGoalNodeControl
+        }
+    }   
+    
+    CoordinationModuleMapping { 
+        moduleInstance BehaviorRobotinoPathNavigation.fleetManager realizedby FleetManagerMod {
+            interfaceInstance fleetManager realizedby SmartJobDispatcher
+        }
+    }
+    
+    
+}

@@ -1,0 +1,30 @@
+DeploymentModel SystemWebotsPathNavigation using ComponentArchitecture SystemWebotsPathNavigation
+{
+    TargetPlatformReference LocalhostTarget using SystemWebotsPathNavigation.LocalhostTarget
+    {
+        UploadDirectory "/tmp"
+        LoginAccount feldmeier
+        NetworkInterface eth1
+    }
+    ComponentArtefact ComponentKB_Robotino_1 deploy-to LocalhostTarget
+    ComponentArtefact ComponentTCLSequencer_Robotino_1 deploy-to LocalhostTarget
+    ComponentArtefact ComponentVisualization deploy-to LocalhostTarget
+    ComponentArtefact ComponentWebots2DLidar deploy-to LocalhostTarget
+    ComponentArtefact ComponentWebotsMobileRobot deploy-to LocalhostTarget
+    ComponentArtefact SmartAmcl deploy-to LocalhostTarget
+    ComponentArtefact SmartCdlServer deploy-to LocalhostTarget
+    ComponentArtefact SmartMapperGridMap deploy-to LocalhostTarget
+    ComponentArtefact SmartPlannerBreadthFirstSearch deploy-to LocalhostTarget
+    ComponentArtefact SmartRobotConsole deploy-to LocalhostTarget
+    ComponentArtefact ComponentGoalNodeControl deploy-to LocalhostTarget
+    ComponentArtefact ComponentSeq2SeqCom deploy-to LocalhostTarget
+NamingService
+	{
+		deploy-to LocalhostTarget }
+	ComponentArtefact SmartJobDispatcher deploy-to LocalhostTarget
+	ComponentArtefact SmartFestoFleetCom deploy-to LocalhostTarget
+	ComponentArtefact ComponentSymbolicPlanner deploy-to LocalhostTarget
+	ComponentArtefact ComponentKB_Master deploy-to LocalhostTarget
+	ComponentArtefact ComponentNavigationGraph deploy-to LocalhostTarget
+	ComponentArtefact ComponentWebots deploy-to LocalhostTarget
+}

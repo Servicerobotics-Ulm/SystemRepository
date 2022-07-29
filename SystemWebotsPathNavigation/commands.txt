@@ -1,0 +1,46 @@
+// Robot ids:
+// Robotino_1: 1
+// Robotino_2: 2
+// Robotino_3: 3
+// Larry: 22
+
+// Job GotoPosition (robot-id, position-id, nav-type)
+// nav-type = "free" | "path"
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 0, "priority" : 0, "robot-id" : 1, "job" : { "type" : "GotoPosition", "position-id" : 0, "nav-type" : "free" }}
+
+// Job DeliverFromTo (robot-id, from-station-id, to-station-id, nav-type)
+// nav-type = "free" | "path"
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 4, "priority" : 0, "robot-id" : 1, "job" : { "type" : "DeliverFromTo", "from-station-id" : 0, "from-station-belt" : 1, "to-station-id" : 1, "to-station-belt" : 1, "nav-type" : "free" }}
+
+// Job RobotCommissioning (robot-id, commissioning-robot-id, from-box-station-id, to-station-id, order)
+// order = { WHITE-BOX-RECT, WHITE-BOX-CUBE } 
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 2, "priority" : 0, "robot-id" : 1, "job" : { "type" : "RobotCommissioning", "commissioning-robot-id" : 22, "from-box-station-id" : 0, "from-box-station-belt" : 1, "to-station-id" : 1, "to-station-belt" : 1, "order-items": [{ "type" : "WHITE-BOX-CUBE", "quantity" : 1 }] }}
+
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 2, "priority" : 0, "robot-id" : 1, "job" : { "type" : "RobotCommissioning", "commissioning-robot-id" : 22, "from-box-station-id" : 0, "from-box-station-belt" : 1, "to-station-id" : 1, "to-station-belt" : 1, "order-items": [{ "type" : "CHOCO", "quantity" : 2 }, { "type" : "SPECIAL", "quantity" : 1 }], "time-limit": 90.0  }}
+
+sharedOrderPicking:path
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 5, "priority" : 0, "robot-id" : 1, "job" : { "type" : "RobotCommissioning", "commissioning-robot-id" : 22, "from-box-station-id" : 3, "from-box-station-belt" : 1, "docking-waypoint" : 18, "to-station-id" : 2, "to-station-belt" : 1, "order-items": [{ "type" : "RATIOPHARM-IBU", "quantity" : 1 }]}}
+sharedOrderPicking:free
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 5, "priority" : 0, "robot-id" : 1, "job" : { "type" : "RobotCommissioning", "commissioning-robot-id" : 22, "from-box-station-id" : 3, "from-box-station-belt" : 1, "docking-waypoint" : -1, "to-station-id" : 1, "to-station-belt" : 1, "order-items": [{ "type" : "CHOCO", "quantity" : 2 }]}}
+
+// Job FollowPerson (robot-id)
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 5, "priority" : 0, "robot-id" : 1, "job" : { "type" : "FollowPerson" }}
+
+// Job CollectFrom (robot-id, from-station-id, nav-type)
+// nav-type = "free" | "path"
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 4, "priority" : 0, "robot-id" : 1, "job" : { "type" : "CollectFrom", "from-station-id" : 0, "from-station-belt" : 1, "nav-type" : "free" }}
+
+// Job DeliverTo (robot-id, to-station-id, nav-type)
+// nav-type = "free" | "path"
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 4, "priority" : 0, "robot-id" : 1, "job" : { "type" : "DeliverTo", "to-station-id" : 1, "to-station-belt" : 1, "nav-type" : "free" }}
+
+
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 1, "priority" : 0, "robot-id" : 1, "job" : { "type" : "GotoPosition", "position-id" : 1, "nav-type" : "path" }}
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 2, "priority" : 0, "robot-id" : 1, "job" : { "type" : "GotoPosition", "position-id" : 3, "nav-type" : "path" }}
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 3, "priority" : 0, "robot-id" : 1, "job" : { "type" : "GotoPosition", "position-id" : 1, "nav-type" : "path" }}
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 4, "priority" : 0, "robot-id" : 1, "job" : { "type" : "GotoPosition", "position-id" : 3, "nav-type" : "path" }}
+
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 5, "priority" : 0, "robot-id" : 1, "job" : { "type" : "GotoPosition", "position-id" : 1001, "nav-type" : "free" }}
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 6, "priority" : 0, "robot-id" : 1, "job" : { "type" : "GotoPosition", "position-id" : 1002, "nav-type" : "free" }}
+{ "msg-type" : "job", "action" : "push-job", "job-id" : 7, "priority" : 0, "robot-id" : 1, "job" : { "type" : "GotoPosition", "position-id" : 1000, "nav-type" : "free" }}
+

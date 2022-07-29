@@ -1,0 +1,9 @@
+TargetPlatformModel SystemWebotsPathNavigation
+{
+    TargetPlatformDefinition LocalhostTarget
+    {
+//        NetworkInterface localhost { HostAddress "127.0.0.1" }
+        NetworkInterface eth1 { HostAddress "10.36.33.212" }
+        LoginAccount feldmeier { FullName "Guest" Email "guest@example.com" }
+    } 
+}

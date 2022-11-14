@@ -1,0 +1,42 @@
+DeploymentModel SystemMultiNavigation using ComponentArchitecture SystemMultiNavigation
+{
+	TargetPlatformReference Robotino_1 using SystemMultiNavigation.Robotino_1 {
+		UploadDirectory "/tmp"
+		NetworkInterface wifi1
+		LoginAccount robotino
+	}
+    TargetPlatformReference Robotino_2 using SystemMultiNavigation.Robotino_2 {
+        UploadDirectory "/tmp"
+        NetworkInterface wifi2
+        LoginAccount robotino
+    }
+	NamingService {
+		deploy-to PC
+	}
+	ComponentArtefact ComponentLaserLMS1xx_1 deploy-to Robotino_1
+	ComponentArtefact ComponentRobotinoBaseServer_1 deploy-to Robotino_1
+	ComponentArtefact SmartAmcl_1 deploy-to Robotino_1
+	ComponentArtefact SmartCdlServer_1 deploy-to Robotino_1
+	ComponentArtefact SmartMapperGridMap_1 deploy-to Robotino_1
+	ComponentArtefact SmartPlannerBreadthFirstSearch_1 deploy-to Robotino_1
+	
+    ComponentArtefact ComponentLaserLMS1xx_2 deploy-to Robotino_2
+    ComponentArtefact ComponentRobotinoBaseServer_2 deploy-to Robotino_2
+    ComponentArtefact SmartAmcl_2 deploy-to Robotino_2
+    ComponentArtefact SmartCdlServer_2 deploy-to Robotino_2
+    ComponentArtefact SmartMapperGridMap_2 deploy-to Robotino_2
+    ComponentArtefact SmartPlannerBreadthFirstSearch_2 deploy-to Robotino_2
+		
+    TargetPlatformReference PC using SystemMultiNavigation.PC
+	{
+		UploadDirectory "/tmp"
+		LoginAccount feldmeier
+		NetworkInterface eth1
+	}
+	ComponentArtefact ComponentWebots deploy-to PC
+	ComponentArtefact ComponentVisualization deploy-to PC
+	ComponentArtefact ComponentKB deploy-to PC
+	ComponentArtefact ComponentTCLSequencer_1 deploy-to Robotino_1
+    ComponentArtefact ComponentTCLSequencer_2 deploy-to Robotino_1
+	
+}

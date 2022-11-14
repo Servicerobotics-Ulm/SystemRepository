@@ -1,0 +1,158 @@
+SystemComponentArchitecture SystemMultiNavigation
+{
+
+    ComponentInstance ComponentKB instantiates ComponentKB {
+        ProvidedService kbQuery
+    }
+	ComponentInstance ComponentTCLSequencer_1 instantiates ComponentTCLSequencer
+	{
+	}
+    ComponentInstance ComponentTCLSequencer_2 instantiates ComponentTCLSequencer
+    {
+    }
+	ComponentInstance ComponentRobotinoBaseServer_1 instantiates ComponentRobotinoBaseServer {
+			
+		ProvidedService BaseStateServiceOut
+		ProvidedService LocalizationUpdateServiceIn
+		ProvidedService NavigationVelocityServiceIn
+	}
+	ComponentInstance SmartCdlServer_1 instantiates SmartCdlServer
+	{
+		RequiredService LaserClient
+		RequiredService PlannerClient
+		RequiredService BaseStateClient
+		RequiredService NavVelSendClient
+	}
+	ComponentInstance SmartMapperGridMap_1 instantiates SmartMapperGridMap
+	{
+		RequiredService LaserServiceIn
+		ProvidedService CurrMapOut
+	}
+	ComponentInstance SmartPlannerBreadthFirstSearch_1 instantiates SmartPlannerBreadthFirstSearch
+	{
+		RequiredService CurMapClient
+		RequiredService BaseStateClient
+		ProvidedService PlannerGoalServer
+	}
+	ComponentInstance SmartAmcl_1 instantiates SmartAmcl
+	{
+		RequiredService LaserServiceIn
+		RequiredService LocalizationUpdateServiceOut
+	}
+
+	ComponentInstance ComponentLaserLMS1xx_1 instantiates ComponentLaserLMS1xx {	
+		RequiredService BaseStateServiceIn
+		ProvidedService LaserServiceOut
+	}
+	
+    ComponentInstance ComponentRobotinoBaseServer_2 instantiates ComponentRobotinoBaseServer {
+        ProvidedService BaseStateServiceOut
+        ProvidedService LocalizationUpdateServiceIn
+        ProvidedService NavigationVelocityServiceIn
+    }
+    ComponentInstance SmartCdlServer_2 instantiates SmartCdlServer
+    {
+        RequiredService LaserClient
+        RequiredService PlannerClient
+
+        RequiredService BaseStateClient
+
+        RequiredService NavVelSendClient
+    }
+    ComponentInstance SmartMapperGridMap_2 instantiates SmartMapperGridMap
+    {
+        RequiredService LaserServiceIn
+        ProvidedService CurrMapOut
+    }
+    ComponentInstance SmartPlannerBreadthFirstSearch_2 instantiates SmartPlannerBreadthFirstSearch
+    {
+        RequiredService CurMapClient
+        RequiredService BaseStateClient
+        ProvidedService PlannerGoalServer
+    }
+    ComponentInstance SmartAmcl_2 instantiates SmartAmcl
+    {
+        RequiredService LaserServiceIn
+        RequiredService LocalizationUpdateServiceOut
+    }
+
+    ComponentInstance ComponentLaserLMS1xx_2 instantiates ComponentLaserLMS1xx {  
+        RequiredService BaseStateServiceIn
+        ProvidedService LaserServiceOut
+    }
+	ComponentInstance ComponentWebots instantiates ComponentWebots
+	{
+		RequiredService CommKBQueryReq
+    }
+
+	ComponentInstance ComponentVisualization instantiates ComponentVisualization {
+	}
+	
+	Connection SmartAmcl_1.LocalizationUpdateServiceOut -> ComponentRobotinoBaseServer_1.LocalizationUpdateServiceIn
+	Connection SmartCdlServer_1.NavVelSendClient -> ComponentRobotinoBaseServer_1.NavigationVelocityServiceIn
+	Connection SmartPlannerBreadthFirstSearch_1.CurMapClient -> SmartMapperGridMap_1.CurrMapOut
+	Connection SmartPlannerBreadthFirstSearch_1.BaseStateClient -> ComponentRobotinoBaseServer_1.BaseStateServiceOut
+	Connection SmartCdlServer_1.PlannerClient -> SmartPlannerBreadthFirstSearch_1.PlannerGoalServer
+	Connection SmartCdlServer_1.BaseStateClient -> ComponentRobotinoBaseServer_1.BaseStateServiceOut
+	Connection ComponentLaserLMS1xx_1.BaseStateServiceIn -> ComponentRobotinoBaseServer_1.BaseStateServiceOut
+	Connection SmartAmcl_1.LaserServiceIn -> ComponentLaserLMS1xx_1.LaserServiceOut
+	Connection SmartCdlServer_1.LaserClient -> ComponentLaserLMS1xx_1.LaserServiceOut
+	Connection SmartMapperGridMap_1.LaserServiceIn -> ComponentLaserLMS1xx_1.LaserServiceOut
+	
+    Connection SmartAmcl_2.LocalizationUpdateServiceOut -> ComponentRobotinoBaseServer_2.LocalizationUpdateServiceIn
+    Connection SmartCdlServer_2.NavVelSendClient -> ComponentRobotinoBaseServer_2.NavigationVelocityServiceIn
+    Connection SmartPlannerBreadthFirstSearch_2.CurMapClient -> SmartMapperGridMap_2.CurrMapOut
+    Connection SmartPlannerBreadthFirstSearch_2.BaseStateClient -> ComponentRobotinoBaseServer_2.BaseStateServiceOut
+    Connection SmartCdlServer_2.PlannerClient -> SmartPlannerBreadthFirstSearch_2.PlannerGoalServer
+    Connection SmartCdlServer_2.BaseStateClient -> ComponentRobotinoBaseServer_2.BaseStateServiceOut
+    Connection ComponentLaserLMS1xx_2.BaseStateServiceIn -> ComponentRobotinoBaseServer_2.BaseStateServiceOut
+    Connection SmartAmcl_2.LaserServiceIn -> ComponentLaserLMS1xx_2.LaserServiceOut
+    Connection SmartCdlServer_2.LaserClient -> ComponentLaserLMS1xx_2.LaserServiceOut
+    Connection SmartMapperGridMap_2.LaserServiceIn -> ComponentLaserLMS1xx_2.LaserServiceOut
+	
+    Connection  ComponentWebots.CommKBQueryReq -> ComponentKB.kbQuery
+
+	
+	BehaviorTaskRef NavigationTasks
+	CoordinationModuleMapping {
+    	moduleInstance NavigationTasks.kbModInst realizedby kbModule { 
+    		interfaceInstance kb realizedby ComponentKB
+    	}
+	}
+	CoordinationModuleMapping {
+        moduleInstance NavigationTasks.navigation_1 realizedby MovementMod2 { 
+        	interfaceInstance cdl realizedby SmartCdlServer_1
+        	interfaceInstance mapper realizedby SmartMapperGridMap_1 
+        	interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch_1
+        }
+    } 
+	CoordinationModuleMapping  { 
+    	moduleInstance NavigationTasks.localizationModInst_1 realizedby locModRealization { 
+    		interfaceInstance amcl realizedby SmartAmcl_1
+    	}
+	}
+	CoordinationModuleMapping {
+	moduleInstance NavigationTasks.base_1 realizedby baseInst {
+		interfaceInstance base realizedby ComponentRobotinoBaseServer_1
+		}
+	}
+	
+    CoordinationModuleMapping {
+        moduleInstance NavigationTasks.navigation_2 realizedby MovementMod2 { 
+            interfaceInstance cdl realizedby SmartCdlServer_2
+            interfaceInstance mapper realizedby SmartMapperGridMap_2 
+            interfaceInstance planner realizedby SmartPlannerBreadthFirstSearch_2
+        }
+    } 
+    CoordinationModuleMapping  { 
+        moduleInstance NavigationTasks.localizationModInst_2 realizedby locModRealization { 
+            interfaceInstance amcl realizedby SmartAmcl_2
+        }
+    }
+    CoordinationModuleMapping {
+    moduleInstance NavigationTasks.base_2 realizedby baseInst {
+        interfaceInstance base realizedby ComponentRobotinoBaseServer_2
+        }
+    }
+
+}

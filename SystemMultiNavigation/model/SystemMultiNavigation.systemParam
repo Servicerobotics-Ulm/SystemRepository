@@ -1,0 +1,91 @@
+SystemParameterModel SystemMultiNavigation extendsSystem SystemMultiNavigation {
+ComponentParameterInstance ComponentWebots refinesParamStruct ComponentWebots {
+    ParameterRefinement General {
+        WorldPath = "$SMART_ROOT_ACE/repos/DataRepository/webots/worlds/MultiNavigation.wbt"
+        isEditorPresent = true
+    }
+}
+// ////// Robotino 1 //////
+ComponentParameterInstance SmartAmcl_1 refinesParamStruct SmartAmclParams{
+    ParameterRefinement General {
+        yaml_file = "localization-map.yaml"
+    }
+    ParameterRefinement Odometry {
+        odom_model_type = "omni"
+    }
+}
+ComponentParameterInstance SmartCdlServer_1 refinesParamStruct SmartCdlServerParams{
+    ParameterRefinement Cdl { 
+        accel_default_file = "CDLacc_Robotino3_600mm.dat"
+        accel_second_file  = "CDLacc_Robotino3_600mm.dat"
+        contour_default_file = "CDLcontour_Robotino3_600mm.dat"
+        contour_second_file  = "CDLcontour_Robotino3_600mm.dat"
+        curvature_default_file = "CDLindex_Robotino3_600mm.dat"
+        curvature_second_file  = "CDLindex_Robotino3_600mm.dat"
+        lookup_default_file = "CDLdist_Robotino3_600mm.dat.compressed"
+        lookup_default_file_compressed = true
+        lookup_second_file  = "CDLdist_Robotino3_600mm.dat.compressed"
+        lookup_second_file_compressed = true
+    }
+}
+ComponentParameterInstance ComponentLaserLMS1xx_1 refinesParamStruct ComponentLaserLMS1xxParams{
+    ParameterRefinement scanner {
+        x = 190
+        ip_address = "192.168.0.2"
+        opening_angle = 210
+    }
+}
+ComponentParameterInstance SmartMapperGridMap_1 refinesParamStruct SmartMapperGridMapParams{
+    ParameterRefinement CurrentMap {
+        growing = "circle16"
+    }
+    ParameterRefinement CURLTM {
+        preoccupation = ENABLE
+    }
+    ParameterRefinement CUREMPTY {
+        mapmode = EMPTY
+    }
+}
+// ////// Robotino 2 //////
+ComponentParameterInstance SmartAmcl_2 refinesParamStruct SmartAmclParams{
+    ParameterRefinement General {
+        yaml_file = "localization-map.yaml"
+    }
+    ParameterRefinement Odometry {
+        odom_model_type = "omni"
+    }
+}
+ComponentParameterInstance SmartCdlServer_2 refinesParamStruct SmartCdlServerParams{
+    ParameterRefinement Cdl { 
+        accel_default_file = "CDLacc_Robotino3_600mm.dat"
+        accel_second_file  = "CDLacc_Robotino3_600mm.dat"
+        contour_default_file = "CDLcontour_Robotino3_600mm.dat"
+        contour_second_file  = "CDLcontour_Robotino3_600mm.dat"
+        curvature_default_file = "CDLindex_Robotino3_600mm.dat"
+        curvature_second_file  = "CDLindex_Robotino3_600mm.dat"
+        lookup_default_file = "CDLdist_Robotino3_600mm.dat.compressed"
+        lookup_default_file_compressed = true
+        lookup_second_file  = "CDLdist_Robotino3_600mm.dat.compressed"
+        lookup_second_file_compressed = true
+    }
+}
+ComponentParameterInstance ComponentLaserLMS1xx_2 refinesParamStruct ComponentLaserLMS1xxParams{
+    ParameterRefinement scanner {
+        x = 190
+        ip_address = "192.168.0.2"
+        opening_angle = 210
+    }
+}
+ComponentParameterInstance SmartMapperGridMap_2 refinesParamStruct SmartMapperGridMapParams{
+    ParameterRefinement CurrentMap {
+        growing = "circle16"
+    }
+    ParameterRefinement CURLTM {
+        preoccupation = ENABLE
+    }
+    ParameterRefinement CUREMPTY {
+        mapmode = EMPTY
+    }
+}
+
+}

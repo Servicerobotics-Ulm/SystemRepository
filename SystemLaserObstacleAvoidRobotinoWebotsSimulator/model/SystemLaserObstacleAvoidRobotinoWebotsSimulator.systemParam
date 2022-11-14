@@ -7,7 +7,6 @@ SystemParameterModel SystemLaserObstacleAvoidRobotinoWebotsSimulator extendsSyst
 			radius = [0.063, 0.063, 0.063]
 			distanceToRobotCentre = [-0.1826, -0.1826, -0.1826]
 			heading = [90.0, 210.0, 330.0]
-			keyboardControl = true
 		}
 	}  
 

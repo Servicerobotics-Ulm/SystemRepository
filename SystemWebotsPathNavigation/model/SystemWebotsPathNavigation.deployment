@@ -3,8 +3,7 @@ DeploymentModel SystemWebotsPathNavigation using ComponentArchitecture SystemWeb
     TargetPlatformReference LocalhostTarget using SystemWebotsPathNavigation.LocalhostTarget
     {
         UploadDirectory "/tmp"
-        LoginAccount feldmeier
-        NetworkInterface eth1
+        NetworkInterface localhost
     }
     ComponentArtefact ComponentKB_Robotino_1 deploy-to LocalhostTarget
     ComponentArtefact ComponentTCLSequencer_Robotino_1 deploy-to LocalhostTarget
@@ -18,8 +17,7 @@ DeploymentModel SystemWebotsPathNavigation using ComponentArchitecture SystemWeb
     ComponentArtefact SmartRobotConsole deploy-to LocalhostTarget
     ComponentArtefact ComponentGoalNodeControl deploy-to LocalhostTarget
     ComponentArtefact ComponentSeq2SeqCom deploy-to LocalhostTarget
-NamingService
-	{
+    NamingService {
 		deploy-to LocalhostTarget }
 	ComponentArtefact SmartJobDispatcher deploy-to LocalhostTarget
 	ComponentArtefact SmartFestoFleetCom deploy-to LocalhostTarget

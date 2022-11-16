@@ -30,19 +30,19 @@ ComponentParameterInstance SmartMapperGridMap refinesParamStruct SmartMapperGrid
 	}
 	ParameterRefinement LtmMap {
 		kalman = 100
-		xsize = 60000
-		ysize = 60000
-		xpos = -15000
-		ypos = -15000
+		xsize = 40000
+		ysize = 40000
+		xpos = -20000
+		ypos = -20000
 		id = 0
 	}
 	ParameterRefinement CurrentMap {
 		interval = 10
 		growing = "star16"
-		xsize = 20000
-		ysize = 20000
-		xpos = -10000
-		ypos = -10000
+		xsize = 40000
+		ysize = 40000
+		xpos = -20000
+		ypos = -20000
 		id = 0
 	}
 }

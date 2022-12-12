@@ -1,0 +1,15 @@
+DeploymentModel SystemP3dxExerciseLaserDriveMidwayRealWorld using ComponentArchitecture SystemP3dxExerciseLaserDriveMidwayRealWorld
+{
+ComponentArtefact ComponentExerciseDriveMidway deploy-to P3dx
+	ComponentArtefact SmartLaserLMS200Server deploy-to P3dx
+	ComponentArtefact SmartPioneerBaseServer deploy-to P3dx
+	TargetPlatformReference P3dx using SystemP3dxExerciseLaserDriveMidwayRealWorld.P3dx
+	{
+		UploadDirectory "/tmp"
+		LoginAccount student
+		NetworkInterface wifi
+	}
+	NamingService
+	{
+		deploy-to P3dx }
+}

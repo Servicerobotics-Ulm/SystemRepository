@@ -1,0 +1,15 @@
+DeploymentModel SystemP3dxExerciseLaserFollowWallRealWorld using ComponentArchitecture SystemP3dxExerciseLaserFollowWallRealWorld
+{
+ComponentArtefact SmartLaserLMS200Server deploy-to P3dx
+	ComponentArtefact ComponentExerciseFollowWall deploy-to P3dx
+	NamingService
+	{
+		deploy-to P3dx }
+	TargetPlatformReference P3dx using SystemP3dxExerciseLaserFollowWallRealWorld.P3dx
+	{
+		UploadDirectory "/tmp"
+		LoginAccount student
+		NetworkInterface wifi
+	}
+	ComponentArtefact SmartPioneerBaseServer deploy-to P3dx
+}

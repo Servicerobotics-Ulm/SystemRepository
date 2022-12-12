@@ -1,0 +1,22 @@
+SystemComponentArchitecture SystemP3dxExerciseLaserFollowWallRealWorld
+{
+ComponentInstance ComponentExerciseFollowWall instantiates ComponentExerciseFollowWall
+	{
+		RequiredService LaserServiceIn
+		RequiredService NavigationVelocityServiceOut
+	}
+	ComponentInstance SmartLaserLMS200Server instantiates SmartLaserLMS200Server
+	{
+		RequiredService BaseStateIn
+		ProvidedService LaserServiceOut
+	}
+	ComponentInstance SmartPioneerBaseServer instantiates SmartPioneerBaseServer
+	{
+		ProvidedService BasePositionOut
+
+		ProvidedService NavVelIn
+	}
+	Connection ComponentExerciseFollowWall.LaserServiceIn -> SmartLaserLMS200Server.LaserServiceOut
+	Connection ComponentExerciseFollowWall.NavigationVelocityServiceOut -> SmartPioneerBaseServer.NavVelIn
+	Connection SmartLaserLMS200Server.BaseStateIn -> SmartPioneerBaseServer.BasePositionOut
+}

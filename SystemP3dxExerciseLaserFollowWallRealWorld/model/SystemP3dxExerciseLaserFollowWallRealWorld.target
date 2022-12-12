@@ -1,0 +1,7 @@
+TargetPlatformModel SystemP3dxExerciseLaserFollowWallRealWorld
+{
+	TargetPlatformDefinition P3dx
+	{
+		NetworkInterface wifi { HostAddress "192.168.1.132" }
+	LoginAccount student { FullName "Guest" Email "guest@example.com" }
+	} }

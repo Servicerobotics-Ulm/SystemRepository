@@ -1,0 +1,22 @@
+SystemComponentArchitecture SystemP3dxExerciseLaserApproachCylinderRealWorld
+{
+ComponentInstance ComponentExerciseApproachCylinder instantiates ComponentExerciseApproachCylinder
+	{
+		RequiredService LaserServiceIn
+		RequiredService NavigationVelocityServiceOut
+	}
+	ComponentInstance SmartPioneerBaseServer instantiates SmartPioneerBaseServer
+	{
+		ProvidedService BasePositionOut
+
+		ProvidedService NavVelIn
+	}
+	ComponentInstance SmartLaserLMS200Server instantiates SmartLaserLMS200Server
+	{
+		RequiredService BaseStateIn
+		ProvidedService LaserServiceOut
+	}
+	Connection ComponentExerciseApproachCylinder.NavigationVelocityServiceOut -> SmartPioneerBaseServer.NavVelIn
+	Connection SmartLaserLMS200Server.BaseStateIn -> SmartPioneerBaseServer.BasePositionOut
+	Connection ComponentExerciseApproachCylinder.LaserServiceIn -> SmartLaserLMS200Server.LaserServiceOut
+}
